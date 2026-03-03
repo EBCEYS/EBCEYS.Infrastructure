@@ -1,0 +1,197 @@
+using Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext;
+using Ebceys.Infrastructure.Exceptions;
+using Ebceys.Infrastructure.HttpClient;
+using Ebceys.Infrastructure.TestApplication.BoundedContext.Requests;
+using Ebceys.Infrastructure.TestApplication.BoundedContext.Responses;
+using Ebceys.Infrastructure.TestApplication.Client.Interfaces;
+using Flurl.Http.Configuration;
+using Microsoft.AspNetCore.Mvc;
+using RoutesDictionary = Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary;
+
+namespace Ebceys.Infrastructure.TestApplication.Client.Implementations;
+
+public class TestClient(
+    IFlurlClientCache clientCache,
+    ILoggerFactory loggerFactory,
+    Func<string> baseUrlResolver,
+    Func<Task<string>>? tokenResolver = null)
+    : ClientBase(clientCache, loggerFactory, baseUrlResolver, tokenResolver), ITestClient
+{
+    private const string BasePath = RoutesDictionary.TestControllerV1.BaseRoute;
+
+    public async Task GetOkAsync(CancellationToken token)
+    {
+        var result = await GetAsync<ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetOk), token: token);
+
+        if (!result.IsSuccess)
+        {
+            ApiExceptionHelper.ThrowApiException(result);
+        }
+    }
+
+    public async Task GetExceptionAsync(CancellationToken token)
+    {
+        var result = await GetAsync<ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetException),
+            token: token);
+
+        if (!result.IsSuccess)
+        {
+            ApiExceptionHelper.ThrowApiException(result);
+        }
+    }
+
+    public async Task<SomeBodyResponse> PostBodyAsync(SomeBodyRequest body, CancellationToken token)
+    {
+        var result = await PostJsonAsync<SomeBodyRequest, SomeBodyResponse, ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.PostBody),
+            body,
+            token: token);
+        if (result is { IsSuccess: true, Result: not null })
+        {
+            return result.Result;
+        }
+
+        return ApiExceptionHelper.ThrowApiException(result);
+    }
+
+    public async Task<SomeBodyResponse> GetQueryAsync(int value, CancellationToken token)
+    {
+        var result = await GetJsonAsync<SomeBodyResponse, ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetQuery)
+                .AppendQueryParam("value", value),
+            token: token);
+
+        if (result is { IsSuccess: true, Result: not null })
+        {
+            return result.Result;
+        }
+
+        return ApiExceptionHelper.ThrowApiException(result);
+    }
+
+    public async Task<CommandResultResponse> PostCommandAsync(string name, CancellationToken token)
+    {
+        var result = await PostJsonAsync<CommandResultResponse, ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.PostCommand)
+                .AppendQueryParam("name", name),
+            token: token);
+
+        if (result is { IsSuccess: true, Result: not null })
+        {
+            return result.Result;
+        }
+
+        return ApiExceptionHelper.ThrowApiException(result);
+    }
+
+    public async Task<CommandResultResponse> GetCommandAsync(CancellationToken token)
+    {
+        var result = await GetJsonAsync<CommandResultResponse, ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetCommand),
+            token: token);
+
+        if (result is { IsSuccess: true, Result: not null })
+        {
+            return result.Result;
+        }
+
+        return ApiExceptionHelper.ThrowApiException(result);
+    }
+
+    public async Task DeleteCommandAsync(string name, CancellationToken token)
+    {
+        var result = await DeleteAsync<ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.DeleteCommand)
+                .AppendQueryParam("name", name),
+            token: token);
+
+        if (!result.IsSuccess)
+        {
+            ApiExceptionHelper.ThrowApiException(result);
+        }
+    }
+
+    public async Task PutCommandAsync(string name, ChangeNameRequest request, CancellationToken token)
+    {
+        var result = await PutJsonAsync<ChangeNameRequest, ProblemDetails>(url => url
+                .AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.PutCommand)
+                .AppendQueryParam("name", name),
+            request,
+            token: token);
+
+        if (!result.IsSuccess)
+        {
+            ApiExceptionHelper.ThrowApiException(result);
+        }
+    }
+
+    public async Task<GenerateTokenResponse> GenerateTokenAsync(CancellationToken token)
+    {
+        var result = await GetJsonAsync<GenerateTokenResponse, ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetToken),
+            token: token);
+
+        if (!result.IsSuccess || result.Result is null)
+        {
+            return ApiExceptionHelper.ThrowApiException(result);
+        }
+
+        return result.Result;
+    }
+
+    public async Task ValidateTokenAsync(string jwt, CancellationToken token)
+    {
+        var result = await GetAsync<ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateToken),
+            GetAuthHeaders(jwt), token);
+
+        if (!result.IsSuccess)
+        {
+            ApiExceptionHelper.ThrowApiException(result);
+        }
+    }
+
+    public async Task ValidateAuthAsync(string jwt, CancellationToken token)
+    {
+        var result = await GetAsync<ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateAuth),
+            GetAuthHeaders(jwt),
+            token);
+
+        if (!result.IsSuccess)
+        {
+            ApiExceptionHelper.ThrowApiException(result);
+        }
+    }
+
+    public async Task NonExistsMethodAsync(CancellationToken token)
+    {
+        var result = await GetAsync<ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, "some", "non", "exists", "method"),
+            null,
+            token);
+
+        if (!result.IsSuccess)
+        {
+            ApiExceptionHelper.ThrowApiException(result.Error);
+        }
+    }
+
+    public async Task<CommandResultResponse> MethodWithoutResponseBodyAsync(CancellationToken token)
+    {
+        var jwt = await GenerateTokenAsync(token);
+
+        var result = await GetJsonAsync<CommandResultResponse, ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateToken),
+            GetAuthHeaders(jwt.Token), token);
+
+        if (result is { IsSuccess: true, Result: not null })
+        {
+            return result.Result;
+        }
+
+        return ApiExceptionHelper.ThrowApiException(result);
+    }
+}
