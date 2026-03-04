@@ -1,0 +1,11 @@
+<map id="AbstractValidator" name="AbstractValidator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="485,5,611,71"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,119,251,228"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="472,61,372,88,263,121,252,125,250,120,262,116,371,83,471,56"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="275,126,541,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="507,82,459,128,455,124,503,78"/>
+<area shape="rect" id="Node000004" href="$classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1ChangeNameRequestValidator.html" title=" " alt="" coords="565,126,813,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="593,78,642,124,638,128,589,82"/>
+<area shape="rect" id="Node000005" href="$classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator.html" title=" " alt="" coords="838,126,1069,221"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="625,56,722,83,826,116,846,123,844,128,824,121,720,88,624,61"/>
+</map>

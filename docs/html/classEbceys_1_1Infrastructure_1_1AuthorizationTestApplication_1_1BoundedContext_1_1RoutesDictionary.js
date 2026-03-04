@@ -1,0 +1,7 @@
+var classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary =
+[
+    [ "AuthControllerV1", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1AuthControllerV1.html", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1AuthControllerV1" ],
+    [ "RabbitMqControllerV1", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1RabbitMqControllerV1.html", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1RabbitMqControllerV1" ],
+    [ "BasePath", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary.html#a75ab952587b2a9f3c4d488dacba06308", null ],
+    [ "ServiceName", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary.html#a3c69ba5a85f29be19b73388ae5c78460", null ]
+];

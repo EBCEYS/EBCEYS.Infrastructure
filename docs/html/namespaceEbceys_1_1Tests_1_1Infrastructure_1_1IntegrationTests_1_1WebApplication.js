@@ -1,0 +1,9 @@
+var namespaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication =
+[
+    [ "ClientTestContext< TClient, TEntrypoint >", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g" ],
+    [ "RoutingMessageHandler", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandler.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandler" ],
+    [ "RoutingMessageHandlerConfiguration", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration" ],
+    [ "ServiceTestContext< TEntrypoint >", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g" ],
+    [ "TestClientInitializeOptions", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions" ],
+    [ "TestWebApplicationFactory< TStartup >", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestWebApplicationFactory-1-g.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestWebApplicationFactory-1-g" ]
+];

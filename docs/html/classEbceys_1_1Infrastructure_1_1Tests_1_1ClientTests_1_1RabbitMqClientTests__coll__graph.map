@@ -1,0 +1,7 @@
+<map id="Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests" name="Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests">
+<area shape="rect" id="Node000001" title=" " alt="" coords="119,168,362,308"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,23,215,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,86,183,153,179,156,131,90"/>
+<area shape="rect" id="Node000003" href="$interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAppRabbitClient.html" title=" " alt="" coords="239,5,507,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="339,107,303,156,299,153,335,104"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware" name="Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware">
+<area shape="rect" id="Node000001" title="The request logging middleware." alt="" coords="372,67,623,107"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="554,55,534,48,497,45,465,47,445,52,438,58,442,65,437,67,433,57,443,48,464,42,497,40,535,43,556,50"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests.html#ada64b1e0e61d6681e72fd663ad8254d4" title=" " alt="" coords="9,5,321,75"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="358,70,320,65,321,59,359,65"/>
+<area shape="rect" id="Node000003" href="$classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests.html#aad36344227951e2151031861f1f9ec1f" title=" " alt="" coords="5,99,324,168"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="359,109,325,114,324,108,358,103"/>
+</map>

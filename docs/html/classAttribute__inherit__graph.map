@@ -1,0 +1,7 @@
+<map id="Attribute" name="Attribute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="211,5,282,71"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1Attributes_1_1NoRequestBodyLoggingAttribute.html" title="The NoRequestBodyLoggingAttribute class." alt="" coords="5,119,232,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,82,163,120,159,116,201,78"/>
+<area shape="rect" id="Node000003" href="$classEbceys_1_1Infrastructure_1_1Attributes_1_1NoResponseBodyLoggingAttribute.html" title="The NoResponseBodyLoggingAttribute class." alt="" coords="257,119,493,199"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,78,334,116,331,120,289,82"/>
+</map>

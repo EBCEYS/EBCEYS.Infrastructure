@@ -1,0 +1,5 @@
+<map id="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer" name="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer">
+<area shape="rect" id="Node000001" title="The PostgresInitializer class." alt="" coords="5,183,240,357"/>
+<area shape="rect" id="Node000002" href="$interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g.html" title="The dependency initializer." alt="" coords="5,5,240,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,148,125,183,120,183,120,148"/>
+</map>

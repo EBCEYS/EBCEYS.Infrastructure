@@ -1,0 +1,9 @@
+<map id="Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync" name="Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync">
+<area shape="rect" id="Node000001" title="Executes the flurl request with Policy." alt="" coords="5,85,303,125"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase.html#ae6d5d118c5f95d84981e1b675278b16f" title="Executes the request delegate without policy." alt="" coords="351,5,591,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,82,337,60,338,65,243,87"/>
+<area shape="rect" id="Node000003" href="$classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase.html#adbe434b6f97c2a5c74123c5aea4ac9e9" title=" " alt="" coords="363,85,578,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="303,102,350,102,350,107,303,107"/>
+<area shape="rect" id="Node000004" href="$classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase.html#a306e46acd18714d98371240e19234a68" title=" " alt="" coords="359,149,583,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="254,122,358,143,357,149,253,127"/>
+</map>
