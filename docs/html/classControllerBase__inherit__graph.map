@@ -1,0 +1,7 @@
+<map id="ControllerBase" name="ControllerBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="241,5,352,71"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController.html" title=" " alt="" coords="5,209,292,329"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,84,189,210,185,207,266,81"/>
+<area shape="rect" id="Node000003" href="$classEbceys_1_1Infrastructure_1_1TestApplication_1_1Controllers_1_1TestController.html" title=" " alt="" coords="317,119,573,419"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="327,81,350,117,346,120,322,84"/>
+</map>

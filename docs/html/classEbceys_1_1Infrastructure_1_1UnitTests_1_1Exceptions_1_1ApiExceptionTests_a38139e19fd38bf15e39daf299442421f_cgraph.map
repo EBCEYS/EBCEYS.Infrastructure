@@ -1,0 +1,5 @@
+<map id="Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests.When_ApiException_With_EmptyProblemDetails_Result_CorrectFields" name="Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests.When_ApiException_With_EmptyProblemDetails_Result_CorrectFields">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,343,75"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper.html#a28d491db086545fb928af7e1f23178b3" title="Throws the api exception." alt="" coords="391,20,669,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="343,37,377,37,377,43,343,43"/>
+</map>

@@ -1,0 +1,4 @@
+var ChangeNameRequestValidator_8cs =
+[
+    [ "Ebceys.Infrastructure.TestApplication.Validators.ChangeNameRequestValidator", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1ChangeNameRequestValidator.html", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1ChangeNameRequestValidator" ]
+];

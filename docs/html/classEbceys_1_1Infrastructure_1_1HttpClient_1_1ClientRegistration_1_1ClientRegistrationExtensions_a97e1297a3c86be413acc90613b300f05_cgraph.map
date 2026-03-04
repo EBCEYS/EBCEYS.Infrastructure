@@ -1,0 +1,5 @@
+<map id="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.AddClient&lt; TInterface, TImplementation &gt;" name="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.AddClient&lt; TInterface, TImplementation &gt;">
+<area shape="rect" id="Node000001" title="Starts the registration process of TImplementation &#160;in services ." alt="" coords="5,5,244,75"/>
+<area shape="rect" id="Node000002" href="$namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration.html#aad14f6b1c5d6289f7216db7eecd42de9" title="The ClientBaseRegistrationRegistrator&lt;TInterface,TImplementation&gt; class. &#160;Creates the new instance of..." alt="" coords="292,5,531,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,37,278,37,278,43,244,43"/>
+</map>
