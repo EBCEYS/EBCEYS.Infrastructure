@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1TokenManager_1_1IClientTokenManager-1-g" kind="interface" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::HttpClient::TokenManager::IClientTokenManager-1-g</compoundname>
+    <templateparamlist>
+      <param>
+        <type>TInterface</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1TokenManager_1_1IClientTokenManager-1-g_1a986c60511fb555db2e00be2b78847900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; string?&gt;</type>
+        <definition>Task&lt; string?&gt; Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager&lt; TInterface &gt;.GetTokenAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetTokenAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1-g.GetTokenAsync</qualifiedname>
+        <briefdescription>
+<para>Gets the auth token. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs" line="17" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1TokenManager_1_1IClientTokenManager-1-g" kindref="compound">IClientTokenManager&lt;TInterface&gt;</ref> interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TInterface</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interface of client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager&lt; TInterface &gt;</label>
+        <link refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1TokenManager_1_1IClientTokenManager-1-g"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs" line="11" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1TokenManager_1_1IClientTokenManager-1-g_1a986c60511fb555db2e00be2b78847900" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::TokenManager::IClientTokenManager-1-g</scope><name>GetTokenAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

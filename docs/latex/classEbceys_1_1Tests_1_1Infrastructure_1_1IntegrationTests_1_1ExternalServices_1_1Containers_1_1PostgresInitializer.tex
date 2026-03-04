@@ -1,0 +1,186 @@
+\doxysection{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer Class Reference}
+\hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer}{}\label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}}
+
+
+The \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer}{Postgres\+Initializer} class.  
+
+
+
+
+Inheritance diagram for Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1e38db0dd36bbb2c96bef63cb0d3aedf9}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1a37478060bce80b2124bae09cd85a8fa}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a8e53bd5460c6c6801052c06387eb9291}{Postgres\+Initializer}} (string user, string password, string? database=null, string image=\mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a3350b1e3e131d373ff9c0d320226b94e}{Image}})
+\begin{DoxyCompactList}\small\item\em Initiates the new instance of \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer}{Postgres\+Initializer}. \end{DoxyCompactList}\item 
+async Task$<$ Postgre\+Sql\+Container $>$ \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_aab421a7fbbba5e304a8867cfc55c0808}{Initialize\+Async}} (Cancellation\+Token token=default)
+\begin{DoxyCompactList}\small\item\em Initialize the dependency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+ \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_acff714e6b9a3a52937347967b5ea2bf4}{Teardown\+Async}} (Cancellation\+Token token=default)
+\begin{DoxyCompactList}\small\item\em Teardowns the dependency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a3350b1e3e131d373ff9c0d320226b94e}{Image}} = "{}postgres\+:13.\+6"{}
+\begin{DoxyCompactList}\small\item\em The postgres container image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Postgre\+Sql\+Builder \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a00a266cf618d360cb6bc11d59541e29e}{Psql\+Builder}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The psql builder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Postgre\+Sql\+Container? \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a0def0d31bed06e7d6cc576738064268a}{\+\_\+container}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer}{Postgres\+Initializer} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a8e53bd5460c6c6801052c06387eb9291}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}!PostgresInitializer@{PostgresInitializer}}
+\index{PostgresInitializer@{PostgresInitializer}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}}
+\doxysubsubsection{\texorpdfstring{PostgresInitializer()}{PostgresInitializer()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a8e53bd5460c6c6801052c06387eb9291} 
+Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer.\+Postgres\+Initializer (\begin{DoxyParamCaption}\item[{string}]{user}{, }\item[{string}]{password}{, }\item[{string?}]{database}{ = {\ttfamily null}, }\item[{string}]{image}{ = {\ttfamily \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a3350b1e3e131d373ff9c0d320226b94e}{Image}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initiates the new instance of \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer}{Postgres\+Initializer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The db user.\\
+\hline
+{\em password} & The db password.\\
+\hline
+{\em database} & The database name.\\
+\hline
+{\em image} & The image.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_aab421a7fbbba5e304a8867cfc55c0808}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}!InitializeAsync@{InitializeAsync}}
+\index{InitializeAsync@{InitializeAsync}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}}
+\doxysubsubsection{\texorpdfstring{InitializeAsync()}{InitializeAsync()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_aab421a7fbbba5e304a8867cfc55c0808} 
+async Task$<$ Postgre\+Sql\+Container $>$ Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer.\+Initialize\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize the dependency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+ 
+
+
+
+Implements \mbox{\hyperlink{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_a571e18aef719e31c49fb19fb404f5df8}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+IDependency\+Initializer$<$ TDependency $>$}}.
+
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_acff714e6b9a3a52937347967b5ea2bf4}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}!TeardownAsync@{TeardownAsync}}
+\index{TeardownAsync@{TeardownAsync}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}}
+\doxysubsubsection{\texorpdfstring{TeardownAsync()}{TeardownAsync()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_acff714e6b9a3a52937347967b5ea2bf4} 
+Task Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer.\+Teardown\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Teardowns the dependency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+ 
+
+
+
+Implements \mbox{\hyperlink{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_ad46b42e06e8f1cd78c8dfc9ec22e8aa4}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+IDependency\+Initializer$<$ TDependency $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a0def0d31bed06e7d6cc576738064268a}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}!\_container@{\_container}}
+\index{\_container@{\_container}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}}
+\doxysubsubsection{\texorpdfstring{\_container}{\_container}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a0def0d31bed06e7d6cc576738064268a} 
+Postgre\+Sql\+Container? Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer.\+\_\+container\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a3350b1e3e131d373ff9c0d320226b94e}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}!Image@{Image}}
+\index{Image@{Image}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}}
+\doxysubsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a3350b1e3e131d373ff9c0d320226b94e} 
+const string Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer.\+Image = "{}postgres\+:13.\+6"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The postgres container image. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a00a266cf618d360cb6bc11d59541e29e}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}!PsqlBuilder@{PsqlBuilder}}
+\index{PsqlBuilder@{PsqlBuilder}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer}}
+\doxysubsubsection{\texorpdfstring{PsqlBuilder}{PsqlBuilder}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_a00a266cf618d360cb6bc11d59541e29e} 
+Postgre\+Sql\+Builder Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer.\+Psql\+Builder\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The psql builder. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Tests.\+Infrastructure/\+Integration\+Tests/\+External\+Services/\+Containers/\mbox{\hyperlink{PostgresInitializer_8cs}{Postgres\+Initializer.\+cs}}\end{DoxyCompactItemize}

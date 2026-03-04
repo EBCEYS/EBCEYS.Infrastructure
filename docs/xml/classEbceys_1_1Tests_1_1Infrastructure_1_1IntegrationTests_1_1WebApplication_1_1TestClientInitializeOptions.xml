@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Tests::Infrastructure::IntegrationTests::WebApplication::TestClientInitializeOptions</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a58e085f5fa9c38387e42ae526f0eefd5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.SolutionRelativePath</definition>
+        <argsstring></argsstring>
+        <name>SolutionRelativePath</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.SolutionRelativePath</qualifiedname>
+        <briefdescription>
+<para>The solution relative path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" line="195" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" bodystart="195" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a319b0851c850a62da875fe9aa122216b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Action&lt; IWebHostBuilder &gt;?</type>
+        <definition>Action&lt;IWebHostBuilder&gt;? Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.BuilderConfiguration</definition>
+        <argsstring></argsstring>
+        <name>BuilderConfiguration</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.BuilderConfiguration</qualifiedname>
+        <briefdescription>
+<para>The builder configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" line="200" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a604e9b54ba93fa148bbd52656f058a65" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Uri?</type>
+        <definition>Uri? Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.BaseAddress</definition>
+        <argsstring></argsstring>
+        <name>BaseAddress</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.BaseAddress</qualifiedname>
+        <briefdescription>
+<para>The base address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" line="205" column="16" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" bodystart="205" bodyend="205"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a0ea8657fd34f90bb2fb991c97663df54" compoundref="ClientTestContext_8cs" startline="186" endline="190">Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.TestClientInitializeOptions</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a5d5ffd3e7273db0eeb3a02b02a60080e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.UseProductionAppSettings</definition>
+        <argsstring></argsstring>
+        <name>UseProductionAppSettings</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.UseProductionAppSettings</qualifiedname>
+        <briefdescription>
+<para>The use production app settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" line="210" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" bodystart="210" bodyend="210"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a0ea8657fd34f90bb2fb991c97663df54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.TestClientInitializeOptions</definition>
+        <argsstring>()</argsstring>
+        <name>TestClientInitializeOptions</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.TestClientInitializeOptions</qualifiedname>
+        <briefdescription>
+<para>Initiates the new instance of <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions" kindref="compound">TestClientInitializeOptions</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" line="186" column="12" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" bodystart="186" bodyend="190"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a604e9b54ba93fa148bbd52656f058a65" compoundref="ClientTestContext_8cs" startline="205" endline="205">Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.BaseAddress</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions" kindref="compound">TestClientInitializeOptions</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" line="181" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs" bodystart="182" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a604e9b54ba93fa148bbd52656f058a65" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::WebApplication::TestClientInitializeOptions</scope><name>BaseAddress</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a319b0851c850a62da875fe9aa122216b" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::WebApplication::TestClientInitializeOptions</scope><name>BuilderConfiguration</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a58e085f5fa9c38387e42ae526f0eefd5" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::WebApplication::TestClientInitializeOptions</scope><name>SolutionRelativePath</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a0ea8657fd34f90bb2fb991c97663df54" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::WebApplication::TestClientInitializeOptions</scope><name>TestClientInitializeOptions</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions_1a5d5ffd3e7273db0eeb3a02b02a60080e" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::WebApplication::TestClientInitializeOptions</scope><name>UseProductionAppSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

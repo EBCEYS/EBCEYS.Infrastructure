@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Scheduling::SchedulingExtensions</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_1aebcfbacf46e3432c37a0a9d2eb276485" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IServiceCollection</type>
+        <definition>static IServiceCollection Ebceys.Infrastructure.Scheduling.SchedulingExtensions.AddSchedulingServices</definition>
+        <argsstring>(this IServiceCollection services, bool waitForJobsToComplete, Func&lt; ISchedulerFactory, Task &gt; configureSchedulerJobs)</argsstring>
+        <name>AddSchedulingServices</name>
+        <qualifiedname>Ebceys.Infrastructure.Scheduling.SchedulingExtensions.AddSchedulingServices</qualifiedname>
+        <param>
+          <type>this IServiceCollection</type>
+          <declname>services</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitForJobsToComplete</declname>
+        </param>
+        <param>
+          <type>Func&lt; ISchedulerFactory, Task &gt;</type>
+          <declname>configureSchedulerJobs</declname>
+        </param>
+        <briefdescription>
+<para>Adds the scheduling services to <emphasis>services</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>services</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The services.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waitForJobsToComplete</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True for set wait for scheduled jobs ends until running next.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configureSchedulerJobs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The jobs&apos; configuration.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The instance of <emphasis>services</emphasis> .</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" line="21" column="38" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" bodystart="21" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_1a4a56d2a0b7ee8dc3dcdaaf76ec5d6ff5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ebceys.Infrastructure.Scheduling.SchedulingExtensions.ScheduleJobAsync&lt; TJob &gt;</definition>
+        <argsstring>(this ISchedulerFactory schedulerFactory, string jobIdentity, TimeSpan interval, TimeSpan delay=default, CancellationToken cancellationToken=default)</argsstring>
+        <name>ScheduleJobAsync&lt; TJob &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Scheduling.SchedulingExtensions.ScheduleJobAsync&lt; TJob &gt;</qualifiedname>
+        <param>
+          <type>this ISchedulerFactory</type>
+          <declname>schedulerFactory</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>jobIdentity</declname>
+        </param>
+        <param>
+          <type>TimeSpan</type>
+          <declname>interval</declname>
+        </param>
+        <param>
+          <type>TimeSpan</type>
+          <declname>delay</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Schedules the <emphasis>TJob</emphasis>  with specified <emphasis>interval</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>schedulerFactory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scheduler factory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobIdentity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The job identity.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The job execution interval.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delay.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellationToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TJob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The job to schedule.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" line="56" column="25" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" bodystart="56" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_1af639a8562b97e021817cee621bb9b93e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ebceys.Infrastructure.Scheduling.SchedulingExtensions.ScheduleJobAsync&lt; TJob &gt;</definition>
+        <argsstring>(ISchedulerFactory schedulerFactory, string jobIdentity, string cronExpression, TimeSpan delay=default, CancellationToken cancellationToken=default)</argsstring>
+        <name>ScheduleJobAsync&lt; TJob &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Scheduling.SchedulingExtensions.ScheduleJobAsync&lt; TJob &gt;</qualifiedname>
+        <param>
+          <type>ISchedulerFactory</type>
+          <declname>schedulerFactory</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>jobIdentity</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cronExpression</declname>
+        </param>
+        <param>
+          <type>TimeSpan</type>
+          <declname>delay</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Schedules the <emphasis>TJob</emphasis>  with specified <emphasis>cronExpression</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>schedulerFactory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scheduler factory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobIdentity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The job identity.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cronExpression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The job execution cron expression.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delay.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellationToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TJob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The job to schedule.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" line="86" column="25" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" bodystart="86" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The IServiceCollection extensions class for scheduling processes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Scheduling.SchedulingExtensions</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" line="12" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs" bodystart="13" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_1aebcfbacf46e3432c37a0a9d2eb276485" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Scheduling::SchedulingExtensions</scope><name>AddSchedulingServices</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_1a4a56d2a0b7ee8dc3dcdaaf76ec5d6ff5" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Scheduling::SchedulingExtensions</scope><name>ScheduleJobAsync&lt; TJob &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_1af639a8562b97e021817cee621bb9b93e" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Scheduling::SchedulingExtensions</scope><name>ScheduleJobAsync&lt; TJob &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

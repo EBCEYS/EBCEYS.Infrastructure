@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="DefaultClientPollyHelper_8cs" kind="file" language="C#">
+    <compoundname>DefaultClientPollyHelper.cs</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper" prot="public">Ebceys::Infrastructure::HttpClient::DefaultClientPollyHelper</innerclass>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure">Ebceys::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1HttpClient">Ebceys::Infrastructure::HttpClient</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Flurl.Http;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">JetBrains.Annotations;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Polly;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1HttpClient" kindref="compound">Ebceys.Infrastructure.HttpClient</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">[PublicAPI]</highlight></codeline>
+<codeline lineno="11" refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper" kindref="compound">DefaultClientPollyHelper</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper_1aaffc7d2781377c2fc0db165858a14b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>IAsyncPolicy&lt;TResult&gt;<sp/><ref refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper_1aaffc7d2781377c2fc0db165858a14b66" kindref="member">CreateDefaultHttpPolly&lt;TResult&gt;</ref>(</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TimeSpan<sp/>delay,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Action&lt;Exception,<sp/>TimeSpan,<sp/>int,<sp/>Context&gt;?<sp/>onRetryAction<sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>policy<sp/>=<sp/>Policy.Handle&lt;FlurlHttpException&gt;()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.WaitAndRetryAsync([delay],<sp/>(exception,<sp/>span,<sp/>retry,<sp/>ctx)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=&gt;<sp/>onRetryAction?.Invoke(exception,<sp/>span,<sp/>retry,<sp/>ctx))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.AsAsyncPolicy&lt;TResult&gt;();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>policy;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/DefaultClientPollyHelper.cs"/>
+  </compounddef>
+</doxygen>

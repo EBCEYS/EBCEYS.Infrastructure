@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="ScheduledTestJob_8cs" kind="file" language="C#">
+    <compoundname>ScheduledTestJob.cs</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob" prot="public">Ebceys::Infrastructure::Tests::ScheduledTests::Helpers::ScheduledTestJob</innerclass>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure">Ebceys::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Tests">Ebceys::Infrastructure::Tests</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests">Ebceys::Infrastructure::Tests::ScheduledTests</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers">Ebceys::Infrastructure::Tests::ScheduledTests::Helpers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Quartz;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers" kindref="compound">Ebceys.Infrastructure.Tests.ScheduledTests.Helpers</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob" kindref="compound">ScheduledTestJob</ref><sp/>:<sp/><ref refid="classIJob" kindref="compound">IJob</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1aa4d612155577437ace19c95011e566ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1aa4d612155577437ace19c95011e566ba" kindref="member">Times</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="8" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1a5f09bf7284fe961014f051feb00fa802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1a5f09bf7284fe961014f051feb00fa802" kindref="member">IsCalled</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1abab3c7d965ad123dddd709418e5ebd90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Task<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1abab3c7d965ad123dddd709418e5ebd90" kindref="member">Execute</ref>(IJobExecutionContext<sp/>context)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1a5f09bf7284fe961014f051feb00fa802" kindref="member">IsCalled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1aa4d612155577437ace19c95011e566ba" kindref="member">Times</ref>++;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Task.CompletedTask;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ScheduledTests/Helpers/ScheduledTestJob.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</compoundname>
+    <basecompoundref refid="classIEnumerable-1-g" prot="public" virt="non-virtual">IEnumerable</basecompoundref>
+    <derivedcompoundref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataInvalidExecutor-2-g" prot="public" virt="non-virtual">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor&lt; TEnumerator, TData &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataValidExecutor-2-g" prot="public" virt="non-virtual">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor&lt; TEnumerator, TData &gt;</derivedcompoundref>
+    <templateparamlist>
+      <param>
+        <type>TData</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a279d958464a1294bc4747cd68a63271d" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; TestCaseData &gt;</type>
+        <definition>IEnumerable&lt;TestCaseData&gt; Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.Cases</definition>
+        <argsstring></argsstring>
+        <name>Cases</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1-g.Cases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="116" column="25" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" bodystart="116" bodyend="116"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1aa2ec8f54ebea8a854f15f5271a2ee1d6" compoundref="EbTestCaseSource_8cs" startline="119" endline="122">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.GetEnumerator</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1abcf5a8ffbb5f25f069f6867170eae335" compoundref="EbTestCaseSource_8cs" startline="111" endline="114">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.TestCaseEnumerator</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a722594d779d599873f01d7a2afb30ba6" prot="protected" static="no" mutable="no">
+        <type>IEnumerable&lt;(Func&lt; TData?, TData?&gt;, string)&gt;</type>
+        <definition>IEnumerable&lt;(Func&lt;TData?, TData?&gt;, string)&gt; Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.dataSource</definition>
+        <argsstring></argsstring>
+        <name>dataSource</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1-g.dataSource</qualifiedname>
+        <briefdescription>
+<para>Gets the data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="133" column="36" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" bodystart="133" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1af04b152763d3d5158350ee850d1399d8" compoundref="EbTestCaseSource_8cs" startline="135" endline="144">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.Enumerate</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataInvalidExecutor-2-g_1afac420e22fcb81261167e92003d468bd" compoundref="EbTestCaseSource_8cs" startline="94" endline="98">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor&lt; TEnumerator, TData &gt;.override</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataValidExecutor-2-g_1aeaadee1a3b5c3379b39c2c6e3d255d70" compoundref="EbTestCaseSource_8cs" startline="59" endline="62">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor&lt; TEnumerator, TData &gt;.override</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1abcf5a8ffbb5f25f069f6867170eae335" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.TestCaseEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>TestCaseEnumerator</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1-g.TestCaseEnumerator</qualifiedname>
+        <briefdescription>
+<para>Initiates the new instance of <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g" kindref="compound">TestCaseEnumerator&lt;TData&gt;</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="111" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" bodystart="111" bodyend="114"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a279d958464a1294bc4747cd68a63271d" compoundref="EbTestCaseSource_8cs" startline="116" endline="116">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.Cases</references>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1af04b152763d3d5158350ee850d1399d8" compoundref="EbTestCaseSource_8cs" startline="135" endline="144">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.Enumerate</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a1fc4da98ec01cbf2b67931dfe32cdb76" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IEnumerable&lt;(Func&lt; TData?, TData?&gt;, string)&gt;? TData baseData</type>
+        <definition>IEnumerable&lt;(Func&lt; TData?, TData?&gt;, string)&gt;? TData baseData Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.GetData</definition>
+        <argsstring>()</argsstring>
+        <name>GetData</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1-g.GetData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="133" column="62"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1af04b152763d3d5158350ee850d1399d8" compoundref="EbTestCaseSource_8cs" startline="135" endline="144">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.Enumerate</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataInvalidExecutor-2-g_1afac420e22fcb81261167e92003d468bd" compoundref="EbTestCaseSource_8cs" startline="94" endline="98">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor&lt; TEnumerator, TData &gt;.override</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataValidExecutor-2-g_1aeaadee1a3b5c3379b39c2c6e3d255d70" compoundref="EbTestCaseSource_8cs" startline="59" endline="62">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor&lt; TEnumerator, TData &gt;.override</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1aa2ec8f54ebea8a854f15f5271a2ee1d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator&lt; TestCaseData &gt;</type>
+        <definition>IEnumerator&lt; TestCaseData &gt; Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1-g.GetEnumerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="119" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" bodystart="119" bodyend="122"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a279d958464a1294bc4747cd68a63271d" compoundref="EbTestCaseSource_8cs" startline="116" endline="116">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.Cases</references>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1aed1b1c5049708f38208e275b455051ca" compoundref="EbTestCaseSource_8cs" startline="124" endline="127">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.GetEnumerator</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1aed1b1c5049708f38208e275b455051ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator IEnumerable.</type>
+        <definition>IEnumerator IEnumerable. Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1-g.GetEnumerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="124" column="28" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" bodystart="124" bodyend="127"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1aa2ec8f54ebea8a854f15f5271a2ee1d6" compoundref="EbTestCaseSource_8cs" startline="119" endline="122">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.GetEnumerator</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1af04b152763d3d5158350ee850d1399d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; TestCaseData &gt;</type>
+        <definition>IEnumerable&lt; TestCaseData &gt; Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.Enumerate</definition>
+        <argsstring>()</argsstring>
+        <name>Enumerate</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1-g.Enumerate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="135" column="25" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" bodystart="135" bodyend="144"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a722594d779d599873f01d7a2afb30ba6" compoundref="EbTestCaseSource_8cs" startline="133">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.dataSource</references>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a1fc4da98ec01cbf2b67931dfe32cdb76">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.GetData</references>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1abcf5a8ffbb5f25f069f6867170eae335" compoundref="EbTestCaseSource_8cs" startline="111" endline="114">Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;.TestCaseEnumerator</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g" kindref="compound">TestCaseEnumerator&lt;TData&gt;</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TData</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor&lt; TEnumerator, TData &gt;</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataInvalidExecutor-2-g"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor&lt; TEnumerator, TData &gt;</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataValidExecutor-2-g"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IEnumerable&lt; TestCaseData &gt;</label>
+        <link refid="classIEnumerable-1-g"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#dataSource</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IEnumerable&lt; TestCaseData &gt;</label>
+        <link refid="classIEnumerable-1-g"/>
+      </node>
+      <node id="3">
+        <label>IEnumerable&lt;(Func&lt; TData?, TData?&gt;, string)&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" line="106" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs" bodystart="107" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a279d958464a1294bc4747cd68a63271d" prot="private" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</scope><name>Cases</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a722594d779d599873f01d7a2afb30ba6" prot="protected" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</scope><name>dataSource</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1af04b152763d3d5158350ee850d1399d8" prot="private" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</scope><name>Enumerate</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1a1fc4da98ec01cbf2b67931dfe32cdb76" prot="protected" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</scope><name>GetData</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1aa2ec8f54ebea8a854f15f5271a2ee1d6" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</scope><name>GetEnumerator</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1aed1b1c5049708f38208e275b455051ca" prot="private" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</scope><name>GetEnumerator</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1TestCaseEnumerator-1-g_1abcf5a8ffbb5f25f069f6867170eae335" prot="protected" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::Helpers::TestCaseSources::TestCaseEnumerator-1-g</scope><name>TestCaseEnumerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

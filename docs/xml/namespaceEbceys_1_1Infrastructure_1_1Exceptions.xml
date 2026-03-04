@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceEbceys_1_1Infrastructure_1_1Exceptions" kind="namespace" language="C#">
+    <compoundname>Ebceys::Infrastructure::Exceptions</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" prot="public">Ebceys::Infrastructure::Exceptions::ApiException</innerclass>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper" prot="public">Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiException.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

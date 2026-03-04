@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext" kind="namespace" language="C#">
+    <compoundname>Ebceys::Infrastructure::AuthorizationTestApplication::BoundedContext</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary" prot="public">Ebceys::Infrastructure::AuthorizationTestApplication::BoundedContext::RoutesDictionary</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1a7d6a3dc0ef9daaedf3280bb1007c29e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>record</type>
+        <definition>record Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenRequest</definition>
+        <argsstring>(string UserName)</argsstring>
+        <name>GenerateTokenRequest</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenRequest</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>UserName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/GenerateTokenRequest.cs" line="5" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/GenerateTokenRequest.cs" bodystart="5" bodyend="8"/>
+        <referencedby refid="interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAppRabbitClient_1a77b0250b2e083b32cc3f396e2c7b3d79">Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAppRabbitClient.GenerateTokenAsync</referencedby>
+        <referencedby refid="interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAuthAppClient_1a2eaab4f62cd4bd8267db70850c924080">Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAuthAppClient.GenerateTokenAsync</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a3b59d5746a0d04755018952ca89b90b2" compoundref="AuthController_8cs" startline="20" endline="26">Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.GetToken</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Controllers_1_1TestController_1a870a6c2244475858cd1d74165b20a2d3" compoundref="TestController_8cs" startline="105" endline="112">Ebceys.Infrastructure.TestApplication.Controllers.TestController.GetToken</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8eba667312dc5a90e97222e584d54396" compoundref="AuthController_8cs" startline="30" endline="55">Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.ValidateToken</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1RabbitMqClientTests_1a858b0e39a54824f913e086ce72b41897" compoundref="RabbitMqClientTests_8cs" startline="27" endline="33">Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests.When_GetJson_With_Result_Ok</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1a73d12961d3887b8f9b098e29f107bd95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>record</type>
+        <definition>record Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenResponse</definition>
+        <argsstring>(string Token)</argsstring>
+        <name>GenerateTokenResponse</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenResponse</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>Token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/GenerateTokenRequest.cs" line="10" column="15" declfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/GenerateTokenRequest.cs" declline="10" declcolumn="15"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a3b59d5746a0d04755018952ca89b90b2" compoundref="AuthController_8cs" startline="20" endline="26">Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.GetToken</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/GenerateTokenRequest.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

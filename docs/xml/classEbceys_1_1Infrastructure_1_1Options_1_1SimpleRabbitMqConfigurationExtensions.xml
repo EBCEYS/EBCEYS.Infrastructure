@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Options::SimpleRabbitMqConfigurationExtensions</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions_1a00626020463d909ea9ff7745314dc9cd" prot="private" static="yes" mutable="no">
+        <type>readonly SimpleRabbitMqConfigurationValidator</type>
+        <definition>readonly SimpleRabbitMqConfigurationValidator Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.Validator</definition>
+        <argsstring></argsstring>
+        <name>Validator</name>
+        <qualifiedname>Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.Validator</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Options/SimpleRabbitMqConfiguration.cs" line="93" column="66" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Options/SimpleRabbitMqConfiguration.cs" bodystart="93" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions_1a5f9d026cf433a0edbcfc18ac5d1bbc70" compoundref="SimpleRabbitMqConfiguration_8cs" startline="95" endline="112">Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.extension</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions_1a5f9d026cf433a0edbcfc18ac5d1bbc70" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.extension</definition>
+        <argsstring>(SimpleRabbitMqConfiguration? configuration)</argsstring>
+        <name>extension</name>
+        <qualifiedname>Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.extension</qualifiedname>
+        <param>
+          <type><ref refid="namespaceEbceys_1_1Infrastructure_1_1Options_1af694a6b056c098e01010bb2fad577f51" kindref="member">SimpleRabbitMqConfiguration</ref>?</type>
+          <declname>configuration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Validates the <emphasis>configuration</emphasis> .</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ValidationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throw if <emphasis>configuration</emphasis>  is not valid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Options/SimpleRabbitMqConfiguration.cs" line="95" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Options/SimpleRabbitMqConfiguration.cs" bodystart="95" bodyend="112"/>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1Options_1af694a6b056c098e01010bb2fad577f51" compoundref="SimpleRabbitMqConfiguration_8cs" startline="15" endline="85">Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions_1a00626020463d909ea9ff7745314dc9cd" compoundref="SimpleRabbitMqConfiguration_8cs" startline="93">Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.Validator</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="namespaceEbceys_1_1Infrastructure_1_1Options_1af694a6b056c098e01010bb2fad577f51" kindref="member">SimpleRabbitMqConfiguration</ref> extensions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>AbstractValidator</label>
+        <link refid="classAbstractValidator-1-g"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-Validator</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationValidator</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Options/SimpleRabbitMqConfiguration.cs" line="91" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Options/SimpleRabbitMqConfiguration.cs" bodystart="92" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions_1a5f9d026cf433a0edbcfc18ac5d1bbc70" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Options::SimpleRabbitMqConfigurationExtensions</scope><name>extension</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationExtensions_1a00626020463d909ea9ff7745314dc9cd" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Options::SimpleRabbitMqConfigurationExtensions</scope><name>Validator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="IDependencyInitializer_8cs" kind="file" language="C#">
+    <compoundname>IDependencyInitializer.cs</compoundname>
+    <innerclass refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g" prot="public">Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::IDependencyInitializer-1-g</innerclass>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Tests">Ebceys::Tests</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Tests_1_1Infrastructure">Ebceys::Tests::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests">Ebceys::Tests::Infrastructure::IntegrationTests</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices">Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers">Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">JetBrains.Annotations;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers" kindref="compound">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">[PublicAPI]</highlight></codeline>
+<codeline lineno="9" refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">IDependencyInitializer&lt;TDependency&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_1a571e18aef719e31c49fb19fb404f5df8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;TDependency&gt;<sp/><ref refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_1a571e18aef719e31c49fb19fb404f5df8" kindref="member">InitializeAsync</ref>(CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_1ad46b42e06e8f1cd78c8dfc9ec22e8aa4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Task<sp/><ref refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_1ad46b42e06e8f1cd78c8dfc9ec22e8aa4" kindref="member">TeardownAsync</ref>(CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" prot="private" static="yes" mutable="no">
+        <type>readonly EbRandomizer</type>
+        <definition>readonly EbRandomizer Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Randomizer</definition>
+        <argsstring></argsstring>
+        <name>Randomizer</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Randomizer</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="11" column="42" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a79d0e5c9134b9fc36f5a678f147f2c49" compoundref="AuthClientTests_8cs" startline="52" endline="64">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateAuth_With_TokenAndWithout_Result_FirstUnauthorizedSecondOk</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1abad02fff9443b0bcaec50a7b22d20d2d" compoundref="AuthClientTests_8cs" startline="43" endline="49">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateToken_With_RandomToken_Result_Forbidden</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" prot="private" static="no" mutable="no">
+        <type><ref refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient" kindref="compound">ITestApplicationClient</ref></type>
+        <definition>ITestApplicationClient Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._client</definition>
+        <argsstring></argsstring>
+        <name>_client</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="12" column="36" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a9ce453c240fe243a58bf34280e6defae" compoundref="AuthClientTests_8cs" startline="16" endline="20">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Setup</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a6c8dd8a8acc16b04158496edc012f256" compoundref="AuthClientTests_8cs" startline="23" endline="30">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_GetToken_With_AppClient_Result_Ok</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a79d0e5c9134b9fc36f5a678f147f2c49" compoundref="AuthClientTests_8cs" startline="52" endline="64">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateAuth_With_TokenAndWithout_Result_FirstUnauthorizedSecondOk</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a842320f5e866beaf54c41e2596718623" compoundref="AuthClientTests_8cs" startline="33" endline="40">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateToken_With_GotToken_Result_Ok</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1abad02fff9443b0bcaec50a7b22d20d2d" compoundref="AuthClientTests_8cs" startline="43" endline="49">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateToken_With_RandomToken_Result_Forbidden</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a09bcee36b35d8761f996f989f6f9fb6b" prot="private" static="no" mutable="no">
+        <type>AppTestClientContext</type>
+        <definition>AppTestClientContext Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="13" column="34" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a9ce453c240fe243a58bf34280e6defae" compoundref="AuthClientTests_8cs" startline="16" endline="20">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Setup</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a9ce453c240fe243a58bf34280e6defae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Setup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="16" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="16" bodyend="20"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" compoundref="AuthClientTests_8cs" startline="12">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._client</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a09bcee36b35d8761f996f989f6f9fb6b" compoundref="AuthClientTests_8cs" startline="13">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._context</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a6c8dd8a8acc16b04158496edc012f256" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_GetToken_With_AppClient_Result_Ok</definition>
+        <argsstring>()</argsstring>
+        <name>When_GetToken_With_AppClient_Result_Ok</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_GetToken_With_AppClient_Result_Ok</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="23" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="23" bodyend="30"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" compoundref="AuthClientTests_8cs" startline="12">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a842320f5e866beaf54c41e2596718623" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateToken_With_GotToken_Result_Ok</definition>
+        <argsstring>()</argsstring>
+        <name>When_ValidateToken_With_GotToken_Result_Ok</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateToken_With_GotToken_Result_Ok</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="33" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="33" bodyend="40"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" compoundref="AuthClientTests_8cs" startline="12">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1abad02fff9443b0bcaec50a7b22d20d2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateToken_With_RandomToken_Result_Forbidden</definition>
+        <argsstring>()</argsstring>
+        <name>When_ValidateToken_With_RandomToken_Result_Forbidden</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateToken_With_RandomToken_Result_Forbidden</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="43" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="43" bodyend="49"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" compoundref="AuthClientTests_8cs" startline="12">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._client</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" compoundref="AuthClientTests_8cs" startline="11">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Randomizer</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a79d0e5c9134b9fc36f5a678f147f2c49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateAuth_With_TokenAndWithout_Result_FirstUnauthorizedSecondOk</definition>
+        <argsstring>()</argsstring>
+        <name>When_ValidateAuth_With_TokenAndWithout_Result_FirstUnauthorizedSecondOk</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.When_ValidateAuth_With_TokenAndWithout_Result_FirstUnauthorizedSecondOk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="52" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="52" bodyend="64"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" compoundref="AuthClientTests_8cs" startline="12">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests._client</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" compoundref="AuthClientTests_8cs" startline="11">Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.Randomizer</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>AppTestClientContext</label>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-Randomizer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_client</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-_context</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient</label>
+        <link refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient"/>
+      </node>
+      <node id="2">
+        <label>static readonly EbRandomizer</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" line="9" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs" bodystart="10" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>_client</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a09bcee36b35d8761f996f989f6f9fb6b" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>_context</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>Randomizer</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a9ce453c240fe243a58bf34280e6defae" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>Setup</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a6c8dd8a8acc16b04158496edc012f256" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>When_GetToken_With_AppClient_Result_Ok</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a79d0e5c9134b9fc36f5a678f147f2c49" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>When_ValidateAuth_With_TokenAndWithout_Result_FirstUnauthorizedSecondOk</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a842320f5e866beaf54c41e2596718623" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>When_ValidateToken_With_GotToken_Result_Ok</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1abad02fff9443b0bcaec50a7b22d20d2d" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</scope><name>When_ValidateToken_With_RandomToken_Result_Forbidden</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

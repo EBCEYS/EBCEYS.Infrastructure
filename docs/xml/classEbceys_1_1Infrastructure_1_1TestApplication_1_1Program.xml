@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Program" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::TestApplication::Program</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Program_1a8812165cea66a2b4a41f6da57c08173b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ebceys.Infrastructure.TestApplication.Program.Main</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Main</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.Program.Main</qualifiedname>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Program.cs" line="20" column="30" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Program.cs" bodystart="20" bodyend="23"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1TestAppInitiator_1afaea571df058ab806dc54ea6ca2d6e3a" compoundref="Ebceys_8Infrastructure_8TestApplication_2Program_8cs" startline="28" endline="32">Ebceys.Infrastructure.TestApplication.TestAppInitiator.InitiateApp</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.TestApplication.Program</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Program"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Program.cs" line="18" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Program.cs" bodystart="19" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Program_1a8812165cea66a2b4a41f6da57c08173b" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::TestApplication::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

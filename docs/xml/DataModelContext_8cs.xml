@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="DataModelContext_8cs" kind="file" language="C#">
+    <compoundname>DataModelContext.cs</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo" prot="public">Ebceys::Infrastructure::TestApplication::DaL::TestTableDbo</innerclass>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure">Ebceys::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication">Ebceys::Infrastructure::TestApplication</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL">Ebceys::Infrastructure::TestApplication::DaL</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1ComponentModel_1_1DataAnnotations_1_1Schema">System::ComponentModel::DataAnnotations::Schema</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.ComponentModel.DataAnnotations;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.ComponentModel.DataAnnotations.Schema;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL" kindref="compound">Ebceys.Infrastructure.TestApplication.DaL</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1a3cb9ad5fd6ae558d6f20c0c275eb32da" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1a3cb9ad5fd6ae558d6f20c0c275eb32da" kindref="member">DataModelContext</ref>(DbContextOptions&lt;<ref refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1a3cb9ad5fd6ae558d6f20c0c275eb32da" kindref="member">DataModelContext</ref>&gt;<sp/>opts)<sp/>:<sp/>DbContext(opts)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>DbSet&lt;TestTableDbo&gt;<sp/>TestTable<sp/>=&gt;<sp/>Set&lt;TestTableDbo&gt;();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnModelCreating(ModelBuilder<sp/>modelBuilder)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>entity<sp/>=<sp/>modelBuilder.Entity&lt;<ref refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo" kindref="compound">TestTableDbo</ref>&gt;();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entity.HasKey(e<sp/>=&gt;<sp/>e.Id);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entity.Property(e<sp/>=&gt;<sp/>e.Id).ValueGeneratedOnAdd();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entity.HasIndex(e<sp/>=&gt;<sp/>e.Id).IsUnique();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entity.HasIndex(e<sp/>=&gt;<sp/>e.Name).IsUnique();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.OnModelCreating(modelBuilder);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnConfiguring(DbContextOptionsBuilder<sp/>optionsBuilder)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optionsBuilder.UseNpgsql();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.OnConfiguring(optionsBuilder);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">[Table(</highlight><highlight class="stringliteral">&quot;test_table&quot;</highlight><highlight class="normal">,<sp/>Schema<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;dbo&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="29" refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo" kindref="compound">TestTableDbo</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo_1a5d4269e73dd02db7a57a4953ca12bf45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[Key]<sp/>[Required]<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo_1a5d4269e73dd02db7a57a4953ca12bf45" kindref="member">Id</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo_1aed9d9d93a77cedfa2872059f6349267b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[Column(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)]<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>required<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo_1aed9d9d93a77cedfa2872059f6349267b" kindref="member">Name</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/DaL/DataModelContext.cs"/>
+  </compounddef>
+</doxygen>

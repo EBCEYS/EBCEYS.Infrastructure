@@ -1,0 +1,487 @@
+\doxysection{Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper Class Reference}
+\hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper}{}\label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+
+
+The \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception} helper class.  
+
+
+
+
+Collaboration diagram for Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a19804ac3acd1ed85d3db3f9b0717c729}{Throw\+Not\+Found$<$ TResult $>$}} (string message, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws not found exception. \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a94f1977c81d43b53232448e6a4a6a583}{Throw\+Not\+Found$<$ TResult, TException $>$}} (TException exception, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws not found exception. \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a31523603fd6a4f9c387f976d2ee22816}{Throw\+Conflict$<$ TResult $>$}} (string message, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the conflict exception. \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a2abdaafda7ed646b72877e828b63b675}{Throw\+Conflict$<$ TResult, TException $>$}} (TException exception, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws conflict exception. \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a188a59a6aa1b18599947e99ce270fdc4}{Throw\+Validation$<$ TResult $>$}} (Validation\+Problem\+Details problem\+Details, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the validation exception. \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a5bce85961e656b506bd7d1e6634dedaf}{Throw\+Exception$<$ TResult, TException $>$}} (TException exception, int status\+Code=Status\+Codes.\+Status500\+Internal\+Server\+Error, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the exception. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a528eaa5f46c153c8a035ba4bbb7918e1}{Throw\+Exception$<$ TException $>$}} (TException exception, int status\+Code=Status\+Codes.\+Status500\+Internal\+Server\+Error, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the exception. \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a0997d232d88b49e6e8fe4af68eced46c}{Throw\+Api\+Exception$<$ TResult $>$}} (Problem\+Details? problem\+Details, int? status\+Code=null, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the api exception. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3}{Throw\+Api\+Exception}} (Problem\+Details? problem\+Details, int? status\+Code=null, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the api exception. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_aa04cfd1832380df5f4eac3908baa41c6}{Throw\+Api\+Exception$<$ TError $>$}} (Operation\+Result$<$ TError $>$ operation\+Result, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the api exception created by {\itshape operation\+Result} . \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a06918d032b62ce3ddf785675011fa3f2}{Throw\+Api\+Exception$<$ TResult, TError $>$}} (Operation\+Result$<$ TError $>$ operation\+Result, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the api exception created by {\itshape operation\+Result} . \end{DoxyCompactList}\item 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a9b01c1b3c78d2a3736e3b0017cf7ac8e}{Throw\+Api\+Exception$<$ TResult, TError $>$}} (Operation\+Result$<$ TResult, TError $>$ operation\+Result, \mbox{[}Caller\+Member\+Name\mbox{]} string member\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Throws the api exception created by {\itshape operation\+Result} . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception} helper class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowApiException@{ThrowApiException}}
+\index{ThrowApiException@{ThrowApiException}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowApiException()}{ThrowApiException()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3} 
+static void Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Api\+Exception (\begin{DoxyParamCaption}\item[{Problem\+Details?}]{problem\+Details}{, }\item[{int?}]{status\+Code}{ = {\ttfamily null}, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the api exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em problem\+Details} & The problem details.\\
+\hline
+{\em status\+Code} & The status code.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_aa04cfd1832380df5f4eac3908baa41c6}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowApiException$<$ TError $>$@{ThrowApiException$<$ TError $>$}}
+\index{ThrowApiException$<$ TError $>$@{ThrowApiException$<$ TError $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowApiException$<$ TError $>$()}{ThrowApiException< TError >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_aa04cfd1832380df5f4eac3908baa41c6} 
+static void \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3}{Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Api\+Exception}}$<$ TError $>$ (\begin{DoxyParamCaption}\item[{Operation\+Result$<$ TError $>$}]{operation\+Result}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the api exception created by {\itshape operation\+Result} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operation\+Result} & The operation result.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TError} & The error.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & The api exception.\\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TError} : {\em class}]\end{description}
+\end{Desc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_aa04cfd1832380df5f4eac3908baa41c6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a0997d232d88b49e6e8fe4af68eced46c}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowApiException$<$ TResult $>$@{ThrowApiException$<$ TResult $>$}}
+\index{ThrowApiException$<$ TResult $>$@{ThrowApiException$<$ TResult $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowApiException$<$ TResult $>$()}{ThrowApiException< TResult >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a0997d232d88b49e6e8fe4af68eced46c} 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3}{Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Api\+Exception}}$<$ TResult $>$ (\begin{DoxyParamCaption}\item[{Problem\+Details?}]{problem\+Details}{, }\item[{int?}]{status\+Code}{ = {\ttfamily null}, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the api exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em problem\+Details} & The problem details.\\
+\hline
+{\em status\+Code} & The status code.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a0997d232d88b49e6e8fe4af68eced46c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a06918d032b62ce3ddf785675011fa3f2}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowApiException$<$ TResult, TError $>$@{ThrowApiException$<$ TResult, TError $>$}}
+\index{ThrowApiException$<$ TResult, TError $>$@{ThrowApiException$<$ TResult, TError $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowApiException$<$ TResult, TError $>$()}{ThrowApiException< TResult, TError >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a06918d032b62ce3ddf785675011fa3f2} 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3}{Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Api\+Exception}}$<$ TResult, TError $>$ (\begin{DoxyParamCaption}\item[{Operation\+Result$<$ TError $>$}]{operation\+Result}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the api exception created by {\itshape operation\+Result} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operation\+Result} & The operation result.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TError} & The error.\\
+\hline
+{\em TResult} & The result.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & The api exception.\\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TError} : {\em class}]\end{description}
+\end{Desc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a06918d032b62ce3ddf785675011fa3f2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a9b01c1b3c78d2a3736e3b0017cf7ac8e}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowApiException$<$ TResult, TError $>$@{ThrowApiException$<$ TResult, TError $>$}}
+\index{ThrowApiException$<$ TResult, TError $>$@{ThrowApiException$<$ TResult, TError $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowApiException$<$ TResult, TError $>$()}{ThrowApiException< TResult, TError >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a9b01c1b3c78d2a3736e3b0017cf7ac8e} 
+static TResult \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a28d491db086545fb928af7e1f23178b3}{Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Api\+Exception}}$<$ TResult, TError $>$ (\begin{DoxyParamCaption}\item[{Operation\+Result$<$ TResult, TError $>$}]{operation\+Result}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the api exception created by {\itshape operation\+Result} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operation\+Result} & The operation result.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TError} & The error.\\
+\hline
+{\em TResult} & The result.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & The api exception.\\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TError} : {\em class}]\item[{\em TResult} : {\em class}]\end{description}
+\end{Desc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a9b01c1b3c78d2a3736e3b0017cf7ac8e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a31523603fd6a4f9c387f976d2ee22816}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowConflict$<$ TResult $>$@{ThrowConflict$<$ TResult $>$}}
+\index{ThrowConflict$<$ TResult $>$@{ThrowConflict$<$ TResult $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowConflict$<$ TResult $>$()}{ThrowConflict< TResult >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a31523603fd6a4f9c387f976d2ee22816} 
+static TResult Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Conflict$<$ TResult $>$ (\begin{DoxyParamCaption}\item[{string}]{message}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the conflict exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a2abdaafda7ed646b72877e828b63b675}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowConflict$<$ TResult, TException $>$@{ThrowConflict$<$ TResult, TException $>$}}
+\index{ThrowConflict$<$ TResult, TException $>$@{ThrowConflict$<$ TResult, TException $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowConflict$<$ TResult, TException $>$()}{ThrowConflict< TResult, TException >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a2abdaafda7ed646b72877e828b63b675} 
+static TResult Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Conflict$<$ TResult, TException $>$ (\begin{DoxyParamCaption}\item[{TException}]{exception}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws conflict exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception} & The exception.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & \\
+\hline
+{\em TException} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TException} : {\em \mbox{\hyperlink{classException}{Exception}}}]\end{description}
+\end{Desc}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a528eaa5f46c153c8a035ba4bbb7918e1}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowException$<$ TException $>$@{ThrowException$<$ TException $>$}}
+\index{ThrowException$<$ TException $>$@{ThrowException$<$ TException $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowException$<$ TException $>$()}{ThrowException< TException >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a528eaa5f46c153c8a035ba4bbb7918e1} 
+static void Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Exception$<$ TException $>$ (\begin{DoxyParamCaption}\item[{TException}]{exception}{, }\item[{int}]{status\+Code}{ = {\ttfamily StatusCodes\+:\+:Status500InternalServerError}, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception} & The exception.\\
+\hline
+{\em status\+Code} & The status code.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TException} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TException} : {\em \mbox{\hyperlink{classException}{Exception}}}]\end{description}
+\end{Desc}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a5bce85961e656b506bd7d1e6634dedaf}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowException$<$ TResult, TException $>$@{ThrowException$<$ TResult, TException $>$}}
+\index{ThrowException$<$ TResult, TException $>$@{ThrowException$<$ TResult, TException $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowException$<$ TResult, TException $>$()}{ThrowException< TResult, TException >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a5bce85961e656b506bd7d1e6634dedaf} 
+static TResult Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Exception$<$ TResult, TException $>$ (\begin{DoxyParamCaption}\item[{TException}]{exception}{, }\item[{int}]{status\+Code}{ = {\ttfamily StatusCodes\+:\+:Status500InternalServerError}, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception} & The exception.\\
+\hline
+{\em status\+Code} & The status code.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & \\
+\hline
+{\em TException} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TException} : {\em \mbox{\hyperlink{classException}{Exception}}}]\end{description}
+\end{Desc}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a19804ac3acd1ed85d3db3f9b0717c729}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowNotFound$<$ TResult $>$@{ThrowNotFound$<$ TResult $>$}}
+\index{ThrowNotFound$<$ TResult $>$@{ThrowNotFound$<$ TResult $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowNotFound$<$ TResult $>$()}{ThrowNotFound< TResult >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a19804ac3acd1ed85d3db3f9b0717c729} 
+static TResult Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Not\+Found$<$ TResult $>$ (\begin{DoxyParamCaption}\item[{string}]{message}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws not found exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a94f1977c81d43b53232448e6a4a6a583}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowNotFound$<$ TResult, TException $>$@{ThrowNotFound$<$ TResult, TException $>$}}
+\index{ThrowNotFound$<$ TResult, TException $>$@{ThrowNotFound$<$ TResult, TException $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowNotFound$<$ TResult, TException $>$()}{ThrowNotFound< TResult, TException >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a94f1977c81d43b53232448e6a4a6a583} 
+static TResult Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Not\+Found$<$ TResult, TException $>$ (\begin{DoxyParamCaption}\item[{TException}]{exception}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws not found exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception} & The inner exception.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & \\
+\hline
+{\em TException} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TException} : {\em \mbox{\hyperlink{classException}{Exception}}}]\end{description}
+\end{Desc}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a188a59a6aa1b18599947e99ce270fdc4}\index{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}!ThrowValidation$<$ TResult $>$@{ThrowValidation$<$ TResult $>$}}
+\index{ThrowValidation$<$ TResult $>$@{ThrowValidation$<$ TResult $>$}!Ebceys.Infrastructure.Exceptions.ApiExceptionHelper@{Ebceys.Infrastructure.Exceptions.ApiExceptionHelper}}
+\doxysubsubsection{\texorpdfstring{ThrowValidation$<$ TResult $>$()}{ThrowValidation< TResult >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_a188a59a6aa1b18599947e99ce270fdc4} 
+static TResult Ebceys.\+Infrastructure.\+Exceptions.\+Api\+Exception\+Helper.\+Throw\+Validation$<$ TResult $>$ (\begin{DoxyParamCaption}\item[{Validation\+Problem\+Details}]{problem\+Details}{, }\item[{\mbox{[}\+Caller\+Member\+Name\mbox{]} string}]{member\+Name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Throws the validation exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em problem\+Details} & The problem details.\\
+\hline
+{\em member\+Name} & The member name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException}{Api\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Infrastructure/\+Exceptions/\mbox{\hyperlink{ApiExceptionHelper_8cs}{Api\+Exception\+Helper.\+cs}}\end{DoxyCompactItemize}

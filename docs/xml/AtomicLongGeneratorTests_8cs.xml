@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="AtomicLongGeneratorTests_8cs" kind="file" language="C#">
+    <compoundname>AtomicLongGeneratorTests.cs</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests" prot="public">Ebceys::Infrastructure::UnitTests::Helpers::AtomicLongGeneratorTests</innerclass>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure">Ebceys::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1UnitTests">Ebceys::Infrastructure::UnitTests</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers">Ebceys::Infrastructure::UnitTests::Helpers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Concurrent;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">AwesomeAssertions;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1Extensions" kindref="compound">Ebceys.Infrastructure.Extensions</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1Helpers_1_1Sequences" kindref="compound">Ebceys.Infrastructure.Helpers.Sequences</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespaceEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers" kindref="compound">Ebceys.Infrastructure.UnitTests.Helpers</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests" kindref="compound">AtomicLongGeneratorTests</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1abde6189b292a81ff201a4bfe90e1d87a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>AtomicIntGenerator<sp/><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1abde6189b292a81ff201a4bfe90e1d87a" kindref="member">_intGen</ref>;</highlight></codeline>
+<codeline lineno="11" refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1a3a29b0ddd4d26216ab6d0fd66e98ad2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>AtomicLongGenerator<sp/><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1a3a29b0ddd4d26216ab6d0fd66e98ad2b" kindref="member">_longGen</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>[SetUp]</highlight></codeline>
+<codeline lineno="14" refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1a5f9cc05a838ea24b3939dc51d2a477fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1a5f9cc05a838ea24b3939dc51d2a477fd" kindref="member">Setup</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1a3a29b0ddd4d26216ab6d0fd66e98ad2b" kindref="member">_longGen</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>AtomicLongGenerator();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1abde6189b292a81ff201a4bfe90e1d87a" kindref="member">_intGen</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>AtomicIntGenerator();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>1000)]</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>10000)]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>10000)]</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>1000)]</highlight></codeline>
+<codeline lineno="24" refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1ac07b815a3521ee5352af547873975603" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1ac07b815a3521ee5352af547873975603" kindref="member">When_LongGenManyParallelIncrements_With_SpecifiedNumOfThreadsAndOperations_Result_NoDuplicates</ref>(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numOfThreads,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numOfOperations)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>bag<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ConcurrentBag&lt;long&gt;();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>parallelLoopResult<sp/>=<sp/>Parallel.For(0,<sp/>numOfThreads,<sp/>_<sp/>=&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(var<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numOfOperations;<sp/>i++)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bag.Add(<ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1a3a29b0ddd4d26216ab6d0fd66e98ad2b" kindref="member">_longGen</ref>.Next());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>Task.WaitUntilAsync(_<sp/>=&gt;<sp/>parallelLoopResult.IsCompleted,<sp/>TimeSpan.FromMinutes(3));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bag.Should().OnlyHaveUniqueItems();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>1000)]</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>10000)]</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>10000)]</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestCase(1000,<sp/>1000)]</highlight></codeline>
+<codeline lineno="45" refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1ad79f5f59bd3186e6a384ea241ec4bb93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1ad79f5f59bd3186e6a384ea241ec4bb93" kindref="member">When_intGenManyParallelIncrements_With_SpecifiedNumOfThreadsAndOperations_Result_NoDuplicates</ref>(</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numOfThreads,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numOfOperations)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>bag<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ConcurrentBag&lt;int&gt;();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>parallelLoopResult<sp/>=<sp/>Parallel.For(0,<sp/>numOfThreads,<sp/>_<sp/>=&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(var<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numOfOperations;<sp/>i++)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bag.Add(<ref refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Helpers_1_1AtomicLongGeneratorTests_1abde6189b292a81ff201a4bfe90e1d87a" kindref="member">_intGen</ref>.Next());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>Task.WaitUntilAsync(_<sp/>=&gt;<sp/>parallelLoopResult.IsCompleted,<sp/>TimeSpan.FromMinutes(3));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bag.Should().OnlyHaveUniqueItems();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.UnitTests/Helpers/AtomicLongGeneratorTests.cs"/>
+  </compounddef>
+</doxygen>

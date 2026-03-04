@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="AppRabbitClient_8cs" kind="file" language="C#">
+    <compoundname>AppRabbitClient.cs</compoundname>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure">Ebceys::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication">Ebceys::Infrastructure::AuthorizationTestApplication</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client">Ebceys::Infrastructure::AuthorizationTestApplication::Client</innernamespace>
+    <innernamespace refid="namespaceEBCEYS_1_1RabbitMQ_1_1Client">EBCEYS::RabbitMQ::Client</innernamespace>
+    <innernamespace refid="namespaceEBCEYS_1_1RabbitMQ_1_1Configuration">EBCEYS::RabbitMQ::Configuration</innernamespace>
+    <innernamespace refid="namespaceJetBrains_1_1Annotations">JetBrains::Annotations</innernamespace>
+    <innernamespace refid="namespaceNewtonsoft_1_1Json">Newtonsoft::Json</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext" kindref="compound">Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1RabbitMq" kindref="compound">Ebceys.Infrastructure.RabbitMq</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">EBCEYS.RabbitMQ.Client;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">EBCEYS.RabbitMQ.Configuration;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">JetBrains.Annotations;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Newtonsoft.Json;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client" kindref="compound">Ebceys.Infrastructure.AuthorizationTestApplication.Client</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">[PublicAPI]</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">AppRabbitClient(</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>ILogger&lt;RabbitMQClient&gt;<sp/>clientLogger,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>RabbitMQConfiguration<sp/>config,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>JsonSerializerSettings?<sp/>serializerSettings<sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient" kindref="compound">EbRabbitMqClient</ref>(clientLogger,<sp/>config,<sp/>serializerSettings),<sp/><ref refid="interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAppRabbitClient" kindref="compound">IAppRabbitClient</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Task&lt;string?&gt;<sp/>GetOkAsync(CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SendRequestAsync&lt;string?&gt;(<ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary" kindref="compound">RoutesDictionary</ref>.<ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1RabbitMqControllerV1" kindref="compound">RabbitMqControllerV1</ref>.<ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05" kindref="compound">Methods</ref>.<ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05_1a477ed16540147637fab6dfd4809bf562" kindref="member">GetOk</ref>,<sp/>token:<sp/>token);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Task&lt;GenerateTokenResponse?&gt;<sp/>GenerateTokenAsync(<ref refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1a7d6a3dc0ef9daaedf3280bb1007c29e9" kindref="member">GenerateTokenRequest</ref><sp/>request,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SendRequestAsync&lt;GenerateTokenRequest,<sp/>GenerateTokenResponse&gt;(request,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary" kindref="compound">RoutesDictionary</ref>.<ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1RabbitMqControllerV1" kindref="compound">RabbitMqControllerV1</ref>.<ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05" kindref="compound">Methods</ref>.<ref refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05_1ab82f31df92fafd03d5a1375c26e1f13e" kindref="member">GetJson</ref>,<sp/>token:<sp/>token);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Client/AppRabbitClient.cs"/>
+  </compounddef>
+</doxygen>

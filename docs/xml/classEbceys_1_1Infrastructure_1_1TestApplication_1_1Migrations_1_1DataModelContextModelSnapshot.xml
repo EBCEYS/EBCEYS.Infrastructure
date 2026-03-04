@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::TestApplication::Migrations::DataModelContextModelSnapshot</compoundname>
+    <basecompoundref refid="classModelSnapshot" prot="public" virt="non-virtual">ModelSnapshot</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot_1a9d04688752407d2426bfc3402a73aeb3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ebceys.Infrastructure.TestApplication.Migrations.DataModelContextModelSnapshot.BuildModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildModel</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.Migrations.DataModelContextModelSnapshot.BuildModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Migrations/DataModelContextModelSnapshot.cs" line="15" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Migrations/DataModelContextModelSnapshot.cs" bodystart="15" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.TestApplication.Migrations.DataModelContextModelSnapshot</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ModelSnapshot</label>
+        <link refid="classModelSnapshot"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.TestApplication.Migrations.DataModelContextModelSnapshot</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ModelSnapshot</label>
+        <link refid="classModelSnapshot"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Migrations/DataModelContextModelSnapshot.cs" line="13" column="12" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Migrations/DataModelContextModelSnapshot.cs" bodystart="14" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot_1a9d04688752407d2426bfc3402a73aeb3" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::TestApplication::Migrations::DataModelContextModelSnapshot</scope><name>BuildModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

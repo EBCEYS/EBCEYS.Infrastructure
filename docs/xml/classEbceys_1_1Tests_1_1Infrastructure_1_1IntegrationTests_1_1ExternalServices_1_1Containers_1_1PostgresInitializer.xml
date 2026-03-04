@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::PostgresInitializer</compoundname>
+    <basecompoundref refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g" prot="public" virt="non-virtual">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer&lt; TDependency &gt;</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a3350b1e3e131d373ff9c0d320226b94e" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.Image</definition>
+        <argsstring></argsstring>
+        <name>Image</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.Image</qualifiedname>
+        <initializer>= &quot;postgres:13.6&quot;</initializer>
+        <briefdescription>
+<para>The postgres container image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" line="15" column="25" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a8e53bd5460c6c6801052c06387eb9291" compoundref="PostgresInitializer_8cs" startline="26" endline="34">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PostgresInitializer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a0def0d31bed06e7d6cc576738064268a" prot="private" static="no" mutable="no">
+        <type>PostgreSqlContainer?</type>
+        <definition>PostgreSqlContainer? Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer._container</definition>
+        <argsstring></argsstring>
+        <name>_container</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer._container</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" line="17" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1aab421a7fbbba5e304a8867cfc55c0808" compoundref="PostgresInitializer_8cs" startline="42" endline="47">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.InitializeAsync</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1acff714e6b9a3a52937347967b5ea2bf4" compoundref="PostgresInitializer_8cs" startline="50" endline="53">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.TeardownAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a00a266cf618d360cb6bc11d59541e29e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>PostgreSqlBuilder</type>
+        <definition>PostgreSqlBuilder Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PsqlBuilder</definition>
+        <argsstring></argsstring>
+        <name>PsqlBuilder</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PsqlBuilder</qualifiedname>
+        <briefdescription>
+<para>The psql builder. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" line="39" column="30" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" bodystart="39" bodyend="39"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1aab421a7fbbba5e304a8867cfc55c0808" compoundref="PostgresInitializer_8cs" startline="42" endline="47">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.InitializeAsync</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a8e53bd5460c6c6801052c06387eb9291" compoundref="PostgresInitializer_8cs" startline="26" endline="34">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PostgresInitializer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a8e53bd5460c6c6801052c06387eb9291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PostgresInitializer</definition>
+        <argsstring>(string user, string password, string? database=null, string image=Image)</argsstring>
+        <name>PostgresInitializer</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PostgresInitializer</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>database</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>image</declname>
+          <defval><ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a3350b1e3e131d373ff9c0d320226b94e" kindref="member">Image</ref></defval>
+        </param>
+        <briefdescription>
+<para>Initiates the new instance of <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer" kindref="compound">PostgresInitializer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The db user.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The db password.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>database</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The database name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" line="26" column="12" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" bodystart="26" bodyend="34"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a3350b1e3e131d373ff9c0d320226b94e" compoundref="PostgresInitializer_8cs" startline="15">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.Image</references>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a00a266cf618d360cb6bc11d59541e29e" compoundref="PostgresInitializer_8cs" startline="39" endline="39">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PsqlBuilder</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1aab421a7fbbba5e304a8867cfc55c0808" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; PostgreSqlContainer &gt;</type>
+        <definition>async Task&lt; PostgreSqlContainer &gt; Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.InitializeAsync</definition>
+        <argsstring>(CancellationToken token=default)</argsstring>
+        <name>InitializeAsync</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.InitializeAsync</qualifiedname>
+        <reimplements refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_1a571e18aef719e31c49fb19fb404f5df8">InitializeAsync</reimplements>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para><para>Initialize the dependency.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" line="42" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" bodystart="42" bodyend="47"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a0def0d31bed06e7d6cc576738064268a" compoundref="PostgresInitializer_8cs" startline="17">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer._container</references>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a00a266cf618d360cb6bc11d59541e29e" compoundref="PostgresInitializer_8cs" startline="39" endline="39">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PsqlBuilder</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1acff714e6b9a3a52937347967b5ea2bf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.TeardownAsync</definition>
+        <argsstring>(CancellationToken token=default)</argsstring>
+        <name>TeardownAsync</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.TeardownAsync</qualifiedname>
+        <reimplements refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_1ad46b42e06e8f1cd78c8dfc9ec22e8aa4">TeardownAsync</reimplements>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para><para>Teardowns the dependency.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" line="50" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" bodystart="50" bodyend="53"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a0def0d31bed06e7d6cc576738064268a" compoundref="PostgresInitializer_8cs" startline="17">Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer._container</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer" kindref="compound">PostgresInitializer</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer&lt; TDependency &gt;</label>
+        <link refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+Image</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-_container</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer&lt; TDependency &gt;</label>
+        <link refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g"/>
+      </node>
+      <node id="4">
+        <label>PostgreSqlContainer?</label>
+      </node>
+      <node id="3">
+        <label>const string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" line="10" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs" bodystart="11" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a0def0d31bed06e7d6cc576738064268a" prot="private" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::PostgresInitializer</scope><name>_container</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a3350b1e3e131d373ff9c0d320226b94e" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::PostgresInitializer</scope><name>Image</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1aab421a7fbbba5e304a8867cfc55c0808" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::PostgresInitializer</scope><name>InitializeAsync</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a8e53bd5460c6c6801052c06387eb9291" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::PostgresInitializer</scope><name>PostgresInitializer</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1a00a266cf618d360cb6bc11d59541e29e" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::PostgresInitializer</scope><name>PsqlBuilder</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_1acff714e6b9a3a52937347967b5ea2bf4" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::ExternalServices::Containers::PostgresInitializer</scope><name>TeardownAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

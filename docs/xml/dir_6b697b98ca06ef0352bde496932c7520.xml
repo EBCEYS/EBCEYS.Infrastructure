@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_6b697b98ca06ef0352bde496932c7520" kind="dir">
+    <compoundname>/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests</compoundname>
+    <innerdir refid="dir_7202b312a8bee243ad6ab032b222a102">/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices</innerdir>
+    <innerdir refid="dir_89a1a9bd64bbc7e064e887714c435f1a">/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication</innerdir>
+    <innerfile refid="TestRoutingMessageHandler_8cs">TestRoutingMessageHandler.cs</innerfile>
+    <innerfile refid="TestsExtensions_8cs">TestsExtensions.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/"/>
+  </compounddef>
+</doxygen>

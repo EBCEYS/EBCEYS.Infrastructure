@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient" kind="interface" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::TestApplication::Client::Implementations::ITestApplicationClient</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient_1afe451af4dc632cc9e8a43a8d1beb672b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient" kindref="compound">ITestClient</ref></type>
+        <definition>ITestClient Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient.TestClient</definition>
+        <argsstring></argsstring>
+        <name>TestClient</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient.TestClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestApplicationClient.cs" line="7" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestApplicationClient.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient</label>
+        <link refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestApplicationClient.cs" line="5" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestApplicationClient.cs" bodystart="6" bodyend="8"/>
+    <listofallmembers>
+      <member refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient_1afe451af4dc632cc9e8a43a8d1beb672b" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::TestApplication::Client::Implementations::ITestApplicationClient</scope><name>TestClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

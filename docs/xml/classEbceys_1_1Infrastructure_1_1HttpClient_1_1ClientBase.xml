@@ -1,0 +1,1853 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Ebceys::Infrastructure::HttpClient::ClientBase</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acd40e540609f324537a2696b3c527235" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.HttpClient.ClientBase.AuthorizationHeader</definition>
+        <argsstring></argsstring>
+        <name>AuthorizationHeader</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.AuthorizationHeader</qualifiedname>
+        <initializer>= &quot;Authorization&quot;</initializer>
+        <briefdescription>
+<para>The authorization header key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="21" column="25" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a5abdf9f059a7b89ae8f44d5c596dc151" compoundref="ClientBase_8cs" startline="559" endline="565">Ebceys.Infrastructure.HttpClient.ClientBase.GetAuthHeaders</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9c91605887d6727560a6cc2f94938c16" compoundref="ClientBase_8cs" startline="487" endline="508">Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a31ba15996c656c42be9274ccd1d3b7b4" prot="private" static="no" mutable="no">
+        <type>readonly IFlurlClient</type>
+        <definition>readonly IFlurlClient Ebceys.Infrastructure.HttpClient.ClientBase._client</definition>
+        <argsstring></argsstring>
+        <name>_client</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase._client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="23" column="35" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" compoundref="ClientBase_8cs" startline="35" endline="45">Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a41094ceb11773ef7f1a5a705102f3e59" prot="private" static="no" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Ebceys.Infrastructure.HttpClient.ClientBase._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="24" column="30" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" compoundref="ClientBase_8cs" startline="35" endline="45">Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1adbe434b6f97c2a5c74123c5aea4ac9e9" compoundref="ClientBase_8cs" startline="510" endline="524">Ebceys.Infrastructure.HttpClient.ClientBase.LogRequest</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a306e46acd18714d98371240e19234a68" compoundref="ClientBase_8cs" startline="526" endline="552">Ebceys.Infrastructure.HttpClient.ClientBase.LogResponse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a82d38b6ac6312e87e00253309de03198" prot="private" static="no" mutable="no">
+        <type>readonly? Func&lt; Task&lt; string &gt; &gt;</type>
+        <definition>readonly? Func&lt;Task&lt;string&gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase._tokenResolver</definition>
+        <argsstring></argsstring>
+        <name>_tokenResolver</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase._tokenResolver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="26" column="27" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" compoundref="ClientBase_8cs" startline="35" endline="45">Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9c91605887d6727560a6cc2f94938c16" compoundref="ClientBase_8cs" startline="487" endline="508">Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afdfe7186d9aa8d504d8093c2e353e9c0" prot="protected" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Ebceys.Infrastructure.HttpClient.ClientBase.ClientName</definition>
+        <argsstring></argsstring>
+        <name>ClientName</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.ClientName</qualifiedname>
+        <briefdescription>
+<para>The client name to get it from IFlurlClientCache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="50" column="22" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" compoundref="ClientBase_8cs" startline="35" endline="45">Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a035da6e398617a54f2e32739e77d081c" prot="protected" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>TimeSpan</type>
+        <definition>TimeSpan Ebceys.Infrastructure.HttpClient.ClientBase.Timeout</definition>
+        <argsstring></argsstring>
+        <name>Timeout</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.Timeout</qualifiedname>
+        <initializer>= TimeSpan.FromSeconds(10)</initializer>
+        <briefdescription>
+<para>The default response awaiting timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="55" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="55" bodyend="55"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" compoundref="ClientBase_8cs" startline="35" endline="45">Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaebbad7c7bb3dd7c315e857ef2242341" compoundref="ClientBase_8cs" startline="72" endline="77">Ebceys.Infrastructure.HttpClient.ClientBase.ConfigureClient</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a95b2c311dfe701553bbb236131e4defc" prot="protected" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>TimeSpan</type>
+        <definition>TimeSpan Ebceys.Infrastructure.HttpClient.ClientBase.DelayBetweenRetries</definition>
+        <argsstring></argsstring>
+        <name>DelayBetweenRetries</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.DelayBetweenRetries</qualifiedname>
+        <initializer>= TimeSpan.FromSeconds(3)</initializer>
+        <briefdescription>
+<para>The default delay between retries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="60" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afe69d12eb0eb931e47589e86975c11e0" prot="protected" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IAsyncPolicy&lt; IFlurlResponse &gt;</type>
+        <definition>IAsyncPolicy&lt;IFlurlResponse&gt; Ebceys.Infrastructure.HttpClient.ClientBase.Policy</definition>
+        <argsstring></argsstring>
+        <name>Policy</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.Policy</qualifiedname>
+        <briefdescription>
+<para>The default http request executing policy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="65" column="28" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="65" bodyend="65"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" compoundref="ClientBase_8cs" startline="35" endline="45">Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ab36a45efbc1d8866c47192f3f2b76c92" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ISerializer</type>
+        <definition>ISerializer Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer</definition>
+        <argsstring></argsstring>
+        <name>DefaultSerializer</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer</qualifiedname>
+        <initializer>= new DefaultJsonSerializer()</initializer>
+        <briefdescription>
+<para>The default request and response serializer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="70" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="70" bodyend="70"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaebbad7c7bb3dd7c315e857ef2242341" compoundref="ClientBase_8cs" startline="72" endline="77">Ebceys.Infrastructure.HttpClient.ClientBase.ConfigureClient</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a6bfb86b34a36d2b2d2f33c082f32fd0b" compoundref="ClientBase_8cs" startline="242" endline="256">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1d934ccb04ed3e2b666666a16bfec65c" compoundref="ClientBase_8cs" startline="322" endline="336">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af30abd96d05940f0d79b965e9e5a3015" compoundref="ClientBase_8cs" startline="391" endline="405">Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1feab8fb1a7c17e521ce2864f9cad37b" compoundref="ClientBase_8cs" startline="419" endline="433">Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TResponse, TError &gt;</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</definition>
+        <argsstring>(IFlurlClientCache clientCache, ILoggerFactory loggerFactory, Func&lt; string &gt; baseUrlResolver, Func&lt; Task&lt; string &gt; &gt;? tokenResolver=null)</argsstring>
+        <name>ClientBase</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</qualifiedname>
+        <param>
+          <type>IFlurlClientCache</type>
+          <declname>clientCache</declname>
+        </param>
+        <param>
+          <type>ILoggerFactory</type>
+          <declname>loggerFactory</declname>
+        </param>
+        <param>
+          <type>Func&lt; string &gt;</type>
+          <declname>baseUrlResolver</declname>
+        </param>
+        <param>
+          <type>Func&lt; Task&lt; string &gt; &gt;?</type>
+          <declname>tokenResolver</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Initiates the new instance of <ref refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase" kindref="compound">ClientBase</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clientCache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client cache.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseUrlResolver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base url resolver.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tokenResolver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token resolver.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loggerFactory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logger factory.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="35" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="35" bodyend="45"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a31ba15996c656c42be9274ccd1d3b7b4" compoundref="ClientBase_8cs" startline="23">Ebceys.Infrastructure.HttpClient.ClientBase._client</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a41094ceb11773ef7f1a5a705102f3e59" compoundref="ClientBase_8cs" startline="24">Ebceys.Infrastructure.HttpClient.ClientBase._logger</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a82d38b6ac6312e87e00253309de03198" compoundref="ClientBase_8cs" startline="26">Ebceys.Infrastructure.HttpClient.ClientBase._tokenResolver</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afdfe7186d9aa8d504d8093c2e353e9c0" compoundref="ClientBase_8cs" startline="50">Ebceys.Infrastructure.HttpClient.ClientBase.ClientName</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaebbad7c7bb3dd7c315e857ef2242341" compoundref="ClientBase_8cs" startline="72" endline="77">Ebceys.Infrastructure.HttpClient.ClientBase.ConfigureClient</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afe69d12eb0eb931e47589e86975c11e0" compoundref="ClientBase_8cs" startline="65" endline="65">Ebceys.Infrastructure.HttpClient.ClientBase.Policy</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a035da6e398617a54f2e32739e77d081c" compoundref="ClientBase_8cs" startline="55" endline="55">Ebceys.Infrastructure.HttpClient.ClientBase.Timeout</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7aff94b2db61e56d4c6bab5e76c620ba" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync&lt; TResponse, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>GetJsonAsync&lt; TResponse, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync&lt; TResponse, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends GET request with awaiting serialized body response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url transform.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The success response type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g" kindref="compound">OperationResult&lt;TResponse,TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="98" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="98" bodyend="108"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7a7a02d4d110ad85f9a49edcaeefe31c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync&lt; TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>GetAsync&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends GET request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url transform.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g" kindref="compound">OperationResult&lt;TResponse,TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="118" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="118" bodyend="128"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaa20322fa957e48c1068dc7961aa91e6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; Stream, TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; Stream, TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync&lt; TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>GetStreamAsync&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends GET request with awaiting Stream response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url transform.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g" kindref="compound">OperationResult&lt;TResponse,TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="138" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="138" bodyend="149"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ade0c9fdbd7a5602a7fc78556bd9539a7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; byte[], TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; byte[], TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync&lt; TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>GetRawAsync&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends GET request with awaiting byte array response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url transform.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g" kindref="compound">OperationResult&lt;TResponse,TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="159" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="159" bodyend="169"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a26ef17508251ba0fd49ca8be0b8425c1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync&lt; TResponse, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>DeleteJsonAsync&lt; TResponse, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync&lt; TResponse, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends DELETE request with awaiting serialized body response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url transform.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The success response type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g" kindref="compound">OperationResult&lt;TResponse,TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="180" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="180" bodyend="190"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a3df617522e4af3ecef207afdef216eea" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync&lt; TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>DeleteAsync&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends DELETE request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url transform.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g" kindref="compound">OperationResult&lt;TResponse,TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="200" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="200" bodyend="210"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af235956f006b50ba47b85d8a5f09c68d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync&lt; TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PostAsync&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends POST request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="220" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="220" bodyend="230"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a6bfb86b34a36d2b2d2f33c082f32fd0b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, TRequest body, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PostJsonAsync&lt; TRequest, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>TRequest</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends POST request with specified serialized body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request object type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="242" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="242" bodyend="256"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ab36a45efbc1d8866c47192f3f2b76c92" compoundref="ClientBase_8cs" startline="70" endline="70">Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a57c753ac70e8b3a9b7f073b58215270e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TResponse, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, Stream body, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PostStreamAsync&lt; TResponse, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TResponse, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends POST request with specified stream body <linebreak/>
+ and with awaiting <emphasis>TResponse</emphasis>  deserialized response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The success response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="270" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="270" bodyend="283"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acc1f3b304179b1f651277700d6d0e98d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, Stream body, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PostStreamAsync&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends POST request with specified stream body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="294" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="294" bodyend="307"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1d934ccb04ed3e2b666666a16bfec65c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TResponse, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, TRequest body, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PostJsonAsync&lt; TRequest, TResponse, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TResponse, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>TRequest</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends POST request with specified serialized body <linebreak/>
+ and with awaiting <emphasis>TResponse</emphasis>  deserialized response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request object type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The success response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="322" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="322" bodyend="336"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ab36a45efbc1d8866c47192f3f2b76c92" compoundref="ClientBase_8cs" startline="70" endline="70">Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1abe61e559a86dbeba95ed4a24c7d8aebf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TResponse, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PostJsonAsync&lt; TResponse, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TResponse, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends POST request<linebreak/>
+ and with awaiting <emphasis>TResponse</emphasis>  deserialized response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The success response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="349" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="349" bodyend="359"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aa537936f9c9d2ecabebdbf7f02495f89" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PostJsonAsync&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends POST request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="369" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="369" bodyend="379"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af30abd96d05940f0d79b965e9e5a3015" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, TRequest body, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PutJsonAsync&lt; TRequest, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>TRequest</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends PUT request with specified serialized body. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request object type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="391" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="391" bodyend="405"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ab36a45efbc1d8866c47192f3f2b76c92" compoundref="ClientBase_8cs" startline="70" endline="70">Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1feab8fb1a7c17e521ce2864f9cad37b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt;</type>
+        <definition>async Task&lt; OperationResult&lt; TResponse, TError &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TResponse, TError &gt;</definition>
+        <argsstring>(Action&lt; Url &gt; url, TRequest body, IDictionary&lt; string, object &gt;? headers=null, CancellationToken token=default)</argsstring>
+        <name>PutJsonAsync&lt; TRequest, TResponse, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TResponse, TError &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>TRequest</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends PUT request with specified serialized body and with awaiting <emphasis>TResponse</emphasis>  deserialized response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The url.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>headers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request object type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error response type.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The success response type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g" kindref="compound">OperationResult&lt;TError&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="419" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="419" bodyend="433"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ab36a45efbc1d8866c47192f3f2b76c92" compoundref="ClientBase_8cs" startline="70" endline="70">Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IFlurlResponse &gt;</type>
+        <definition>async Task&lt; IFlurlResponse &gt; Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</definition>
+        <argsstring>(IFlurlRequest request, HttpMethod method, HttpCompletionOption completionOption=HttpCompletionOption.ResponseContentRead, CancellationToken token=default)</argsstring>
+        <name>ExecuteWithPolicyAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</qualifiedname>
+        <param>
+          <type>IFlurlRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>HttpMethod</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>HttpCompletionOption</type>
+          <declname>completionOption</declname>
+          <defval>HttpCompletionOption.ResponseContentRead</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Executes the flurl request with <ref refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afe69d12eb0eb931e47589e86975c11e0" kindref="member">Policy</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The http method.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>completionOption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The completion options.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Task which result contains the new instance of IFlurlResponse.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="443" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="443" bodyend="462"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ae6d5d118c5f95d84981e1b675278b16f" compoundref="ClientBase_8cs" startline="471" endline="477">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithoutPolicyAsync</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1adbe434b6f97c2a5c74123c5aea4ac9e9" compoundref="ClientBase_8cs" startline="510" endline="524">Ebceys.Infrastructure.HttpClient.ClientBase.LogRequest</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a306e46acd18714d98371240e19234a68" compoundref="ClientBase_8cs" startline="526" endline="552">Ebceys.Infrastructure.HttpClient.ClientBase.LogResponse</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afe69d12eb0eb931e47589e86975c11e0" compoundref="ClientBase_8cs" startline="65" endline="65">Ebceys.Infrastructure.HttpClient.ClientBase.Policy</references>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a3df617522e4af3ecef207afdef216eea" compoundref="ClientBase_8cs" startline="200" endline="210">Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a26ef17508251ba0fd49ca8be0b8425c1" compoundref="ClientBase_8cs" startline="180" endline="190">Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7a7a02d4d110ad85f9a49edcaeefe31c" compoundref="ClientBase_8cs" startline="118" endline="128">Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7aff94b2db61e56d4c6bab5e76c620ba" compoundref="ClientBase_8cs" startline="98" endline="108">Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ade0c9fdbd7a5602a7fc78556bd9539a7" compoundref="ClientBase_8cs" startline="159" endline="169">Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaa20322fa957e48c1068dc7961aa91e6" compoundref="ClientBase_8cs" startline="138" endline="149">Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af235956f006b50ba47b85d8a5f09c68d" compoundref="ClientBase_8cs" startline="220" endline="230">Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aa537936f9c9d2ecabebdbf7f02495f89" compoundref="ClientBase_8cs" startline="369" endline="379">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a6bfb86b34a36d2b2d2f33c082f32fd0b" compoundref="ClientBase_8cs" startline="242" endline="256">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1d934ccb04ed3e2b666666a16bfec65c" compoundref="ClientBase_8cs" startline="322" endline="336">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1abe61e559a86dbeba95ed4a24c7d8aebf" compoundref="ClientBase_8cs" startline="349" endline="359">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acc1f3b304179b1f651277700d6d0e98d" compoundref="ClientBase_8cs" startline="294" endline="307">Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a57c753ac70e8b3a9b7f073b58215270e" compoundref="ClientBase_8cs" startline="270" endline="283">Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af30abd96d05940f0d79b965e9e5a3015" compoundref="ClientBase_8cs" startline="391" endline="405">Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1feab8fb1a7c17e521ce2864f9cad37b" compoundref="ClientBase_8cs" startline="419" endline="433">Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TResponse, TError &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ae6d5d118c5f95d84981e1b675278b16f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>Task&lt; IFlurlResponse &gt;</type>
+        <definition>virtual Task&lt; IFlurlResponse &gt; Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithoutPolicyAsync</definition>
+        <argsstring>(Func&lt; IFlurlRequest, CancellationToken, Task&lt; IFlurlResponse &gt; &gt; func, IFlurlRequest request, CancellationToken token=default)</argsstring>
+        <name>ExecuteWithoutPolicyAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithoutPolicyAsync</qualifiedname>
+        <param>
+          <type>Func&lt; IFlurlRequest, CancellationToken, Task&lt; IFlurlResponse &gt; &gt;</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>IFlurlRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Executes the request delegate without policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delegate to execute.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request to be executed.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Task which result contains the new instance of IFlurlResponse.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="471" column="28" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="471" bodyend="477"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaebbad7c7bb3dd7c315e857ef2242341" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ebceys.Infrastructure.HttpClient.ClientBase.ConfigureClient</definition>
+        <argsstring>(IFlurlClientBuilder obj)</argsstring>
+        <name>ConfigureClient</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.ConfigureClient</qualifiedname>
+        <param>
+          <type>IFlurlClientBuilder</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="72" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="72" bodyend="77"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ab36a45efbc1d8866c47192f3f2b76c92" compoundref="ClientBase_8cs" startline="70" endline="70">Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a035da6e398617a54f2e32739e77d081c" compoundref="ClientBase_8cs" startline="55" endline="55">Ebceys.Infrastructure.HttpClient.ClientBase.Timeout</references>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" compoundref="ClientBase_8cs" startline="35" endline="45">Ebceys.Infrastructure.HttpClient.ClientBase.ClientBase</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IFlurlRequest &gt;</type>
+        <definition>async Task&lt; IFlurlRequest &gt; Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</definition>
+        <argsstring>(Action&lt; Url &gt; url, IDictionary&lt; string, object &gt;? headers)</argsstring>
+        <name>PrepareRequest</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</qualifiedname>
+        <param>
+          <type>Action&lt; Url &gt;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="479" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="479" bodyend="485"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a31ba15996c656c42be9274ccd1d3b7b4" compoundref="ClientBase_8cs" startline="23">Ebceys.Infrastructure.HttpClient.ClientBase._client</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9c91605887d6727560a6cc2f94938c16" compoundref="ClientBase_8cs" startline="487" endline="508">Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders</references>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a3df617522e4af3ecef207afdef216eea" compoundref="ClientBase_8cs" startline="200" endline="210">Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a26ef17508251ba0fd49ca8be0b8425c1" compoundref="ClientBase_8cs" startline="180" endline="190">Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7a7a02d4d110ad85f9a49edcaeefe31c" compoundref="ClientBase_8cs" startline="118" endline="128">Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7aff94b2db61e56d4c6bab5e76c620ba" compoundref="ClientBase_8cs" startline="98" endline="108">Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ade0c9fdbd7a5602a7fc78556bd9539a7" compoundref="ClientBase_8cs" startline="159" endline="169">Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaa20322fa957e48c1068dc7961aa91e6" compoundref="ClientBase_8cs" startline="138" endline="149">Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af235956f006b50ba47b85d8a5f09c68d" compoundref="ClientBase_8cs" startline="220" endline="230">Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aa537936f9c9d2ecabebdbf7f02495f89" compoundref="ClientBase_8cs" startline="369" endline="379">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a6bfb86b34a36d2b2d2f33c082f32fd0b" compoundref="ClientBase_8cs" startline="242" endline="256">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1d934ccb04ed3e2b666666a16bfec65c" compoundref="ClientBase_8cs" startline="322" endline="336">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TRequest, TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1abe61e559a86dbeba95ed4a24c7d8aebf" compoundref="ClientBase_8cs" startline="349" endline="359">Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acc1f3b304179b1f651277700d6d0e98d" compoundref="ClientBase_8cs" startline="294" endline="307">Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a57c753ac70e8b3a9b7f073b58215270e" compoundref="ClientBase_8cs" startline="270" endline="283">Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync&lt; TResponse, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af30abd96d05940f0d79b965e9e5a3015" compoundref="ClientBase_8cs" startline="391" endline="405">Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1feab8fb1a7c17e521ce2864f9cad37b" compoundref="ClientBase_8cs" startline="419" endline="433">Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync&lt; TRequest, TResponse, TError &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9c91605887d6727560a6cc2f94938c16" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; Dictionary&lt; string, object &gt; &gt;</type>
+        <definition>async Task&lt; Dictionary&lt; string, object &gt; &gt; Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders</definition>
+        <argsstring>(IDictionary&lt; string, object &gt;? additionalHeaders=null)</argsstring>
+        <name>GetDefaultHeaders</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders</qualifiedname>
+        <param>
+          <type>IDictionary&lt; string, object &gt;?</type>
+          <declname>additionalHeaders</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="487" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="487" bodyend="508"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a82d38b6ac6312e87e00253309de03198" compoundref="ClientBase_8cs" startline="26">Ebceys.Infrastructure.HttpClient.ClientBase._tokenResolver</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acd40e540609f324537a2696b3c527235" compoundref="ClientBase_8cs" startline="21">Ebceys.Infrastructure.HttpClient.ClientBase.AuthorizationHeader</references>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" compoundref="ClientBase_8cs" startline="479" endline="485">Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1adbe434b6f97c2a5c74123c5aea4ac9e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ebceys.Infrastructure.HttpClient.ClientBase.LogRequest</definition>
+        <argsstring>(HttpMethod method, IFlurlRequest request, string requestId)</argsstring>
+        <name>LogRequest</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.LogRequest</qualifiedname>
+        <param>
+          <type>HttpMethod</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>IFlurlRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>requestId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="510" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="510" bodyend="524"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a41094ceb11773ef7f1a5a705102f3e59" compoundref="ClientBase_8cs" startline="24">Ebceys.Infrastructure.HttpClient.ClientBase._logger</references>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a306e46acd18714d98371240e19234a68" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ebceys.Infrastructure.HttpClient.ClientBase.LogResponse</definition>
+        <argsstring>(HttpMethod method, IFlurlResponse response, IFlurlRequest request, TimeSpan duration, string requestId)</argsstring>
+        <name>LogResponse</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.LogResponse</qualifiedname>
+        <param>
+          <type>HttpMethod</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>IFlurlResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>IFlurlRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>TimeSpan</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>requestId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="526" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="526" bodyend="552"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a41094ceb11773ef7f1a5a705102f3e59" compoundref="ClientBase_8cs" startline="24">Ebceys.Infrastructure.HttpClient.ClientBase._logger</references>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" compoundref="ClientBase_8cs" startline="443" endline="462">Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a631eeba1c36247a0d2fc630eedff4da6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Ebceys.Infrastructure.HttpClient.ClientBase.GetClientName</definition>
+        <argsstring>(Type implementationType)</argsstring>
+        <name>GetClientName</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.GetClientName</qualifiedname>
+        <param>
+          <type>Type</type>
+          <declname>implementationType</declname>
+        </param>
+        <briefdescription>
+<para>Gets the client name. With this name the client will get from IFlurlClientCache. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>implementationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client implementation type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="84" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="84" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a5abdf9f059a7b89ae8f44d5c596dc151" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dictionary&lt; string, object &gt;</type>
+        <definition>static Dictionary&lt; string, object &gt; Ebceys.Infrastructure.HttpClient.ClientBase.GetAuthHeaders</definition>
+        <argsstring>(string token)</argsstring>
+        <name>GetAuthHeaders</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientBase.GetAuthHeaders</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Gets the auth headers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The jwt.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of request headers.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="559" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="559" bodyend="565"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acd40e540609f324537a2696b3c527235" compoundref="ClientBase_8cs" startline="21">Ebceys.Infrastructure.HttpClient.ClientBase.AuthorizationHeader</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase" kindref="compound">ClientBase</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.HttpClient.ClientBase</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+AuthorizationHeader</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_client</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-_logger</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-_tokenResolver</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>const string</label>
+      </node>
+      <node id="3">
+        <label>readonly IFlurlClient</label>
+      </node>
+      <node id="4">
+        <label>readonly ILogger</label>
+      </node>
+      <node id="5">
+        <label>readonly? Func&lt; Task&lt; string &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" line="16" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientBase.cs" bodystart="17" bodyend="566"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a31ba15996c656c42be9274ccd1d3b7b4" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>_client</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a41094ceb11773ef7f1a5a705102f3e59" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>_logger</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a82d38b6ac6312e87e00253309de03198" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>_tokenResolver</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acd40e540609f324537a2696b3c527235" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>AuthorizationHeader</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9343f276552c115282bf243dc5a93fe8" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>ClientBase</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afdfe7186d9aa8d504d8093c2e353e9c0" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>ClientName</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaebbad7c7bb3dd7c315e857ef2242341" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>ConfigureClient</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ab36a45efbc1d8866c47192f3f2b76c92" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>DefaultSerializer</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a95b2c311dfe701553bbb236131e4defc" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>DelayBetweenRetries</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a3df617522e4af3ecef207afdef216eea" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>DeleteAsync&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a26ef17508251ba0fd49ca8be0b8425c1" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>DeleteJsonAsync&lt; TResponse, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ae6d5d118c5f95d84981e1b675278b16f" prot="protected" virt="virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>ExecuteWithoutPolicyAsync</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1696185a0f91cbdecdbda5181719877b" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>ExecuteWithPolicyAsync</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7a7a02d4d110ad85f9a49edcaeefe31c" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>GetAsync&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a5abdf9f059a7b89ae8f44d5c596dc151" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>GetAuthHeaders</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a631eeba1c36247a0d2fc630eedff4da6" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>GetClientName</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a9c91605887d6727560a6cc2f94938c16" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>GetDefaultHeaders</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a7aff94b2db61e56d4c6bab5e76c620ba" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>GetJsonAsync&lt; TResponse, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1ade0c9fdbd7a5602a7fc78556bd9539a7" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>GetRawAsync&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aaa20322fa957e48c1068dc7961aa91e6" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>GetStreamAsync&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1adbe434b6f97c2a5c74123c5aea4ac9e9" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>LogRequest</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a306e46acd18714d98371240e19234a68" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>LogResponse</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1afe69d12eb0eb931e47589e86975c11e0" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>Policy</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af235956f006b50ba47b85d8a5f09c68d" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PostAsync&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1aa537936f9c9d2ecabebdbf7f02495f89" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PostJsonAsync&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a6bfb86b34a36d2b2d2f33c082f32fd0b" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PostJsonAsync&lt; TRequest, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1d934ccb04ed3e2b666666a16bfec65c" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PostJsonAsync&lt; TRequest, TResponse, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1abe61e559a86dbeba95ed4a24c7d8aebf" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PostJsonAsync&lt; TResponse, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1acc1f3b304179b1f651277700d6d0e98d" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PostStreamAsync&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a57c753ac70e8b3a9b7f073b58215270e" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PostStreamAsync&lt; TResponse, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1215a1d2418cd433a86229b07718ee6e" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PrepareRequest</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1af30abd96d05940f0d79b965e9e5a3015" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PutJsonAsync&lt; TRequest, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a1feab8fb1a7c17e521ce2864f9cad37b" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>PutJsonAsync&lt; TRequest, TResponse, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_1a035da6e398617a54f2e32739e77d081c" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientBase</scope><name>Timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

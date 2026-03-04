@@ -1,0 +1,221 @@
+\doxysection{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context\texorpdfstring{$<$}{<} TClient, TEntrypoint \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g}{}\label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}}
+
+
+The \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g}{Client\+Test\+Context$<$\+TClient,\+TEntrypoint$>$} class.  
+
+
+
+
+Inheritance diagram for Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context\texorpdfstring{$<$}{<} TClient, TEntrypoint \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context\texorpdfstring{$<$}{<} TClient, TEntrypoint \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a6536350128cb863710ec63f8cecb7d20}{Initialize}} (Action$<$ \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions}{Test\+Client\+Initialize\+Options}} $>$? configurator=null)
+\begin{DoxyCompactList}\small\item\em Initializes the context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em configurator} & \\
+\hline
+\end{DoxyParams}
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient}{IService\+System\+Client}} \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a88f3ce79649e98c5a6012c4dff31302d}{Create\+Service\+System\+Client}} (ILogger\+Factory? logger\+Factory=null)
+\begin{DoxyCompactList}\small\item\em Creates the instance of \doxylink{interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient}{IService\+System\+Client}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Service\+Test\+Context$<$ TEntrypoint $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g_a1c48aae28bae4895c5bb7a0e2bee70b2}{Teardown}} ()
+\begin{DoxyCompactList}\small\item\em Teardowns the context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+TClient \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a9163b3413fc33cdaf4859facc0a7ace0}{Create\+Service\+Client}} (string base\+Address)
+\begin{DoxyCompactList}\small\item\em Creates the service client. \end{DoxyCompactList}\item 
+IFlurl\+Client\+Cache \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a4fd6a94729815bdc7cc5a1c2258572ba}{Create\+Flurl\+Cache}} ()
+\begin{DoxyCompactList}\small\item\em Creates the IFlurl\+Client\+Cache with default middlewares. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Service\+Test\+Context$<$ TEntrypoint $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+Test\+Web\+Application\+Factory$<$ TEntrypoint $>$ \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g_a8fd19856fb0cde31c69459d0138a1d80}{Create\+Web\+Application\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Creates the web host application factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+TClient \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a49226247cacc97c1b6747fbc8e8feaab}{Service\+Client}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The service client. \end{DoxyCompactList}\item 
+IService\+Provider \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_af1a0ab81d1ada894756d145612ff0c9c}{Services}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Service\+Test\+Context$<$ TEntrypoint $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+Web\+Application\+Factory$<$ TEntrypoint $>$ \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g_afd71541bab1e1f08d300d70a118762d6}{Factory}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The factory. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g_a0f9b8981cf75e4eb7b3be383ba1ad593}{Base\+Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The base address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g}{Client\+Test\+Context$<$\+TClient,\+TEntrypoint$>$} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TClient} & The client.\\
+\hline
+{\em TEntrypoint} & The entry point\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TEntrypoint} : {\em class}]\item[{\em TClient} : {\em class}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a4fd6a94729815bdc7cc5a1c2258572ba}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}!CreateFlurlCache@{CreateFlurlCache}}
+\index{CreateFlurlCache@{CreateFlurlCache}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}}
+\doxysubsubsection{\texorpdfstring{CreateFlurlCache()}{CreateFlurlCache()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a4fd6a94729815bdc7cc5a1c2258572ba} 
+IFlurl\+Client\+Cache Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context$<$ TClient, TEntrypoint $>$.Create\+Flurl\+Cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Creates the IFlurl\+Client\+Cache with default middlewares. 
+
+\begin{DoxyReturn}{Returns}
+The new instance of IFlurl\+Client\+Cache.
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a4fd6a94729815bdc7cc5a1c2258572ba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a9163b3413fc33cdaf4859facc0a7ace0}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}!CreateServiceClient@{CreateServiceClient}}
+\index{CreateServiceClient@{CreateServiceClient}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}}
+\doxysubsubsection{\texorpdfstring{CreateServiceClient()}{CreateServiceClient()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a9163b3413fc33cdaf4859facc0a7ace0} 
+TClient Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context$<$ TClient, TEntrypoint $>$.Create\+Service\+Client (\begin{DoxyParamCaption}\item[{string}]{base\+Address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Creates the service client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Address} & The base address.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new instance of TClient.
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a9163b3413fc33cdaf4859facc0a7ace0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a88f3ce79649e98c5a6012c4dff31302d}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}!CreateServiceSystemClient@{CreateServiceSystemClient}}
+\index{CreateServiceSystemClient@{CreateServiceSystemClient}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}}
+\doxysubsubsection{\texorpdfstring{CreateServiceSystemClient()}{CreateServiceSystemClient()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a88f3ce79649e98c5a6012c4dff31302d} 
+\mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient}{IService\+System\+Client}} Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context$<$ TClient, TEntrypoint $>$.Create\+Service\+System\+Client (\begin{DoxyParamCaption}\item[{ILogger\+Factory?}]{logger\+Factory}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates the instance of \doxylink{interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient}{IService\+System\+Client}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logger\+Factory} & The logger factory.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new instance of \doxylink{interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient}{IService\+System\+Client}.
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a88f3ce79649e98c5a6012c4dff31302d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a6536350128cb863710ec63f8cecb7d20}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a6536350128cb863710ec63f8cecb7d20} 
+override void Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context$<$ TClient, TEntrypoint $>$.Initialize (\begin{DoxyParamCaption}\item[{Action$<$ \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions}{Test\+Client\+Initialize\+Options}} $>$?}]{configurator}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em configurator} & \\
+\hline
+\end{DoxyParams}
+ 
+
+
+
+Reimplemented from \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g_ad9c754cd8381734362c5b0fd9af118ba}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Service\+Test\+Context$<$ TEntrypoint $>$}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a6536350128cb863710ec63f8cecb7d20_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a49226247cacc97c1b6747fbc8e8feaab}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}!ServiceClient@{ServiceClient}}
+\index{ServiceClient@{ServiceClient}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}}
+\doxysubsubsection{\texorpdfstring{ServiceClient}{ServiceClient}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_a49226247cacc97c1b6747fbc8e8feaab} 
+TClient Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context$<$ TClient, TEntrypoint $>$.Service\+Client = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The service client. 
+
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_af1a0ab81d1ada894756d145612ff0c9c}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}!Services@{Services}}
+\index{Services@{Services}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext$<$ TClient, TEntrypoint $>$}}
+\doxysubsubsection{\texorpdfstring{Services}{Services}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g_af1a0ab81d1ada894756d145612ff0c9c} 
+IService\+Provider Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Client\+Test\+Context$<$ TClient, TEntrypoint $>$.Services\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The services. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Tests.\+Infrastructure/\+Integration\+Tests/\+Web\+Application/\mbox{\hyperlink{ClientTestContext_8cs}{Client\+Test\+Context.\+cs}}\end{DoxyCompactItemize}

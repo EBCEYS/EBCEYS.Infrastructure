@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_aaee60f2347b72a612ecf793b1733916" kind="dir">
+    <compoundname>/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.UnitTests/Validators</compoundname>
+    <innerfile refid="SimpleRabbitMqConfigurationValidatorTests_8cs">SimpleRabbitMqConfigurationValidatorTests.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.UnitTests/Validators/"/>
+  </compounddef>
+</doxygen>

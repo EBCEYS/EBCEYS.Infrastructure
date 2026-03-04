@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_5489846885b9b74229ad81447cf96f94" kind="dir">
+    <compoundname>/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext</compoundname>
+    <innerdir refid="dir_70db095a2051677874e98b17cd2ba06b">/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/Requests</innerdir>
+    <innerdir refid="dir_a389b416802f16d6ba2969b47cbfe65d">/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/Responses</innerdir>
+    <innerfile refid="Ebceys_8Infrastructure_8TestApplication_2BoundedContext_2RoutesDictionary_8cs">RoutesDictionary.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/"/>
+  </compounddef>
+</doxygen>

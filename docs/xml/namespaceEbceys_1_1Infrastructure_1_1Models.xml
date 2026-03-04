@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceEbceys_1_1Infrastructure_1_1Models" kind="namespace" language="C#">
+    <compoundname>Ebceys::Infrastructure::Models</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1Models_1_1ProblemDetailsResult" prot="public">Ebceys::Infrastructure::Models::ProblemDetailsResult</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceEbceys_1_1Infrastructure_1_1Models_1a1a9fec053ac62ed2793d0b919055f879" prot="public" static="no" const="no" explicit="no" inline="no" sealed="yes" virt="non-virtual">
+        <type>record</type>
+        <definition>record Ebceys.Infrastructure.Models.ServiceApiInfo</definition>
+        <argsstring>(string ServiceName, PathString BaseAddress, string Description)</argsstring>
+        <name>ServiceApiInfo</name>
+        <qualifiedname>Ebceys.Infrastructure.Models.ServiceApiInfo</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>ServiceName</declname>
+        </param>
+        <param>
+          <type>PathString</type>
+          <declname>BaseAddress</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Description</declname>
+        </param>
+        <briefdescription>
+<para>The service api info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ServiceName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Models/ServiceApiInfo.cs" line="12" column="14" declfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Models/ServiceApiInfo.cs" declline="12" declcolumn="14"/>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1a0f1a291ecc09c874982ef9a117225c14" compoundref="Ebceys_8Infrastructure_8AuthorizationTestApplication_2Program_8cs" startline="20" endline="42">Ebceys.Infrastructure.AuthorizationTestApplication.AuthorizationStartup</referencedby>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1ab81a1413fa2d4078311b09b25cfd7256" compoundref="Ebceys_8Infrastructure_8TestApplication_2Program_8cs" startline="35" endline="82">Ebceys.Infrastructure.TestApplication.Startup</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Models/ProblemDetailsResult.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

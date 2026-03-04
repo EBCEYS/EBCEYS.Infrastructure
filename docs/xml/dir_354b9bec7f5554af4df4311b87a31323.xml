@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_354b9bec7f5554af4df4311b87a31323" kind="dir">
+    <compoundname>/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Client</compoundname>
+    <innerfile refid="AppRabbitClient_8cs">AppRabbitClient.cs</innerfile>
+    <innerfile refid="AuthAppClient_8cs">AuthAppClient.cs</innerfile>
+    <innerfile refid="IAppRabbitClient_8cs">IAppRabbitClient.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Client/"/>
+  </compounddef>
+</doxygen>

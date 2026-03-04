@@ -1,0 +1,76 @@
+\doxysection{Ebceys.\+Infrastructure.\+Helpers.\+ICommand\+Executor Interface Reference}
+\hypertarget{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor}{}\label{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor}\index{Ebceys.Infrastructure.Helpers.ICommandExecutor@{Ebceys.Infrastructure.Helpers.ICommandExecutor}}
+
+
+The \doxylink{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor}{ICommand\+Executor} interface.  
+
+
+
+
+Collaboration diagram for Ebceys.\+Infrastructure.\+Helpers.\+ICommand\+Executor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ TResult $>$ \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor_aaac7694f0bed7cdf5ba49fd8146c1099}{Execute\+Command\+Async$<$ TContext, TResult $>$}} (TContext context, Cancellation\+Token token=default)
+\begin{DoxyCompactList}\small\item\em Executes the command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor}{ICommand\+Executor} interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor_aaac7694f0bed7cdf5ba49fd8146c1099}\index{Ebceys.Infrastructure.Helpers.ICommandExecutor@{Ebceys.Infrastructure.Helpers.ICommandExecutor}!ExecuteCommandAsync$<$ TContext, TResult $>$@{ExecuteCommandAsync$<$ TContext, TResult $>$}}
+\index{ExecuteCommandAsync$<$ TContext, TResult $>$@{ExecuteCommandAsync$<$ TContext, TResult $>$}!Ebceys.Infrastructure.Helpers.ICommandExecutor@{Ebceys.Infrastructure.Helpers.ICommandExecutor}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommandAsync$<$ TContext, TResult $>$()}{ExecuteCommandAsync< TContext, TResult >()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor_aaac7694f0bed7cdf5ba49fd8146c1099} 
+Task$<$ TResult $>$ Ebceys.\+Infrastructure.\+Helpers.\+ICommand\+Executor.\+Execute\+Command\+Async$<$ TContext, TResult $>$ (\begin{DoxyParamCaption}\item[{TContext}]{context}{, }\item[{Cancellation\+Token}]{token}{ = {\ttfamily default}}\end{DoxyParamCaption})}
+
+
+
+Executes the command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The command context.\\
+\hline
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TContext} & The context.\\
+\hline
+{\em TResult} & The result.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The new instance of {\itshape TResult} .
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor_aaac7694f0bed7cdf5ba49fd8146c1099_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1ICommandExecutor_aaac7694f0bed7cdf5ba49fd8146c1099_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Infrastructure/\+Helpers/\mbox{\hyperlink{ICommandExecutor_8cs}{ICommand\+Executor.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\doxysection{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Routing\+Message\+Handler\+Configuration Class Reference}
+\hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration}{}\label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}}
+
+
+The \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration}{Routing\+Message\+Handler\+Configuration} class.  
+
+
+
+
+Collaboration diagram for Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Routing\+Message\+Handler\+Configuration\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a1992cd801cb2dbe87f7b54fa6d7164d2}{Clear\+Routes}} ()
+\begin{DoxyCompactList}\small\item\em Clears the routes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_acdee444801836557772f8495cab9915f}{Add\+Route}} (string url, Func$<$ Http\+Message\+Handler $>$ handler)
+\begin{DoxyCompactList}\small\item\em Adds the route. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a4dbe7b94acff097cb54e38133dc25665}{Add\+Route$<$ TClient, TEntrypoint $>$}} (Client\+Test\+Context$<$ TClient, TEntrypoint $>$ test\+Context)
+\begin{DoxyCompactList}\small\item\em Adds the route for {\itshape test\+Context} . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IRead\+Only\+Dictionary$<$ string, Func$<$ Http\+Message\+Handler $>$ $>$ \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a97535ab6c8ea8c539a73c470adbfd905}{Routes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The routes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Dictionary$<$ string, Func$<$ Http\+Message\+Handler $>$ $>$ \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a90d30822c147918447d28d63eea6c1e6}{\+\_\+routes}} = new()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration}{Routing\+Message\+Handler\+Configuration} class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_acdee444801836557772f8495cab9915f}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}!AddRoute@{AddRoute}}
+\index{AddRoute@{AddRoute}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}}
+\doxysubsubsection{\texorpdfstring{AddRoute()}{AddRoute()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_acdee444801836557772f8495cab9915f} 
+void Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Routing\+Message\+Handler\+Configuration.\+Add\+Route (\begin{DoxyParamCaption}\item[{string}]{url}{, }\item[{Func$<$ Http\+Message\+Handler $>$}]{handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+{\em handler} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_acdee444801836557772f8495cab9915f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a4dbe7b94acff097cb54e38133dc25665}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}!AddRoute$<$ TClient, TEntrypoint $>$@{AddRoute$<$ TClient, TEntrypoint $>$}}
+\index{AddRoute$<$ TClient, TEntrypoint $>$@{AddRoute$<$ TClient, TEntrypoint $>$}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}}
+\doxysubsubsection{\texorpdfstring{AddRoute$<$ TClient, TEntrypoint $>$()}{AddRoute< TClient, TEntrypoint >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a4dbe7b94acff097cb54e38133dc25665} 
+void \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_acdee444801836557772f8495cab9915f}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Routing\+Message\+Handler\+Configuration.\+Add\+Route}}$<$ TClient, TEntrypoint $>$ (\begin{DoxyParamCaption}\item[{Client\+Test\+Context$<$ TClient, TEntrypoint $>$}]{test\+Context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the route for {\itshape test\+Context} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Context} & The test context.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TClient} & \\
+\hline
+{\em TEntrypoint} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TEntrypoint} : {\em class}]\item[{\em TClient} : {\em class}]\end{description}
+\end{Desc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a4dbe7b94acff097cb54e38133dc25665_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a1992cd801cb2dbe87f7b54fa6d7164d2}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}!ClearRoutes@{ClearRoutes}}
+\index{ClearRoutes@{ClearRoutes}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}}
+\doxysubsubsection{\texorpdfstring{ClearRoutes()}{ClearRoutes()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a1992cd801cb2dbe87f7b54fa6d7164d2} 
+void Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Routing\+Message\+Handler\+Configuration.\+Clear\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears the routes. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a90d30822c147918447d28d63eea6c1e6}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}!\_routes@{\_routes}}
+\index{\_routes@{\_routes}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}}
+\doxysubsubsection{\texorpdfstring{\_routes}{\_routes}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a90d30822c147918447d28d63eea6c1e6} 
+readonly Dictionary$<$string, Func$<$Http\+Message\+Handler$>$ $>$ Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Routing\+Message\+Handler\+Configuration.\+\_\+routes = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a97535ab6c8ea8c539a73c470adbfd905}\index{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}!Routes@{Routes}}
+\index{Routes@{Routes}!Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration@{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration}}
+\doxysubsubsection{\texorpdfstring{Routes}{Routes}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration_a97535ab6c8ea8c539a73c470adbfd905} 
+IRead\+Only\+Dictionary$<$string, Func$<$Http\+Message\+Handler$>$ $>$ Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+Web\+Application.\+Routing\+Message\+Handler\+Configuration.\+Routes\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The routes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Tests.\+Infrastructure/\+Integration\+Tests/\+Web\+Application/\mbox{\hyperlink{ClientTestContext_8cs}{Client\+Test\+Context.\+cs}}\end{DoxyCompactItemize}
