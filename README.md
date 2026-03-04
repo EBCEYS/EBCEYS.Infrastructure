@@ -69,6 +69,7 @@
             - [EbObjectExtensions](#ebobjectextensions)
             - [EbServerExtensions](#ebserverextensions)
             - [EbIServiceCollectionExtensions](#ebiservicecollectionextensions)
+    - [Тестовая инфраструктура](#тестовая-инфраструктура)
     - [Лицензия](#лицензия)
     - [Автор](#автор)
 
@@ -1025,6 +1026,22 @@ services.AddJwtValidator();
 // Регистрация атомарных генераторов:
 services.AddAtomicGenerators();
 ```
+
+---
+
+## Тестовая инфраструктура
+
+Для тестирования приложений, построенных на базе `EBCEYS.Infrastructure`, предназначена отдельная вспомогательная библиотека **Ebceys.Tests.Infrastructure**.
+
+Она предоставляет:
+
+- генератор случайных тестовых данных (`EbRandomizer`)
+- утилиты для работы с портами и временем (`PortSelector`, `StopWatchElapser`)
+- базовые классы для интеграционных тестов (`TestWebApplicationFactory`, `ServiceTestContext`, `ClientTestContext`)
+- маршрутизацию HTTP между тестовыми серверами (`RoutingMessageHandler`)
+- запуск внешних зависимостей через Testcontainers (`PostgresInitializer`, `RabbitMqInitializer`)
+
+Подробная документация: [Ebceys.Tests.Infrastructure/README.md](Ebceys.Tests.Infrastructure/README.md)
 
 ---
 
