@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Attributes_1_1NoResponseBodyLoggingAttribute" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Attributes::NoResponseBodyLoggingAttribute</compoundname>
+    <basecompoundref refid="classAttribute" prot="public" virt="non-virtual">Attribute</basecompoundref>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Infrastructure_1_1Attributes_1_1NoResponseBodyLoggingAttribute" kindref="compound">NoResponseBodyLoggingAttribute</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Use it to hide response logging. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Attribute</label>
+        <link refid="classAttribute"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Attributes_1_1NoResponseBodyLoggingAttribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Attribute</label>
+        <link refid="classAttribute"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Attributes_1_1NoResponseBodyLoggingAttribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Attributes/NoResponseBodyLoggingAttribute.cs" line="13" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Attributes/NoResponseBodyLoggingAttribute.cs" bodystart="14" bodyend="15"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

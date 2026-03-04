@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::AuthorizationTestApplication::Controllers::AuthController</compoundname>
+    <basecompoundref refid="classControllerBase" prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8302e00f6c1263c4403b54df64b473fc" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.AuthHeader</definition>
+        <argsstring></argsstring>
+        <name>AuthHeader</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.AuthHeader</qualifiedname>
+        <initializer>= &quot;Authorization&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" line="17" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8eba667312dc5a90e97222e584d54396" compoundref="AuthController_8cs" startline="30" endline="55">Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.ValidateToken</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a3b59d5746a0d04755018952ca89b90b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.GetToken</definition>
+        <argsstring>([FromBody][Required] GenerateTokenRequest request, [FromServices] IJwtGenerator jwtGenerator)</argsstring>
+        <name>GetToken</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.GetToken</qualifiedname>
+        <param>
+          <attributes>[Required]</attributes>
+          <type>GenerateTokenRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <attributes>[FromServices]</attributes>
+          <type><ref refid="interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1Jwt_1_1IJwtGenerator" kindref="compound">IJwtGenerator</ref></type>
+          <declname>jwtGenerator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" line="20" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" bodystart="20" bodyend="26"/>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1a7d6a3dc0ef9daaedf3280bb1007c29e9" compoundref="GenerateTokenRequest_8cs" startline="5" endline="8">Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenRequest</references>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1a73d12961d3887b8f9b098e29f107bd95">Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenResponse</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8eba667312dc5a90e97222e584d54396" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.ValidateToken</definition>
+        <argsstring>()</argsstring>
+        <name>ValidateToken</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.ValidateToken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" line="30" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" bodystart="30" bodyend="55"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8302e00f6c1263c4403b54df64b473fc" compoundref="AuthController_8cs" startline="17">Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.AuthHeader</references>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1a7d6a3dc0ef9daaedf3280bb1007c29e9" compoundref="GenerateTokenRequest_8cs" startline="5" endline="8">Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenRequest</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a28d491db086545fb928af7e1f23178b3" compoundref="ApiExceptionHelper_8cs" startline="169" endline="188">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1ab0a1d822d17ba3451f197ef76e89f31e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.ValidateAuth</definition>
+        <argsstring>()</argsstring>
+        <name>ValidateAuth</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.ValidateAuth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" line="59" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" bodystart="59" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ControllerBase</label>
+        <link refid="classControllerBase"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ControllerBase</label>
+        <link refid="classControllerBase"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-AuthHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>const string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" line="15" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Controllers/AuthController.cs" bodystart="16" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8302e00f6c1263c4403b54df64b473fc" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::Controllers::AuthController</scope><name>AuthHeader</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a3b59d5746a0d04755018952ca89b90b2" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::Controllers::AuthController</scope><name>GetToken</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1ab0a1d822d17ba3451f197ef76e89f31e" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::Controllers::AuthController</scope><name>ValidateAuth</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8eba667312dc5a90e97222e584d54396" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::Controllers::AuthController</scope><name>ValidateToken</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

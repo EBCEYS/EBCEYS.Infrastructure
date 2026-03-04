@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests" kind="class" language="C#" prot="package">
+    <compoundname>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af6e5a750947bd5b805bd34def638a38c" prot="private" static="yes" mutable="no">
+        <type>readonly EbRandomizer</type>
+        <definition>readonly EbRandomizer Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.Randomizer</definition>
+        <argsstring></argsstring>
+        <name>Randomizer</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.Randomizer</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="14" column="42" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a02bf196e282da35aaeba96b8cd391e1c" prot="private" static="no" mutable="no">
+        <type><ref refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient" kindref="compound">ITestApplicationClient</ref></type>
+        <definition>ITestApplicationClient Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests._client</definition>
+        <argsstring></argsstring>
+        <name>_client</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests._client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="15" column="36" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1ab450b03e5304207331b19fdfa3c8e73c" prot="private" static="no" mutable="no">
+        <type>AppTestClientContext</type>
+        <definition>AppTestClientContext Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests._context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests._context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="16" column="34" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a6d2d49905016ad9d07294d1f26b4d201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.Setup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="19" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af33c94510734f538e416d6be524b86de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.TearDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="26" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="26" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a1f3120a004d7753fc567bfbe2538c49d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetOk_With_Result_Ok</definition>
+        <argsstring>()</argsstring>
+        <name>When_GetOk_With_Result_Ok</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetOk_With_Result_Ok</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="37" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af0c8d6f147c616fd42a99e998f06ec94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetException_With_Result_ApiExceptionAndCode500</definition>
+        <argsstring>()</argsstring>
+        <name>When_GetException_With_Result_ApiExceptionAndCode500</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetException_With_Result_ApiExceptionAndCode500</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="44" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a1c5d392bf5d3942d5645876c216d31f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PostBody_With_ValidRequest_Result_Ok</definition>
+        <argsstring>()</argsstring>
+        <name>When_PostBody_With_ValidRequest_Result_Ok</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PostBody_With_ValidRequest_Result_Ok</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="53" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="53" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a5ee7f7cbfb6ba631be9e615164060e4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PostBody_With_InvalidRequest_Result_ApiExceptionAndCode400</definition>
+        <argsstring>()</argsstring>
+        <name>When_PostBody_With_InvalidRequest_Result_ApiExceptionAndCode400</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PostBody_With_InvalidRequest_Result_ApiExceptionAndCode400</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="64" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="64" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a53ffb041f652188102a48596ae252542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetQuery_With_RandomValue_Result_GetExactValue</definition>
+        <argsstring>()</argsstring>
+        <name>When_GetQuery_With_RandomValue_Result_GetExactValue</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetQuery_With_RandomValue_Result_GetExactValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="75" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af1116908a364bbad9cecf28533fa1e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PostCommand_With_RandomName_Result_CommandExecutedSuccessfully</definition>
+        <argsstring>()</argsstring>
+        <name>When_PostCommand_With_RandomName_Result_CommandExecutedSuccessfully</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PostCommand_With_RandomName_Result_CommandExecutedSuccessfully</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="86" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="86" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a0306b38454364ea3c3ee46b7784588fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetCommand_With_Result_Ok</definition>
+        <argsstring>()</argsstring>
+        <name>When_GetCommand_With_Result_Ok</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_GetCommand_With_Result_Ok</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="97" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="97" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1acb3f8a9fa56f27a17e624e13a52bda77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_DeleteCommand_With_NonExistingEntity_Result_ApiExceptionAndCode404</definition>
+        <argsstring>()</argsstring>
+        <name>When_DeleteCommand_With_NonExistingEntity_Result_ApiExceptionAndCode404</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_DeleteCommand_With_NonExistingEntity_Result_ApiExceptionAndCode404</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="113" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="113" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a444d31bf2a62f63cdd37e413d65b6a66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_DeleteCommand_With_ExistingEntity_Result_StatusCode200</definition>
+        <argsstring>()</argsstring>
+        <name>When_DeleteCommand_With_ExistingEntity_Result_StatusCode200</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_DeleteCommand_With_ExistingEntity_Result_StatusCode200</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="122" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="122" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a245dd7d50e7a5aba78c8ae79f2895efb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PutCommand_With_ExistingEntity_Result_StatusCode200</definition>
+        <argsstring>()</argsstring>
+        <name>When_PutCommand_With_ExistingEntity_Result_StatusCode200</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_PutCommand_With_ExistingEntity_Result_StatusCode200</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="133" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="133" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a35922741529f221016ac27a24ee05bcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_SendNonExistsMethod_With_Result_ApiExceptionAndCode404</definition>
+        <argsstring>()</argsstring>
+        <name>When_SendNonExistsMethod_With_Result_ApiExceptionAndCode404</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_SendNonExistsMethod_With_Result_ApiExceptionAndCode404</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="152" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="152" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a59628b2a8ebdfa640c4295fb43ad2227" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_SendExistsMethodWithoutResponseBody_With_Result_ApiException</definition>
+        <argsstring>()</argsstring>
+        <name>When_SendExistsMethodWithoutResponseBody_With_Result_ApiException</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests.When_SendExistsMethodWithoutResponseBody_With_Result_ApiException</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="165" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="165" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>AppTestClientContext</label>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Tests.ClientTests.TestAppClientTests</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-Randomizer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_client</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-_context</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient</label>
+        <link refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient"/>
+      </node>
+      <node id="2">
+        <label>static readonly EbRandomizer</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" line="12" column="9" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/TestAppClientTests.cs" bodystart="13" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a02bf196e282da35aaeba96b8cd391e1c" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>_client</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1ab450b03e5304207331b19fdfa3c8e73c" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>_context</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af6e5a750947bd5b805bd34def638a38c" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>Randomizer</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a6d2d49905016ad9d07294d1f26b4d201" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>Setup</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af33c94510734f538e416d6be524b86de" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>TearDown</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a444d31bf2a62f63cdd37e413d65b6a66" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_DeleteCommand_With_ExistingEntity_Result_StatusCode200</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1acb3f8a9fa56f27a17e624e13a52bda77" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_DeleteCommand_With_NonExistingEntity_Result_ApiExceptionAndCode404</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a0306b38454364ea3c3ee46b7784588fc" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_GetCommand_With_Result_Ok</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af0c8d6f147c616fd42a99e998f06ec94" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_GetException_With_Result_ApiExceptionAndCode500</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a1f3120a004d7753fc567bfbe2538c49d" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_GetOk_With_Result_Ok</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a53ffb041f652188102a48596ae252542" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_GetQuery_With_RandomValue_Result_GetExactValue</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a5ee7f7cbfb6ba631be9e615164060e4b" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_PostBody_With_InvalidRequest_Result_ApiExceptionAndCode400</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a1c5d392bf5d3942d5645876c216d31f6" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_PostBody_With_ValidRequest_Result_Ok</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1af1116908a364bbad9cecf28533fa1e20" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_PostCommand_With_RandomName_Result_CommandExecutedSuccessfully</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a245dd7d50e7a5aba78c8ae79f2895efb" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_PutCommand_With_ExistingEntity_Result_StatusCode200</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a59628b2a8ebdfa640c4295fb43ad2227" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_SendExistsMethodWithoutResponseBody_With_Result_ApiException</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1TestAppClientTests_1a35922741529f221016ac27a24ee05bcf" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ClientTests::TestAppClientTests</scope><name>When_SendNonExistsMethod_With_Result_ApiExceptionAndCode404</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

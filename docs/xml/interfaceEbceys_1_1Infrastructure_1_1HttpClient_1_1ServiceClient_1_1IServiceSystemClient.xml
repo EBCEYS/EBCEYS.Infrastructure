@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient" kind="interface" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::HttpClient::ServiceClient::IServiceSystemClient</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1a41fd8972c80720d0940874da98566f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.PingAsync</definition>
+        <argsstring>(CancellationToken token=default)</argsstring>
+        <name>PingAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.PingAsync</qualifiedname>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Pings the service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Completed task if pinged successfully.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Api exception if catched error while requesting.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ServiceClient/ServiceSystemClient.cs" line="24" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1af3a6c91debf3e538d9f18074b9615cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.HealthCheckAsync</definition>
+        <argsstring>(CancellationToken token=default)</argsstring>
+        <name>HealthCheckAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.HealthCheckAsync</qualifiedname>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Health checks the service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Completed task if service is healthy.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Api exception if catched error while requesting or service is unhealthy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ServiceClient/ServiceSystemClient.cs" line="32" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1abea2c46cb56c67bc9f889f73ac8fa970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; UIHealthReport &gt;</type>
+        <definition>Task&lt; UIHealthReport &gt; Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.HealthStatusCheckAsync</definition>
+        <argsstring>(CancellationToken token=default)</argsstring>
+        <name>HealthStatusCheckAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.HealthStatusCheckAsync</qualifiedname>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Health checks the service with information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The health check result.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ServiceClient/ServiceSystemClient.cs" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1ad934581e41faae1ebba5a2916f838c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; string &gt;</type>
+        <definition>Task&lt; string &gt; Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.GetMetricsAsync</definition>
+        <argsstring>(CancellationToken token=default)</argsstring>
+        <name>GetMetricsAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.GetMetricsAsync</qualifiedname>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Gets the service metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string with service metrics.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ServiceClient/ServiceSystemClient.cs" line="47" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient" kindref="compound">IServiceSystemClient</ref> interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient</label>
+        <link refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ServiceClient/ServiceSystemClient.cs" line="16" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ServiceClient/ServiceSystemClient.cs" bodystart="17" bodyend="48"/>
+    <listofallmembers>
+      <member refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1ad934581e41faae1ebba5a2916f838c5b" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ServiceClient::IServiceSystemClient</scope><name>GetMetricsAsync</name></member>
+      <member refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1af3a6c91debf3e538d9f18074b9615cbc" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ServiceClient::IServiceSystemClient</scope><name>HealthCheckAsync</name></member>
+      <member refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1abea2c46cb56c67bc9f889f73ac8fa970" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ServiceClient::IServiceSystemClient</scope><name>HealthStatusCheckAsync</name></member>
+      <member refid="interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient_1a41fd8972c80720d0940874da98566f5c" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ServiceClient::IServiceSystemClient</scope><name>PingAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

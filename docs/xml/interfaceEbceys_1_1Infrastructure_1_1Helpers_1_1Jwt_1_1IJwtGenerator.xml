@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1Jwt_1_1IJwtGenerator" kind="interface" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Helpers::Jwt::IJwtGenerator</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1Jwt_1_1IJwtGenerator_1ab223d650990fd2f876fe28da2958bc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.GenerateKey</definition>
+        <argsstring>(params IEnumerable&lt; Claim &gt; claims)</argsstring>
+        <name>GenerateKey</name>
+        <qualifiedname>Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.GenerateKey</qualifiedname>
+        <param>
+          <type>params IEnumerable&lt; Claim &gt;</type>
+          <declname>claims</declname>
+        </param>
+        <briefdescription>
+<para>Generates the JWT with specified <emphasis>claims</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>claims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The claims.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new jwt token.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Helpers/Jwt/JwtGenerator.cs" line="22" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1Jwt_1_1IJwtGenerator" kindref="compound">IJwtGenerator</ref> interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator</label>
+        <link refid="interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1Jwt_1_1IJwtGenerator"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Helpers/Jwt/JwtGenerator.cs" line="15" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Helpers/Jwt/JwtGenerator.cs" bodystart="16" bodyend="23"/>
+    <listofallmembers>
+      <member refid="interfaceEbceys_1_1Infrastructure_1_1Helpers_1_1Jwt_1_1IJwtGenerator_1ab223d650990fd2f876fe28da2958bc17" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Helpers::Jwt::IJwtGenerator</scope><name>GenerateKey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_ac743768ea5583b61a9993bce92575fb" kind="dir">
+    <compoundname>/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Models</compoundname>
+    <innerfile refid="ProblemDetailsResult_8cs">ProblemDetailsResult.cs</innerfile>
+    <innerfile refid="ServiceApiInfo_8cs">ServiceApiInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Models/"/>
+  </compounddef>
+</doxygen>

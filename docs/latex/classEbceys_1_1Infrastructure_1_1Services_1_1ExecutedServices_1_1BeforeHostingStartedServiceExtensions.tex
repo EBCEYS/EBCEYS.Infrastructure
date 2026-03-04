@@ -1,0 +1,81 @@
+\doxysection{Ebceys.\+Infrastructure.\+Services.\+Executed\+Services.\+Before\+Hosting\+Started\+Service\+Extensions Class Reference}
+\hypertarget{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions}{}\label{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions}\index{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions@{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions}}
+
+
+The \doxylink{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions}{Before\+Hosting\+Started\+Service\+Extensions} extensions class.  
+
+
+
+
+Collaboration diagram for Ebceys.\+Infrastructure.\+Services.\+Executed\+Services.\+Before\+Hosting\+Started\+Service\+Extensions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static IService\+Collection \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_a05ccae4c069ab6fceb233251689237f7}{Add\+Before\+Hosting\+Started$<$ TImplementation $>$}} (this IService\+Collection services)
+\begin{DoxyCompactList}\small\item\em Register implementation of \doxylink{interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService}{IBefore\+Hosting\+Started\+Service} to {\itshape services} .~\newline
+ All \doxylink{interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService}{IBefore\+Hosting\+Started\+Service} will be executed after all services registration. \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_a175192746139d6bd5edfba283687755c}{Execute\+All\+Before\+Hosting\+Started}} (this IService\+Provider services, Cancellation\+Token token=default)
+\begin{DoxyCompactList}\small\item\em Executes the all registered implementations of \doxylink{interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService}{IBefore\+Hosting\+Started\+Service}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions}{Before\+Hosting\+Started\+Service\+Extensions} extensions class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_a05ccae4c069ab6fceb233251689237f7}\index{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions@{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions}!AddBeforeHostingStarted$<$ TImplementation $>$@{AddBeforeHostingStarted$<$ TImplementation $>$}}
+\index{AddBeforeHostingStarted$<$ TImplementation $>$@{AddBeforeHostingStarted$<$ TImplementation $>$}!Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions@{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions}}
+\doxysubsubsection{\texorpdfstring{AddBeforeHostingStarted$<$ TImplementation $>$()}{AddBeforeHostingStarted< TImplementation >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_a05ccae4c069ab6fceb233251689237f7} 
+static IService\+Collection Ebceys.\+Infrastructure.\+Services.\+Executed\+Services.\+Before\+Hosting\+Started\+Service\+Extensions.\+Add\+Before\+Hosting\+Started$<$ TImplementation $>$ (\begin{DoxyParamCaption}\item[{this IService\+Collection}]{services}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Register implementation of \doxylink{interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService}{IBefore\+Hosting\+Started\+Service} to {\itshape services} .~\newline
+ All \doxylink{interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService}{IBefore\+Hosting\+Started\+Service} will be executed after all services registration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & The services.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TImplementation} & The implementation of \doxylink{interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService}{IBefore\+Hosting\+Started\+Service}.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The {\itshape services} .
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TImplementation} : {\em class}]\item[{\em TImplementation} : {\em IBefore\+Hosting\+Started\+Service}]\end{description}
+\end{Desc}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_a175192746139d6bd5edfba283687755c}\index{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions@{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions}!ExecuteAllBeforeHostingStarted@{ExecuteAllBeforeHostingStarted}}
+\index{ExecuteAllBeforeHostingStarted@{ExecuteAllBeforeHostingStarted}!Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions@{Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions}}
+\doxysubsubsection{\texorpdfstring{ExecuteAllBeforeHostingStarted()}{ExecuteAllBeforeHostingStarted()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_a175192746139d6bd5edfba283687755c} 
+static async Task Ebceys.\+Infrastructure.\+Services.\+Executed\+Services.\+Before\+Hosting\+Started\+Service\+Extensions.\+Execute\+All\+Before\+Hosting\+Started (\begin{DoxyParamCaption}\item[{this IService\+Provider}]{services}{, }\item[{Cancellation\+Token}]{token}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Executes the all registered implementations of \doxylink{interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService}{IBefore\+Hosting\+Started\+Service}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & The services.\\
+\hline
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Infrastructure/\+Services/\+Executed\+Services/\mbox{\hyperlink{IBeforeHostingStartedService_8cs}{IBefore\+Hosting\+Started\+Service.\+cs}}\end{DoxyCompactItemize}

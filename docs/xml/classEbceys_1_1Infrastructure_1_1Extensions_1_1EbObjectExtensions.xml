@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Extensions::EbObjectExtensions</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a4a28b4629c05260a9306e4ba302d8838" prot="private" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>JsonSerializerOptions</type>
+        <definition>JsonSerializerOptions Ebceys.Infrastructure.Extensions.EbObjectExtensions.DiagnosticJsonOptions</definition>
+        <argsstring></argsstring>
+        <name>DiagnosticJsonOptions</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbObjectExtensions.DiagnosticJsonOptions</qualifiedname>
+        <initializer>= new(JsonSerializerDefaults.Web)
+    {
+        Converters = { new JsonStringEnumConverter() },
+        WriteIndented = true
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="13" column="42" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="13" bodyend="17"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1ad4e63838a2f4175130b6dce4985742a7" compoundref="EbObjectExtensions_8cs" startline="45" endline="66">Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1aa9ac376d97db7bfad9118db68f9d2477" prot="private" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>JsonSerializerOptions</type>
+        <definition>JsonSerializerOptions Ebceys.Infrastructure.Extensions.EbObjectExtensions.DefaultJsonOptions</definition>
+        <argsstring></argsstring>
+        <name>DefaultJsonOptions</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbObjectExtensions.DefaultJsonOptions</qualifiedname>
+        <initializer>= new(JsonSerializerDefaults.Web)
+    {
+        Converters = { new JsonStringEnumConverter() }
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="19" column="42" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="19" bodyend="22"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1ad4e63838a2f4175130b6dce4985742a7" compoundref="EbObjectExtensions_8cs" startline="45" endline="66">Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a63895250a363446e8b552d1aec28d709" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>static uint Ebceys.Infrastructure.Extensions.EbObjectExtensions.ToUInt</definition>
+        <argsstring>(this int value)</argsstring>
+        <name>ToUInt</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbObjectExtensions.ToUInt</qualifiedname>
+        <param>
+          <type>this int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Casts the <emphasis>value</emphasis>  to uint value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to cast.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of uint.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="29" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a59e014131215516bad4ffa8f92df2035" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ulong</type>
+        <definition>static ulong Ebceys.Infrastructure.Extensions.EbObjectExtensions.ToULong</definition>
+        <argsstring>(this long value)</argsstring>
+        <name>ToULong</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbObjectExtensions.ToULong</qualifiedname>
+        <param>
+          <type>this long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Casts the <emphasis>value</emphasis>  to ulong value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to cast.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of ulong.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="39" column="25" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1ad4e63838a2f4175130b6dce4985742a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>extension</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Serializes the <emphasis>obj</emphasis>  to diagnostic JSON string.</para>
+<para><simplesect kind="return"><para>The serialized JSON string.</para>
+</simplesect>
+</para>
+<para>Serializes the <emphasis>obj</emphasis>  to default JSON string.</para>
+<para><simplesect kind="return"><para>The serialized JSON string.</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="45" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="45" bodyend="66"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1aa9ac376d97db7bfad9118db68f9d2477" compoundref="EbObjectExtensions_8cs" startline="19" endline="22">Ebceys.Infrastructure.Extensions.EbObjectExtensions.DefaultJsonOptions</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a4a28b4629c05260a9306e4ba302d8838" compoundref="EbObjectExtensions_8cs" startline="13" endline="17">Ebceys.Infrastructure.Extensions.EbObjectExtensions.DiagnosticJsonOptions</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a88b4636d4d31768b7deecd75ee116047" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</definition>
+        <argsstring>(string? val)</argsstring>
+        <name>extension</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</qualifiedname>
+        <param>
+          <type>string?</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Indicates that <emphasis>val</emphasis>  is null or empty.</para>
+<para><simplesect kind="return"><para>true if string is null or empty.</para>
+</simplesect>
+</para>
+<para>Indicates that <emphasis>val</emphasis>  is null or white space.</para>
+<para><simplesect kind="return"><para>true if string is null or white space.</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="68" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="68" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a34f512dd8b6e407c4df8158f166d64bc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</definition>
+        <argsstring>(IEnumerable&lt; string &gt; strings)</argsstring>
+        <name>extension</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbObjectExtensions.extension</qualifiedname>
+        <param>
+          <type>IEnumerable&lt; string &gt;</type>
+          <declname>strings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Joins the string with specified <emphasis>separator</emphasis> .</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>separator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The separator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The joined strings.</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="89" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="89" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The object extensions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Extensions.EbObjectExtensions</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" line="11" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbObjectExtensions.cs" bodystart="12" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1aa9ac376d97db7bfad9118db68f9d2477" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbObjectExtensions</scope><name>DefaultJsonOptions</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a4a28b4629c05260a9306e4ba302d8838" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbObjectExtensions</scope><name>DiagnosticJsonOptions</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1ad4e63838a2f4175130b6dce4985742a7" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbObjectExtensions</scope><name>extension</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a88b4636d4d31768b7deecd75ee116047" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbObjectExtensions</scope><name>extension</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a34f512dd8b6e407c4df8158f166d64bc" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbObjectExtensions</scope><name>extension</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a63895250a363446e8b552d1aec28d709" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbObjectExtensions</scope><name>ToUInt</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbObjectExtensions_1a59e014131215516bad4ffa8f92df2035" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbObjectExtensions</scope><name>ToULong</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</compoundname>
+    <basecompoundref refid="classIRabbitMQClient" prot="public" virt="non-virtual">IRabbitMQClient</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" prot="private" static="no" mutable="no">
+        <type>readonly RabbitMQClient</type>
+        <definition>readonly RabbitMQClient Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</definition>
+        <argsstring></argsstring>
+        <name>_client</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="16" column="37" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a8cfd8d74fe6d50de32bac4807105f92d" compoundref="EbRabbitMqClient_8cs" startline="46" endline="49">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.Dispose</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a133d39c781ac307fa7370b6c1818c280" compoundref="EbRabbitMqClient_8cs" startline="52" endline="55">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.DisposeAsync</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a5508112dabd78576c159d3555eda0fb5" compoundref="EbRabbitMqClient_8cs" startline="24" endline="29">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.EbRabbitMqClient</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1aa675d3b95ae1212fad2ad55625960164" compoundref="EbRabbitMqClient_8cs" startline="58" endline="62">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1ae95e8cbf21be79ac67bc06cb968b14b9" compoundref="EbRabbitMqClient_8cs" startline="98" endline="105">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a9848c1f69b98b3ede59798b8d9377507" compoundref="EbRabbitMqClient_8cs" startline="81" endline="89">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync&lt; TMessage &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1add0be890dc9ade5f65c39360c8eb2c1b" compoundref="EbRabbitMqClient_8cs" startline="66" endline="70">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; T &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a3a81d5ae06388eb0ec8d8009acfbaa4e" compoundref="EbRabbitMqClient_8cs" startline="117" endline="127">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TRequest, TResponse &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a0f52a34078ba6d34bb442eb34fadffcf" compoundref="EbRabbitMqClient_8cs" startline="137" endline="144">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TResponse &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1ac88b736b28e329f1109ec935fd37f505" compoundref="EbRabbitMqClient_8cs" startline="34" endline="37">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StartAsync</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a987fdfa774b6a819f0a8805293635630" compoundref="EbRabbitMqClient_8cs" startline="40" endline="43">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StopAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a73ab7cc95dc4cf64bf3fe855d476b2fe" prot="package" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Uri</type>
+        <definition>Uri Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.ConnectionString</definition>
+        <argsstring></argsstring>
+        <name>ConnectionString</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.ConnectionString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="31" column="18" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a5508112dabd78576c159d3555eda0fb5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.EbRabbitMqClient</definition>
+        <argsstring>(ILogger&lt; RabbitMQClient &gt; clientLogger, RabbitMQConfiguration config, JsonSerializerSettings? serializerSettings=null)</argsstring>
+        <name>EbRabbitMqClient</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.EbRabbitMqClient</qualifiedname>
+        <param>
+          <type>ILogger&lt; RabbitMQClient &gt;</type>
+          <declname>clientLogger</declname>
+        </param>
+        <param>
+          <type>RabbitMQConfiguration</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>JsonSerializerSettings?</type>
+          <declname>serializerSettings</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Initiates the new instance of <ref refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient" kindref="compound">EbRabbitMqClient</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clientLogger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client logger.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rabbitmq configuration.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serializerSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The JSON serializer settings.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="24" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="24" bodyend="29"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1ac88b736b28e329f1109ec935fd37f505" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StartAsync</definition>
+        <argsstring>(CancellationToken cancellationToken)</argsstring>
+        <name>StartAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StartAsync</qualifiedname>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="34" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="34" bodyend="37"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a987fdfa774b6a819f0a8805293635630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StopAsync</definition>
+        <argsstring>(CancellationToken cancellationToken)</argsstring>
+        <name>StopAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StopAsync</qualifiedname>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="40" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="40" bodyend="43"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a8cfd8d74fe6d50de32bac4807105f92d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.Dispose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="46" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="46" bodyend="49"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a133d39c781ac307fa7370b6c1818c280" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ValueTask</type>
+        <definition>ValueTask Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.DisposeAsync</definition>
+        <argsstring>()</argsstring>
+        <name>DisposeAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.DisposeAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="52" column="22" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="52" bodyend="55"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1aa675d3b95ae1212fad2ad55625960164" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync</definition>
+        <argsstring>(RabbitMQRequestData data, bool mandatory=false, CancellationToken token=default)</argsstring>
+        <name>SendMessageAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync</qualifiedname>
+        <param>
+          <type>RabbitMQRequestData</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="58" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="58" bodyend="62"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1add0be890dc9ade5f65c39360c8eb2c1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; T?&gt;</type>
+        <definition>Task&lt; T?&gt; Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; T &gt;</definition>
+        <argsstring>(RabbitMQRequestData data, bool mandatory=false, CancellationToken token=default)</argsstring>
+        <name>SendRequestAsync&lt; T &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; T &gt;</qualifiedname>
+        <param>
+          <type>RabbitMQRequestData</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="66" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="66" bodyend="70"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a9848c1f69b98b3ede59798b8d9377507" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync&lt; TMessage &gt;</definition>
+        <argsstring>(TMessage message, string method, bool mandatory=false, CancellationToken token=default)</argsstring>
+        <name>SendMessageAsync&lt; TMessage &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync&lt; TMessage &gt;</qualifiedname>
+        <param>
+          <type>TMessage</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends the messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The method name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mandatory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="81" column="12" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="81" bodyend="89"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1ae95e8cbf21be79ac67bc06cb968b14b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync</definition>
+        <argsstring>(string method, bool mandatory=false, CancellationToken token=default)</argsstring>
+        <name>SendMessageAsync</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends the messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The method name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mandatory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="98" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="98" bodyend="105"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a3a81d5ae06388eb0ec8d8009acfbaa4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; TResponse?&gt;</type>
+        <definition>Task&lt; TResponse?&gt; Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TRequest, TResponse &gt;</definition>
+        <argsstring>(TRequest request, string method, bool mandatory=false, CancellationToken token=default)</argsstring>
+        <name>SendRequestAsync&lt; TRequest, TResponse &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TRequest, TResponse &gt;</qualifiedname>
+        <param>
+          <type>TRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends the request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The method name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mandatory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="117" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="117" bodyend="127"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a0f52a34078ba6d34bb442eb34fadffcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; TResponse?&gt;</type>
+        <definition>Task&lt; TResponse?&gt; Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TResponse &gt;</definition>
+        <argsstring>(string method, bool mandatory=false, CancellationToken token=default)</argsstring>
+        <name>SendRequestAsync&lt; TResponse &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TResponse &gt;</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Sends the request. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The method name.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mandatory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="137" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="137" bodyend="144"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" compoundref="EbRabbitMqClient_8cs" startline="16">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient" kindref="compound">EbRabbitMqClient</ref> wrapper class for RabbitMQClient. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IRabbitMQClient</label>
+        <link refid="classIRabbitMQClient"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_client</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IRabbitMQClient</label>
+        <link refid="classIRabbitMQClient"/>
+      </node>
+      <node id="3">
+        <label>readonly RabbitMQClient</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="14" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" bodystart="15" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a82846af16746ddbb08dc234415248d88" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>_client</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a73ab7cc95dc4cf64bf3fe855d476b2fe" prot="package" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>ConnectionString</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a8cfd8d74fe6d50de32bac4807105f92d" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>Dispose</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a133d39c781ac307fa7370b6c1818c280" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>DisposeAsync</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a5508112dabd78576c159d3555eda0fb5" prot="protected" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>EbRabbitMqClient</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1aa675d3b95ae1212fad2ad55625960164" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>SendMessageAsync</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1ae95e8cbf21be79ac67bc06cb968b14b9" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>SendMessageAsync</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a9848c1f69b98b3ede59798b8d9377507" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>SendMessageAsync&lt; TMessage &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1add0be890dc9ade5f65c39360c8eb2c1b" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>SendRequestAsync&lt; T &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a3a81d5ae06388eb0ec8d8009acfbaa4e" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>SendRequestAsync&lt; TRequest, TResponse &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a0f52a34078ba6d34bb442eb34fadffcf" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>SendRequestAsync&lt; TResponse &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1ac88b736b28e329f1109ec935fd37f505" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>StartAsync</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient_1a987fdfa774b6a819f0a8805293635630" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::RabbitMq::EbRabbitMqClient</scope><name>StopAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

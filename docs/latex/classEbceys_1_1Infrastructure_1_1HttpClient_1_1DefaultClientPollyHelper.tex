@@ -1,0 +1,58 @@
+\doxysection{Ebceys.\+Infrastructure.\+Http\+Client.\+Default\+Client\+Polly\+Helper Class Reference}
+\hypertarget{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper}{}\label{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper}\index{Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper@{Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper}}
+
+
+The \doxylink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper}{Default\+Client\+Polly\+Helper} class.  
+
+
+
+
+Collaboration diagram for Ebceys.\+Infrastructure.\+Http\+Client.\+Default\+Client\+Polly\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static IAsync\+Policy$<$ TResult $>$ \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper_aaffc7d2781377c2fc0db165858a14b66}{Create\+Default\+Http\+Polly$<$ TResult $>$}} (Time\+Span delay, Action$<$ \mbox{\hyperlink{classException}{Exception}}, Time\+Span, int, Context $>$? on\+Retry\+Action=null)
+\begin{DoxyCompactList}\small\item\em Creates the default http executing policy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper}{Default\+Client\+Polly\+Helper} class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper_aaffc7d2781377c2fc0db165858a14b66}\index{Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper@{Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper}!CreateDefaultHttpPolly$<$ TResult $>$@{CreateDefaultHttpPolly$<$ TResult $>$}}
+\index{CreateDefaultHttpPolly$<$ TResult $>$@{CreateDefaultHttpPolly$<$ TResult $>$}!Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper@{Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper}}
+\doxysubsubsection{\texorpdfstring{CreateDefaultHttpPolly$<$ TResult $>$()}{CreateDefaultHttpPolly< TResult >()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1HttpClient_1_1DefaultClientPollyHelper_aaffc7d2781377c2fc0db165858a14b66} 
+static IAsync\+Policy$<$ TResult $>$ Ebceys.\+Infrastructure.\+Http\+Client.\+Default\+Client\+Polly\+Helper.\+Create\+Default\+Http\+Polly$<$ TResult $>$ (\begin{DoxyParamCaption}\item[{Time\+Span}]{delay}{, }\item[{Action$<$ \mbox{\hyperlink{classException}{Exception}}, Time\+Span, int, Context $>$?}]{on\+Retry\+Action}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates the default http executing policy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & The delay between retries.\\
+\hline
+{\em on\+Retry\+Action} & The action that could be called on retry.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TResult} & The policy execution result.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The new instance of configured policy.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Infrastructure/\+Http\+Client/\mbox{\hyperlink{DefaultClientPollyHelper_8cs}{Default\+Client\+Polly\+Helper.\+cs}}\end{DoxyCompactItemize}

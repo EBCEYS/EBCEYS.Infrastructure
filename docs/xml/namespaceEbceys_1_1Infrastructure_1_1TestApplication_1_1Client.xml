@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client" kind="namespace" language="C#">
+    <compoundname>Ebceys::Infrastructure::TestApplication::Client</compoundname>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations">Ebceys::Infrastructure::TestApplication::Client::Implementations</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces">Ebceys::Infrastructure::TestApplication::Client::Interfaces</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestApplicationClient.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

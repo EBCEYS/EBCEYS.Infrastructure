@@ -1,0 +1,89 @@
+\doxysection{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+IDependency\+Initializer\texorpdfstring{$<$}{<} TDependency \texorpdfstring{$>$}{>} Interface Template Reference}
+\hypertarget{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g}{}\label{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$}}
+
+
+The dependency initializer.  
+
+
+
+
+Inheritance diagram for Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+IDependency\+Initializer\texorpdfstring{$<$}{<} TDependency \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containersfc05455500ce10c21ccb2d3509663eca}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+IDependency\+Initializer\texorpdfstring{$<$}{<} TDependency \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containersd0b22ec4f14b88de0f60a72e3f1ec8dd}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ TDependency $>$ \mbox{\hyperlink{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_a571e18aef719e31c49fb19fb404f5df8}{Initialize\+Async}} (Cancellation\+Token token=default)
+\begin{DoxyCompactList}\small\item\em Initialize the dependency. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_ad46b42e06e8f1cd78c8dfc9ec22e8aa4}{Teardown\+Async}} (Cancellation\+Token token=default)
+\begin{DoxyCompactList}\small\item\em Teardowns the dependency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The dependency initializer. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_a571e18aef719e31c49fb19fb404f5df8}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$}!InitializeAsync@{InitializeAsync}}
+\index{InitializeAsync@{InitializeAsync}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$}}
+\doxysubsubsection{\texorpdfstring{InitializeAsync()}{InitializeAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_a571e18aef719e31c49fb19fb404f5df8} 
+Task$<$ TDependency $>$ Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+IDependency\+Initializer$<$ TDependency $>$.Initialize\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{ = {\ttfamily default}}\end{DoxyParamCaption})}
+
+
+
+Initialize the dependency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_aab421a7fbbba5e304a8867cfc55c0808}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer}}, and \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1RabbitMqInitializer_a9c29637003c9612e86ac0496d1351d8e}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Rabbit\+Mq\+Initializer}}.
+
+\Hypertarget{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_ad46b42e06e8f1cd78c8dfc9ec22e8aa4}\index{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$}!TeardownAsync@{TeardownAsync}}
+\index{TeardownAsync@{TeardownAsync}!Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$@{Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer$<$ TDependency $>$}}
+\doxysubsubsection{\texorpdfstring{TeardownAsync()}{TeardownAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g_ad46b42e06e8f1cd78c8dfc9ec22e8aa4} 
+Task Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+IDependency\+Initializer$<$ TDependency $>$.Teardown\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{ = {\ttfamily default}}\end{DoxyParamCaption})}
+
+
+
+Teardowns the dependency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1PostgresInitializer_acff714e6b9a3a52937347967b5ea2bf4}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Postgres\+Initializer}}, and \mbox{\hyperlink{classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1RabbitMqInitializer_a761db981ad29fd621aa59532803f66b0}{Ebceys.\+Tests.\+Infrastructure.\+Integration\+Tests.\+External\+Services.\+Containers.\+Rabbit\+Mq\+Initializer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Tests.\+Infrastructure/\+Integration\+Tests/\+External\+Services/\+Containers/\mbox{\hyperlink{IDependencyInitializer_8cs}{IDependency\+Initializer.\+cs}}\end{DoxyCompactItemize}

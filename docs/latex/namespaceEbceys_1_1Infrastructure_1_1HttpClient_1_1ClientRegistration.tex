@@ -1,0 +1,129 @@
+\doxysection{Ebceys.\+Infrastructure.\+Http\+Client.\+Client\+Registration Namespace Reference}
+\hypertarget{namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration}{}\label{namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration}\index{Ebceys.Infrastructure.HttpClient.ClientRegistration@{Ebceys.Infrastructure.HttpClient.ClientRegistration}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientConfiguration}{Client\+Configuration}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase}{Client\+Base} configuration class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientRegistrationExtensions}{Client\+Registration\+Extensions}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientRegistrationExtensions}{Client\+Registration\+Extensions} extensions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_aad14f6b1c5d6289f7216db7eecd42de9}{Client\+Base\+Registration\+Registrator$<$ TInterface, TImplementation $>$}} (IService\+Collection services)
+\begin{DoxyCompactList}\small\item\em The Client\+Base\+Registration\+Registrator$<$\+TInterface,\+TImplementation$>$ class.~\newline
+ Creates the new instance of Client\+Base\+Registration\+Registrator$<$\+TInterface,\+TImplementation$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_aad14f6b1c5d6289f7216db7eecd42de9}\index{Ebceys.Infrastructure.HttpClient.ClientRegistration@{Ebceys.Infrastructure.HttpClient.ClientRegistration}!ClientBaseRegistrationRegistrator$<$ TInterface, TImplementation $>$@{ClientBaseRegistrationRegistrator$<$ TInterface, TImplementation $>$}}
+\index{ClientBaseRegistrationRegistrator$<$ TInterface, TImplementation $>$@{ClientBaseRegistrationRegistrator$<$ TInterface, TImplementation $>$}!Ebceys.Infrastructure.HttpClient.ClientRegistration@{Ebceys.Infrastructure.HttpClient.ClientRegistration}}
+\doxysubsubsection{\texorpdfstring{ClientBaseRegistrationRegistrator$<$ TInterface, TImplementation $>$()}{ClientBaseRegistrationRegistrator< TInterface, TImplementation >()}}
+{\footnotesize\ttfamily \label{namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_aad14f6b1c5d6289f7216db7eecd42de9} 
+class Ebceys.\+Infrastructure.\+Http\+Client.\+Client\+Registration.\+Client\+Base\+Registration\+Registrator$<$ TInterface, TImplementation $>$ (\begin{DoxyParamCaption}\item[{IService\+Collection}]{services}{}\end{DoxyParamCaption})}
+
+
+
+The Client\+Base\+Registration\+Registrator$<$\+TInterface,\+TImplementation$>$ class.~\newline
+ Creates the new instance of Client\+Base\+Registration\+Registrator$<$\+TInterface,\+TImplementation$>$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & The service collection.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TInterface} & The \doxylink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase}{Client\+Base} interface.\\
+\hline
+{\em TImplementation} & The \doxylink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase}{Client\+Base} implementation.\\
+\hline
+\end{DoxyTemplParams}
+Configures the url for client from string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The url to server.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Configures the server url for client from IConfiguration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em configuration} & The configuration.\\
+\hline
+{\em service\+Name} & The service name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & Throw if there\textquotesingle{}s no section with {\itshape service\+Name} .\\
+\hline
+\end{DoxyExceptions}
+
+
+Adds the auth token resolver to Client\+Base\+Registration\+Registrator$<$\+TInterface,\+TImplementation$>$.~\newline
+ Token will be placed in request headers with key \doxylink{classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase_acd40e540609f324537a2696b3c527235}{Client\+Base.\+Authorization\+Header}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token\+Resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Adds the \doxylink{interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1TokenManager_1_1IClientTokenManager-1-g}{IClient\+Token\+Manager$<$\+TInterface$>$} with {\itshape TInterface}  type to service collection. ~\newline
+ It uses for access to auth token from http context. See default implementation (could be overwritten). \begin{DoxySeeAlso}{See also}
+From\+Context\+Client\+Token\+Manager$<$\+TInterface$>$
+
+
+\end{DoxySeeAlso}
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Configures IFlurl\+Client\+Cache. If it wasn\textquotesingle{}t configured the default implementation will be used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Cache\+Resolver} & The client cache resolver.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Registration of the {\itshape TImplementation}  in IService\+Collection.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TImplementation} : {\em Client\+Base}]\item[{\em TImplementation} : {\em TInterface}]\item[{\em TInterface} : {\em class}]\end{description}
+\end{Desc}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_aad14f6b1c5d6289f7216db7eecd42de9_icgraph}
+\end{center}
+\end{figure}

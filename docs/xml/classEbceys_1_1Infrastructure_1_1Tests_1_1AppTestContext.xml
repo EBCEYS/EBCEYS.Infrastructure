@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext" kind="class" language="C#" prot="package">
+    <compoundname>Ebceys::Infrastructure::Tests::AppTestContext</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1aea8d3598dac4f9c473d912f217ab35df" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.Tests.AppTestContext.DbUser</definition>
+        <argsstring></argsstring>
+        <name>DbUser</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.DbUser</qualifiedname>
+        <initializer>= &quot;admin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="19" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1aaf7e97e36fb5d67b123a198d294bd9d1" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.Tests.AppTestContext.DbPassword</definition>
+        <argsstring></argsstring>
+        <name>DbPassword</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.DbPassword</qualifiedname>
+        <initializer>= &quot;password&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="20" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a3183b6cfda06c61d676b4b4981b6a709" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.Tests.AppTestContext.QueueName</definition>
+        <argsstring></argsstring>
+        <name>QueueName</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.QueueName</qualifiedname>
+        <initializer>= &quot;someQueue&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="21" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a242c94ba64d9a06bfafe0c758f15788b" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.Tests.AppTestContext.ExName</definition>
+        <argsstring></argsstring>
+        <name>ExName</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.ExName</qualifiedname>
+        <initializer>= &quot;someEx&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="22" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1af0e7b50c8a0f4ce56b7fa2872219137d" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.Tests.AppTestContext.SectionBase</definition>
+        <argsstring></argsstring>
+        <name>SectionBase</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.SectionBase</qualifiedname>
+        <initializer>= &quot;rabbit&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="23" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a055d26f59dc8c4d7f954d2366157ff14" prot="private" static="yes" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string Ebceys.Infrastructure.Tests.AppTestContext.SolutionRelativePath</definition>
+        <argsstring></argsstring>
+        <name>SolutionRelativePath</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.SolutionRelativePath</qualifiedname>
+        <initializer>= typeof(AppTestContext).Namespace!</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="25" column="36" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a09cdbe2c01361f76d04e486602256f79" prot="private" static="no" mutable="no">
+        <type>IDependencyInitializer&lt; PostgreSqlContainer &gt;</type>
+        <definition>IDependencyInitializer&lt;PostgreSqlContainer&gt; Ebceys.Infrastructure.Tests.AppTestContext._postgres</definition>
+        <argsstring></argsstring>
+        <name>_postgres</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext._postgres</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="27" column="36" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a5c5f591205be5496fd5fb2104cce0eb6" prot="private" static="no" mutable="no">
+        <type><ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1RabbitMqInitializer" kindref="compound">RabbitMqInitializer</ref></type>
+        <definition>RabbitMqInitializer Ebceys.Infrastructure.Tests.AppTestContext._rabbit</definition>
+        <argsstring></argsstring>
+        <name>_rabbit</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext._rabbit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="28" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a4699dc1ccd78b951cd16ee4566467efd" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>AppTestClientContext</type>
+        <definition>AppTestClientContext Ebceys.Infrastructure.Tests.AppTestContext.AppContext</definition>
+        <argsstring></argsstring>
+        <name>AppContext</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.AppContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="30" column="40" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1affdc1704f09e4ede6da598e6d7332621" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>LogCatcherMiddleware&lt; RequestLoggingMiddleware &gt;</type>
+        <definition>LogCatcherMiddleware&lt;RequestLoggingMiddleware&gt; Ebceys.Infrastructure.Tests.AppTestContext.AppLogCatcher</definition>
+        <argsstring></argsstring>
+        <name>AppLogCatcher</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.AppLogCatcher</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="32" column="40" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1af67f5de0dafbba6ac3ab72c7c9e84ee5" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>AuthAppTestClientContext</type>
+        <definition>AuthAppTestClientContext Ebceys.Infrastructure.Tests.AppTestContext.AuthAppClientContext</definition>
+        <argsstring></argsstring>
+        <name>AuthAppClientContext</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.AuthAppClientContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="34" column="44" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a0914ec42dd596941f6f5aa2734c978a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.AppTestContext.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.Setup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="38" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="38" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a719f12aeb2f02358afafac64f3f96759" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.AppTestContext.TearDown</definition>
+        <argsstring>()</argsstring>
+        <name>TearDown</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.AppTestContext.TearDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="96" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="96" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Tests.AppTestContext</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-DbPassword</edgelabel>
+          <edgelabel>-DbUser</edgelabel>
+          <edgelabel>-ExName</edgelabel>
+          <edgelabel>-QueueName</edgelabel>
+          <edgelabel>-SectionBase</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-SolutionRelativePath</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-_postgres</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-_rabbit</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer&lt; TDependency &gt;</label>
+        <link refid="interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g"/>
+      </node>
+      <node id="5">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1RabbitMqInitializer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+Image</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-_container</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RabbitMqContainer?</label>
+      </node>
+      <node id="2">
+        <label>const string</label>
+      </node>
+      <node id="3">
+        <label>static readonly string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" line="17" column="9" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/AppTestContext.cs" bodystart="18" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a09cdbe2c01361f76d04e486602256f79" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>_postgres</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a5c5f591205be5496fd5fb2104cce0eb6" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>_rabbit</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a4699dc1ccd78b951cd16ee4566467efd" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>AppContext</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1affdc1704f09e4ede6da598e6d7332621" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>AppLogCatcher</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1af67f5de0dafbba6ac3ab72c7c9e84ee5" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>AuthAppClientContext</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1aaf7e97e36fb5d67b123a198d294bd9d1" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>DbPassword</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1aea8d3598dac4f9c473d912f217ab35df" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>DbUser</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a242c94ba64d9a06bfafe0c758f15788b" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>ExName</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a3183b6cfda06c61d676b4b4981b6a709" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>QueueName</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1af0e7b50c8a0f4ce56b7fa2872219137d" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>SectionBase</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a0914ec42dd596941f6f5aa2734c978a3" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>Setup</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a055d26f59dc8c4d7f954d2366157ff14" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>SolutionRelativePath</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1AppTestContext_1a719f12aeb2f02358afafac64f3f96759" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::AppTestContext</scope><name>TearDown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

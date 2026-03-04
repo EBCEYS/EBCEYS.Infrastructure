@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="EbServerExtensions_8cs" kind="file" language="C#">
+    <compoundname>EbServerExtensions.cs</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions" prot="public">Ebceys::Infrastructure::Extensions::EbServerExtensions</innerclass>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure">Ebceys::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Extensions">Ebceys::Infrastructure::Extensions</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1Net">System::Net</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Net;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">JetBrains.Annotations;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Http;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Mvc;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1Extensions" kindref="compound">Ebceys.Infrastructure.Extensions</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">[PublicAPI]</highlight></codeline>
+<codeline lineno="12" refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions" kindref="compound">EbServerExtensions</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_1a16d8c45373b2243f12689d7df847854c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>readonly<sp/>Dictionary&lt;int,<sp/>string&gt;<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_1a16d8c45373b2243f12689d7df847854c" kindref="member">StatusCodes</ref><sp/>=<sp/>Enum.GetValues&lt;HttpStatusCode&gt;()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.DistinctBy(x<sp/>=&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)x).ToDictionary(x<sp/>=&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)x,<sp/>x<sp/>=&gt;<sp/>x.ToString());</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_1a8914d4b5a576ef0d40c27eb170914689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_1a8914d4b5a576ef0d40c27eb170914689" kindref="member">extension</ref>(ProblemDetails)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>ProblemDetails<sp/>CreateFromResponse(HttpResponse<sp/>ctx)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ProblemDetails</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Status<sp/>=<sp/>ctx.StatusCode,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Instance<sp/>=<sp/>ctx.HttpContext.Request.Path,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_1a16d8c45373b2243f12689d7df847854c" kindref="member">StatusCodes</ref>.TryGetValue(ctx.HttpContext.Response.StatusCode,<sp/>out<sp/>var<sp/>statusCode)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>statusCode</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>ctx.HttpContext.Response.StatusCode.ToString()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_1ade6304f2161172a4a1092c40cb38f508" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_1ade6304f2161172a4a1092c40cb38f508" kindref="member">extension</ref>(Task)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/>WaitUntilAsync(Predicate&lt;CancellationToken&gt;<sp/>predicate,<sp/>TimeSpan<sp/>timeout,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>cts<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>CancellationTokenSource(timeout);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>token.Register(()<sp/>=&gt;<sp/>cts.Cancel());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!predicate(cts.Token)<sp/>&amp;&amp;<sp/>!cts.IsCancellationRequested)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>Task.Delay(50,<sp/>cts.Token);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbServerExtensions.cs"/>
+  </compounddef>
+</doxygen>

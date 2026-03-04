@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::TestApplication::BoundedContext::RoutesDictionary::TestControllerV1</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1_1Methods" prot="public">Ebceys::Infrastructure::TestApplication::BoundedContext::RoutesDictionary::TestControllerV1::Methods</innerclass>
+    <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1ad203394b20c580c0c6d99c69161eaed0" prot="package" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.ControllerRoute</definition>
+        <argsstring></argsstring>
+        <name>ControllerRoute</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.ControllerRoute</qualifiedname>
+        <initializer>= &quot;api/v{version:apiVersion}/[controller]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" line="9" column="31" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1acaf532d7efd21bda6b2d576e93ccf57e" prot="package" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.ApiVersion</definition>
+        <argsstring></argsstring>
+        <name>ApiVersion</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.ApiVersion</qualifiedname>
+        <initializer>= &quot;1.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" line="10" column="31" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1a96174d28a62581b4f1f7518ad4e8e057" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.BaseRoute</definition>
+        <argsstring></argsstring>
+        <name>BaseRoute</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.BaseRoute</qualifiedname>
+        <initializer>= BasePath + &quot;/api/v1/test&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" line="12" column="29" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+BaseRoute</edgelabel>
+          <edgelabel>~ApiVersion</edgelabel>
+          <edgelabel>~ControllerRoute</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>const string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" line="7" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/BoundedContext/RoutesDictionary.cs" bodystart="8" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1acaf532d7efd21bda6b2d576e93ccf57e" prot="package" virt="non-virtual"><scope>Ebceys::Infrastructure::TestApplication::BoundedContext::RoutesDictionary::TestControllerV1</scope><name>ApiVersion</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1a96174d28a62581b4f1f7518ad4e8e057" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::TestApplication::BoundedContext::RoutesDictionary::TestControllerV1</scope><name>BaseRoute</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1ad203394b20c580c0c6d99c69161eaed0" prot="package" virt="non-virtual"><scope>Ebceys::Infrastructure::TestApplication::BoundedContext::RoutesDictionary::TestControllerV1</scope><name>ControllerRoute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

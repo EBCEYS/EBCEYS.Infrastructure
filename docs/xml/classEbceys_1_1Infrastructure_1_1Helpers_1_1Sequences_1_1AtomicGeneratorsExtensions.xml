@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Helpers_1_1Sequences_1_1AtomicGeneratorsExtensions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Helpers::Sequences::AtomicGeneratorsExtensions</compoundname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Helpers_1_1Sequences_1_1AtomicGeneratorsExtensions_1a223b3d1db79e84be7da20ce99a2a585f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.extension</definition>
+        <argsstring>(IServiceCollection services)</argsstring>
+        <name>extension</name>
+        <qualifiedname>Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.extension</qualifiedname>
+        <param>
+          <type>IServiceCollection</type>
+          <declname>services</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Adds the IAtomGenerator&lt;T&gt; to <emphasis>services</emphasis> .</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The seed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><emphasis>services</emphasis>  </para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Helpers/Sequences/AtomicGeneratorsExtensions.cs" line="13" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Helpers/Sequences/AtomicGeneratorsExtensions.cs" bodystart="13" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Infrastructure_1_1Helpers_1_1Sequences_1_1AtomicGeneratorsExtensions" kindref="compound">AtomicGeneratorsExtensions</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Helpers_1_1Sequences_1_1AtomicGeneratorsExtensions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Helpers/Sequences/AtomicGeneratorsExtensions.cs" line="11" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Helpers/Sequences/AtomicGeneratorsExtensions.cs" bodystart="12" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Helpers_1_1Sequences_1_1AtomicGeneratorsExtensions_1a223b3d1db79e84be7da20ce99a2a585f" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Helpers::Sequences::AtomicGeneratorsExtensions</scope><name>extension</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

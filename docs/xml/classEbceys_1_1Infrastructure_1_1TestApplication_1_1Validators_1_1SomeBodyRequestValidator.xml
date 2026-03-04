@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::TestApplication::Validators::SomeBodyRequestValidator</compoundname>
+    <basecompoundref refid="classAbstractValidator-1-g" prot="public" virt="non-virtual">AbstractValidator</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator_1af4f5a5c75723f09799deeb3f420810e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator.SomeBodyRequestValidator</definition>
+        <argsstring>()</argsstring>
+        <name>SomeBodyRequestValidator</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator.SomeBodyRequestValidator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Validators/SomeBodyRequestValidator.cs" line="8" column="12" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Validators/SomeBodyRequestValidator.cs" bodystart="8" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractValidator</label>
+        <link refid="classAbstractValidator-1-g"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractValidator</label>
+        <link refid="classAbstractValidator-1-g"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Validators/SomeBodyRequestValidator.cs" line="6" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Validators/SomeBodyRequestValidator.cs" bodystart="7" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator_1af4f5a5c75723f09799deeb3f420810e4" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::TestApplication::Validators::SomeBodyRequestValidator</scope><name>SomeBodyRequestValidator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

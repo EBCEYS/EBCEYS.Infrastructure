@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceEbceys_1_1Infrastructure_1_1Middlewares" kind="namespace" language="C#">
+    <compoundname>Ebceys::Infrastructure::Middlewares</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1Middlewares_1_1HttpLoggingOptions" prot="public">Ebceys::Infrastructure::Middlewares::HttpLoggingOptions</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceEbceys_1_1Infrastructure_1_1Middlewares_1a42b27d516407d5ae930ee3d2b14b438f" prot="package" static="no" const="no" explicit="no" inline="no" sealed="yes" virt="non-virtual">
+        <type>class</type>
+        <definition>class Ebceys.Infrastructure.Middlewares.ExceptionCatcherMiddleware</definition>
+        <argsstring>(RequestDelegate next)</argsstring>
+        <name>ExceptionCatcherMiddleware</name>
+        <qualifiedname>Ebceys.Infrastructure.Middlewares.ExceptionCatcherMiddleware</qualifiedname>
+        <param>
+          <type>RequestDelegate</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Middlewares/ExceptionCatcherMiddleware.cs" line="6" column="1" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Middlewares/ExceptionCatcherMiddleware.cs" bodystart="6" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceEbceys_1_1Infrastructure_1_1Middlewares_1a099ce09ea672d667023db342151af972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware</definition>
+        <argsstring>(RequestDelegate next, IOptions&lt; HttpLoggingOptions &gt; loggingOpts, ILogger&lt; RequestLoggingMiddleware &gt; logger)</argsstring>
+        <name>RequestLoggingMiddleware</name>
+        <qualifiedname>Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware</qualifiedname>
+        <param>
+          <type>RequestDelegate</type>
+          <declname>next</declname>
+        </param>
+        <param>
+          <type>IOptions&lt; <ref refid="classEbceys_1_1Infrastructure_1_1Middlewares_1_1HttpLoggingOptions" kindref="compound">HttpLoggingOptions</ref> &gt;</type>
+          <declname>loggingOpts</declname>
+        </param>
+        <param>
+          <type>ILogger&lt; RequestLoggingMiddleware &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+<para>The request logging middleware. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request delegate.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logger.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>The string that will write to log if body should not be logged.</para>
+<para>Invokes the context.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Middlewares/RequestLoggingMiddleware.cs" line="54" column="1" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Middlewares/RequestLoggingMiddleware.cs" bodystart="54" bodyend="227"/>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1Middlewares_1a099ce09ea672d667023db342151af972" compoundref="RequestLoggingMiddleware_8cs" startline="54" endline="227">Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware</references>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1Middlewares_1a099ce09ea672d667023db342151af972" compoundref="RequestLoggingMiddleware_8cs" startline="54" endline="227">Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ada64b1e0e61d6681e72fd663ad8254d4" compoundref="RequestLoggingMiddlewareTests_8cs" startline="47" endline="72">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1aad36344227951e2151031861f1f9ec1f" compoundref="RequestLoggingMiddlewareTests_8cs" startline="22" endline="35">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInOpts_Result_CatcherDontLogBodies</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceEbceys_1_1Infrastructure_1_1Middlewares_1ab70db0e9af206285e3c5fdb488978944" prot="package" static="no" const="no" explicit="no" inline="no" sealed="yes" virt="non-virtual">
+        <type>class</type>
+        <definition>class Ebceys.Infrastructure.Middlewares.RequestMetricsMiddleware</definition>
+        <argsstring>(RequestDelegate next)</argsstring>
+        <name>RequestMetricsMiddleware</name>
+        <qualifiedname>Ebceys.Infrastructure.Middlewares.RequestMetricsMiddleware</qualifiedname>
+        <param>
+          <type>RequestDelegate</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Middlewares/RequestMetricsMiddleware.cs" line="6" column="1" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Middlewares/RequestMetricsMiddleware.cs" bodystart="6" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Middlewares/ExceptionCatcherMiddleware.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

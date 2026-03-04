@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classIRabbitMQClient" kind="class" language="C#" prot="public">
+    <compoundname>IRabbitMQClient</compoundname>
+    <derivedcompoundref refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient" prot="public" virt="non-virtual">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IRabbitMQClient</label>
+        <link refid="classIRabbitMQClient"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IRabbitMQClient</label>
+        <link refid="classIRabbitMQClient"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs" line="14" column="17"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

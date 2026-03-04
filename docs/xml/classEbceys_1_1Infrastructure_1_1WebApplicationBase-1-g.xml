@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::WebApplicationBase-1-g</compoundname>
+    <templateparamlist>
+      <param>
+        <type>TStartup</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g_1ac050a636ca54ee62cb0982d04f7380f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ConfiguredApp</type>
+        <definition>ConfiguredApp Ebceys.Infrastructure.WebApplicationBase&lt; TStartup &gt;.Build</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Build</name>
+        <qualifiedname>Ebceys.Infrastructure.WebApplicationBase-1-g.Build</qualifiedname>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Builds the application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/WebApplicationBase.cs" line="19" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/WebApplicationBase.cs" bodystart="19" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g_1a325ae7762675ab36695790885f050856" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>WebApplicationBase&lt; TStartup &gt;</type>
+        <definition>static WebApplicationBase&lt; TStartup &gt; Ebceys.Infrastructure.WebApplicationBase&lt; TStartup &gt;.Create</definition>
+        <argsstring>(params string[] args)</argsstring>
+        <name>Create</name>
+        <qualifiedname>Ebceys.Infrastructure.WebApplicationBase-1-g.Create</qualifiedname>
+        <param>
+          <type>params string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Creates the new instance of <ref refid="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g" kindref="compound">WebApplicationBase&lt;TStartup&gt;</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The args.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of <ref refid="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g" kindref="compound">WebApplicationBase&lt;TStartup&gt;</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/WebApplicationBase.cs" line="33" column="38" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/WebApplicationBase.cs" bodystart="33" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Initiates the new instance of <ref refid="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g" kindref="compound">WebApplicationBase&lt;TStartup&gt;</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TStartup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The startup class based on ExtraStartupBase.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.WebApplicationBase&lt; TStartup &gt;</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/WebApplicationBase.cs" line="12" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/WebApplicationBase.cs" bodystart="13" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g_1ac050a636ca54ee62cb0982d04f7380f4" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::WebApplicationBase-1-g</scope><name>Build</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g_1a325ae7762675ab36695790885f050856" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::WebApplicationBase-1-g</scope><name>Create</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

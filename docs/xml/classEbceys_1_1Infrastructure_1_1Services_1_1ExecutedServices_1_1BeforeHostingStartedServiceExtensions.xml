@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Services::ExecutedServices::BeforeHostingStartedServiceExtensions</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_1a05ccae4c069ab6fceb233251689237f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IServiceCollection</type>
+        <definition>static IServiceCollection Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.AddBeforeHostingStarted&lt; TImplementation &gt;</definition>
+        <argsstring>(this IServiceCollection services)</argsstring>
+        <name>AddBeforeHostingStarted&lt; TImplementation &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.AddBeforeHostingStarted&lt; TImplementation &gt;</qualifiedname>
+        <param>
+          <type>this IServiceCollection</type>
+          <declname>services</declname>
+        </param>
+        <briefdescription>
+<para>Register implementation of <ref refid="interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService" kindref="compound">IBeforeHostingStartedService</ref> to <emphasis>services</emphasis> .<linebreak/>
+ All <ref refid="interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService" kindref="compound">IBeforeHostingStartedService</ref> will be executed after all services registration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>services</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The services.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TImplementation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The implementation of <ref refid="interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService" kindref="compound">IBeforeHostingStartedService</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <emphasis>services</emphasis> .</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Services/ExecutedServices/IBeforeHostingStartedService.cs" line="32" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Services/ExecutedServices/IBeforeHostingStartedService.cs" bodystart="32" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_1a175192746139d6bd5edfba283687755c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.ExecuteAllBeforeHostingStarted</definition>
+        <argsstring>(this IServiceProvider services, CancellationToken token=default)</argsstring>
+        <name>ExecuteAllBeforeHostingStarted</name>
+        <qualifiedname>Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.ExecuteAllBeforeHostingStarted</qualifiedname>
+        <param>
+          <type>this IServiceProvider</type>
+          <declname>services</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Executes the all registered implementations of <ref refid="interfaceEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1IBeforeHostingStartedService" kindref="compound">IBeforeHostingStartedService</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>services</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The services.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Services/ExecutedServices/IBeforeHostingStartedService.cs" line="44" column="30" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Services/ExecutedServices/IBeforeHostingStartedService.cs" bodystart="44" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions" kindref="compound">BeforeHostingStartedServiceExtensions</ref> extensions class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Services/ExecutedServices/IBeforeHostingStartedService.cs" line="23" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Services/ExecutedServices/IBeforeHostingStartedService.cs" bodystart="24" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_1a05ccae4c069ab6fceb233251689237f7" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Services::ExecutedServices::BeforeHostingStartedServiceExtensions</scope><name>AddBeforeHostingStarted&lt; TImplementation &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Services_1_1ExecutedServices_1_1BeforeHostingStartedServiceExtensions_1a175192746139d6bd5edfba283687755c" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Services::ExecutedServices::BeforeHostingStartedServiceExtensions</scope><name>ExecuteAllBeforeHostingStarted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthchecksRegistrationExtensions" kind="class" language="C#" prot="package">
+    <compoundname>Ebceys::Infrastructure::HealthChecks::HealthchecksRegistrationExtensions</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthchecksRegistrationExtensions_1a5f5a8be40d84e820989b46c8e7b8de9d" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.HealthChecks.HealthchecksRegistrationExtensions.PsqlHealthNamePrefix</definition>
+        <argsstring></argsstring>
+        <name>PsqlHealthNamePrefix</name>
+        <qualifiedname>Ebceys.Infrastructure.HealthChecks.HealthchecksRegistrationExtensions.PsqlHealthNamePrefix</qualifiedname>
+        <initializer>= &quot;psql&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" line="9" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthchecksRegistrationExtensions_1a4fa11c96c24a5aec1d589c1e3e6cd3cc" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.HealthChecks.HealthchecksRegistrationExtensions.RabbitHealthNamePrefix</definition>
+        <argsstring></argsstring>
+        <name>RabbitHealthNamePrefix</name>
+        <qualifiedname>Ebceys.Infrastructure.HealthChecks.HealthchecksRegistrationExtensions.RabbitHealthNamePrefix</qualifiedname>
+        <initializer>= &quot;rabbit-mq&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" line="10" column="26" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthchecksRegistrationExtensions_1a83d48f69687f811134b3b2c73b070885" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.HealthChecks.HealthchecksRegistrationExtensions.extension</definition>
+        <argsstring>(IHealthChecksBuilder hcBuilder)</argsstring>
+        <name>extension</name>
+        <qualifiedname>Ebceys.Infrastructure.HealthChecks.HealthchecksRegistrationExtensions.extension</qualifiedname>
+        <param>
+          <type>IHealthChecksBuilder</type>
+          <declname>hcBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" line="12" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" bodystart="12" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.HealthChecks.HealthchecksRegistrationExtensions</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-PsqlHealthNamePrefix</edgelabel>
+          <edgelabel>-RabbitHealthNamePrefix</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>const string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" line="7" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthchecksRegistrationExtensions.cs" bodystart="8" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthchecksRegistrationExtensions_1a83d48f69687f811134b3b2c73b070885" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HealthChecks::HealthchecksRegistrationExtensions</scope><name>extension</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthchecksRegistrationExtensions_1a5f5a8be40d84e820989b46c8e7b8de9d" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HealthChecks::HealthchecksRegistrationExtensions</scope><name>PsqlHealthNamePrefix</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthchecksRegistrationExtensions_1a4fa11c96c24a5aec1d589c1e3e6cd3cc" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::HealthChecks::HealthchecksRegistrationExtensions</scope><name>RabbitHealthNamePrefix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

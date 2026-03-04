@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceEbceys_1_1Infrastructure" kind="namespace" language="C#">
+    <compoundname>Ebceys::Infrastructure</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1WebApplicationBase-1-g" prot="public">Ebceys::Infrastructure::WebApplicationBase-1-g</innerclass>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Attributes">Ebceys::Infrastructure::Attributes</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication">Ebceys::Infrastructure::AuthorizationTestApplication</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1ControllerFilters">Ebceys::Infrastructure::ControllerFilters</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Controllers">Ebceys::Infrastructure::Controllers</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1DatabaseRegistration">Ebceys::Infrastructure::DatabaseRegistration</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Exceptions">Ebceys::Infrastructure::Exceptions</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Extensions">Ebceys::Infrastructure::Extensions</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1HealthChecks">Ebceys::Infrastructure::HealthChecks</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Helpers">Ebceys::Infrastructure::Helpers</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1HttpClient">Ebceys::Infrastructure::HttpClient</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Interfaces">Ebceys::Infrastructure::Interfaces</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Middlewares">Ebceys::Infrastructure::Middlewares</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Models">Ebceys::Infrastructure::Models</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Options">Ebceys::Infrastructure::Options</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1RabbitMq">Ebceys::Infrastructure::RabbitMq</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Scheduling">Ebceys::Infrastructure::Scheduling</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Services">Ebceys::Infrastructure::Services</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication">Ebceys::Infrastructure::TestApplication</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Tests">Ebceys::Infrastructure::Tests</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1UnitTests">Ebceys::Infrastructure::UnitTests</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/GenerateTokenRequest.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,143 @@
+\doxysection{Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client Interface Reference}
+\hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient}{}\label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+
+
+Collaboration diagram for Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a5fd7de04ef0602c9e53524c895810af6}{Get\+Ok\+Async}} (Cancellation\+Token token)
+\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_afc249691455e452ce026fe1147e9f11a}{Get\+Exception\+Async}} (Cancellation\+Token token)
+\item 
+Task$<$ Some\+Body\+Response $>$ \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ac8918425a63b40a23fef19545e7d4a22}{Post\+Body\+Async}} (Some\+Body\+Request body, Cancellation\+Token token)
+\item 
+Task$<$ Some\+Body\+Response $>$ \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_af22c32820abbcc94817270746c15a0b8}{Get\+Query\+Async}} (int value, Cancellation\+Token token)
+\item 
+Task$<$ Command\+Result\+Response $>$ \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a7f1846ce8ebacb40797ce783d3d12ac4}{Post\+Command\+Async}} (string name, Cancellation\+Token token)
+\item 
+Task$<$ Command\+Result\+Response $>$ \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a4b909dd18a4d5b29a85f89f8c36799f4}{Get\+Command\+Async}} (Cancellation\+Token token)
+\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a3e59e2eed519a17eb78e2fb6052248a6}{Delete\+Command\+Async}} (string name, Cancellation\+Token token)
+\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a39616f227caf996bcea912d0af53a366}{Put\+Command\+Async}} (string name, Change\+Name\+Request request, Cancellation\+Token token)
+\item 
+Task$<$ Generate\+Token\+Response $>$ \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a293b0f6fe73916b59e47b60a351282cb}{Generate\+Token\+Async}} (Cancellation\+Token token)
+\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ae6668f45e1bf8d4790208c5f1aeff8ea}{Validate\+Token\+Async}} (string jwt, Cancellation\+Token token)
+\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a967f8a32b0321c0b886a867a356ae3dc}{Validate\+Auth\+Async}} (string jwt, Cancellation\+Token token)
+\item 
+Task \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ac3733145bdac78964b8806f74969618c}{Non\+Exists\+Method\+Async}} (Cancellation\+Token token)
+\item 
+Task$<$ Command\+Result\+Response $>$ \mbox{\hyperlink{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a6d5ebab9a4c8fe8b29c61d34a9482e0c}{Method\+Without\+Response\+Body\+Async}} (Cancellation\+Token token)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a3e59e2eed519a17eb78e2fb6052248a6}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!DeleteCommandAsync@{DeleteCommandAsync}}
+\index{DeleteCommandAsync@{DeleteCommandAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{DeleteCommandAsync()}{DeleteCommandAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a3e59e2eed519a17eb78e2fb6052248a6} 
+Task Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Delete\+Command\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a293b0f6fe73916b59e47b60a351282cb}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!GenerateTokenAsync@{GenerateTokenAsync}}
+\index{GenerateTokenAsync@{GenerateTokenAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{GenerateTokenAsync()}{GenerateTokenAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a293b0f6fe73916b59e47b60a351282cb} 
+Task$<$ Generate\+Token\+Response $>$ Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Generate\+Token\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a4b909dd18a4d5b29a85f89f8c36799f4}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!GetCommandAsync@{GetCommandAsync}}
+\index{GetCommandAsync@{GetCommandAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{GetCommandAsync()}{GetCommandAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a4b909dd18a4d5b29a85f89f8c36799f4} 
+Task$<$ Command\+Result\+Response $>$ Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Get\+Command\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_afc249691455e452ce026fe1147e9f11a}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!GetExceptionAsync@{GetExceptionAsync}}
+\index{GetExceptionAsync@{GetExceptionAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{GetExceptionAsync()}{GetExceptionAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_afc249691455e452ce026fe1147e9f11a} 
+Task Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Get\+Exception\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a5fd7de04ef0602c9e53524c895810af6}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!GetOkAsync@{GetOkAsync}}
+\index{GetOkAsync@{GetOkAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{GetOkAsync()}{GetOkAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a5fd7de04ef0602c9e53524c895810af6} 
+Task Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Get\+Ok\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_af22c32820abbcc94817270746c15a0b8}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!GetQueryAsync@{GetQueryAsync}}
+\index{GetQueryAsync@{GetQueryAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{GetQueryAsync()}{GetQueryAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_af22c32820abbcc94817270746c15a0b8} 
+Task$<$ Some\+Body\+Response $>$ Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Get\+Query\+Async (\begin{DoxyParamCaption}\item[{int}]{value}{, }\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a6d5ebab9a4c8fe8b29c61d34a9482e0c}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!MethodWithoutResponseBodyAsync@{MethodWithoutResponseBodyAsync}}
+\index{MethodWithoutResponseBodyAsync@{MethodWithoutResponseBodyAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{MethodWithoutResponseBodyAsync()}{MethodWithoutResponseBodyAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a6d5ebab9a4c8fe8b29c61d34a9482e0c} 
+Task$<$ Command\+Result\+Response $>$ Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Method\+Without\+Response\+Body\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ac3733145bdac78964b8806f74969618c}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!NonExistsMethodAsync@{NonExistsMethodAsync}}
+\index{NonExistsMethodAsync@{NonExistsMethodAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{NonExistsMethodAsync()}{NonExistsMethodAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ac3733145bdac78964b8806f74969618c} 
+Task Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Non\+Exists\+Method\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ac8918425a63b40a23fef19545e7d4a22}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!PostBodyAsync@{PostBodyAsync}}
+\index{PostBodyAsync@{PostBodyAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{PostBodyAsync()}{PostBodyAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ac8918425a63b40a23fef19545e7d4a22} 
+Task$<$ Some\+Body\+Response $>$ Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Post\+Body\+Async (\begin{DoxyParamCaption}\item[{Some\+Body\+Request}]{body}{, }\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ac8918425a63b40a23fef19545e7d4a22_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a7f1846ce8ebacb40797ce783d3d12ac4}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!PostCommandAsync@{PostCommandAsync}}
+\index{PostCommandAsync@{PostCommandAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{PostCommandAsync()}{PostCommandAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a7f1846ce8ebacb40797ce783d3d12ac4} 
+Task$<$ Command\+Result\+Response $>$ Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Post\+Command\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a39616f227caf996bcea912d0af53a366}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!PutCommandAsync@{PutCommandAsync}}
+\index{PutCommandAsync@{PutCommandAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{PutCommandAsync()}{PutCommandAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a39616f227caf996bcea912d0af53a366} 
+Task Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Put\+Command\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Change\+Name\+Request}]{request}{, }\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a39616f227caf996bcea912d0af53a366_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a967f8a32b0321c0b886a867a356ae3dc}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!ValidateAuthAsync@{ValidateAuthAsync}}
+\index{ValidateAuthAsync@{ValidateAuthAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{ValidateAuthAsync()}{ValidateAuthAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_a967f8a32b0321c0b886a867a356ae3dc} 
+Task Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Validate\+Auth\+Async (\begin{DoxyParamCaption}\item[{string}]{jwt}{, }\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ae6668f45e1bf8d4790208c5f1aeff8ea}\index{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}!ValidateTokenAsync@{ValidateTokenAsync}}
+\index{ValidateTokenAsync@{ValidateTokenAsync}!Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient@{Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient}}
+\doxysubsubsection{\texorpdfstring{ValidateTokenAsync()}{ValidateTokenAsync()}}
+{\footnotesize\ttfamily \label{interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient_ae6668f45e1bf8d4790208c5f1aeff8ea} 
+Task Ebceys.\+Infrastructure.\+Test\+Application.\+Client.\+Interfaces.\+ITest\+Client.\+Validate\+Token\+Async (\begin{DoxyParamCaption}\item[{string}]{jwt}{, }\item[{Cancellation\+Token}]{token}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Infrastructure.\+Test\+Application/\+Client/\+Interfaces/\mbox{\hyperlink{ITestClient_8cs}{ITest\+Client.\+cs}}\end{DoxyCompactItemize}

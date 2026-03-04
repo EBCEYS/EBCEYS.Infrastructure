@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Program" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::AuthorizationTestApplication::Program</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Program_1a9140711848806ae4f8f8532ab315b7d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ebceys.Infrastructure.AuthorizationTestApplication.Program.Main</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Main</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.Program.Main</qualifiedname>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Program.cs" line="13" column="30" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Program.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.AuthorizationTestApplication.Program</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Program"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Program.cs" line="11" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/Program.cs" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Program_1a9140711848806ae4f8f8532ab315b7d9" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Tests::Middlewares::RequestLoggingMiddlewareTests</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ab0ccb58d8c58365ec34cf6473224519f" prot="private" static="yes" mutable="no">
+        <type>readonly EbRandomizer</type>
+        <definition>readonly EbRandomizer Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Randomizer</definition>
+        <argsstring></argsstring>
+        <name>Randomizer</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Randomizer</qualifiedname>
+        <initializer>= EbRandomizer.Create()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" line="11" column="42" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1a7f5336d87e9d87b86c020bf84f1033b8" compoundref="RequestLoggingMiddlewareTests_8cs" startline="38" endline="44">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Request_With_NoAttrOrOpts_Result_AllLogged</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ada64b1e0e61d6681e72fd663ad8254d4" compoundref="RequestLoggingMiddlewareTests_8cs" startline="47" endline="72">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1aad36344227951e2151031861f1f9ec1f" compoundref="RequestLoggingMiddlewareTests_8cs" startline="22" endline="35">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInOpts_Result_CatcherDontLogBodies</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1af182d07e7a62112848d16dce30bd9f53" prot="private" static="no" mutable="no">
+        <type><ref refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient" kindref="compound">ITestApplicationClient</ref></type>
+        <definition>ITestApplicationClient Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests._client</definition>
+        <argsstring></argsstring>
+        <name>_client</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests._client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" line="12" column="36" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1abbd679a37fe1b7c564770ea5c88c6bd9" compoundref="RequestLoggingMiddlewareTests_8cs" startline="15" endline="19">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Setup</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1a7f5336d87e9d87b86c020bf84f1033b8" compoundref="RequestLoggingMiddlewareTests_8cs" startline="38" endline="44">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Request_With_NoAttrOrOpts_Result_AllLogged</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ada64b1e0e61d6681e72fd663ad8254d4" compoundref="RequestLoggingMiddlewareTests_8cs" startline="47" endline="72">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1aad36344227951e2151031861f1f9ec1f" compoundref="RequestLoggingMiddlewareTests_8cs" startline="22" endline="35">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInOpts_Result_CatcherDontLogBodies</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1abbd679a37fe1b7c564770ea5c88c6bd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Setup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" line="15" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" bodystart="15" bodyend="19"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1af182d07e7a62112848d16dce30bd9f53" compoundref="RequestLoggingMiddlewareTests_8cs" startline="12">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests._client</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1aad36344227951e2151031861f1f9ec1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInOpts_Result_CatcherDontLogBodies</definition>
+        <argsstring>()</argsstring>
+        <name>When_Requests_With_NoLoggingInOpts_Result_CatcherDontLogBodies</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInOpts_Result_CatcherDontLogBodies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" line="22" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" bodystart="22" bodyend="35"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1af182d07e7a62112848d16dce30bd9f53" compoundref="RequestLoggingMiddlewareTests_8cs" startline="12">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests._client</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ab0ccb58d8c58365ec34cf6473224519f" compoundref="RequestLoggingMiddlewareTests_8cs" startline="11">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Randomizer</references>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1Middlewares_1a099ce09ea672d667023db342151af972" compoundref="RequestLoggingMiddleware_8cs" startline="54" endline="227">Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware</references>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1Requests_1af449e41339d2ed56bb4d6fea0ddb89f8">Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.SomeBodyRequest</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1a7f5336d87e9d87b86c020bf84f1033b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Request_With_NoAttrOrOpts_Result_AllLogged</definition>
+        <argsstring>()</argsstring>
+        <name>When_Request_With_NoAttrOrOpts_Result_AllLogged</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Request_With_NoAttrOrOpts_Result_AllLogged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" line="38" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" bodystart="38" bodyend="44"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1af182d07e7a62112848d16dce30bd9f53" compoundref="RequestLoggingMiddlewareTests_8cs" startline="12">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests._client</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ab0ccb58d8c58365ec34cf6473224519f" compoundref="RequestLoggingMiddlewareTests_8cs" startline="11">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Randomizer</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ada64b1e0e61d6681e72fd663ad8254d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies</definition>
+        <argsstring>()</argsstring>
+        <name>When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" line="47" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" bodystart="47" bodyend="72"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1af182d07e7a62112848d16dce30bd9f53" compoundref="RequestLoggingMiddlewareTests_8cs" startline="12">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests._client</references>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1Requests_1a8e94e6f96ec7f9ce57f47938740f844c">Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ab0ccb58d8c58365ec34cf6473224519f" compoundref="RequestLoggingMiddlewareTests_8cs" startline="11">Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.Randomizer</references>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1Middlewares_1a099ce09ea672d667023db342151af972" compoundref="RequestLoggingMiddleware_8cs" startline="54" endline="227">Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-Randomizer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_client</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient</label>
+        <link refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient"/>
+      </node>
+      <node id="2">
+        <label>static readonly EbRandomizer</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" line="9" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/Middlewares/RequestLoggingMiddlewareTests.cs" bodystart="10" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1af182d07e7a62112848d16dce30bd9f53" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::Middlewares::RequestLoggingMiddlewareTests</scope><name>_client</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ab0ccb58d8c58365ec34cf6473224519f" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::Middlewares::RequestLoggingMiddlewareTests</scope><name>Randomizer</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1abbd679a37fe1b7c564770ea5c88c6bd9" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::Middlewares::RequestLoggingMiddlewareTests</scope><name>Setup</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1a7f5336d87e9d87b86c020bf84f1033b8" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::Middlewares::RequestLoggingMiddlewareTests</scope><name>When_Request_With_NoAttrOrOpts_Result_AllLogged</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1ada64b1e0e61d6681e72fd663ad8254d4" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::Middlewares::RequestLoggingMiddlewareTests</scope><name>When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests_1aad36344227951e2151031861f1f9ec1f" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::Middlewares::RequestLoggingMiddlewareTests</scope><name>When_Requests_With_NoLoggingInOpts_Result_CatcherDontLogBodies</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

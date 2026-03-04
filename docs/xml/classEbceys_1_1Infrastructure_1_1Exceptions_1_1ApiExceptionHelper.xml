@@ -1,0 +1,865 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a19804ac3acd1ed85d3db3f9b0717c729" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowNotFound&lt; TResult &gt;</definition>
+        <argsstring>(string message, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowNotFound&lt; TResult &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowNotFound&lt; TResult &gt;</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws not found exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="24" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a94f1977c81d43b53232448e6a4a6a583" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowNotFound&lt; TResult, TException &gt;</definition>
+        <argsstring>(TException exception, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowNotFound&lt; TResult, TException &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowNotFound&lt; TResult, TException &gt;</qualifiedname>
+        <param>
+          <type>TException</type>
+          <declname>exception</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws not found exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The inner exception.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="44" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="44" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a31523603fd6a4f9c387f976d2ee22816" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowConflict&lt; TResult &gt;</definition>
+        <argsstring>(string message, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowConflict&lt; TResult &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowConflict&lt; TResult &gt;</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the conflict exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="65" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="65" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a2abdaafda7ed646b72877e828b63b675" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowConflict&lt; TResult, TException &gt;</definition>
+        <argsstring>(TException exception, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowConflict&lt; TResult, TException &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowConflict&lt; TResult, TException &gt;</qualifiedname>
+        <param>
+          <type>TException</type>
+          <declname>exception</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws conflict exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exception.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="85" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a188a59a6aa1b18599947e99ce270fdc4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowValidation&lt; TResult &gt;</definition>
+        <argsstring>(ValidationProblemDetails problemDetails, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowValidation&lt; TResult &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowValidation&lt; TResult &gt;</qualifiedname>
+        <param>
+          <type>ValidationProblemDetails</type>
+          <declname>problemDetails</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the validation exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>problemDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The problem details.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="106" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a5bce85961e656b506bd7d1e6634dedaf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowException&lt; TResult, TException &gt;</definition>
+        <argsstring>(TException exception, int statusCode=StatusCodes.Status500InternalServerError, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowException&lt; TResult, TException &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowException&lt; TResult, TException &gt;</qualifiedname>
+        <param>
+          <type>TException</type>
+          <declname>exception</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>statusCode</declname>
+          <defval>StatusCodes.Status500InternalServerError</defval>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exception.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status code.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="122" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a528eaa5f46c153c8a035ba4bbb7918e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowException&lt; TException &gt;</definition>
+        <argsstring>(TException exception, int statusCode=StatusCodes.Status500InternalServerError, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowException&lt; TException &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowException&lt; TException &gt;</qualifiedname>
+        <param>
+          <type>TException</type>
+          <declname>exception</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>statusCode</declname>
+          <defval>StatusCodes.Status500InternalServerError</defval>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exception.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status code.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="138" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a0997d232d88b49e6e8fe4af68eced46c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult &gt;</definition>
+        <argsstring>(ProblemDetails? problemDetails, int? statusCode=null, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowApiException&lt; TResult &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult &gt;</qualifiedname>
+        <param>
+          <type>ProblemDetails?</type>
+          <declname>problemDetails</declname>
+        </param>
+        <param>
+          <type>int?</type>
+          <declname>statusCode</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the api exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>problemDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The problem details.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status code.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="154" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="154" bodyend="159"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a28d491db086545fb928af7e1f23178b3" compoundref="ApiExceptionHelper_8cs" startline="169" endline="188">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a28d491db086545fb928af7e1f23178b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException</definition>
+        <argsstring>(ProblemDetails? problemDetails, int? statusCode=null, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowApiException</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException</qualifiedname>
+        <param>
+          <type>ProblemDetails?</type>
+          <declname>problemDetails</declname>
+        </param>
+        <param>
+          <type>int?</type>
+          <declname>statusCode</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the api exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>problemDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The problem details.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status code.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="169" column="24" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="169" bodyend="188"/>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1aa04cfd1832380df5f4eac3908baa41c6" compoundref="ApiExceptionHelper_8cs" startline="197" endline="207">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a0997d232d88b49e6e8fe4af68eced46c" compoundref="ApiExceptionHelper_8cs" startline="154" endline="159">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a06918d032b62ce3ddf785675011fa3f2" compoundref="ApiExceptionHelper_8cs" startline="217" endline="227">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a9b01c1b3c78d2a3736e3b0017cf7ac8e" compoundref="ApiExceptionHelper_8cs" startline="237" endline="247">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult, TError &gt;</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Controllers_1_1AuthController_1a8eba667312dc5a90e97222e584d54396" compoundref="AuthController_8cs" startline="30" endline="55">Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.ValidateToken</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Exceptions_1_1ApiExceptionTests_1a38139e19fd38bf15e39daf299442421f" compoundref="ApiExceptionTests_8cs" startline="109" endline="118">Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests.When_ApiException_With_EmptyProblemDetails_Result_CorrectFields</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Exceptions_1_1ApiExceptionTests_1a493ae888907bf9083629d93b40000687" compoundref="ApiExceptionTests_8cs" startline="121" endline="130">Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests.When_ApiException_With_NullProblemDetails_Result_CorrectFields</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1UnitTests_1_1Exceptions_1_1ApiExceptionTests_1a43a45a8a209946f2b91acd302b1ee17c" compoundref="ApiExceptionTests_8cs" startline="133" endline="148">Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests.When_ApiException_With_RandomProblemDetails_Result_CorrectFields</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1aa04cfd1832380df5f4eac3908baa41c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TError &gt;</definition>
+        <argsstring>(OperationResult&lt; TError &gt; operationResult, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowApiException&lt; TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TError &gt;</qualifiedname>
+        <param>
+          <type>OperationResult&lt; TError &gt;</type>
+          <declname>operationResult</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the api exception created by <emphasis>operationResult</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operationResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation result.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The api exception.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="197" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="197" bodyend="207"/>
+        <references refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g_1a4324f7829cd2d4fbf15b848a767a189b" compoundref="OperationResult_8cs" startline="120" endline="120">Ebceys.Infrastructure.HttpClient.OperationResult&lt; TError &gt;.Error</references>
+        <references refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g_1aa75fbf9ee128156929c0a0fee11a8187" compoundref="OperationResult_8cs" startline="130" endline="130">Ebceys.Infrastructure.HttpClient.OperationResult&lt; TError &gt;.StatusCode</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a28d491db086545fb928af7e1f23178b3" compoundref="ApiExceptionHelper_8cs" startline="169" endline="188">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a06918d032b62ce3ddf785675011fa3f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult, TError &gt;</definition>
+        <argsstring>(OperationResult&lt; TError &gt; operationResult, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowApiException&lt; TResult, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult, TError &gt;</qualifiedname>
+        <param>
+          <type>OperationResult&lt; TError &gt;</type>
+          <declname>operationResult</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the api exception created by <emphasis>operationResult</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operationResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation result.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The api exception.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="217" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="217" bodyend="227"/>
+        <references refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g_1a4324f7829cd2d4fbf15b848a767a189b" compoundref="OperationResult_8cs" startline="120" endline="120">Ebceys.Infrastructure.HttpClient.OperationResult&lt; TError &gt;.Error</references>
+        <references refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-1-g_1aa75fbf9ee128156929c0a0fee11a8187" compoundref="OperationResult_8cs" startline="130" endline="130">Ebceys.Infrastructure.HttpClient.OperationResult&lt; TError &gt;.StatusCode</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a28d491db086545fb928af7e1f23178b3" compoundref="ApiExceptionHelper_8cs" startline="169" endline="188">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException</references>
+      </memberdef>
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a9b01c1b3c78d2a3736e3b0017cf7ac8e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TResult</type>
+        <definition>static TResult Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult, TError &gt;</definition>
+        <argsstring>(OperationResult&lt; TResult, TError &gt; operationResult, [CallerMemberName] string memberName=&quot;&quot;)</argsstring>
+        <name>ThrowApiException&lt; TResult, TError &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException&lt; TResult, TError &gt;</qualifiedname>
+        <param>
+          <type>OperationResult&lt; TResult, TError &gt;</type>
+          <declname>operationResult</declname>
+        </param>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string</type>
+          <declname>memberName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Throws the api exception created by <emphasis>operationResult</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operationResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation result.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memberName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The member name.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The api exception.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="237" column="19" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="237" bodyend="247"/>
+        <references refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g_1ac15879d9f1b5ca48040af25b662a7169" compoundref="OperationResult_8cs" startline="24" endline="24">Ebceys.Infrastructure.HttpClient.OperationResult&lt; TResponse, TError &gt;.Error</references>
+        <references refid="structEbceys_1_1Infrastructure_1_1HttpClient_1_1OperationResult-2-g_1a5e8466e40ea648b1959e954413ffc1a2" compoundref="OperationResult_8cs" startline="34" endline="34">Ebceys.Infrastructure.HttpClient.OperationResult&lt; TResponse, TError &gt;.StatusCode</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a28d491db086545fb928af7e1f23178b3" compoundref="ApiExceptionHelper_8cs" startline="169" endline="188">Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.ThrowApiException</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiException" kindref="compound">ApiException</ref> helper class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Exceptions.ApiExceptionHelper</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" line="14" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Exceptions/ApiExceptionHelper.cs" bodystart="15" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a28d491db086545fb928af7e1f23178b3" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowApiException</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1aa04cfd1832380df5f4eac3908baa41c6" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowApiException&lt; TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a0997d232d88b49e6e8fe4af68eced46c" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowApiException&lt; TResult &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a06918d032b62ce3ddf785675011fa3f2" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowApiException&lt; TResult, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a9b01c1b3c78d2a3736e3b0017cf7ac8e" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowApiException&lt; TResult, TError &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a31523603fd6a4f9c387f976d2ee22816" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowConflict&lt; TResult &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a2abdaafda7ed646b72877e828b63b675" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowConflict&lt; TResult, TException &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a528eaa5f46c153c8a035ba4bbb7918e1" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowException&lt; TException &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a5bce85961e656b506bd7d1e6634dedaf" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowException&lt; TResult, TException &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a19804ac3acd1ed85d3db3f9b0717c729" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowNotFound&lt; TResult &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a94f1977c81d43b53232448e6a4a6a583" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowNotFound&lt; TResult, TException &gt;</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1Exceptions_1_1ApiExceptionHelper_1a188a59a6aa1b18599947e99ce270fdc4" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Exceptions::ApiExceptionHelper</scope><name>ThrowValidation&lt; TResult &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

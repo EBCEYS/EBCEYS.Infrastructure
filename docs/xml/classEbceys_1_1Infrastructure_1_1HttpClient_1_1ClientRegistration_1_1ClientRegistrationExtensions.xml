@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientRegistrationExtensions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::HttpClient::ClientRegistration::ClientRegistrationExtensions</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientRegistrationExtensions_1a97e1297a3c86be413acc90613b300f05" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ClientBaseRegistrationRegistrator&lt; TInterface, TImplementation &gt;</type>
+        <definition>static ClientBaseRegistrationRegistrator&lt; TInterface, TImplementation &gt; Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.AddClient&lt; TInterface, TImplementation &gt;</definition>
+        <argsstring>(this IServiceCollection services)</argsstring>
+        <name>AddClient&lt; TInterface, TImplementation &gt;</name>
+        <qualifiedname>Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.AddClient&lt; TInterface, TImplementation &gt;</qualifiedname>
+        <param>
+          <type>this IServiceCollection</type>
+          <declname>services</declname>
+        </param>
+        <briefdescription>
+<para>Starts the registration process of <emphasis>TImplementation</emphasis>  in <emphasis>services</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>services</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The services.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TInterface</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interface.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TImplementation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The implementation of <ref refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientBase" kindref="compound">ClientBase</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new instance of ClientBaseRegistrationRegistrator&lt;TInterface,TImplementation&gt; to configure client. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs" line="26" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs" bodystart="26" bodyend="31"/>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1aad14f6b1c5d6289f7216db7eecd42de9" compoundref="ClientRegistrationExtensions_8cs" startline="42" endline="183">Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator&lt; TInterface, TImplementation &gt;</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientRegistrationExtensions" kindref="compound">ClientRegistrationExtensions</ref> extensions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientRegistrationExtensions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs" line="14" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs" bodystart="15" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1HttpClient_1_1ClientRegistration_1_1ClientRegistrationExtensions_1a97e1297a3c86be413acc90613b300f05" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HttpClient::ClientRegistration::ClientRegistrationExtensions</scope><name>AddClient&lt; TInterface, TImplementation &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

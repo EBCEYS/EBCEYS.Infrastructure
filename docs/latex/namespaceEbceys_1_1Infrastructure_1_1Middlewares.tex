@@ -1,0 +1,57 @@
+\doxysection{Ebceys.\+Infrastructure.\+Middlewares Namespace Reference}
+\hypertarget{namespaceEbceys_1_1Infrastructure_1_1Middlewares}{}\label{namespaceEbceys_1_1Infrastructure_1_1Middlewares}\index{Ebceys.Infrastructure.Middlewares@{Ebceys.Infrastructure.Middlewares}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Middlewares_1_1HttpLoggingOptions}{Http\+Logging\+Options}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{classEbceys_1_1Infrastructure_1_1Middlewares_1_1HttpLoggingOptions}{Http\+Logging\+Options} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{namespaceEbceys_1_1Infrastructure_1_1Middlewares_a099ce09ea672d667023db342151af972}{Request\+Logging\+Middleware}} (Request\+Delegate next, IOptions$<$ \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Middlewares_1_1HttpLoggingOptions}{Http\+Logging\+Options}} $>$ logging\+Opts, ILogger$<$ Request\+Logging\+Middleware $>$ logger)
+\begin{DoxyCompactList}\small\item\em The request logging middleware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceEbceys_1_1Infrastructure_1_1Middlewares_a099ce09ea672d667023db342151af972}\index{Ebceys.Infrastructure.Middlewares@{Ebceys.Infrastructure.Middlewares}!RequestLoggingMiddleware@{RequestLoggingMiddleware}}
+\index{RequestLoggingMiddleware@{RequestLoggingMiddleware}!Ebceys.Infrastructure.Middlewares@{Ebceys.Infrastructure.Middlewares}}
+\doxysubsubsection{\texorpdfstring{RequestLoggingMiddleware()}{RequestLoggingMiddleware()}}
+{\footnotesize\ttfamily \label{namespaceEbceys_1_1Infrastructure_1_1Middlewares_a099ce09ea672d667023db342151af972} 
+class Ebceys.\+Infrastructure.\+Middlewares.\+Request\+Logging\+Middleware (\begin{DoxyParamCaption}\item[{Request\+Delegate}]{next}{, }\item[{IOptions$<$ \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Middlewares_1_1HttpLoggingOptions}{Http\+Logging\+Options}} $>$}]{logging\+Opts}{, }\item[{ILogger$<$ Request\+Logging\+Middleware $>$}]{logger}{}\end{DoxyParamCaption})}
+
+
+
+The request logging middleware. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next} & The request delegate.\\
+\hline
+{\em logger} & The logger.\\
+\hline
+\end{DoxyParams}
+The string that will write to log if body should not be logged.
+
+Invokes the context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The context.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{namespaceEbceys_1_1Infrastructure_1_1Middlewares_a099ce09ea672d667023db342151af972_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceEbceys_1_1Infrastructure_1_1Middlewares_a099ce09ea672d667023db342151af972_icgraph}
+\end{center}
+\end{figure}

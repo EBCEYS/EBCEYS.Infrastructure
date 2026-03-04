@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::AuthorizationTestApplication::BoundedContext::RoutesDictionary::AuthControllerV1::Methods</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91_1a9a401eb4fa1b7e1be3b14372aebc60f6" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.GetToken</definition>
+        <argsstring></argsstring>
+        <name>GetToken</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.GetToken</qualifiedname>
+        <initializer>= &quot;token&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" line="17" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91_1a150330f850e6ddfc23308c2d6bc88df9" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.ValidateToken</definition>
+        <argsstring></argsstring>
+        <name>ValidateToken</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.ValidateToken</qualifiedname>
+        <initializer>= &quot;validate/token&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" line="18" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91_1af379b7de4722072dfd464c6d6819ed4e" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.ValidateAuth</definition>
+        <argsstring></argsstring>
+        <name>ValidateAuth</name>
+        <qualifiedname>Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.ValidateAuth</qualifiedname>
+        <initializer>= &quot;validate/auth&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" line="19" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+GetToken</edgelabel>
+          <edgelabel>+ValidateAuth</edgelabel>
+          <edgelabel>+ValidateToken</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>const string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" line="15" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.AuthorizationTestApplication/BoundedContext/RoutesDictionary.cs" bodystart="16" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91_1a9a401eb4fa1b7e1be3b14372aebc60f6" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::BoundedContext::RoutesDictionary::AuthControllerV1::Methods</scope><name>GetToken</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91_1af379b7de4722072dfd464c6d6819ed4e" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::BoundedContext::RoutesDictionary::AuthControllerV1::Methods</scope><name>ValidateAuth</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91_1a150330f850e6ddfc23308c2d6bc88df9" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::AuthorizationTestApplication::BoundedContext::RoutesDictionary::AuthControllerV1::Methods</scope><name>ValidateToken</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

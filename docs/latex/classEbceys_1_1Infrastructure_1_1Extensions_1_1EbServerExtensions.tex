@@ -1,0 +1,88 @@
+\doxysection{Ebceys.\+Infrastructure.\+Extensions.\+Eb\+Server\+Extensions Class Reference}
+\hypertarget{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions}{}\label{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions}\index{Ebceys.Infrastructure.Extensions.EbServerExtensions@{Ebceys.Infrastructure.Extensions.EbServerExtensions}}
+
+
+The \doxylink{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions}{Eb\+Server\+Extensions} class.  
+
+
+
+
+Collaboration diagram for Ebceys.\+Infrastructure.\+Extensions.\+Eb\+Server\+Extensions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_a8914d4b5a576ef0d40c27eb170914689}{extension}} (Problem\+Details)
+\item 
+\mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_ade6304f2161172a4a1092c40cb38f508}{extension}} (Task)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Dictionary$<$ int, string $>$ \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_a16d8c45373b2243f12689d7df847854c}{Status\+Codes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions}{Eb\+Server\+Extensions} class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_a8914d4b5a576ef0d40c27eb170914689}\index{Ebceys.Infrastructure.Extensions.EbServerExtensions@{Ebceys.Infrastructure.Extensions.EbServerExtensions}!extension@{extension}}
+\index{extension@{extension}!Ebceys.Infrastructure.Extensions.EbServerExtensions@{Ebceys.Infrastructure.Extensions.EbServerExtensions}}
+\doxysubsubsection{\texorpdfstring{extension()}{extension()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_a8914d4b5a576ef0d40c27eb170914689} 
+Ebceys.\+Infrastructure.\+Extensions.\+Eb\+Server\+Extensions.\+extension (\begin{DoxyParamCaption}\item[{Problem\+Details}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Creates the new instance of Problem\+Details by {\itshape ctx} .
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The http response.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new instance of Problem\+Details.
+\end{DoxyReturn}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_ade6304f2161172a4a1092c40cb38f508}\index{Ebceys.Infrastructure.Extensions.EbServerExtensions@{Ebceys.Infrastructure.Extensions.EbServerExtensions}!extension@{extension}}
+\index{extension@{extension}!Ebceys.Infrastructure.Extensions.EbServerExtensions@{Ebceys.Infrastructure.Extensions.EbServerExtensions}}
+\doxysubsubsection{\texorpdfstring{extension()}{extension()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_ade6304f2161172a4a1092c40cb38f508} 
+Ebceys.\+Infrastructure.\+Extensions.\+Eb\+Server\+Extensions.\+extension (\begin{DoxyParamCaption}\item[{Task}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Awaits until {\itshape predicate}  wont return true or {\itshape timeout} .
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The predicate.\\
+\hline
+{\em timeout} & The timeout.\\
+\hline
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_a16d8c45373b2243f12689d7df847854c}\index{Ebceys.Infrastructure.Extensions.EbServerExtensions@{Ebceys.Infrastructure.Extensions.EbServerExtensions}!StatusCodes@{StatusCodes}}
+\index{StatusCodes@{StatusCodes}!Ebceys.Infrastructure.Extensions.EbServerExtensions@{Ebceys.Infrastructure.Extensions.EbServerExtensions}}
+\doxysubsubsection{\texorpdfstring{StatusCodes}{StatusCodes}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Extensions_1_1EbServerExtensions_a16d8c45373b2243f12689d7df847854c} 
+readonly Dictionary$<$int, string$>$ Ebceys.\+Infrastructure.\+Extensions.\+Eb\+Server\+Extensions.\+Status\+Codes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Enum.GetValues<HttpStatusCode>()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ .DistinctBy(x\ =>\ (\textcolor{keywordtype}{int})x).ToDictionary(x\ =>\ (\textcolor{keywordtype}{int})x,\ x\ =>\ x.ToString())}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Infrastructure/\+Extensions/\mbox{\hyperlink{EbServerExtensions_8cs}{Eb\+Server\+Extensions.\+cs}}\end{DoxyCompactItemize}

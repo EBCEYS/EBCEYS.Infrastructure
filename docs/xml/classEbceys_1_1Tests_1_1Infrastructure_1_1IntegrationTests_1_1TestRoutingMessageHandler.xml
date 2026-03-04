@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Tests::Infrastructure::IntegrationTests::TestRoutingMessageHandler</compoundname>
+    <basecompoundref refid="classDelegatingHandler" prot="public" virt="non-virtual">DelegatingHandler</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a19ca578a8c1bd144b9d783a1a72bfedb" prot="private" static="no" mutable="no">
+        <type>readonly Dictionary&lt; string, <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a8143f8d8a072418d1151a9c0321d11fc" kindref="member">HostHandler</ref> &gt;</type>
+        <definition>readonly Dictionary&lt;string, HostHandler&gt; Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler._hosts</definition>
+        <argsstring></argsstring>
+        <name>_hosts</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler._hosts</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" line="12" column="33" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1ac089552c76722c505e8f0f1bcef52404" compoundref="TestRoutingMessageHandler_8cs" startline="20" endline="39">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.SendAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a34034124c521cafe280ad371bcdb199b" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration" kindref="compound">RoutingMessageHandlerConfiguration</ref></type>
+        <definition>RoutingMessageHandlerConfiguration Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.RouteConfiguration</definition>
+        <argsstring></argsstring>
+        <name>RouteConfiguration</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.RouteConfiguration</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para>The route configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" line="17" column="54" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" bodystart="17" bodyend="17"/>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1ac089552c76722c505e8f0f1bcef52404" compoundref="TestRoutingMessageHandler_8cs" startline="20" endline="39">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.SendAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1ac089552c76722c505e8f0f1bcef52404" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task&lt; HttpResponseMessage &gt;</type>
+        <definition>override async Task&lt; HttpResponseMessage &gt; Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.SendAsync</definition>
+        <argsstring>(HttpRequestMessage request, CancellationToken cancellationToken)</argsstring>
+        <name>SendAsync</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.SendAsync</qualifiedname>
+        <param>
+          <type>HttpRequestMessage</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" line="20" column="35" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" bodystart="20" bodyend="39"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a19ca578a8c1bd144b9d783a1a72bfedb" compoundref="TestRoutingMessageHandler_8cs" startline="12">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler._hosts</references>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a8143f8d8a072418d1151a9c0321d11fc" compoundref="TestRoutingMessageHandler_8cs" startline="42" endline="48">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.HostHandler</references>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a34034124c521cafe280ad371bcdb199b" compoundref="TestRoutingMessageHandler_8cs" startline="17" endline="17">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.RouteConfiguration</references>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a8143f8d8a072418d1151a9c0321d11fc" compoundref="TestRoutingMessageHandler_8cs" startline="42" endline="48">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.HostHandler</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a8143f8d8a072418d1151a9c0321d11fc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>class</type>
+        <definition>class Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.HostHandler</definition>
+        <argsstring>(HttpMessageHandler handler)</argsstring>
+        <name>HostHandler</name>
+        <qualifiedname>Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.HostHandler</qualifiedname>
+        <param>
+          <type>HttpMessageHandler</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" line="42" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" bodystart="42" bodyend="48"/>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a8143f8d8a072418d1151a9c0321d11fc" compoundref="TestRoutingMessageHandler_8cs" startline="42" endline="48">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.HostHandler</references>
+        <references refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1ac089552c76722c505e8f0f1bcef52404" compoundref="TestRoutingMessageHandler_8cs" startline="20" endline="39">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.SendAsync</references>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a8143f8d8a072418d1151a9c0321d11fc" compoundref="TestRoutingMessageHandler_8cs" startline="42" endline="48">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.HostHandler</referencedby>
+        <referencedby refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1ac089552c76722c505e8f0f1bcef52404" compoundref="TestRoutingMessageHandler_8cs" startline="20" endline="39">Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.SendAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler" kindref="compound">TestRoutingMessageHandler</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DelegatingHandler</label>
+        <link refid="classDelegatingHandler"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DelegatingHandler</label>
+        <link refid="classDelegatingHandler"/>
+      </node>
+      <node id="1">
+        <label>Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler</label>
+        <link refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_hosts</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>readonly Dictionary&lt; string, HostHandler &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" line="10" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs" bodystart="11" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a19ca578a8c1bd144b9d783a1a72bfedb" prot="private" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::TestRoutingMessageHandler</scope><name>_hosts</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a8143f8d8a072418d1151a9c0321d11fc" prot="private" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::TestRoutingMessageHandler</scope><name>HostHandler</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1a34034124c521cafe280ad371bcdb199b" prot="public" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::TestRoutingMessageHandler</scope><name>RouteConfiguration</name></member>
+      <member refid="classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler_1ac089552c76722c505e8f0f1bcef52404" prot="protected" virt="non-virtual"><scope>Ebceys::Tests::Infrastructure::IntegrationTests::TestRoutingMessageHandler</scope><name>SendAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

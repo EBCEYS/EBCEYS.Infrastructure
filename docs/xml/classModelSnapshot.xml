@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classModelSnapshot" kind="class" language="C#" prot="public">
+    <compoundname>ModelSnapshot</compoundname>
+    <derivedcompoundref refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot" prot="public" virt="non-virtual">Ebceys.Infrastructure.TestApplication.Migrations.DataModelContextModelSnapshot</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Ebceys.Infrastructure.TestApplication.Migrations.DataModelContextModelSnapshot</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ModelSnapshot</label>
+        <link refid="classModelSnapshot"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ModelSnapshot</label>
+        <link refid="classModelSnapshot"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/Migrations/DataModelContextModelSnapshot.cs" line="13" column="12"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

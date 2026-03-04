@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthChecksCollectorService" kind="class" language="C#" prot="package">
+    <compoundname>Ebceys::Infrastructure::HealthChecks::HealthChecksCollectorService</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthChecksCollectorService_1a63ee2ee42c56ad73a1474f751d9bad8d" prot="public" static="yes" mutable="no">
+        <type>readonly ConcurrentBag&lt; IConnectionFactory &gt;</type>
+        <definition>readonly ConcurrentBag&lt;IConnectionFactory&gt; Ebceys.Infrastructure.HealthChecks.HealthChecksCollectorService.Rabbits</definition>
+        <argsstring></argsstring>
+        <name>Rabbits</name>
+        <qualifiedname>Ebceys.Infrastructure.HealthChecks.HealthChecksCollectorService.Rabbits</qualifiedname>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthChecksCollectorService.cs" line="8" column="42" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthChecksCollectorService.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthChecksCollectorService_1a8171be1c43c9e0fd9699e8e069646840" prot="public" static="yes" mutable="no">
+        <type>readonly ConcurrentBag&lt; string &gt;</type>
+        <definition>readonly ConcurrentBag&lt;string&gt; Ebceys.Infrastructure.HealthChecks.HealthChecksCollectorService.Psqls</definition>
+        <argsstring></argsstring>
+        <name>Psqls</name>
+        <qualifiedname>Ebceys.Infrastructure.HealthChecks.HealthChecksCollectorService.Psqls</qualifiedname>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthChecksCollectorService.cs" line="9" column="42" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthChecksCollectorService.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.HealthChecks.HealthChecksCollectorService</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+Rabbits</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+Psqls</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>static readonly ConcurrentBag&lt; IConnectionFactory &gt;</label>
+      </node>
+      <node id="3">
+        <label>static readonly ConcurrentBag&lt; string &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthChecksCollectorService.cs" line="6" column="17" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/HealthChecks/HealthChecksCollectorService.cs" bodystart="7" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthChecksCollectorService_1a8171be1c43c9e0fd9699e8e069646840" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HealthChecks::HealthChecksCollectorService</scope><name>Psqls</name></member>
+      <member refid="classEbceys_1_1Infrastructure_1_1HealthChecks_1_1HealthChecksCollectorService_1a63ee2ee42c56ad73a1474f751d9bad8d" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::HealthChecks::HealthChecksCollectorService</scope><name>Rabbits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

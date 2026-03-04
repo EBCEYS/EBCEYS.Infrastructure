@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbIServiceProviderExtensions" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Extensions::EbIServiceProviderExtensions</compoundname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbIServiceProviderExtensions_1a3bc68441c54d00d080a0b9329792bf19" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ebceys.Infrastructure.Extensions.EbIServiceProviderExtensions.extension</definition>
+        <argsstring>(IServiceProvider serviceProvider)</argsstring>
+        <name>extension</name>
+        <qualifiedname>Ebceys.Infrastructure.Extensions.EbIServiceProviderExtensions.extension</qualifiedname>
+        <param>
+          <type>IServiceProvider</type>
+          <declname>serviceProvider</declname>
+        </param>
+        <briefdescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The service provider.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Gets the command from service provider.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command context.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command result.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The instance of <ref refid="interfaceEbceys_1_1Infrastructure_1_1Interfaces_1_1ICommand-2-g" kindref="compound">ICommand&lt;TContext,TResult&gt;</ref> if exists; otherwise <computeroutput>null</computeroutput>.</para>
+</simplesect>
+</para>
+<para>Gets the command from service provider.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command context.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command result.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The instance of <ref refid="interfaceEbceys_1_1Infrastructure_1_1Interfaces_1_1ICommand-2-g" kindref="compound">ICommand&lt;TContext,TResult&gt;</ref>.</para>
+</simplesect>
+</para>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbIServiceProviderExtensions.cs" line="14" column="5" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbIServiceProviderExtensions.cs" bodystart="14" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The IServiceProvider extensions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Extensions.EbIServiceProviderExtensions</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbIServiceProviderExtensions"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbIServiceProviderExtensions.cs" line="11" column="15" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/Extensions/EbIServiceProviderExtensions.cs" bodystart="12" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Extensions_1_1EbIServiceProviderExtensions_1a3bc68441c54d00d080a0b9329792bf19" prot="private" virt="non-virtual"><scope>Ebceys::Infrastructure::Extensions::EbIServiceProviderExtensions</scope><name>extension</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

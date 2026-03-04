@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classAbstractValidator-1-g" kind="class" language="C#" prot="public">
+    <compoundname>AbstractValidator-1-g</compoundname>
+    <derivedcompoundref refid="classEbceys_1_1Infrastructure_1_1DatabaseRegistration_1_1DbContextRegistrationOptionsValidator" prot="public" virt="non-virtual">Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptionsValidator</derivedcompoundref>
+    <derivedcompoundref refid="classEbceys_1_1Infrastructure_1_1Options_1_1SimpleRabbitMqConfigurationValidator" prot="public" virt="non-virtual">Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationValidator</derivedcompoundref>
+    <derivedcompoundref refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1ChangeNameRequestValidator" prot="public" virt="non-virtual">Ebceys.Infrastructure.TestApplication.Validators.ChangeNameRequestValidator</derivedcompoundref>
+    <derivedcompoundref refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator" prot="public" virt="non-virtual">Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AbstractValidator</label>
+        <link refid="classAbstractValidator-1-g"/>
+      </node>
+      <node id="2">
+        <label>Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptionsValidator</label>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationValidator</label>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Ebceys.Infrastructure.TestApplication.Validators.ChangeNameRequestValidator</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1ChangeNameRequestValidator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AbstractValidator</label>
+        <link refid="classAbstractValidator-1-g"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs" line="85" column="9"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

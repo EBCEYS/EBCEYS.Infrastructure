@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="AuthClientTests_8cs" kind="file" language="C#">
+    <compoundname>AuthClientTests.cs</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests" prot="public">Ebceys::Infrastructure::Tests::ClientTests::AuthClientTests</innerclass>
+    <innernamespace refid="namespaceEbceys">Ebceys</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure">Ebceys::Infrastructure</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Tests">Ebceys::Infrastructure::Tests</innernamespace>
+    <innernamespace refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests">Ebceys::Infrastructure::Tests::ClientTests</innernamespace>
+    <innernamespace refid="namespaceAwesomeAssertions">AwesomeAssertions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">AwesomeAssertions;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1Exceptions" kindref="compound">Ebceys.Infrastructure.Exceptions</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations" kindref="compound">Ebceys.Infrastructure.TestApplication.Client.Implementations</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1AppInitializer" kindref="compound">Ebceys.Infrastructure.Tests.AppInitializer</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Tests_1_1Infrastructure_1_1Helpers" kindref="compound">Ebceys.Tests.Infrastructure.Helpers</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests" kindref="compound">Ebceys.Infrastructure.Tests.ClientTests</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests" kindref="compound">AuthClientTests</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>readonly<sp/><ref refid="namespaceEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1ac9492a2eeccc0965c21683f27daac5b1" kindref="member">EbRandomizer</ref><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" kindref="member">Randomizer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">();</highlight></codeline>
+<codeline lineno="12" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient" kindref="compound">ITestApplicationClient</ref><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a09bcee36b35d8761f996f989f6f9fb6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>AppTestClientContext<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a09bcee36b35d8761f996f989f6f9fb6b" kindref="member">_context</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>[SetUp]</highlight></codeline>
+<codeline lineno="16" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a9ce453c240fe243a58bf34280e6defae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a9ce453c240fe243a58bf34280e6defae" kindref="member">Setup</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a09bcee36b35d8761f996f989f6f9fb6b" kindref="member">_context</ref><sp/>=<sp/>AppTestContext.AppContext;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref><sp/>=<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a09bcee36b35d8761f996f989f6f9fb6b" kindref="member">_context</ref>.ServiceClient;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
+<codeline lineno="23" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a6c8dd8a8acc16b04158496edc012f256" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a6c8dd8a8acc16b04158496edc012f256" kindref="member">When_GetToken_With_AppClient_Result_Ok</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>result<sp/>=<sp/>await<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>.TestClient.GenerateTokenAsync(CancellationToken.None);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.Should().NotBeNull();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.Token.Should().NotBeNullOrEmpty();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Console.WriteLine(result.Token);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
+<codeline lineno="33" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a842320f5e866beaf54c41e2596718623" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a842320f5e866beaf54c41e2596718623" kindref="member">When_ValidateToken_With_GotToken_Result_Ok</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>token<sp/>=<sp/>await<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>.TestClient.GenerateTokenAsync(CancellationToken.None);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>act<sp/>=<sp/>()<sp/>=&gt;<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>.TestClient.ValidateTokenAsync(token.Token,<sp/>CancellationToken.None);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>act.Should().NotThrowAsync();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
+<codeline lineno="43" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1abad02fff9443b0bcaec50a7b22d20d2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1abad02fff9443b0bcaec50a7b22d20d2d" kindref="member">When_ValidateToken_With_RandomToken_Result_Forbidden</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>act<sp/>=<sp/>()<sp/>=&gt;<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>.TestClient.ValidateTokenAsync(<ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" kindref="member">Randomizer</ref>.Jwt(),<sp/>CancellationToken.None);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(await<sp/>act.Should().ThrowAsync&lt;ApiException&gt;())</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.And.ProblemDetails.Status.Should().Be(StatusCodes.Status403Forbidden);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>[Test]</highlight></codeline>
+<codeline lineno="52" refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a79d0e5c9134b9fc36f5a678f147f2c49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a79d0e5c9134b9fc36f5a678f147f2c49" kindref="member">When_ValidateAuth_With_TokenAndWithout_Result_FirstUnauthorizedSecondOk</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>act<sp/>=<sp/>()<sp/>=&gt;<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>.TestClient.ValidateAuthAsync(<ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1adc59b0bcab5bbb04e02a1cab70eb9abf" kindref="member">Randomizer</ref>.Jwt(),<sp/>CancellationToken.None);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(await<sp/>act.Should().ThrowAsync&lt;ApiException&gt;())</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.And.ProblemDetails.Status.Should().Be(StatusCodes.Status401Unauthorized);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>token<sp/>=<sp/>await<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>.TestClient.GenerateTokenAsync(CancellationToken.None);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>act2<sp/>=<sp/>()<sp/>=&gt;<sp/><ref refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1AuthClientTests_1a74832156c66a709c44a4b6efd964bcb4" kindref="member">_client</ref>.TestClient.ValidateAuthAsync(token.Token,<sp/>CancellationToken.None);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>act2.Should().NotThrowAsync();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ClientTests/AuthClientTests.cs"/>
+  </compounddef>
+</doxygen>

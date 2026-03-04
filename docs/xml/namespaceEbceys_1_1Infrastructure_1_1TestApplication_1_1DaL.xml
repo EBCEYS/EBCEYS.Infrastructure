@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL" kind="namespace" language="C#">
+    <compoundname>Ebceys::Infrastructure::TestApplication::DaL</compoundname>
+    <innerclass refid="classEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1_1TestTableDbo" prot="public">Ebceys::Infrastructure::TestApplication::DaL::TestTableDbo</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1a3cb9ad5fd6ae558d6f20c0c275eb32da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class Ebceys.Infrastructure.TestApplication.DaL.DataModelContext</definition>
+        <argsstring>(DbContextOptions&lt; DataModelContext &gt; opts)</argsstring>
+        <name>DataModelContext</name>
+        <qualifiedname>Ebceys.Infrastructure.TestApplication.DaL.DataModelContext</qualifiedname>
+        <param>
+          <type>DbContextOptions&lt; DataModelContext &gt;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/DaL/DataModelContext.cs" line="7" column="1" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/DaL/DataModelContext.cs" bodystart="7" bodyend="26"/>
+        <references refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1a3cb9ad5fd6ae558d6f20c0c275eb32da" compoundref="DataModelContext_8cs" startline="7" endline="26">Ebceys.Infrastructure.TestApplication.DaL.DataModelContext</references>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Commands_1a250926b0041b9824f967701a7a10ab96">Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommandResult</referencedby>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1DaL_1a3cb9ad5fd6ae558d6f20c0c275eb32da" compoundref="DataModelContext_8cs" startline="7" endline="26">Ebceys.Infrastructure.TestApplication.DaL.DataModelContext</referencedby>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Commands_1a2a114d426beecb5d879d15b53da8f89c">Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommandResult</referencedby>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Commands_1a71cd9444528c7fa8dc1deddf1b7c50a9">Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommandResult</referencedby>
+        <referencedby refid="namespaceEbceys_1_1Infrastructure_1_1TestApplication_1ab81a1413fa2d4078311b09b25cfd7256" compoundref="Ebceys_8Infrastructure_8TestApplication_2Program_8cs" startline="35" endline="82">Ebceys.Infrastructure.TestApplication.Startup</referencedby>
+        <referencedby refid="classEbceys_1_1Infrastructure_1_1Tests_1_1DiTests_1_1DiCTests_1acc360a4d09f1a7fd374150cd36c90e5d" compoundref="DiCTests_8cs" startline="80" endline="89">Ebceys.Infrastructure.Tests.DiTests.DiCTests.When_AppIsRunning_With_TestApp_Result_DataModelContextExists</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.TestApplication/DaL/DataModelContext.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

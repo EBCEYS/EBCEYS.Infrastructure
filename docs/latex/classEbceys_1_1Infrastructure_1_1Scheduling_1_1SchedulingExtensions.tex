@@ -1,0 +1,123 @@
+\doxysection{Ebceys.\+Infrastructure.\+Scheduling.\+Scheduling\+Extensions Class Reference}
+\hypertarget{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions}{}\label{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions}\index{Ebceys.Infrastructure.Scheduling.SchedulingExtensions@{Ebceys.Infrastructure.Scheduling.SchedulingExtensions}}
+
+
+The IService\+Collection extensions class for scheduling processes.  
+
+
+
+
+Collaboration diagram for Ebceys.\+Infrastructure.\+Scheduling.\+Scheduling\+Extensions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static IService\+Collection \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_aebcfbacf46e3432c37a0a9d2eb276485}{Add\+Scheduling\+Services}} (this IService\+Collection services, bool wait\+For\+Jobs\+To\+Complete, Func$<$ IScheduler\+Factory, Task $>$ configure\+Scheduler\+Jobs)
+\begin{DoxyCompactList}\small\item\em Adds the scheduling services to {\itshape services} . \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_a4a56d2a0b7ee8dc3dcdaaf76ec5d6ff5}{Schedule\+Job\+Async$<$ TJob $>$}} (this IScheduler\+Factory scheduler\+Factory, string job\+Identity, Time\+Span interval, Time\+Span delay=default, Cancellation\+Token cancellation\+Token=default)
+\begin{DoxyCompactList}\small\item\em Schedules the {\itshape TJob}  with specified {\itshape interval} . \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_af639a8562b97e021817cee621bb9b93e}{Schedule\+Job\+Async$<$ TJob $>$}} (IScheduler\+Factory scheduler\+Factory, string job\+Identity, string cron\+Expression, Time\+Span delay=default, Cancellation\+Token cancellation\+Token=default)
+\begin{DoxyCompactList}\small\item\em Schedules the {\itshape TJob}  with specified {\itshape cron\+Expression} . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The IService\+Collection extensions class for scheduling processes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_aebcfbacf46e3432c37a0a9d2eb276485}\index{Ebceys.Infrastructure.Scheduling.SchedulingExtensions@{Ebceys.Infrastructure.Scheduling.SchedulingExtensions}!AddSchedulingServices@{AddSchedulingServices}}
+\index{AddSchedulingServices@{AddSchedulingServices}!Ebceys.Infrastructure.Scheduling.SchedulingExtensions@{Ebceys.Infrastructure.Scheduling.SchedulingExtensions}}
+\doxysubsubsection{\texorpdfstring{AddSchedulingServices()}{AddSchedulingServices()}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_aebcfbacf46e3432c37a0a9d2eb276485} 
+static IService\+Collection Ebceys.\+Infrastructure.\+Scheduling.\+Scheduling\+Extensions.\+Add\+Scheduling\+Services (\begin{DoxyParamCaption}\item[{this IService\+Collection}]{services}{, }\item[{bool}]{wait\+For\+Jobs\+To\+Complete}{, }\item[{Func$<$ IScheduler\+Factory, Task $>$}]{configure\+Scheduler\+Jobs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Adds the scheduling services to {\itshape services} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & The services.\\
+\hline
+{\em wait\+For\+Jobs\+To\+Complete} & True for set wait for scheduled jobs ends until running next.\\
+\hline
+{\em configure\+Scheduler\+Jobs} & The jobs\textquotesingle{} configuration.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The instance of {\itshape services} .
+\end{DoxyReturn}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_af639a8562b97e021817cee621bb9b93e}\index{Ebceys.Infrastructure.Scheduling.SchedulingExtensions@{Ebceys.Infrastructure.Scheduling.SchedulingExtensions}!ScheduleJobAsync$<$ TJob $>$@{ScheduleJobAsync$<$ TJob $>$}}
+\index{ScheduleJobAsync$<$ TJob $>$@{ScheduleJobAsync$<$ TJob $>$}!Ebceys.Infrastructure.Scheduling.SchedulingExtensions@{Ebceys.Infrastructure.Scheduling.SchedulingExtensions}}
+\doxysubsubsection{\texorpdfstring{ScheduleJobAsync$<$ TJob $>$()}{ScheduleJobAsync< TJob >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_af639a8562b97e021817cee621bb9b93e} 
+static async Task Ebceys.\+Infrastructure.\+Scheduling.\+Scheduling\+Extensions.\+Schedule\+Job\+Async$<$ TJob $>$ (\begin{DoxyParamCaption}\item[{IScheduler\+Factory}]{scheduler\+Factory}{, }\item[{string}]{job\+Identity}{, }\item[{string}]{cron\+Expression}{, }\item[{Time\+Span}]{delay}{ = {\ttfamily default}, }\item[{Cancellation\+Token}]{cancellation\+Token}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Schedules the {\itshape TJob}  with specified {\itshape cron\+Expression} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scheduler\+Factory} & The scheduler factory.\\
+\hline
+{\em job\+Identity} & The job identity.\\
+\hline
+{\em cron\+Expression} & The job execution cron expression.\\
+\hline
+{\em delay} & The delay.\\
+\hline
+{\em cancellation\+Token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TJob} & The job to schedule.\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TJob} : {\em \mbox{\hyperlink{classIJob}{IJob}}}]\end{description}
+\end{Desc}
+\Hypertarget{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_a4a56d2a0b7ee8dc3dcdaaf76ec5d6ff5}\index{Ebceys.Infrastructure.Scheduling.SchedulingExtensions@{Ebceys.Infrastructure.Scheduling.SchedulingExtensions}!ScheduleJobAsync$<$ TJob $>$@{ScheduleJobAsync$<$ TJob $>$}}
+\index{ScheduleJobAsync$<$ TJob $>$@{ScheduleJobAsync$<$ TJob $>$}!Ebceys.Infrastructure.Scheduling.SchedulingExtensions@{Ebceys.Infrastructure.Scheduling.SchedulingExtensions}}
+\doxysubsubsection{\texorpdfstring{ScheduleJobAsync$<$ TJob $>$()}{ScheduleJobAsync< TJob >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classEbceys_1_1Infrastructure_1_1Scheduling_1_1SchedulingExtensions_a4a56d2a0b7ee8dc3dcdaaf76ec5d6ff5} 
+static async Task Ebceys.\+Infrastructure.\+Scheduling.\+Scheduling\+Extensions.\+Schedule\+Job\+Async$<$ TJob $>$ (\begin{DoxyParamCaption}\item[{this IScheduler\+Factory}]{scheduler\+Factory}{, }\item[{string}]{job\+Identity}{, }\item[{Time\+Span}]{interval}{, }\item[{Time\+Span}]{delay}{ = {\ttfamily default}, }\item[{Cancellation\+Token}]{cancellation\+Token}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Schedules the {\itshape TJob}  with specified {\itshape interval} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scheduler\+Factory} & The scheduler factory.\\
+\hline
+{\em job\+Identity} & The job identity.\\
+\hline
+{\em interval} & The job execution interval.\\
+\hline
+{\em delay} & The delay.\\
+\hline
+{\em cancellation\+Token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TJob} & The job to schedule.\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TJob} : {\em \mbox{\hyperlink{classIJob}{IJob}}}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/app/doc\+\_\+state/github\+\_\+repos\+Repo\+Arch\+Doc\+Gen\+Context/\+EBCEYS/\+EBCEYS.\+Infrastructure/\+Ebceys.\+Infrastructure/\+Scheduling/\mbox{\hyperlink{SchedulingExtensions_8cs}{Scheduling\+Extensions.\+cs}}\end{DoxyCompactItemize}

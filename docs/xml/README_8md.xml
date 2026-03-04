@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>EBCEYS.Infrastructure</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Библиотека<sp/>инфраструктуры,<sp/>предоставляющая<sp/>необходимые<sp/>утилиты<sp/>и<sp/>компоненты<sp/>для<sp/>создания<sp/>надежных<sp/>приложений.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📋<sp/>Описание</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EBCEYS.Infrastructure<sp/>—<sp/>это<sp/>комплексная<sp/>библиотека<sp/>на<sp/>C#,<sp/>разработанная<sp/>для<sp/>упрощения<sp/>инфраструктурных<sp/>задач<sp/>и</highlight></codeline>
+<codeline><highlight class="normal">предоставления<sp/>переиспользуемых<sp/>компонентов<sp/>для<sp/>разработки<sp/>приложений.<sp/>Эта<sp/>библиотека<sp/>содержит<sp/>распространенные</highlight></codeline>
+<codeline><highlight class="normal">паттерны,<sp/>утилиты<sp/>и<sp/>абстракции<sp/>для<sp/>ускорения<sp/>разработки<sp/>и<sp/>соблюдения<sp/>лучших<sp/>практик.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🚀<sp/>Основные<sp/>возможности</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**Модульная<sp/>архитектура**:<sp/>Хорошо<sp/>организованные<sp/>компоненты<sp/>для<sp/>простой<sp/>интеграции</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Переиспользуемые<sp/>утилиты**:<sp/>Часто<sp/>используемые<sp/>вспомогательные<sp/>функции<sp/>и<sp/>расширения</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Инфраструктурные<sp/>паттерны**:<sp/>Реализация<sp/>популярных<sp/>инфраструктурных<sp/>паттернов</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Типобезопасность**:<sp/>Разработано<sp/>на<sp/>C#<sp/>для<sp/>сильной<sp/>типизации<sp/>и<sp/>надежности</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Расширяемость**:<sp/>Легко<sp/>расширяется<sp/>и<sp/>настраивается<sp/>под<sp/>конкретные<sp/>потребности</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📦<sp/>Установка</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Чтобы<sp/>использовать<sp/>эту<sp/>библиотеку<sp/>в<sp/>своем<sp/>проекте,<sp/>добавьте<sp/>ссылку<sp/>на<sp/>EBCEYS.Infrastructure:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>add<sp/>reference<sp/>./EBCEYS.Infrastructure.csproj</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Или<sp/>через<sp/>NuGet<sp/>(если<sp/>опубликовано):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>add<sp/>package<sp/>EBCEYS.Infrastructure</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🛠️<sp/>Быстрый<sp/>старт</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Основное<sp/>использование</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```csharp</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>EBCEYS.Infrastructure;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Ваш<sp/>код<sp/>здесь</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📚<sp/>Документация</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>подробной<sp/>документации<sp/>и<sp/>справочника<sp/>API<sp/>посетите<sp/>[документацию<sp/>проекта](./docs)<sp/>или<sp/>ознакомьтесь<sp/>с<sp/>встроенной</highlight></codeline>
+<codeline><highlight class="normal">документацией<sp/>кода.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🤝<sp/>Вклад<sp/>в<sp/>развитие</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Мы<sp/>приветствуем<sp/>вклад<sp/>в<sp/>развитие<sp/>проекта!<sp/>Не<sp/>стесняйтесь<sp/>отправлять<sp/>pull<sp/>request<sp/>или<sp/>создавать<sp/>issues<sp/>для<sp/>сообщения<sp/>об</highlight></codeline>
+<codeline><highlight class="normal">ошибках<sp/>и<sp/>предложения<sp/>новых<sp/>функций.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📄<sp/>Лицензия</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Этот<sp/>проект<sp/>лицензируется<sp/>в<sp/>соответствии<sp/>с<sp/>условиями,<sp/>указанными<sp/>в<sp/>файле<sp/>LICENSE.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>👤<sp/>Автор</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Создано<sp/>и<sp/>поддерживается<sp/>[EBCEYS](https://github.com/EBCEYS)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📞<sp/>Поддержка</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Если<sp/>у<sp/>вас<sp/>возникли<sp/>вопросы<sp/>или<sp/>проблемы,<sp/>пожалуйста,<sp/>создайте<sp/>issue</highlight></codeline>
+<codeline><highlight class="normal">в<sp/>[репозитории<sp/>GitHub](https://github.com/EBCEYS/EBCEYS.Infrastructure/issues).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+    </programlisting>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/README.md"/>
+  </compounddef>
+</doxygen>

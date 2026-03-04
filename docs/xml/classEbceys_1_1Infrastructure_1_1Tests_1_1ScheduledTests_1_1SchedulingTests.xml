@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1SchedulingTests" kind="class" language="C#" prot="public">
+    <compoundname>Ebceys::Infrastructure::Tests::ScheduledTests::SchedulingTests</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1SchedulingTests_1abc66930fb25feaa22c050fc299792d62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingTests.When_ServiceStarted_With_ScheduledJob_Result_JobTriggered</definition>
+        <argsstring>()</argsstring>
+        <name>When_ServiceStarted_With_ScheduledJob_Result_JobTriggered</name>
+        <qualifiedname>Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingTests.When_ServiceStarted_With_ScheduledJob_Result_JobTriggered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ScheduledTests/SchedulingTests.cs" line="10" column="23" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ScheduledTests/SchedulingTests.cs" bodystart="10" bodyend="16"/>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1a5f09bf7284fe961014f051feb00fa802" compoundref="ScheduledTestJob_8cs" startline="8" endline="8">Ebceys.Infrastructure.Tests.ScheduledTests.Helpers.ScheduledTestJob.IsCalled</references>
+        <references refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1Helpers_1_1ScheduledTestJob_1aa4d612155577437ace19c95011e566ba" compoundref="ScheduledTestJob_8cs" startline="7" endline="7">Ebceys.Infrastructure.Tests.ScheduledTests.Helpers.ScheduledTestJob.Times</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingTests</label>
+        <link refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1SchedulingTests"/>
+      </node>
+    </collaborationgraph>
+    <location file="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ScheduledTests/SchedulingTests.cs" line="7" column="7" bodyfile="/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure.Tests/ScheduledTests/SchedulingTests.cs" bodystart="8" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classEbceys_1_1Infrastructure_1_1Tests_1_1ScheduledTests_1_1SchedulingTests_1abc66930fb25feaa22c050fc299792d62" prot="public" virt="non-virtual"><scope>Ebceys::Infrastructure::Tests::ScheduledTests::SchedulingTests</scope><name>When_ServiceStarted_With_ScheduledJob_Result_JobTriggered</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
