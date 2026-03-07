@@ -9,8 +9,8 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>Ebceys.Tests.Infrastructure</PackageId>
         <Authors>EBCEYS</Authors>
-        <RepositoryUrl>https://github.com/Basova-Angelina-Michailovna/Infrastructure</RepositoryUrl>
-        <Title>Ebceys.Infrastructure</Title>
+        <RepositoryUrl>https://github.com/EBCEYS/EBCEYS.Infrastructure</RepositoryUrl>
+        <Title>Ebceys.Tests.Infrastructure</Title>
         <Copyright>EBCEYS</Copyright>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageReadmeFile>README.md</PackageReadmeFile>
