@@ -20,7 +20,7 @@
       }
     ],
     "dest": "docs",
-    "template": ["default", "modern"],
+    "template": ["modern"],
     "globalMetadata": {
       "_appTitle": "EBCEYS.Infrastructure",
       "_enableSearch": true,
