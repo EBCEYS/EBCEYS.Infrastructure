@@ -1,9 +1,0 @@
-<map id="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;" name="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator&lt; TData &gt;">
-<area shape="rect" id="Node000001" title="The TestCaseEnumerator&lt;TData&gt; class." alt="" coords="170,119,409,313"/>
-<area shape="rect" id="Node000003" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataInvalidExecutor-2-g.html" title="The invalid test case executor. Executes the EbTestCaseSource&lt;TData&gt;.GetInvalidCases." alt="" coords="5,371,280,486"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,326,184,373,180,370,212,323"/>
-<area shape="rect" id="Node000004" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestDataValidExecutor-2-g.html" title="The valid test case executor. Executes the EbTestCaseSource&lt;TData&gt;.GetValidCases." alt="" coords="305,361,567,496"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="367,323,392,359,387,362,362,327"/>
-<area shape="rect" id="Node000002" href="$classIEnumerable-1-g.html" title=" " alt="" coords="182,5,397,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,84,292,119,287,119,287,84"/>
-</map>

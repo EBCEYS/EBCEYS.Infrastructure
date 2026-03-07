@@ -1,5 +1,0 @@
-var classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1 =
-[
-    [ "Methods", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1_1Methods.html", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1_1_1Methods" ],
-    [ "BaseRoute", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1.html#a96174d28a62581b4f1f7518ad4e8e057", null ]
-];

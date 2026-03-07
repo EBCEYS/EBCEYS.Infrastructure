@@ -1,4 +1,0 @@
-var classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1RabbitMqControllerV1 =
-[
-    [ "Methods", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05.html", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05" ]
-];

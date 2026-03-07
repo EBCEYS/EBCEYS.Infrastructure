@@ -1,4 +1,0 @@
-var ITestApplicationClient_8cs =
-[
-    [ "Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient", "interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient.html", "interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient" ]
-];

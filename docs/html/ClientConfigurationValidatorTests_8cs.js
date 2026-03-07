@@ -1,5 +1,0 @@
-var ClientConfigurationValidatorTests_8cs =
-[
-    [ "Ebceys.Infrastructure.UnitTests.Validators.ClientConfigurationValidatorTests", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests.html", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests" ],
-    [ "Ebceys.Infrastructure.UnitTests.Validators.ClientConfigurationValidatorTests.ClientConfigurationValidatorCaseSource", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests_1_f563cc778aa4ad70f46aa3f8ccf7ada3.html", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests_1_f563cc778aa4ad70f46aa3f8ccf7ada3" ]
-];

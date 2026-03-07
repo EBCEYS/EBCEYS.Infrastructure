@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classAbstractValidator-1-g.html" title=" " alt="" coords="5,60,140,85"/>
-<area shape="rect" id="Node000001" href="$classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1ChangeNameRequestValidator.html" title=" " alt="" coords="188,5,444,60"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="153,57,188,51,188,56,154,62"/>
-<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1TestApplication_1_1Validators_1_1SomeBodyRequestValidator.html" title=" " alt="" coords="197,84,435,139"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="154,83,197,90,196,95,153,88"/>
-</map>

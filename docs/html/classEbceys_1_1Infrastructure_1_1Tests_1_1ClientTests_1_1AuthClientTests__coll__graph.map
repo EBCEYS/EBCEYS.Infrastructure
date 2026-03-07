@@ -1,9 +1,0 @@
-<map id="Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests" name="Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests">
-<area shape="rect" id="Node000001" title=" " alt="" coords="251,163,476,411"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,20,215,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,84,240,169,237,173,143,88"/>
-<area shape="rect" id="Node000003" href="$interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Implementations_1_1ITestApplicationClient.html" title=" " alt="" coords="239,5,487,100"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="366,100,366,146,361,146,361,100"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="511,20,666,85"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="560,88,489,160,486,156,556,84"/>
-</map>

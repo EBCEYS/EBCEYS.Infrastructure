@@ -1,5 +1,0 @@
-var classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05 =
-[
-    [ "GetJson", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05.html#ab82f31df92fafd03d5a1375c26e1f13e", null ],
-    [ "GetOk", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionb937704540423dd1bb3fde3d1105dd05.html#a477ed16540147637fab6dfd4809bf562", null ]
-];

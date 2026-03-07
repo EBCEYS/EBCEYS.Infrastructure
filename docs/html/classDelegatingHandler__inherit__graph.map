@@ -1,7 +1,0 @@
-<map id="DelegatingHandler" name="DelegatingHandler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="197,5,333,71"/>
-<area shape="rect" id="Node000002" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1TestRoutingMessageHandler.html" title="The TestRoutingMessageHandler class." alt="" coords="5,149,261,283"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,83,185,150,181,147,231,80"/>
-<area shape="rect" id="Node000003" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandler.html" title=" " alt="" coords="285,119,512,313"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="300,80,328,117,323,120,295,83"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource&lt; TData &gt;" name="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource&lt; TData &gt;">
-<area shape="rect" id="Node000001" title="The test case source." alt="" coords="348,5,603,160"/>
-<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests_1_f563cc778aa4ad70f46aa3f8ccf7ada3.html" title=" " alt="" coords="5,208,297,377"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="346,170,283,210,280,206,344,165"/>
-<area shape="rect" id="Node000003" href="$classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidato9df594712d5be3b65f9144006a5f0a1e.html" title=" " alt="" coords="322,208,629,377"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="478,173,478,208,473,208,473,173"/>
-<area shape="rect" id="Node000004" href="$classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1SimpleRabbitMqConfigurationValidatorbb17d622c89aafd7d283213a89dab816.html" title=" " alt="" coords="653,208,935,377"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="605,165,667,206,664,210,602,170"/>
-</map>

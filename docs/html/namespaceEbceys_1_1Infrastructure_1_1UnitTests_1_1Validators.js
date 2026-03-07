@@ -1,6 +1,0 @@
-var namespaceEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators =
-[
-    [ "ClientConfigurationValidatorTests", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests.html", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests" ],
-    [ "DbContextRegistrationOptionsValidatorTests", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests.html", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests" ],
-    [ "SimpleRabbitMqConfigurationValidatorTests", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1SimpleRabbitMqConfigurationValidatorTests.html", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1SimpleRabbitMqConfigurationValidatorTests" ]
-];
