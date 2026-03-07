@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['basepath_0',['BasePath',['../classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary.html#a75ab952587b2a9f3c4d488dacba06308',1,'Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.BasePath'],['../classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary.html#a0c5e75b16674987a34ae065e2113fcea',1,'Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.BasePath']]],
+  ['baseroute_1',['BaseRoute',['../classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1AuthControllerV1.html#adc61ba22a62303dac619af4b6da225d7',1,'Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.BaseRoute'],['../classEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1TestControllerV1.html#a96174d28a62581b4f1f7518ad4e8e057',1,'Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.BaseRoute']]]
+];

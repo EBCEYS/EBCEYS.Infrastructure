@@ -1,0 +1,5 @@
+var namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations =
+[
+    [ "DataModelContextModelSnapshot", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot.html", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1DataModelContextModelSnapshot" ],
+    [ "Initial", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1Initial.html", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Migrations_1_1Initial" ]
+];

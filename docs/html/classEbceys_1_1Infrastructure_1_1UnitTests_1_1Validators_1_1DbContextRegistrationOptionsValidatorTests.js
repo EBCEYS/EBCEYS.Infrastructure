@@ -1,0 +1,9 @@
+var classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests =
+[
+    [ "DbContextRegistrationOptionsValidatorCaseSource", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidato9df594712d5be3b65f9144006a5f0a1e.html", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidato9df594712d5be3b65f9144006a5f0a1e" ],
+    [ "Setup", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests.html#a6944881db447e33e238782cf9b50d6e6", null ],
+    [ "When_Validate_With_InvalidCase_Result_NotThrows", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests.html#a76974e5e27df7135ec3676a0dd80f476", null ],
+    [ "When_Validate_With_ValidCase_Result_NotThrows", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests.html#aa808c465bbf985fa9e2570ce05544e1d", null ],
+    [ "_validator", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests.html#a05c504560fcf7e8a49748f93e75ea60b", null ],
+    [ "Randomizer", "classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidatorTests.html#a2df6a2f2addf389e4d78f7dd8f374f7a", null ]
+];

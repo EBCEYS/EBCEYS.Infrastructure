@@ -1,0 +1,12 @@
+<map id="Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest" name="Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="365,132,640,187"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1TestApplication_1_1Controllers_1_1TestController.html#a82fd01449a1cae6fdcf7c43d6506c1d2" title=" " alt="" coords="28,5,295,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="438,128,380,100,316,74,282,63,283,58,318,69,382,95,440,123"/>
+<area shape="rect" id="Node000003" href="$interfaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Client_1_1Interfaces_1_1ITestClient.html#a39616f227caf996bcea912d0af53a366" title=" " alt="" coords="51,84,272,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,141,272,129,273,124,352,135"/>
+<area shape="rect" id="Node000004" href="$namespaceEbceys_1_1Infrastructure_1_1TestApplication.html#ab81a1413fa2d4078311b09b25cfd7256" title=" " alt="" coords="66,187,257,227"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="352,183,257,197,257,191,351,178"/>
+<area shape="rect" id="Node000005" href="$classEbceys_1_1Infrastructure_1_1Tests_1_1Middlewares_1_1RequestLoggingMiddlewareTests.html#ada64b1e0e61d6681e72fd663ad8254d4" title=" " alt="" coords="5,251,317,321"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="432,195,318,242,283,254,282,249,316,237,430,190"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="220,176,199,169,161,166,128,168,108,173,100,179,104,186,99,188,95,178,105,168,127,163,161,161,201,163,222,171"/>
+</map>
