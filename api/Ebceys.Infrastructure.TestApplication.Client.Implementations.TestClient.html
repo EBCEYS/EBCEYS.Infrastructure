@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TestClient | EBCEYS.Infrastructure </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TestClient | EBCEYS.Infrastructure ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/EBCEYS/EBCEYS.Infrastructure/new/main/apiSpec/new?filename=Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient.md&amp;value=---%0Auid%3A%20Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient">
+
+
+
+  <h1 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient" class="text-break">
+Class TestClient  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ebceys.html">Ebceys</a>.<a class="xref" href="Ebceys.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Ebceys.Infrastructure.TestApplication.html">TestApplication</a>.<a class="xref" href="Ebceys.Infrastructure.TestApplication.Client.html">Client</a>.<a class="xref" href="Ebceys.Infrastructure.TestApplication.Client.Implementations.html">Implementations</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.TestApplication.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TestClient : ClientBase, ITestClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a></div>
+      <div><span class="xref">TestClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.html">ITestClient</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_AuthorizationHeader">ClientBase.AuthorizationHeader</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_ClientName">ClientBase.ClientName</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_Timeout">ClientBase.Timeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DelayBetweenRetries">ClientBase.DelayBetweenRetries</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_Policy">ClientBase.Policy</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DefaultSerializer">ClientBase.DefaultSerializer</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetClientName_System_Type_">ClientBase.GetClientName(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.GetJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.GetAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetStreamAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.GetStreamAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetRawAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.GetRawAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DeleteJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.DeleteJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DeleteAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.DeleteAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PostAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__2_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PostJsonAsync&lt;TRequest, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync__2_System_Action_Flurl_Url__System_IO_Stream_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PostStreamAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, Stream, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync__1_System_Action_Flurl_Url__System_IO_Stream_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PostStreamAsync&lt;TError&gt;(Action&lt;Url&gt;, Stream, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__3_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PostJsonAsync&lt;TRequest, TResponse, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PostJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PostJsonAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync__2_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PutJsonAsync&lt;TRequest, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync__3_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_">ClientBase.PutJsonAsync&lt;TRequest, TResponse, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_ExecuteWithPolicyAsync_Flurl_Http_IFlurlRequest_System_Net_Http_HttpMethod_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">ClientBase.ExecuteWithPolicyAsync(IFlurlRequest, HttpMethod, HttpCompletionOption, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_ExecuteWithoutPolicyAsync_System_Func_Flurl_Http_IFlurlRequest_System_Threading_CancellationToken_System_Threading_Tasks_Task_Flurl_Http_IFlurlResponse___Flurl_Http_IFlurlRequest_System_Threading_CancellationToken_">ClientBase.ExecuteWithoutPolicyAsync(Func&lt;IFlurlRequest, CancellationToken, Task&lt;IFlurlResponse&gt;&gt;, IFlurlRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetAuthHeaders_System_String_">ClientBase.GetAuthHeaders(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient__ctor_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.#ctor*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient__ctor_Flurl_Http_Configuration_IFlurlClientCache_Microsoft_Extensions_Logging_ILoggerFactory_Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver_Ebceys_Infrastructure_HttpClient_ClientBaseTokenResolver_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.#ctor(Flurl.Http.Configuration.IFlurlClientCache,Microsoft.Extensions.Logging.ILoggerFactory,Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver,Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver)">
+  TestClient(IFlurlClientCache, ILoggerFactory, ClientBaseUrlResolver, ClientBaseTokenResolver?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestClient(IFlurlClientCache clientCache, ILoggerFactory loggerFactory, ClientBaseUrlResolver baseUrlResolver, ClientBaseTokenResolver? tokenResolver = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientCache</code> <span class="xref">IFlurlClientCache</span></dt>
+    <dd></dd>
+    <dt><code>loggerFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></dt>
+    <dd></dd>
+    <dt><code>baseUrlResolver</code> <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html">ClientBaseUrlResolver</a></dt>
+    <dd></dd>
+    <dt><code>tokenResolver</code> <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.html">ClientBaseTokenResolver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_DeleteCommandAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.DeleteCommandAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_DeleteCommandAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.DeleteCommandAsync(System.String,System.Threading.CancellationToken)">
+  DeleteCommandAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteCommandAsync(string name, CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GenerateTokenAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GenerateTokenAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GenerateTokenAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GenerateTokenAsync(System.Threading.CancellationToken)">
+  GenerateTokenAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateTokenResponse&gt; GenerateTokenAsync(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenResponse.html">GenerateTokenResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetCommandAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetCommandAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetCommandAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetCommandAsync(System.Threading.CancellationToken)">
+  GetCommandAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommandResultResponse&gt; GetCommandAsync(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.CommandResultResponse.html">CommandResultResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetExceptionAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetExceptionAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetExceptionAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetExceptionAsync(System.Threading.CancellationToken)">
+  GetExceptionAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task GetExceptionAsync(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetOkAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetOkAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetOkAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetOkAsync(System.Threading.CancellationToken)">
+  GetOkAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task GetOkAsync(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetQueryAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetQueryAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_GetQueryAsync_System_Int32_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.GetQueryAsync(System.Int32,System.Threading.CancellationToken)">
+  GetQueryAsync(int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SomeBodyResponse&gt; GetQueryAsync(int value, CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.SomeBodyResponse.html">SomeBodyResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_MethodWithoutResponseBodyAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.MethodWithoutResponseBodyAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_MethodWithoutResponseBodyAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.MethodWithoutResponseBodyAsync(System.Threading.CancellationToken)">
+  MethodWithoutResponseBodyAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommandResultResponse&gt; MethodWithoutResponseBodyAsync(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.CommandResultResponse.html">CommandResultResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_NonExistsMethodAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.NonExistsMethodAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_NonExistsMethodAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.NonExistsMethodAsync(System.Threading.CancellationToken)">
+  NonExistsMethodAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task NonExistsMethodAsync(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_PostBodyAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.PostBodyAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_PostBodyAsync_Ebceys_Infrastructure_TestApplication_BoundedContext_Requests_SomeBodyRequest_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.PostBodyAsync(Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.SomeBodyRequest,System.Threading.CancellationToken)">
+  PostBodyAsync(SomeBodyRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SomeBodyResponse&gt; PostBodyAsync(SomeBodyRequest body, CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>body</code> <a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.SomeBodyRequest.html">SomeBodyRequest</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.SomeBodyResponse.html">SomeBodyResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_PostCommandAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.PostCommandAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_PostCommandAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.PostCommandAsync(System.String,System.Threading.CancellationToken)">
+  PostCommandAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CommandResultResponse&gt; PostCommandAsync(string name, CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.CommandResultResponse.html">CommandResultResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_PutCommandAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.PutCommandAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_PutCommandAsync_System_String_Ebceys_Infrastructure_TestApplication_BoundedContext_Requests_ChangeNameRequest_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.PutCommandAsync(System.String,Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest,System.Threading.CancellationToken)">
+  PutCommandAsync(string, ChangeNameRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PutCommandAsync(string name, ChangeNameRequest request, CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>request</code> <a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest.html">ChangeNameRequest</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_ValidateAuthAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.ValidateAuthAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_ValidateAuthAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.ValidateAuthAsync(System.String,System.Threading.CancellationToken)">
+  ValidateAuthAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ValidateAuthAsync(string jwt, CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jwt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_ValidateTokenAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.ValidateTokenAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Implementations_TestClient_ValidateTokenAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.ValidateTokenAsync(System.String,System.Threading.CancellationToken)">
+  ValidateTokenAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ValidateTokenAsync(string jwt, CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jwt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Implementations/TestClient.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Released under THE BEER-WARE LICENSE
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
