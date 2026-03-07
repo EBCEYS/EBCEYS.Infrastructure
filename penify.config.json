@@ -1,5 +1,5 @@
 {
-  "ignore": ["node_modules", ".git", ".github", "docs"],
+  "ignore": ["node_modules", ".git", ".github", "docs", "html"],
   "should_use_git_ignore": true,
   "arch_docs": {
     "host_documentation": true,
@@ -12,6 +12,6 @@
     }
   },
   "analyze_repo": {
-    "ignore": ["node_modules", ".git", ".github", "public", "dist", "docs*"]
+    "ignore": ["node_modules", ".git", ".github", "public", "dist", "docs*", "html"]
   }
 }
