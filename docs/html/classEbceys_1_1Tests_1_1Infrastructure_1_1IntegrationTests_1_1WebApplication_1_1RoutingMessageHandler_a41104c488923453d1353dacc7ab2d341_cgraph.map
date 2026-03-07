@@ -1,0 +1,9 @@
+<map id="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler.HostHandler" name="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler.HostHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,271,93"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="79,39,79,28,90,19,109,14,138,12,172,15,192,23,190,28,171,20,138,17,110,19,92,24,84,31,84,39"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandler.html#a234667c66978e641af16324747d16cc7" title=" " alt="" coords="319,5,573,60"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="271,49,304,45,305,51,271,54"/>
+<area shape="rect" id="Node000003" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandler.html#a6899a4700a3e7686457571da40d9fa90" title=" " alt="" coords="621,39,980,93"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="574,42,608,45,607,51,573,47"/>
+<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="621,73,573,74,319,74,285,73,285,68,319,69,573,69,621,68"/>
+</map>

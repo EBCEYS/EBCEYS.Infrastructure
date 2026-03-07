@@ -1,0 +1,11 @@
+<map id="Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests.LittleBenchmark" name="Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests.LittleBenchmark">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,240,100"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1StopWatchElapser.html#acfdf2ae952b2930267ed83c2bd682ee0" title="Creates the new instance of StopWatchElapser." alt="" coords="288,15,527,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,55,274,50,275,55,241,60"/>
+<area shape="rect" id="Node000004" href="$classEbceys_1_1Infrastructure_1_1Tests_1_1ClientTests_1_1RabbitMqClientTests.html#a858b0e39a54824f913e086ce72b41897" title=" " alt="" coords="290,81,525,136"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,85,277,89,276,95,240,90"/>
+<area shape="rect" id="Node000003" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1StopWatchElapser.html#acb5aa1529fb63f3dd1cc345999a373dc" title=" " alt="" coords="591,5,856,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="527,32,577,31,577,37,527,37"/>
+<area shape="rect" id="Node000005" href="$namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext.html#a7d6a3dc0ef9daaedf3280bb1007c29e9" title=" " alt="" coords="575,84,872,139"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="525,107,561,107,561,113,525,112"/>
+</map>

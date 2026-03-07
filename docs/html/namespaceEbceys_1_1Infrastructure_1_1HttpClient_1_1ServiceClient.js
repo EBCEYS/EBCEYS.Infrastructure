@@ -1,0 +1,4 @@
+var namespaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient =
+[
+    [ "IServiceSystemClient", "interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient.html", "interfaceEbceys_1_1Infrastructure_1_1HttpClient_1_1ServiceClient_1_1IServiceSystemClient" ]
+];

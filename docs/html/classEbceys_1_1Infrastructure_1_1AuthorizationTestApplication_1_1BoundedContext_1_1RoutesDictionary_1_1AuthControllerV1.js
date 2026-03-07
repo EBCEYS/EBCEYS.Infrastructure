@@ -1,0 +1,5 @@
+var classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1AuthControllerV1 =
+[
+    [ "Methods", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91.html", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91" ],
+    [ "BaseRoute", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionary_1_1AuthControllerV1.html#adc61ba22a62303dac619af4b6da225d7", null ]
+];

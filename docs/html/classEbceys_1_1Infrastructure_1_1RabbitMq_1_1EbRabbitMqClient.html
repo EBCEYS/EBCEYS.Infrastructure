@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="EBCEYS.Infrastructure " />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="EBCEYS.Infrastructure - Custom CSS theme for html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://github.com/EBCEYS/EBCEYS.Infrastructure" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>EBCEYS.Infrastructure: Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/EBCEYS/EBCEYS.Infrastructure" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">EBCEYS.Infrastructure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient.html" title="The EbRabbitMqClient wrapper class for RabbitMQClient.">EbRabbitMqClient</a> wrapper class for RabbitMQClient.  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient__inherit__graph.svg" width="275" height="439"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient__coll__graph.svg" width="334" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac88b736b28e329f1109ec935fd37f505" id="r_ac88b736b28e329f1109ec935fd37f505"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac88b736b28e329f1109ec935fd37f505">StartAsync</a> (CancellationToken cancellationToken)</td></tr>
+<tr class="separator:ac88b736b28e329f1109ec935fd37f505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987fdfa774b6a819f0a8805293635630" id="r_a987fdfa774b6a819f0a8805293635630"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a987fdfa774b6a819f0a8805293635630">StopAsync</a> (CancellationToken cancellationToken)</td></tr>
+<tr class="separator:a987fdfa774b6a819f0a8805293635630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cfd8d74fe6d50de32bac4807105f92d" id="r_a8cfd8d74fe6d50de32bac4807105f92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cfd8d74fe6d50de32bac4807105f92d">Dispose</a> ()</td></tr>
+<tr class="separator:a8cfd8d74fe6d50de32bac4807105f92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133d39c781ac307fa7370b6c1818c280" id="r_a133d39c781ac307fa7370b6c1818c280"><td class="memItemLeft" align="right" valign="top">ValueTask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a133d39c781ac307fa7370b6c1818c280">DisposeAsync</a> ()</td></tr>
+<tr class="separator:a133d39c781ac307fa7370b6c1818c280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa675d3b95ae1212fad2ad55625960164" id="r_aa675d3b95ae1212fad2ad55625960164"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa675d3b95ae1212fad2ad55625960164">SendMessageAsync</a> (RabbitMQRequestData data, bool mandatory=false, CancellationToken token=default)</td></tr>
+<tr class="separator:aa675d3b95ae1212fad2ad55625960164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0be890dc9ade5f65c39360c8eb2c1b" id="r_add0be890dc9ade5f65c39360c8eb2c1b"><td class="memItemLeft" align="right" valign="top">Task&lt; T?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add0be890dc9ade5f65c39360c8eb2c1b">SendRequestAsync&lt; T &gt;</a> (RabbitMQRequestData data, bool mandatory=false, CancellationToken token=default)</td></tr>
+<tr class="separator:add0be890dc9ade5f65c39360c8eb2c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9848c1f69b98b3ede59798b8d9377507" id="r_a9848c1f69b98b3ede59798b8d9377507"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9848c1f69b98b3ede59798b8d9377507">SendMessageAsync&lt; TMessage &gt;</a> (TMessage message, string method, bool mandatory=false, CancellationToken token=default)</td></tr>
+<tr class="memdesc:a9848c1f69b98b3ede59798b8d9377507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the messages.  <br /></td></tr>
+<tr class="separator:a9848c1f69b98b3ede59798b8d9377507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95e8cbf21be79ac67bc06cb968b14b9" id="r_ae95e8cbf21be79ac67bc06cb968b14b9"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae95e8cbf21be79ac67bc06cb968b14b9">SendMessageAsync</a> (string method, bool mandatory=false, CancellationToken token=default)</td></tr>
+<tr class="memdesc:ae95e8cbf21be79ac67bc06cb968b14b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the messages.  <br /></td></tr>
+<tr class="separator:ae95e8cbf21be79ac67bc06cb968b14b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a81d5ae06388eb0ec8d8009acfbaa4e" id="r_a3a81d5ae06388eb0ec8d8009acfbaa4e"><td class="memItemLeft" align="right" valign="top">Task&lt; TResponse?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a81d5ae06388eb0ec8d8009acfbaa4e">SendRequestAsync&lt; TRequest, TResponse &gt;</a> (TRequest request, string method, bool mandatory=false, CancellationToken token=default)</td></tr>
+<tr class="memdesc:a3a81d5ae06388eb0ec8d8009acfbaa4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the request.  <br /></td></tr>
+<tr class="separator:a3a81d5ae06388eb0ec8d8009acfbaa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f52a34078ba6d34bb442eb34fadffcf" id="r_a0f52a34078ba6d34bb442eb34fadffcf"><td class="memItemLeft" align="right" valign="top">Task&lt; TResponse?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f52a34078ba6d34bb442eb34fadffcf">SendRequestAsync&lt; TResponse &gt;</a> (string method, bool mandatory=false, CancellationToken token=default)</td></tr>
+<tr class="memdesc:a0f52a34078ba6d34bb442eb34fadffcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the request.  <br /></td></tr>
+<tr class="separator:a0f52a34078ba6d34bb442eb34fadffcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5508112dabd78576c159d3555eda0fb5" id="r_a5508112dabd78576c159d3555eda0fb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5508112dabd78576c159d3555eda0fb5">EbRabbitMqClient</a> (ILogger&lt; RabbitMQClient &gt; clientLogger, RabbitMQConfiguration config, JsonSerializerSettings? serializerSettings=null)</td></tr>
+<tr class="memdesc:a5508112dabd78576c159d3555eda0fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates the new instance of <a class="el" href="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient.html" title="The EbRabbitMqClient wrapper class for RabbitMQClient.">EbRabbitMqClient</a>.  <br /></td></tr>
+<tr class="separator:a5508112dabd78576c159d3555eda0fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a82846af16746ddbb08dc234415248d88" id="r_a82846af16746ddbb08dc234415248d88"><td class="memItemLeft" align="right" valign="top">readonly RabbitMQClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82846af16746ddbb08dc234415248d88">_client</a></td></tr>
+<tr class="separator:a82846af16746ddbb08dc234415248d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient.html" title="The EbRabbitMqClient wrapper class for RabbitMQClient.">EbRabbitMqClient</a> wrapper class for RabbitMQClient. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5508112dabd78576c159d3555eda0fb5" name="a5508112dabd78576c159d3555eda0fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5508112dabd78576c159d3555eda0fb5">&#9670;&#160;</a></span>EbRabbitMqClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.EbRabbitMqClient </td>
+          <td>(</td>
+          <td class="paramtype">ILogger&lt; RabbitMQClient &gt;</td>          <td class="paramname"><span class="paramname"><em>clientLogger</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RabbitMQConfiguration</td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JsonSerializerSettings?</td>          <td class="paramname"><span class="paramname"><em>serializerSettings</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initiates the new instance of <a class="el" href="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient.html" title="The EbRabbitMqClient wrapper class for RabbitMQClient.">EbRabbitMqClient</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientLogger</td><td>The client logger.</td></tr>
+    <tr><td class="paramname">config</td><td>The rabbitmq configuration.</td></tr>
+    <tr><td class="paramname">serializerSettings</td><td>The JSON serializer settings.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8cfd8d74fe6d50de32bac4807105f92d" name="a8cfd8d74fe6d50de32bac4807105f92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cfd8d74fe6d50de32bac4807105f92d">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a id="a133d39c781ac307fa7370b6c1818c280" name="a133d39c781ac307fa7370b6c1818c280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133d39c781ac307fa7370b6c1818c280">&#9670;&#160;</a></span>DisposeAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ValueTask Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.DisposeAsync </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a id="aa675d3b95ae1212fad2ad55625960164" name="aa675d3b95ae1212fad2ad55625960164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa675d3b95ae1212fad2ad55625960164">&#9670;&#160;</a></span>SendMessageAsync() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync </td>
+          <td>(</td>
+          <td class="paramtype">RabbitMQRequestData</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mandatory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>token</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a id="ae95e8cbf21be79ac67bc06cb968b14b9" name="ae95e8cbf21be79ac67bc06cb968b14b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95e8cbf21be79ac67bc06cb968b14b9">&#9670;&#160;</a></span>SendMessageAsync() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>method</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mandatory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>token</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">method</td><td>The method name.</td></tr>
+    <tr><td class="paramname">mandatory</td><td>The mandatory.</td></tr>
+    <tr><td class="paramname">token</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a9848c1f69b98b3ede59798b8d9377507" name="a9848c1f69b98b3ede59798b8d9377507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9848c1f69b98b3ede59798b8d9377507">&#9670;&#160;</a></span>SendMessageAsync&lt; TMessage &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task <a class="el" href="#aa675d3b95ae1212fad2ad55625960164">Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync</a>&lt; TMessage &gt; </td>
+          <td>(</td>
+          <td class="paramtype">TMessage</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>method</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mandatory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>token</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message.</td></tr>
+    <tr><td class="paramname">method</td><td>The method name.</td></tr>
+    <tr><td class="paramname">mandatory</td><td>The mandatory.</td></tr>
+    <tr><td class="paramname">token</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TMessage</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TMessage</em></td><td>&#160;:</td><td valign="top"><em>notnull</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a id="add0be890dc9ade5f65c39360c8eb2c1b" name="add0be890dc9ade5f65c39360c8eb2c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0be890dc9ade5f65c39360c8eb2c1b">&#9670;&#160;</a></span>SendRequestAsync&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt; T?&gt; Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">RabbitMQRequestData</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mandatory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>token</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a id="a3a81d5ae06388eb0ec8d8009acfbaa4e" name="a3a81d5ae06388eb0ec8d8009acfbaa4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a81d5ae06388eb0ec8d8009acfbaa4e">&#9670;&#160;</a></span>SendRequestAsync&lt; TRequest, TResponse &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt; TResponse?&gt; Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TRequest, TResponse &gt; </td>
+          <td>(</td>
+          <td class="paramtype">TRequest</td>          <td class="paramname"><span class="paramname"><em>request</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>method</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mandatory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>token</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>The request.</td></tr>
+    <tr><td class="paramname">method</td><td>The method name.</td></tr>
+    <tr><td class="paramname">mandatory</td><td>The mandatory.</td></tr>
+    <tr><td class="paramname">token</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TRequest</td><td></td></tr>
+    <tr><td class="paramname">TResponse</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TRequest</em></td><td>&#160;:</td><td valign="top"><em>notnull</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a id="a0f52a34078ba6d34bb442eb34fadffcf" name="a0f52a34078ba6d34bb442eb34fadffcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f52a34078ba6d34bb442eb34fadffcf">&#9670;&#160;</a></span>SendRequestAsync&lt; TResponse &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt; TResponse?&gt; Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync&lt; TResponse &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>method</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mandatory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>token</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">method</td><td>The method name.</td></tr>
+    <tr><td class="paramname">mandatory</td><td>The mandatory.</td></tr>
+    <tr><td class="paramname">token</td><td>The cancellation token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TResponse</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ac88b736b28e329f1109ec935fd37f505" name="ac88b736b28e329f1109ec935fd37f505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac88b736b28e329f1109ec935fd37f505">&#9670;&#160;</a></span>StartAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StartAsync </td>
+          <td>(</td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>cancellationToken</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a id="a987fdfa774b6a819f0a8805293635630" name="a987fdfa774b6a819f0a8805293635630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987fdfa774b6a819f0a8805293635630">&#9670;&#160;</a></span>StopAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StopAsync </td>
+          <td>(</td>
+          <td class="paramtype">CancellationToken</td>          <td class="paramname"><span class="paramname"><em>cancellationToken</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a82846af16746ddbb08dc234415248d88" name="a82846af16746ddbb08dc234415248d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82846af16746ddbb08dc234415248d88">&#9670;&#160;</a></span>_client</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly RabbitMQClient Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient._client</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/app/doc_state/github_reposRepoArchDocGenContext/EBCEYS/EBCEYS.Infrastructure/Ebceys.Infrastructure/RabbitMq/<a class="el" href="EbRabbitMqClient_8cs.html">EbRabbitMqClient.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceEbceys.html">Ebceys</a></li><li class="navelem"><a class="el" href="namespaceEbceys_1_1Infrastructure.html">Infrastructure</a></li><li class="navelem"><a class="el" href="namespaceEbceys_1_1Infrastructure_1_1RabbitMq.html">RabbitMq</a></li><li class="navelem"><a class="el" href="classEbceys_1_1Infrastructure_1_1RabbitMq_1_1EbRabbitMqClient.html">EbRabbitMqClient</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/penify-logo.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classEbceys_1_1Tests_1_1Infrastructure_1_1Helpers_1_1TestCaseSources_1_1EbTestCaseSource-1-g.html" title="The test case source." alt="" coords="5,106,268,161"/>
+<area shape="rect" id="Node000001" href="$classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1ClientConfigurationValidatorTests_1_f563cc778aa4ad70f46aa3f8ccf7ada3.html" title=" " alt="" coords="323,5,623,75"/>
+<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="248,100,347,72,349,77,250,105"/>
+<area shape="rect" id="Node000002" href="$classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1DbContextRegistrationOptionsValidato9df594712d5be3b65f9144006a5f0a1e.html" title=" " alt="" coords="316,99,631,168"/>
+<area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="282,131,316,131,316,136,282,136"/>
+<area shape="rect" id="Node000003" href="$classEbceys_1_1Infrastructure_1_1UnitTests_1_1Validators_1_1SimpleRabbitMqConfigurationValidatorbb17d622c89aafd7d283213a89dab816.html" title=" " alt="" coords="328,192,619,261"/>
+<area shape="poly" id="edge12_Node000000_Node000003" title=" " alt="" coords="250,162,349,189,347,195,248,167"/>
+</map>
