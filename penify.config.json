@@ -12,6 +12,6 @@
     }
   },
   "analyze_repo": {
-    "ignore": ["node_modules", ".git", ".github", "public", "dist", "test*", "docs*"]
+    "ignore": ["node_modules", ".git", ".github", "public", "dist", "docs*"]
   }
 }
