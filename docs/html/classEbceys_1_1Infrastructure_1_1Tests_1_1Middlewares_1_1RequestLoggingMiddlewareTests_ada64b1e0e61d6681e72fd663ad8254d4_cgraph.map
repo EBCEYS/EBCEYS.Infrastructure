@@ -1,8 +1,0 @@
-<map id="Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies" name="Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.When_Requests_With_NoLoggingInAttr_Result_CatcherDontLogBodies">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,46,317,115"/>
-<area shape="rect" id="Node000002" href="$namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1BoundedContext_1_1Requests.html#a8e94e6f96ec7f9ce57f47938740f844c" title=" " alt="" coords="365,5,640,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,56,351,51,352,56,318,61"/>
-<area shape="rect" id="Node000003" href="$namespaceEbceys_1_1Infrastructure_1_1Middlewares.html#a099ce09ea672d667023db342151af972" title="The request logging middleware." alt="" coords="377,109,628,149"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="318,100,364,107,363,112,317,105"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="440,109,436,99,446,90,469,84,503,82,542,85,563,92,562,97,541,90,503,87,469,89,449,94,442,100,445,107"/>
-</map>

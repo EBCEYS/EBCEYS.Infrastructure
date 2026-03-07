@@ -1,9 +1,0 @@
-<map id="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer" name="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer">
-<area shape="rect" id="Node000001" title="The RabbitMqInitializer class." alt="" coords="192,197,427,332"/>
-<area shape="rect" id="Node000002" href="$interfaceEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1IDependencyInitializer-1-g.html" title="The dependency initializer." alt="" coords="5,5,240,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,143,246,195,243,199,192,147"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="264,37,355,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="312,103,312,181,307,181,307,103"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="379,37,525,103"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="431,105,370,186,366,183,426,101"/>
-</map>

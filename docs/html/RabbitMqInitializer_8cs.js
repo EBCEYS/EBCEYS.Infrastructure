@@ -1,4 +1,0 @@
-var RabbitMqInitializer_8cs =
-[
-    [ "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1RabbitMqInitializer.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1ExternalServices_1_1Containers_1_1RabbitMqInitializer" ]
-];

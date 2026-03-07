@@ -1,6 +1,0 @@
-var classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91 =
-[
-    [ "GetToken", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91.html#a9a401eb4fa1b7e1be3b14372aebc60f6", null ],
-    [ "ValidateAuth", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91.html#af379b7de4722072dfd464c6d6819ed4e", null ],
-    [ "ValidateToken", "classEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1BoundedContext_1_1RoutesDictionaa7e61ad17337a99284f818800c5da91.html#a150330f850e6ddfc23308c2d6bc88df9", null ]
-];

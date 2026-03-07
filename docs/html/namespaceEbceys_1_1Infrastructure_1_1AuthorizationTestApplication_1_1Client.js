@@ -1,5 +1,0 @@
-var namespaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client =
-[
-    [ "IAppRabbitClient", "interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAppRabbitClient.html", "interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAppRabbitClient" ],
-    [ "IAuthAppClient", "interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAuthAppClient.html", "interfaceEbceys_1_1Infrastructure_1_1AuthorizationTestApplication_1_1Client_1_1IAuthAppClient" ]
-];

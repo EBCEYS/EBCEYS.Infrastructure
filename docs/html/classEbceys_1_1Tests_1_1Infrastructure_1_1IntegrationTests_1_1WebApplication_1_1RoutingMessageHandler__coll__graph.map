@@ -1,7 +1,0 @@
-<map id="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler" name="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="64,148,291,343"/>
-<area shape="rect" id="Node000002" href="$classDelegatingHandler.html" title=" " alt="" coords="5,13,141,78"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,89,129,147,124,149,94,91"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="166,5,397,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="263,87,238,135,233,132,258,84"/>
-</map>

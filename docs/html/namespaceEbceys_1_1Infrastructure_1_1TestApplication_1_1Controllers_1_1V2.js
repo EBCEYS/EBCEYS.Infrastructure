@@ -1,4 +1,0 @@
-var namespaceEbceys_1_1Infrastructure_1_1TestApplication_1_1Controllers_1_1V2 =
-[
-    [ "TestV2Controller", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Controllers_1_1V2_1_1TestV2Controller.html", "classEbceys_1_1Infrastructure_1_1TestApplication_1_1Controllers_1_1V2_1_1TestV2Controller" ]
-];

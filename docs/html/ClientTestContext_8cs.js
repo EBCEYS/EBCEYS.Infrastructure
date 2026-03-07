@@ -1,8 +1,0 @@
-var ClientTestContext_8cs =
-[
-    [ "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext< TClient, TEntrypoint >", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ClientTestContext-2-g" ],
-    [ "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext< TEntrypoint >", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1ServiceTestContext-1-g" ],
-    [ "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1TestClientInitializeOptions" ],
-    [ "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandler.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandler" ],
-    [ "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration.html", "classEbceys_1_1Tests_1_1Infrastructure_1_1IntegrationTests_1_1WebApplication_1_1RoutingMessageHandlerConfiguration" ]
-];
