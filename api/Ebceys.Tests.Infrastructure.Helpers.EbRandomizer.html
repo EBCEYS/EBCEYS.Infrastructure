@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EbRandomizer | EBCEYS.Infrastructure </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EbRandomizer | EBCEYS.Infrastructure ">
+      
+      <meta name="description" content="The  class.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer">
+
+
+
+  <h1 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer" class="text-break">
+Class EbRandomizer  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ebceys.html">Ebceys</a>.<a class="xref" href="Ebceys.Tests.html">Tests</a>.<a class="xref" href="Ebceys.Tests.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html">EbRandomizer</a> class.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public class EbRandomizer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EbRandomizer</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer__ctor_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.#ctor*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer__ctor_System_Int32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.#ctor(System.Int32)">
+  EbRandomizer(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html">EbRandomizer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EbRandomizer(int seed = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The seed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Chars_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Chars*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Chars" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Chars">
+  Chars
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The chars for string generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Chars { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_RandomJwtGeneratorInstance_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.RandomJwtGeneratorInstance*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_RandomJwtGeneratorInstance" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.RandomJwtGeneratorInstance">
+  RandomJwtGeneratorInstance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The random jwt generator instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IJwtGenerator RandomJwtGeneratorInstance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.html">IJwtGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Array_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Array*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Array__1_System_Func_System_Int32_Ebceys_Tests_Infrastructure_Helpers_EbRandomizer___0__System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Array``1(System.Func{System.Int32,Ebceys.Tests.Infrastructure.Helpers.EbRandomizer,``0},System.UInt32)">
+  Array&lt;T&gt;(Func&lt;int, EbRandomizer, T&gt;, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] Array&lt;T&gt;(Func&lt;int, EbRandomizer, T&gt; conf, uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html">EbRandomizer</a>, T&gt;</dt>
+    <dd><p>The func generates each element of array.<br>
+The first arg is index of element in array.</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>T[]</dt>
+    <dd><p>The new array of <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Bool_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Bool*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Bool_System_Single_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Bool(System.Single)">
+  Bool(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random bool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Bool(float weight = 0.5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The weight.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The random bool.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Bool_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Weight 0.7 meens that 70% of bool values will be true.</p>
+</div>
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Byte_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Byte*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Byte" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Byte">
+  Byte()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random byte value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte Byte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>The random byte value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Byte_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Byte*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Byte_System_Int64_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Byte(System.Int64)">
+  Byte(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random byte value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte Byte(long minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>The random byte value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Byte_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Byte*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Byte_System_Int64_System_Int64_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Byte(System.Int64,System.Int64)">
+  Byte(long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random byte value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte Byte(long minValue, long maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>The random byte value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_ByteArray_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.ByteArray*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_ByteArray_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.ByteArray(System.UInt32)">
+  ByteArray(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ByteArray(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The new array of bytes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Create_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Create*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Create" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Create">
+  Create()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates the new instance of <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html">EbRandomizer</a> with random seed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EbRandomizer Create()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html">EbRandomizer</a></dt>
+    <dd><p>The new instance of <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html">EbRandomizer</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTime_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTime*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTime" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTime">
+  DateTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random datetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DateTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The random datetime.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTime_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTime*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTime_System_DateTime_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTime(System.DateTime)">
+  DateTime(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random datetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DateTime(DateTime minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The random datetime.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTime_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTime*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTime_System_DateTime_System_DateTime_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTime(System.DateTime,System.DateTime)">
+  DateTime(DateTime, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random datetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DateTime(DateTime minValue, DateTime maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>The random datetime.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTimeOffset_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTimeOffset*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTimeOffset" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTimeOffset">
+  DateTimeOffset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random DateTimeOffset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset DateTimeOffset()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The random DateTimeOffset.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTimeOffset_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTimeOffset*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTimeOffset_System_DateTimeOffset_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTimeOffset(System.DateTimeOffset)">
+  DateTimeOffset(DateTimeOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random DateTimeOffset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset DateTimeOffset(DateTimeOffset minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The random DateTimeOffset.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTimeOffset_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTimeOffset*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DateTimeOffset_System_DateTimeOffset_System_DateTimeOffset_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DateTimeOffset(System.DateTimeOffset,System.DateTimeOffset)">
+  DateTimeOffset(DateTimeOffset, DateTimeOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random DateTimeOffset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset DateTimeOffset(DateTimeOffset minValue, DateTimeOffset maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd><p>The random DateTimeOffset.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Decimal_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Decimal*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Decimal" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Decimal">
+  Decimal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random decimal value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal Decimal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The random decimal value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Decimal_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Decimal*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Decimal_System_Decimal_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Decimal(System.Decimal)">
+  Decimal(decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random decimal value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal Decimal(decimal minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The random decimal value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Decimal_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Decimal*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Decimal_System_Decimal_System_Decimal_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Decimal(System.Decimal,System.Decimal)">
+  Decimal(decimal, decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random decimal value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal Decimal(decimal minValue, decimal maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The random decimal value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DecimalArray_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DecimalArray*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DecimalArray_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DecimalArray(System.UInt32)">
+  DecimalArray(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of decimals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal[] DecimalArray(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>[]</dt>
+    <dd><p>The new array of decimals.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Domain_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Domain*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Domain_System_UInt32_System_String_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Domain(System.UInt32,System.String)">
+  Domain(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The random domain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Domain(uint length = 8, string postfix = &quot;com&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The domain prefix length.</p>
+</dd>
+    <dt><code>postfix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The postfix. Default is <code>com</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new string with domain.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Domain_System_UInt32_System_String__examples">Examples</h4>
+  <p>vitaliy.com</p>
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Double_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Double*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Double" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Double">
+  Double()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random double value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Double()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The random double value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Double_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Double*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Double_System_Double_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Double(System.Double)">
+  Double(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random double value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Double(double minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The random double value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Double_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Double*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Double_System_Double_System_Double_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Double(System.Double,System.Double)">
+  Double(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random double value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Double(double minValue, double maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The random double value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DoubleArray_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DoubleArray*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_DoubleArray_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.DoubleArray(System.UInt32)">
+  DoubleArray(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of doubles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] DoubleArray(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The new array of doubles.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Email_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Email*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Email_System_UInt32_System_String_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Email(System.UInt32,System.String)">
+  Email(uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The random email with specified domain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Email(uint length, string domain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The prefix length.</p>
+</dd>
+    <dt><code>domain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The domain.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new string with random email.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>If domain contains spec symbols.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Email_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Email*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Email_System_UInt32_System_UInt32_System_String_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Email(System.UInt32,System.UInt32,System.String)">
+  Email(uint, uint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The random email with random domain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Email(uint length = 16, uint domainLength = 8, string postfix = &quot;com&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The prefix length.</p>
+</dd>
+    <dt><code>domainLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The domain prefix length.</p>
+</dd>
+    <dt><code>postfix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The email postfix. Default is <code>com</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Enum_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Enum*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Enum__1" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Enum``1">
+  Enum&lt;TEnum&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random enum entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TEnum Enum&lt;TEnum&gt;() where TEnum : struct, Enum</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TEnum</span></dt>
+    <dd><p>The <code class="typeparamref">TEnum</code> exemplar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnum</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Enums_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Enums*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Enums__1_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Enums``1(System.UInt32)">
+  Enums&lt;TEnum&gt;(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random enum entities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TEnum&gt; Enums&lt;TEnum&gt;(uint count) where TEnum : struct, Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The num of random enums to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEnum&gt;</dt>
+    <dd><p>The <code class="typeparamref">TEnum</code> exemplar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEnum</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_HexString_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.HexString*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_HexString_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.HexString(System.UInt32)">
+  HexString(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random hex string with specified length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HexString(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The string length. If 0 the random length will be.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new instance of hex <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Int_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Int*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Int" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Int">
+  Int()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random int value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Int()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The random int value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Int_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Int*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Int_System_Int32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Int(System.Int32)">
+  Int(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random int value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Int(int minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The random int value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Int_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Int*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Int_System_Int32_System_Int32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Int(System.Int32,System.Int32)">
+  Int(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random int value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Int(int minValue, int maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The random int value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_IntArray_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.IntArray*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_IntArray_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.IntArray(System.UInt32)">
+  IntArray(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of ints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] IntArray(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>The new array of ints.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt">
+  Jwt()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random JWT.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Jwt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The random jwt with prefix <code>Bearer {token}</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_Ebceys_Infrastructure_Options_JwtOptions_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt(Ebceys.Infrastructure.Options.JwtOptions)">
+  Jwt(JwtOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random JWT with specified <code class="paramref">opts</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Jwt(JwtOptions opts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opts</code> <a class="xref" href="Ebceys.Infrastructure.Options.JwtOptions.html">JwtOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The random jwt with prefix <code>Bearer {token}</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_Ebceys_Infrastructure_Options_JwtOptions_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt(Ebceys.Infrastructure.Options.JwtOptions,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})">
+  Jwt(JwtOptions, IEnumerable&lt;Claim&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random JWT with specified <code class="paramref">opts</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Jwt(JwtOptions opts, IEnumerable&lt;Claim&gt; claims)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>opts</code> <a class="xref" href="Ebceys.Infrastructure.Options.JwtOptions.html">JwtOptions</a></dt>
+    <dd></dd>
+    <dt><code>claims</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claim">Claim</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The random jwt with prefix <code>Bearer {token}</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_System_Security_Claims_Claim___" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt(System.Security.Claims.Claim[])">
+  Jwt(params Claim[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L603"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random JWT.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Jwt(params Claim[] claims)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>claims</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claim">Claim</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The random jwt with prefix <code>Bearer {token}</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_JwtOptions_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.JwtOptions*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_JwtOptions" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.JwtOptions">
+  JwtOptions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html#Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_JwtOptions">JwtOptions()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JwtOptions JwtOptions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ebceys.Infrastructure.Options.JwtOptions.html">JwtOptions</a></dt>
+    <dd><p>The new instance of <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html#Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_JwtOptions">JwtOptions()</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Jwt__1___0_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Jwt``1(``0,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})">
+  Jwt&lt;TJwtGenerator&gt;(TJwtGenerator, IEnumerable&lt;Claim&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L593"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random jwt with specified <code class="typeparamref">TJwtGenerator</code> and <code class="paramref">claims</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Jwt&lt;TJwtGenerator&gt;(TJwtGenerator generator, IEnumerable&lt;Claim&gt; claims) where TJwtGenerator : IJwtGenerator</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>generator</code> <span class="xref">TJwtGenerator</span></dt>
+    <dd><p>The jwt generator.</p>
+</dd>
+    <dt><code>claims</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claim">Claim</a>&gt;</dt>
+    <dd><p>The claims.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TJwtGenerator</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Long_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Long*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Long" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Long">
+  Long()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random long value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Long()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The random long value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Long_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Long*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Long_System_Int64_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Long(System.Int64)">
+  Long(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random long value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Long(long minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The random long value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Long_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Long*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Long_System_Int64_System_Int64_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Long(System.Int64,System.Int64)">
+  Long(long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random long value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Long(long minValue, long maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The random long value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_LongArray_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.LongArray*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_LongArray_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.LongArray(System.UInt32)">
+  LongArray(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of longs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long[] LongArray(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd><p>The new array of longs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_RandomElement_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.RandomElement*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_RandomElement__1_System_Collections_Generic_IEnumerable___0__" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.RandomElement``1(System.Collections.Generic.IEnumerable{``0})">
+  RandomElement&lt;T&gt;(IEnumerable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random element of collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RandomElement&lt;T&gt;(IEnumerable&lt;T&gt; elements)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The elements.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_RandomElements_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.RandomElements*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_RandomElements__1_System_Collections_Generic_IEnumerable___0__System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.RandomElements``1(System.Collections.Generic.IEnumerable{``0},System.UInt32)">
+  RandomElements&lt;T&gt;(IEnumerable&lt;T&gt;, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random elements from collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; RandomElements&lt;T&gt;(IEnumerable&lt;T&gt; elements, uint count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The elements.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The result collection length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd><p>The new instance of <code class="typeparamref">T</code> collection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Throw if <code class="paramref">count</code> is greater then
+<code class="paramref">elements</code> length.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_String_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.String*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_String_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.String(System.UInt32)">
+  String(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random string with specified length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string String(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The string length. If 0 the random length will be.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new instance of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_StringArray_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.StringArray*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_StringArray_System_UInt32_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.StringArray(System.UInt32,System.UInt32)">
+  StringArray(uint, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] StringArray(uint length = 0, uint stringMaxLength = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+    <dt><code>stringMaxLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The max length of string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The new array of strings.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_TimeSpan_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.TimeSpan*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_TimeSpan" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.TimeSpan">
+  TimeSpan()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random timespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan TimeSpan()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>The new instance of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_TimeSpan_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.TimeSpan*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_TimeSpan_System_TimeSpan_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.TimeSpan(System.TimeSpan)">
+  TimeSpan(TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random timespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan TimeSpan(TimeSpan minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>The new instance of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_TimeSpan_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.TimeSpan*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_TimeSpan_System_TimeSpan_System_TimeSpan_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.TimeSpan(System.TimeSpan,System.TimeSpan)">
+  TimeSpan(TimeSpan, TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random timespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan TimeSpan(TimeSpan minValue, TimeSpan maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>The new instance of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UInt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UInt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UInt" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UInt">
+  UInt()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random int value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint UInt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The random int value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UInt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UInt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UInt_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UInt(System.UInt32)">
+  UInt(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random int value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint UInt(uint minValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The random int value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UInt_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UInt*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UInt_System_UInt32_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UInt(System.UInt32,System.UInt32)">
+  UInt(uint, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random int value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint UInt(uint minValue, uint maxValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>maxValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The random int value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UIntArray_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UIntArray*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_UIntArray_System_UInt32_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.UIntArray(System.UInt32)">
+  UIntArray(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the random array of uints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint[] UIntArray(uint length = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The array length.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd><p>The new array of uints.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Url_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Url*"></a>
+
+  <h3 id="Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Url_System_String_" data-uid="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.Url(System.String)">
+  Url(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/EbRandomizer.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates the random uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Url(string scheme = &quot;http&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scheme</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The scheme.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></dt>
+    <dd><p>The new <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html#Ebceys_Tests_Infrastructure_Helpers_EbRandomizer_Url_System_String_">Url(string)</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

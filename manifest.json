@@ -1,7 +1,2936 @@
 {
   "source_base_path": "/home/runner/work/EBCEYS.Infrastructure/EBCEYS.Infrastructure",
   "xrefmap": "xrefmap.yml",
-  "files": [],
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Attributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Attributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.AuthorizationStartup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.AuthorizationStartup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.AuthorizationStartup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.GenerateTokenResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.Methods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.RabbitMqControllerV1.Methods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.RabbitMqControllerV1.Methods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.RabbitMqControllerV1.Methods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.RabbitMqControllerV1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.RabbitMqControllerV1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.RabbitMqControllerV1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.AppRabbitClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.AppRabbitClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Client.AppRabbitClient",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.AppRabbitClient.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.AuthorizationTestApplication.Client.AppRabbitClient\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.AuthAppClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.AuthAppClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Client.AuthAppClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAppRabbitClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAppRabbitClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAppRabbitClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAuthAppClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAuthAppClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Client.IAuthAppClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Client.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Client",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.AuthController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Program",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Rabbit.RabbitMqController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Rabbit.RabbitMqController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Rabbit.RabbitMqController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Rabbit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.Rabbit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.Rabbit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.SchedulingJobs.LogSomeJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.SchedulingJobs.LogSomeJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.SchedulingJobs.LogSomeJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.SchedulingJobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.SchedulingJobs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication.SchedulingJobs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.AuthorizationTestApplication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.AuthorizationTestApplication",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.ConfiguredApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.ConfiguredApp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.ConfiguredApp",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ConfiguredApp.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.ConfiguredApp\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.ControllerFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.ControllerFilters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.ControllerFilters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Controllers.ServiceController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Controllers.ServiceController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Controllers.ServiceController",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Controllers.ServiceController.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Controllers.ServiceController\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.Methods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.Methods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.Methods",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.Methods.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Controllers.ServiceController\" data-throw-if-not-resolved=\"false\"></xref> methods.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Controllers.ServiceControllerRoutes",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Controllers.ServiceControllerRoutes\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter.yml\" sourcestartlinenumber=\"1\">Defines conversions from an object of one type in a model to an object of the same or\ndifferent type in the store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.Conversions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.Conversions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.DatabaseRegistration.Conversions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions\" data-throw-if-not-resolved=\"false\"></xref> extension class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions\" data-throw-if-not-resolved=\"false\"></xref> record.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService<TDbContext>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.DatabaseRegistration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.DatabaseRegistration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Exceptions.ApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Exceptions.ApiException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Exceptions.ApiException",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Exceptions.ApiException.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Exceptions.ApiException\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Exceptions.ApiExceptionHelper",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Exceptions.ApiException\" data-throw-if-not-resolved=\"false\"></xref> helper class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Extensions.EbIServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Extensions.EbIServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Extensions.EbIServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Extensions.EbIServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Extensions.EbIServiceProviderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Extensions.EbIServiceProviderExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Extensions.EbIServiceProviderExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Extensions.EbIServiceProviderExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"System.IServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Extensions.EbObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Extensions.EbObjectExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Extensions.EbObjectExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Extensions.EbObjectExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Extensions.EbServerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Extensions.EbServerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Extensions.EbServerExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Extensions.EbServerExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Extensions.EbServerExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.ExtraStartupBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.ExtraStartupBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.ExtraStartupBase",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ExtraStartupBase.yml\" sourcestartlinenumber=\"1\">The extra startup base class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HealthChecks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HealthChecks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HealthChecks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.CommandExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.CommandExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.CommandExecutor",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.CommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.CommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.ICommandExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.ICommandExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.ICommandExecutor",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.ICommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.ICommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.IScopedCommandExecutor",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.IScopedCommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Jwt.JwtValidator",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.JwtValidator\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Jwt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.ScopedCommandExecutor",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.ScopedCommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator.yml\" sourcestartlinenumber=\"1\">The atomic generator for <xref href=\"System.Int64\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.yml\" sourcestartlinenumber=\"1\">The atomic generator for <xref href=\"System.Int64\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator<T>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator-1.yml\" sourcestartlinenumber=\"1\">The atomic num generator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Sequences.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Sequences",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Swagger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Swagger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Swagger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientBase",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBase.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator<TInterface, TImplementation>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator%602\" data-throw-if-not-resolved=\"false\"></xref> class.<br>\nCreates the new instance of <xref href=\"Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator%602\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientConfiguration",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> configuration class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientRegistration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientRegistration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.IClientBaseResolver<TResolve>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.IClientBaseResolver%601\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.OperationResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.OperationResult-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.OperationResult<TError>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.OperationResult-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.OperationResult%601\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.OperationResult-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.OperationResult-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.OperationResult<TResponse, TError>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.OperationResult-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.OperationResult%602\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ServiceClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ServiceClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ServiceClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager<TInterface>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager<TInterface>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager%601\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.TokenManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.TokenManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.TokenManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Interfaces.ICommand-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Interfaces.ICommand-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Interfaces.ICommand<TContext, TResult>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Interfaces.ICommand-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Interfaces.ICommand%602\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Middlewares.HttpLoggingOptions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Middlewares.HttpLoggingOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware.yml\" sourcestartlinenumber=\"1\">The request logging middleware.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Middlewares.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Middlewares.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Middlewares",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Models.ProblemDetailsResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Models.ProblemDetailsResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Models.ProblemDetailsResult",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Models.ProblemDetailsResult.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Models.ProblemDetailsResult\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Models.ServiceApiInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Models.ServiceApiInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Models.ServiceApiInfo",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Models.ServiceApiInfo.yml\" sourcestartlinenumber=\"1\">The service api info.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Options.JwtOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Options.JwtOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Options.JwtOptions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.JwtOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.JwtOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Options.RabbitMqExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Options.RabbitMqExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Options.RabbitMqExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.RabbitMqExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.RabbitMqExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Options.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Options",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient\" data-throw-if-not-resolved=\"false\"></xref> wrapper class for <xref href=\"EBCEYS.RabbitMQ.Client.RabbitMQClient\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.RabbitMq.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.RabbitMq.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.RabbitMq",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Scheduling.SchedulingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Scheduling.SchedulingExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Scheduling.SchedulingExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Scheduling.SchedulingExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref> extensions class for scheduling processes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Scheduling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Scheduling.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Scheduling",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Services.ExecutedServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Services.ExecutedServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Services.ExecutedServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.SomeBodyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.SomeBodyRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.SomeBodyRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.Requests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.CommandResultResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.CommandResultResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.CommandResultResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.EntityResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.EntityResponseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.EntityResponseDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.SomeBodyResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.SomeBodyResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.SomeBodyResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.Responses",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.Methods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.Methods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.Methods",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.TestControllerV1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext.RoutesDictionary",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.BoundedContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.BoundedContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Client.Implementations.ITestApplicationClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.TestApplicationClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.TestApplicationClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Client.Implementations.TestApplicationClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Client.Implementations.TestClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Implementations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Client.Implementations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Client.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Client.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommandContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommandContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommandContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommandResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.AddEntityCommandResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommandContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommandContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommandContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommandResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.DeleteElementCommandResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommandContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommandContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommandContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommandResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.GetEntitiesCommandResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommandContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommandContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommandContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommandResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands.UpdateEntityCommandResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.TestController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.TestController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Controllers.TestController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.V2.TestV2Controller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.V2.TestV2Controller.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Controllers.V2.TestV2Controller",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.V2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.V2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Controllers.V2",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.DaL.DataModelContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.DaL.DataModelContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.DaL.DataModelContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.DaL.TestTableDbo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.DaL.TestTableDbo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.DaL.TestTableDbo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.DaL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.DaL.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.DaL",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Migrations.Initial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Migrations.Initial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Migrations.Initial",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.TestApplication.Migrations.Initial.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Program",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Startup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Startup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.TestAppInitiator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.TestAppInitiator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.TestAppInitiator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Validators.ChangeNameRequestValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Validators.ChangeNameRequestValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Validators.ChangeNameRequestValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Validators.SomeBodyRequestValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.Validators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication.Validators",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.TestApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.TestApplication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.TestApplication",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AppTestClientContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AppTestClientContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.AppInitializer.AppTestClientContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AppWebApplicationFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AppWebApplicationFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.AppInitializer.AppWebApplicationFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AuthAppTestClientContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AuthAppTestClientContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.AppInitializer.AuthAppTestClientContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AuthAppWebApplicationFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.AuthAppWebApplicationFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.AppInitializer.AuthAppWebApplicationFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.AppInitializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.AppInitializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ClientTests.AuthClientTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.ServiceSystemClientTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.ServiceSystemClientTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ClientTests.ServiceSystemClientTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ClientTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.DiTests.DiCTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.DiTests.DiCTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.DiTests.DiCTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.DiTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.DiTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.DiTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.Middlewares.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.Middlewares.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.Middlewares",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.Helpers.ScheduledTestJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.Helpers.ScheduledTestJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ScheduledTests.Helpers.ScheduledTestJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ScheduledTests.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ScheduledTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Exceptions.ApiExceptionTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.AtomicLongGeneratorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.AtomicLongGeneratorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.AtomicLongGeneratorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.EbRandomizerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.EbRandomizerTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.EbRandomizerTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.TestEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.TestEnum.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.TestEnum",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.ClientConfigurationValidatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.ClientConfigurationValidatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Validators.ClientConfigurationValidatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.DbContextRegistrationOptionsValidatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.DbContextRegistrationOptionsValidatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Validators.DbContextRegistrationOptionsValidatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.SimpleRabbitMqConfigurationValidatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.SimpleRabbitMqConfigurationValidatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Validators.SimpleRabbitMqConfigurationValidatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Validators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Validators",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Validation.ValidatorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Validation.ValidatorExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Validation.ValidatorExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Validation.ValidatorExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Validation.ValidatorExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Validation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Validation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.WebApplicationBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.WebApplicationBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.WebApplicationBase<TStartup>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.WebApplicationBase-1.yml\" sourcestartlinenumber=\"1\">Initiates the new instance of <xref href=\"Ebceys.Infrastructure.WebApplicationBase%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.EbRandomizer",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.EbRandomizer\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.PortSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.PortSelector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.PortSelector",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.PortSelector.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.PortSelector\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource<TData>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.yml\" sourcestartlinenumber=\"1\">The test case source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor<TEnumerator, TData>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.yml\" sourcestartlinenumber=\"1\">The invalid test case executor. Executes the <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601.GetInvalidCases\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor<TEnumerator, TData>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.yml\" sourcestartlinenumber=\"1\">The valid test case executor. Executes the <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601.GetValidCases\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator<TData>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer<TDependency>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer-1.yml\" sourcestartlinenumber=\"1\">The dependency initializer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext<TClient, TEntrypoint>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext%602\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler.yml\" sourcestartlinenumber=\"1\">A type for HTTP handlers that delegate the processing of HTTP response messages to another handler, called the inner handler.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext<TEntrypoint>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory<TStartup>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Tests.Infrastructure.IntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Tests.Infrastructure.IntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
