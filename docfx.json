@@ -1,0 +1,34 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["**/*.csproj"],
+          "exclude": ["**/bin/**", "**/obj/**", "**/test/**", "**/examples/**"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["api/**.yml", "api/index.md"]
+      },
+      {
+        "files": ["articles/**.md", "toc.yml", "index.md"]
+      }
+    ],
+    "dest": "docs",
+    "template": ["default", "modern"],
+    "globalMetadata": {
+      "_appTitle": "EBCEYS.Infrastructure",
+      "_enableSearch": true,
+      "_appFooter": "Released under THE BEER-WARE LICENSE",
+      "_gitContribute": {
+        "repo": "https://github.com/EBCEYS/EBCEYS.Infrastructure",
+        "branch": "main"
+      }
+    }
+  }
+}
