@@ -1,4 +1,6 @@
 using Ebceys.Infrastructure.HttpClient.TokenManager;
+using Ebceys.Infrastructure.Validation;
+using FluentValidation;
 using Flurl.Http.Configuration;
 using JetBrains.Annotations;
 using Microsoft.Extensions.Configuration;
@@ -65,6 +67,7 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
     /// <param name="serviceName">The service name.</param>
     /// <returns></returns>
     /// <exception cref="InvalidOperationException">Throw if there's no section with <paramref name="serviceName" />.</exception>
+    /// <exception cref="ValidationException">If client configuration is not valid.</exception>
     public ClientBaseRegistrationRegistrator<TInterface, TImplementation> FromConfiguration(
         IConfiguration configuration,
         string serviceName)
@@ -72,6 +75,9 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
         var clientConfiguration = configuration.GetSection(serviceName).Get<ClientConfiguration>()
                                   ?? throw new InvalidOperationException(
                                       $"Configuration section '{serviceName}' not found");
+        var validator = new ClientConfigurationValidator();
+        validator.ValidateAndThrow(clientConfiguration);
+        
         _baseUrlResolver = ClientBaseUrlResolver.Create(clientConfiguration.ServiceUrl);
         return this;
     }
@@ -221,4 +227,12 @@ public record ClientConfiguration
     ///     The service url.
     /// </summary>
     public required string ServiceUrl { get; init; }
+}
+
+internal class ClientConfigurationValidator : AbstractValidator<ClientConfiguration>
+{
+    public ClientConfigurationValidator()
+    {
+        RuleFor(it => it.ServiceUrl).IsValidAbsoluteUrl();
+    }
 }

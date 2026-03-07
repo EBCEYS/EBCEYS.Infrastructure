@@ -288,6 +288,16 @@ public class EbRandomizerTests
         hexes.Should().NotThrow();
     }
 
+    [TestCase(10000)]
+    public void With_RandomUrl_With_SpecifiedNumOfAttempts_Result_ValidAbsoluteUrlStrings(int numOfAttempts)
+    {
+        var urls = Enumerable.Range(0, numOfAttempts)
+            .Select(_ => _randomizer.Url().ToString())
+            .ToArray();
+
+        urls.Should().AllSatisfy(url => Uri.TryCreate(url, UriKind.Absolute, out _).Should().BeTrue());
+    }
+
     private static bool IsEmailValid(string address)
     {
         try

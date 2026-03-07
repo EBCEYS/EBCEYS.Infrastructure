@@ -628,6 +628,25 @@ public partial class EbRandomizer(int seed = 0)
     private static partial Regex LatAlphabetAndNumsRegex();
 
     /// <summary>
+    ///     Generates the random uri.
+    /// </summary>
+    /// <param name="scheme">The scheme.</param>
+    /// <returns>The new <see cref="Url" /> instance.</returns>
+    public Uri Url(string scheme = "http")
+    {
+        var builder = new UriBuilder
+        {
+            Scheme = scheme,
+            Host = String(),
+            Path = Bool() ? String() : string.Empty,
+            Query = Bool() ? String() : string.Empty,
+            Fragment = Bool() ? String() : string.Empty,
+            Port = Bool() ? Int(0, 65535) : 0
+        };
+        return builder.Uri;
+    }
+
+    /// <summary>
     ///     The <see cref="RandomJwtGenerator" /> class.
     /// </summary>
     /// <param name="options">The jwt options.</param>

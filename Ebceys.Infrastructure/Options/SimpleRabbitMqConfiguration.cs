@@ -1,5 +1,6 @@
 using System.Text;
 using Ebceys.Infrastructure.RabbitMq;
+using Ebceys.Infrastructure.Validation;
 using EBCEYS.RabbitMQ.Configuration;
 using FluentValidation;
 using JetBrains.Annotations;
@@ -119,7 +120,7 @@ internal class SimpleRabbitMqConfigurationValidator : AbstractValidator<SimpleRa
         RuleFor(x => x).NotNull()
             .DependentRules(() =>
             {
-                RuleFor(x => x.ConnectionString).NotEmpty().Must(c => Uri.TryCreate(c, UriKind.Absolute, out _));
+                RuleFor(x => x.ConnectionString).NotEmpty().IsValidAbsoluteUrl();
                 RuleFor(x => x.ExName).NotNull().NotEmpty();
                 RuleFor(x => x.ExType).IsInEnum();
                 RuleFor(x => x.QueueName).NotNull().NotEmpty();

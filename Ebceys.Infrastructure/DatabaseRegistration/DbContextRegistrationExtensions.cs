@@ -88,5 +88,8 @@ internal class DbContextRegistrationOptionsValidator : AbstractValidator<DbConte
     {
         RuleFor(it => it).NotNull();
         RuleFor(it => it.ConnectionString).NotEmpty();
+        RuleFor(it => it.Timeout)
+            .GreaterThan(TimeSpan.Zero)
+            .When(it => it.Timeout is not null);
     }
 }
