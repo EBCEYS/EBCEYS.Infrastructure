@@ -1,5 +1,6 @@
 using Ebceys.Infrastructure.AuthorizationTestApplication;
 using Ebceys.Infrastructure.AuthorizationTestApplication.Client;
+using Ebceys.Infrastructure.HttpClient;
 using Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication;
 using Serilog.Extensions.Logging;
 
@@ -32,6 +33,6 @@ public class AuthAppTestClientContext(Action<IServiceCollection> beforeHostingSt
     protected override IAuthAppClient CreateServiceClient(string baseAddress)
     {
         var cache = CreateFlurlCache();
-        return new AuthAppClient(cache, new SerilogLoggerFactory(), () => baseAddress);
+        return new AuthAppClient(cache, new SerilogLoggerFactory(), ClientBaseUrlResolver.Create(baseAddress));
     }
 }

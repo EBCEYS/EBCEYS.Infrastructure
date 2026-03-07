@@ -1,6 +1,8 @@
 # Ebceys.Tests.Infrastructure
 
-Вспомогательная библиотека для тестирования ASP.NET Core приложений, построенных на базе `EBCEYS.Infrastructure`. Предоставляет утилиты для интеграционных тестов, генерацию тестовых данных и поддержку внешних зависимостей через Testcontainers.
+Вспомогательная библиотека для тестирования ASP.NET Core приложений, построенных на базе `EBCEYS.Infrastructure`.
+Предоставляет утилиты для интеграционных тестов, генерацию тестовых данных и поддержку внешних зависимостей через
+Testcontainers.
 
 ---
 
@@ -48,7 +50,8 @@ dotnet add reference ./Ebceys.Tests.Infrastructure.csproj
 
 #### EbRandomizer
 
-`EbRandomizer` — многофункциональный генератор случайных данных для тестов. Поддерживает детерминированную генерацию через `seed`.
+`EbRandomizer` — многофункциональный генератор случайных данных для тестов. Поддерживает детерминированную генерацию
+через `seed`.
 
 ```csharp
 // Создание с фиксированным seed (воспроизводимые данные)
@@ -61,7 +64,7 @@ var rand = EbRandomizer.Create();
 **Генерация примитивных типов:**
 
 | Метод                 | Описание                                        |
-| --------------------- | ----------------------------------------------- |
+|-----------------------|-------------------------------------------------|
 | `String(length?)`     | Случайная строка из букв и цифр                 |
 | `HexString(length?)`  | Случайная hex-строка                            |
 | `Int(min?, max?)`     | Случайное `int`                                 |
@@ -149,7 +152,8 @@ bool free = PortSelector.IsFree(5432);
 
 #### StopWatchElapser
 
-`StopWatchElapser` — `IDisposable`-обёртка над `Stopwatch`. Запускает таймер при создании и вызывает переданный `Action<TimeSpan>` при вызове `Dispose`.
+`StopWatchElapser` — `IDisposable`-обёртка над `Stopwatch`. Запускает таймер при создании и вызывает переданный
+`Action<TimeSpan>` при вызове `Dispose`.
 
 ```csharp
 using (StopWatchElapser.Create(elapsed =>
@@ -166,7 +170,8 @@ using (StopWatchElapser.Create(elapsed =>
 
 #### EbTestCaseSource
 
-`EbTestCaseSource<TData>` — абстрактный базовый класс для организации параметризованных тестовых данных в NUnit. Разделяет данные на валидные и невалидные наборы.
+`EbTestCaseSource<TData>` — абстрактный базовый класс для организации параметризованных тестовых данных в NUnit.
+Разделяет данные на валидные и невалидные наборы.
 
 **Создание источника данных:**
 
@@ -217,12 +222,13 @@ public void Validate_ShouldBeInvalid(CreateOrderRequest? request)
 
 #### TestWebApplicationFactory
 
-`TestWebApplicationFactory<TStartup>` — расширение `WebApplicationFactory<TStartup>` с поддержкой настроек и запуска `IBeforeHostingStartedService`.
+`TestWebApplicationFactory<TStartup>` — расширение `WebApplicationFactory<TStartup>` с поддержкой настроек и запуска
+`IBeforeHostingStartedService`.
 
 **Переопределяемые члены:**
 
 | Член                                           | Описание                                            |
-| ---------------------------------------------- | --------------------------------------------------- |
+|------------------------------------------------|-----------------------------------------------------|
 | `ServiceId` _(abstract)_                       | Идентификатор сервиса, подставляется в конфигурацию |
 | `UseProductionAppSettings`                     | Загружать ли `appsettings.json` из проекта          |
 | `ConfigureTestServices(services)` _(abstract)_ | Регистрация тестовых сервисов / моков               |
@@ -246,7 +252,8 @@ public class MyWebApplicationFactory : TestWebApplicationFactory<Startup>
 
 #### ServiceTestContext
 
-`ServiceTestContext<TEntrypoint>` — базовый контекст для интеграционных тестов сервиса. Управляет жизненным циклом `WebApplicationFactory`.
+`ServiceTestContext<TEntrypoint>` — базовый контекст для интеграционных тестов сервиса. Управляет жизненным циклом
+`WebApplicationFactory`.
 
 ```csharp
 public class MyServiceTests
@@ -270,7 +277,7 @@ public class MyServiceTests
 **Члены:**
 
 | Член                                         | Описание                          |
-| -------------------------------------------- | --------------------------------- |
+|----------------------------------------------|-----------------------------------|
 | `Factory`                                    | Экземпляр `WebApplicationFactory` |
 | `BaseAddress`                                | Базовый URL тестового сервера     |
 | `Initialize(configurator?)`                  | Инициализация контекста           |
@@ -281,7 +288,8 @@ public class MyServiceTests
 
 #### ClientTestContext
 
-`ClientTestContext<TClient, TEntrypoint>` — расширение `ServiceTestContext` с автоматическим созданием типизированного клиента.
+`ClientTestContext<TClient, TEntrypoint>` — расширение `ServiceTestContext` с автоматическим созданием типизированного
+клиента.
 
 ```csharp
 public class OrderServiceTestContext
@@ -298,7 +306,7 @@ public class OrderServiceTestContext
 **Дополнительные члены:**
 
 | Член                                        | Описание                                       |
-| ------------------------------------------- | ---------------------------------------------- |
+|---------------------------------------------|------------------------------------------------|
 | `ServiceClient`                             | Созданный экземпляр клиента `TClient`          |
 | `Services`                                  | `IServiceProvider` тестового приложения        |
 | `CreateServiceSystemClient(loggerFactory?)` | Создаёт `IServiceSystemClient`                 |
@@ -311,7 +319,7 @@ public class OrderServiceTestContext
 Параметры инициализации тестового клиента, передаются в `ServiceTestContext.Initialize()`.
 
 | Свойство                   | Тип                        | Описание                                                |
-| -------------------------- | -------------------------- | ------------------------------------------------------- |
+|----------------------------|----------------------------|---------------------------------------------------------|
 | `BaseAddress`              | `Uri?`                     | Базовый адрес (по умолчанию — случайный свободный порт) |
 | `SolutionRelativePath`     | `string?`                  | Относительный путь к контент-руту проекта               |
 | `BuilderConfiguration`     | `Action<IWebHostBuilder>?` | Дополнительная конфигурация хоста                       |
@@ -330,7 +338,9 @@ _context.Initialize(opts =>
 
 #### RoutingMessageHandler и RoutingMessageHandlerConfiguration
 
-`RoutingMessageHandler` — `DelegatingHandler`, который перехватывает исходящие HTTP-запросы и перенаправляет их к соответствующим тестовым серверам по схеме `host:port`. Используется для организации межсервисного взаимодействия в интеграционных тестах без реальной сети.
+`RoutingMessageHandler` — `DelegatingHandler`, который перехватывает исходящие HTTP-запросы и перенаправляет их к
+соответствующим тестовым серверам по схеме `host:port`. Используется для организации межсервисного взаимодействия в
+интеграционных тестах без реальной сети.
 
 `RoutingMessageHandlerConfiguration` хранит таблицу маршрутов `host → HttpMessageHandler`.
 
@@ -348,7 +358,8 @@ configuration.AddRoute("http://payments-service:80/", () => paymentsFactory.Serv
 
 #### TestRoutingMessageHandler
 
-`TestRoutingMessageHandler` — альтернативный `DelegatingHandler` с глобальной статической конфигурацией маршрутов через `RouteConfiguration`.
+`TestRoutingMessageHandler` — альтернативный `DelegatingHandler` с глобальной статической конфигурацией маршрутов через
+`RouteConfiguration`.
 
 ```csharp
 // Настройка до инициализации теста

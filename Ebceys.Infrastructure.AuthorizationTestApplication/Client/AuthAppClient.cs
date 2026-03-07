@@ -20,8 +20,8 @@ public interface IAuthAppClient
 public class AuthAppClient(
     IFlurlClientCache clientCache,
     ILoggerFactory loggerFactory,
-    Func<string> baseUrlResolver,
-    Func<Task<string>>? tokenResolver = null)
+    ClientBaseUrlResolver baseUrlResolver,
+    ClientBaseTokenResolver? tokenResolver = null)
     : ClientBase(clientCache, loggerFactory, baseUrlResolver, tokenResolver), IAuthAppClient
 {
     public async Task<GenerateTokenResponse> GenerateTokenAsync(GenerateTokenRequest request,

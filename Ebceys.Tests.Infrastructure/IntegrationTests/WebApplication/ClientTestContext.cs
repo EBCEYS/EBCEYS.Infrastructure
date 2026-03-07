@@ -1,4 +1,5 @@
 using Ebceys.Infrastructure.Extensions;
+using Ebceys.Infrastructure.HttpClient;
 using Ebceys.Infrastructure.HttpClient.ServiceClient;
 using Ebceys.Infrastructure.Models;
 using Ebceys.Infrastructure.Services.ExecutedServices;
@@ -54,12 +55,15 @@ public abstract class ClientTestContext<TClient, TEntrypoint> : ServiceTestConte
     ///     Creates the instance of <see cref="IServiceSystemClient" />.
     /// </summary>
     /// <param name="loggerFactory">The logger factory.</param>
+    /// <param name="tokenResolver">The token resolver.</param>
     /// <returns>The new instance of <see cref="IServiceSystemClient" />.</returns>
-    public IServiceSystemClient CreateServiceSystemClient(ILoggerFactory? loggerFactory = null)
+    public IServiceSystemClient CreateServiceSystemClient(ILoggerFactory? loggerFactory = null,
+        ClientBaseTokenResolver? tokenResolver = null)
     {
         var apiInfo = Factory.Services.GetRequiredService<IOptions<ServiceApiInfo>>();
         var cache = CreateFlurlCache();
-        return new ServiceSystemClient(apiInfo, cache, loggerFactory ?? new SerilogLoggerFactory(), () => BaseAddress);
+        return new ServiceSystemClient(apiInfo, cache, loggerFactory ?? new SerilogLoggerFactory(),
+            ClientBaseUrlResolver.Create(BaseAddress), tokenResolver);
     }
 
     /// <summary>

@@ -23,7 +23,7 @@ public abstract class ClientBase
     private readonly IFlurlClient _client;
     private readonly ILogger _logger;
 
-    private readonly Func<Task<string>>? _tokenResolver;
+    private readonly ClientBaseTokenResolver? _tokenResolver;
 
     /// <summary>
     ///     Initiates the new instance of <see cref="ClientBase" />.
@@ -35,12 +35,12 @@ public abstract class ClientBase
     protected ClientBase(
         IFlurlClientCache clientCache,
         ILoggerFactory loggerFactory,
-        Func<string> baseUrlResolver,
-        Func<Task<string>>? tokenResolver = null)
+        ClientBaseUrlResolver baseUrlResolver,
+        ClientBaseTokenResolver? tokenResolver = null)
     {
         _tokenResolver = tokenResolver;
         Policy = DefaultClientPollyHelper.CreateDefaultHttpPolly<IFlurlResponse>(Timeout);
-        _client = clientCache.GetOrAdd(ClientName, baseUrlResolver(), ConfigureClient);
+        _client = clientCache.GetOrAdd(ClientName, baseUrlResolver.Invoke(), ConfigureClient);
         _logger = loggerFactory.CreateLogger(GetType());
     }
 
@@ -491,7 +491,10 @@ public abstract class ClientBase
         if (_tokenResolver is not null && !(additionalHeaders?.ContainsKey(AuthorizationHeader) ?? false))
         {
             var token = await _tokenResolver.Invoke();
-            headers.Add(AuthorizationHeader, token);
+            if (token is not null)
+            {
+                headers.Add(AuthorizationHeader, token);
+            }
         }
 
         if (additionalHeaders == null)

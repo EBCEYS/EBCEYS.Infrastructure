@@ -1,6 +1,7 @@
 # EBCEYS.Infrastructure
 
-Комплексная инфраструктурная библиотека на C#, предоставляющая готовые утилиты и компоненты для построения надёжных ASP.NET Core приложений.
+Комплексная инфраструктурная библиотека на C#, предоставляющая готовые утилиты и компоненты для построения надёжных
+ASP.NET Core приложений.
 
 ---
 
@@ -93,7 +94,8 @@ dotnet add package EBCEYS.Infrastructure
 
 ## Быстрый старт
 
-Основной сценарий — создать класс Startup, унаследовав его от `ExtraStartupBase`, и запустить приложение через `WebApplicationBase`:
+Основной сценарий — создать класс Startup, унаследовав его от `ExtraStartupBase`, и запустить приложение через
+`WebApplicationBase`:
 
 ```csharp
 // Startup.cs
@@ -130,7 +132,8 @@ await WebApplicationBase<Startup>
 
 #### WebApplicationBase
 
-`WebApplicationBase<TStartup>` — точка входа для построения приложения. Создаёт `IWebHost` на базе `TStartup`, который должен наследоваться от `ExtraStartupBase`.
+`WebApplicationBase<TStartup>` — точка входа для построения приложения. Создаёт `IWebHost` на базе `TStartup`, который
+должен наследоваться от `ExtraStartupBase`.
 
 ```csharp
 // Program.cs
@@ -157,7 +160,7 @@ await WebApplicationBase<Startup>
 **Переопределяемые свойства:**
 
 | Свойство             | Описание                                      |
-| -------------------- | --------------------------------------------- |
+|----------------------|-----------------------------------------------|
 | `UseAuthentication`  | Подключить JWT-аутентификацию                 |
 | `ProxyToken`         | Прокси-режим токена (не валидировать locally) |
 | `HealthCheckPort`    | Порт для health-check эндпоинтов              |
@@ -167,7 +170,7 @@ await WebApplicationBase<Startup>
 **Переопределяемые методы:**
 
 | Метод                             | Описание                           |
-| --------------------------------- | ---------------------------------- |
+|-----------------------------------|------------------------------------|
 | `ServicesConfiguration(services)` | Регистрация ваших DI-сервисов      |
 | `ConfigureMiddlewares(app, env)`  | Настройка кастомных middleware     |
 | `ConfigureFilters(filters)`       | Добавление кастомных фильтров MVC  |
@@ -203,7 +206,8 @@ public class Startup(IConfiguration configuration) : ExtraStartupBase(configurat
 
 #### ConfiguredApp
 
-Обёртка над `IWebHost`, которую возвращает `WebApplicationBase.Build()`. Запускает все `IBeforeHostingStartedService` перед стартом хоста.
+Обёртка над `IWebHost`, которую возвращает `WebApplicationBase.Build()`. Запускает все `IBeforeHostingStartedService`
+перед стартом хоста.
 
 ```csharp
 var app = WebApplicationBase<Startup>.Create(args).Build(args);
@@ -224,7 +228,8 @@ var myService = app.ServiceProvider.GetRequiredService<IMyService>();
 
 #### ApiException
 
-Исключение для передачи HTTP-ответных ошибок в формате `ProblemDetails` через слои приложения. `ApiExceptionFilter` перехватывает его и автоматически формирует правильный HTTP-ответ.
+Исключение для передачи HTTP-ответных ошибок в формате `ProblemDetails` через слои приложения. `ApiExceptionFilter`
+перехватывает его и автоматически формирует правильный HTTP-ответ.
 
 ```csharp
 // Выброс с кодом и сообщением
@@ -246,12 +251,13 @@ throw new ApiException(StatusCodes.Status500InternalServerError, innerException)
 
 #### ApiExceptionHelper
 
-Статический вспомогательный класс для удобного выброса типизированных `ApiException`. Все методы автоматически подставляют имя вызывающего метода через `[CallerMemberName]`.
+Статический вспомогательный класс для удобного выброса типизированных `ApiException`. Все методы автоматически
+подставляют имя вызывающего метода через `[CallerMemberName]`.
 
 Доступные методы:
 
 | Метод                                                 | HTTP-статус   |
-| ----------------------------------------------------- | ------------- |
+|-------------------------------------------------------|---------------|
 | `ThrowNotFound<TResult>(message)`                     | 404 Not Found |
 | `ThrowConflict<TResult>(message)`                     | 409 Conflict  |
 | `ThrowValidation<TResult>(problemDetails)`            | 422           |
@@ -304,14 +310,15 @@ services.AddControllers(opts =>
 
 #### RequestLoggingMiddleware
 
-Middleware для логирования входящих HTTP-запросов и исходящих ответов. Логирует URL, метод, статус-код, время обработки и (при соответствующем уровне логирования) тела запроса/ответа.
+Middleware для логирования входящих HTTP-запросов и исходящих ответов. Логирует URL, метод, статус-код, время обработки
+и (при соответствующем уровне логирования) тела запроса/ответа.
 
 Автоматически исключает из логирования: `/swagger/`, `/metrics`, `/service/ping`, `/service/healthz`.
 
 **`HttpLoggingOptions`** — класс настройки:
 
 | Свойство                     | Описание                                                      |
-| ---------------------------- | ------------------------------------------------------------- |
+|------------------------------|---------------------------------------------------------------|
 | `PathStartExcludeLogging`    | Пути, начинающиеся с указанных строк — не логируются          |
 | `PathContainsExcludeLogging` | Пути, содержащие указанные строки — не логируются             |
 | `PathEndExcludeLogging`      | Пути, заканчивающиеся на указанные строки — не логируются     |
@@ -332,13 +339,15 @@ protected override Action<HttpLoggingOptions>? HttpContextLogging => opts =>
 
 #### RequestMetricsMiddleware
 
-Middleware для сбора Prometheus-метрик по HTTP-запросам. Счётчик `prometheus_demo_request_total` разбит по меткам `path`, `method`, `status`. Автоматически подключается через `ExtraStartupBase`.
+Middleware для сбора Prometheus-метрик по HTTP-запросам. Счётчик `prometheus_demo_request_total` разбит по меткам
+`path`, `method`, `status`. Автоматически подключается через `ExtraStartupBase`.
 
 ---
 
 #### ExceptionCatcherMiddleware
 
-Перехватывает все необработанные исключения (кроме `ApiException`) и перебрасывает их как `ApiException` с кодом 500. Это гарантирует, что любая необработанная ошибка всегда будет представлена в формате `ProblemDetails`.
+Перехватывает все необработанные исключения (кроме `ApiException`) и перебрасывает их как `ApiException` с кодом 500.
+Это гарантирует, что любая необработанная ошибка всегда будет представлена в формате `ProblemDetails`.
 
 ---
 
@@ -346,7 +355,8 @@ Middleware для сбора Prometheus-метрик по HTTP-запросам.
 
 #### NoRequestBodyLoggingAttribute
 
-Декоратор для метода контроллера. Отключает логирование тела **запроса** для данного эндпоинта. Полезно для эндпоинтов, принимающих чувствительные данные (пароли, токены).
+Декоратор для метода контроллера. Отключает логирование тела **запроса** для данного эндпоинта. Полезно для эндпоинтов,
+принимающих чувствительные данные (пароли, токены).
 
 ```csharp
 [HttpPost("login")]
@@ -426,7 +436,8 @@ public class OrderController(ICommandExecutor executor) : ControllerBase
 
 #### IScopedCommandExecutor / ScopedCommandExecutor
 
-Scoped-версия `ICommandExecutor`. Используйте, когда команда должна выполняться в рамках текущего DI-скоупа (например, внутри фонового сервиса, где выполняется единичная транзакция).
+Scoped-версия `ICommandExecutor`. Используйте, когда команда должна выполняться в рамках текущего DI-скоупа (например,
+внутри фонового сервиса, где выполняется единичная транзакция).
 
 ```csharp
 public class OrderProcessor(IScopedCommandExecutor executor)
@@ -454,7 +465,7 @@ public class OrderProcessor(IScopedCommandExecutor executor)
 Методы для каждого HTTP-метода (GET, POST, PUT, PATCH, DELETE):
 
 | Метод                                | Описание                          |
-| ------------------------------------ | --------------------------------- |
+|--------------------------------------|-----------------------------------|
 | `GetJsonAsync<TResponse, TError>`    | GET с десериализацией тела ответа |
 | `GetAsync<TError>`                   | GET без тела успешного ответа     |
 | `GetStreamAsync<TError>`             | GET → Stream                      |
@@ -473,7 +484,7 @@ public interface IProductClient
 public class ProductClient(
     IFlurlClientCache cache,
     ILoggerFactory loggerFactory,
-    Func<string> baseUrlResolver)
+    ClientBaseUrlResolver baseUrlResolver)
     : ClientBase(cache, loggerFactory, baseUrlResolver), IProductClient
 {
     public async Task<Product?> GetProductAsync(Guid id, CancellationToken ct = default)
@@ -535,7 +546,8 @@ services.AddClient<IProductClient, ProductClient>()
 
 Интерфейс для получения токена авторизации при исходящих запросах из `ClientBase`.
 
-Встроенная реализация `FromContextClientTokenManager<TInterface>` берёт токен из заголовка `Authorization` текущего входящего HTTP-запроса (прокси-режим).
+Встроенная реализация `FromContextClientTokenManager<TInterface>` берёт токен из заголовка `Authorization` текущего
+входящего HTTP-запроса (прокси-режим).
 
 ```csharp
 // Собственная реализация (например, получение service-to-service токена):
@@ -611,7 +623,8 @@ public class AuthController(IJwtGenerator jwtGenerator) : ControllerBase
 
 #### IJwtValidator / JwtValidator
 
-Парсинг и базовая валидация (синтаксис) JWT-токена без проверки подписи. Полезно для чтения claims из токена без полной верификации (например, в proxy-режиме).
+Парсинг и базовая валидация (синтаксис) JWT-токена без проверки подписи. Полезно для чтения claims из токена без полной
+верификации (например, в proxy-режиме).
 
 ```csharp
 // Регистрация в DI:
@@ -681,7 +694,8 @@ public class OrderNumberGenerator(IAtomGenerator<long> generator)
 
 #### AtomicLongGenerator / AtomicIntGenerator
 
-Конкретные реализации `IAtomGenerator<long>` и `IAtomGenerator<int>`. Используют `Interlocked.Increment` для потокобезопасного инкремента. Начальное значение генерируется случайно (или задаётся через `seed`).
+Конкретные реализации `IAtomGenerator<long>` и `IAtomGenerator<int>`. Используют `Interlocked.Increment` для
+потокобезопасного инкремента. Начальное значение генерируется случайно (или задаётся через `seed`).
 
 ```csharp
 var gen = new AtomicLongGenerator(seed: 0);
@@ -715,7 +729,8 @@ services.RegisterDbContext<AppDbContext>(opts =>
 
 #### MigrationApplierService
 
-Реализация `IBeforeHostingStartedService`, которая применяет EF Core-миграции до запуска HTTP-сервера. Автоматически регистрируется через `RegisterDbContext`, если включена опция `MigrateDb`.
+Реализация `IBeforeHostingStartedService`, которая применяет EF Core-миграции до запуска HTTP-сервера. Автоматически
+регистрируется через `RegisterDbContext`, если включена опция `MigrateDb`.
 
 ```csharp
 // При необходимости — ручная регистрация:
@@ -726,7 +741,8 @@ services.AddBeforeHostingStarted<MigrationApplierService<AppDbContext>>();
 
 #### DateTimeOffsetConverter
 
-EF Core `ValueConverter` для корректного сохранения `DateTimeOffset` в PostgreSQL: преобразует в UTC при записи и чтении.
+EF Core `ValueConverter` для корректного сохранения `DateTimeOffset` в PostgreSQL: преобразует в UTC при записи и
+чтении.
 
 ```csharp
 protected override void ConfigureConventions(ModelConfigurationBuilder builder)
@@ -742,12 +758,13 @@ protected override void ConfigureConventions(ModelConfigurationBuilder builder)
 
 #### EbRabbitMqClient
 
-Абстрактный базовый класс для типизированных RabbitMQ-клиентов. Оборачивает `RabbitMQClient` из библиотеки `EBCEYS.RabbitMQ` и реализует `IHostedService` для управления жизненным циклом.
+Абстрактный базовый класс для типизированных RabbitMQ-клиентов. Оборачивает `RabbitMQClient` из библиотеки
+`EBCEYS.RabbitMQ` и реализует `IHostedService` для управления жизненным циклом.
 
 Доступные методы отправки:
 
 | Метод                                                | Описание                                     |
-| ---------------------------------------------------- | -------------------------------------------- |
+|------------------------------------------------------|----------------------------------------------|
 | `SendMessageAsync<TMessage>(msg, method)`            | Отправить сообщение без ожидания ответа      |
 | `SendMessageAsync(method)`                           | Отправить пустое сообщение                   |
 | `SendRequestAsync<TRequest, TResponse>(req, method)` | Отправить запрос и дождаться ответа          |
@@ -787,7 +804,8 @@ services.AddRabbitMqController<MyRabbitController>(
 
 #### SimpleRabbitMqConfiguration
 
-Упрощённый POCO для конфигурации RabbitMQ из `appsettings.json`. Вместо подробной конфигурации через `RabbitMQConfigurationBuilder` — достаточно задать несколько строковых полей.
+Упрощённый POCO для конфигурации RabbitMQ из `appsettings.json`. Вместо подробной конфигурации через
+`RabbitMQConfigurationBuilder` — достаточно задать несколько строковых полей.
 
 ```json
 {
@@ -809,7 +827,8 @@ var config = configuration.GetRabbitMqConfiguration("NotificationRabbit");
 
 #### RabbitMqExtensions
 
-Расширения `IConfiguration` для чтения `RabbitMQConfiguration`. Поддерживает как формат `SimpleRabbitMqConfiguration` (упрощённый), так и полный формат с явными секциями `ExchangeConfiguration`, `QueueConfiguration`, etc.
+Расширения `IConfiguration` для чтения `RabbitMQConfiguration`. Поддерживает как формат `SimpleRabbitMqConfiguration` (
+упрощённый), так и полный формат с явными секциями `ExchangeConfiguration`, `QueueConfiguration`, etc.
 
 ```csharp
 RabbitMQConfiguration config = configuration.GetRabbitMqConfiguration("MyRabbitSection");
@@ -821,7 +840,8 @@ RabbitMQConfiguration config = configuration.GetRabbitMqConfiguration("MyRabbitS
 
 #### SchedulingExtensions
 
-Обёртка над [Quartz.NET](https://www.quartz-scheduler.net/) для удобного планирования фоновых задач. Задачи запускаются до старта HTTP-сервера (через `IBeforeHostingStartedService`).
+Обёртка над [Quartz.NET](https://www.quartz-scheduler.net/) для удобного планирования фоновых задач. Задачи запускаются
+до старта HTTP-сервера (через `IBeforeHostingStartedService`).
 
 ```csharp
 // Регистрация планировщика:
@@ -858,7 +878,8 @@ public class CleanupJob(ILogger<CleanupJob> logger) : IJob
 
 #### IBeforeHostingStartedService
 
-Интерфейс для выполнения произвольных действий **до** старта HTTP-сервера, но **после** построения DI-контейнера. Все зарегистрированные реализации запускаются последовательно внутри `ConfiguredApp.BuildAndRunAsync()`.
+Интерфейс для выполнения произвольных действий **до** старта HTTP-сервера, но **после** построения DI-контейнера. Все
+зарегистрированные реализации запускаются последовательно внутри `ConfiguredApp.BuildAndRunAsync()`.
 
 ```csharp
 // Реализация:
@@ -882,10 +903,11 @@ services.AddBeforeHostingStarted<SeedDataService>();
 
 ### Service Controller
 
-`ServiceController` — встроенный контроллер, автоматически подключаемый через `ExtraStartupBase`. Предоставляет системные эндпоинты под маршрутом `/service`:
+`ServiceController` — встроенный контроллер, автоматически подключаемый через `ExtraStartupBase`. Предоставляет
+системные эндпоинты под маршрутом `/service`:
 
 | Эндпоинт                      | Описание                                  |
-| ----------------------------- | ----------------------------------------- |
+|-------------------------------|-------------------------------------------|
 | `GET /service/ping`           | Возвращает `"pong"`                       |
 | `GET /service/healthz`        | Health check без тела ответа (200 / 500)  |
 | `GET /service/healthz-status` | Health check с детальным `UIHealthReport` |
@@ -914,7 +936,8 @@ protected override ServiceApiInfo ServiceApiInfo { get; init; } =
 
 #### ProblemDetailsResult
 
-`IActionResult` для возврата `ProblemDetails` с правильным Content-Type (`application/problem+json`) и HTTP-статусом из объекта.
+`IActionResult` для возврата `ProblemDetails` с правильным Content-Type (`application/problem+json`) и HTTP-статусом из
+объекта.
 
 ```csharp
 // Используется внутри ApiExceptionFilter.
@@ -933,7 +956,8 @@ return new ProblemDetailsResult(new ProblemDetails
 
 #### ConfigureSwaggerOptions
 
-Настраивает Swagger-документацию для всех версий API (`IApiVersionDescriptionProvider`). Берёт название и описание из `ServiceApiInfo`. Автоматически помечает устаревшие версии.
+Настраивает Swagger-документацию для всех версий API (`IApiVersionDescriptionProvider`). Берёт название и описание из
+`ServiceApiInfo`. Автоматически помечает устаревшие версии.
 
 ```csharp
 // Переопределение OpenApiInfo (опционально):
@@ -1031,7 +1055,8 @@ services.AddAtomicGenerators();
 
 ## Тестовая инфраструктура
 
-Для тестирования приложений, построенных на базе `EBCEYS.Infrastructure`, предназначена отдельная вспомогательная библиотека **Ebceys.Tests.Infrastructure**.
+Для тестирования приложений, построенных на базе `EBCEYS.Infrastructure`, предназначена отдельная вспомогательная
+библиотека **Ebceys.Tests.Infrastructure**.
 
 Она предоставляет:
 
@@ -1053,6 +1078,7 @@ services.AddAtomicGenerators();
 
 Создано и поддерживается [EBCEYS](https://github.com/EBCEYS).
 
-Если у вас возникли вопросы или проблемы, пожалуйста, создайте issue в [репозитории GitHub](https://github.com/EBCEYS/EBCEYS.Infrastructure/issues).
+Если у вас возникли вопросы или проблемы, пожалуйста, создайте issue
+в [репозитории GitHub](https://github.com/EBCEYS/EBCEYS.Infrastructure/issues).
 
 ---

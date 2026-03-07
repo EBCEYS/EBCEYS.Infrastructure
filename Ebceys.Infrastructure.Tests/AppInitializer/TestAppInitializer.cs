@@ -1,3 +1,4 @@
+using Ebceys.Infrastructure.HttpClient;
 using Ebceys.Infrastructure.TestApplication;
 using Ebceys.Infrastructure.TestApplication.Client.Implementations;
 using Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication;
@@ -33,6 +34,7 @@ public class AppTestClientContext(Action<IServiceCollection> beforeHostingStarte
     {
         var clientsCache = CreateFlurlCache();
 
-        return new TestApplicationClient(clientsCache, new SerilogLoggerFactory(), () => baseAddress);
+        return new TestApplicationClient(clientsCache, new SerilogLoggerFactory(),
+            ClientBaseUrlResolver.Create(baseAddress));
     }
 }

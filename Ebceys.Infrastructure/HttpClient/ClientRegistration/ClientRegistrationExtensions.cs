@@ -42,9 +42,9 @@ public static class ClientRegistrationExtensions
 public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(IServiceCollection services)
     where TImplementation : ClientBase, TInterface where TInterface : class
 {
-    private Func<string>? _baseUrlResolver;
+    private ClientBaseUrlResolver? _baseUrlResolver;
     private Func<IServiceProvider, IEnumerable<Func<DelegatingHandler>>, IFlurlClientCache>? _flurlClientCacheResolver;
-    private Func<Task<string>>? _tokenResolver;
+    private ClientBaseTokenResolver? _tokenResolver;
     private bool _useClientTokenManager;
 
     /// <summary>
@@ -54,7 +54,7 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
     /// <returns></returns>
     public ClientBaseRegistrationRegistrator<TInterface, TImplementation> FromUrl(string url)
     {
-        _baseUrlResolver = () => url;
+        _baseUrlResolver = ClientBaseUrlResolver.Create(url);
         return this;
     }
 
@@ -72,7 +72,7 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
         var clientConfiguration = configuration.GetSection(serviceName).Get<ClientConfiguration>()
                                   ?? throw new InvalidOperationException(
                                       $"Configuration section '{serviceName}' not found");
-        _baseUrlResolver = () => clientConfiguration.ServiceUrl;
+        _baseUrlResolver = ClientBaseUrlResolver.Create(clientConfiguration.ServiceUrl);
         return this;
     }
 
@@ -83,9 +83,9 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
     /// <param name="tokenResolver"></param>
     /// <returns></returns>
     public ClientBaseRegistrationRegistrator<TInterface, TImplementation> AddAuthTokenResolver(
-        Func<Task<string>> tokenResolver)
+        Func<Task<string?>> tokenResolver)
     {
-        _tokenResolver = tokenResolver;
+        _tokenResolver = new ClientBaseTokenResolver(tokenResolver);
         return this;
     }
 
@@ -98,7 +98,35 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
     /// <returns></returns>
     public ClientBaseRegistrationRegistrator<TInterface, TImplementation> AddAuthTokenFromHttpContextResolver()
     {
-        services.TryAddSingleton<IClientTokenManager<TInterface>, FromContextClientTokenManager<TInterface>>();
+        return AddCustomAuthTokenResolver<FromContextClientTokenManager<TInterface>>();
+    }
+
+    /// <summary>
+    ///     Adds the custom auth token resolver with <see cref="TInterface" /> mapping.
+    /// </summary>
+    /// <param name="factory">The factory.</param>
+    /// <typeparam name="TResolver">The <see cref="IClientTokenManager{TInterface}" /> implementation.</typeparam>
+    /// <exception cref="InvalidOperationException">If token manager already registered for service.</exception>
+    /// <returns></returns>
+    public ClientBaseRegistrationRegistrator<TInterface, TImplementation> AddCustomAuthTokenResolver<TResolver>(
+        Func<IServiceProvider, IClientTokenManager<TInterface>>? factory = null)
+        where TResolver : class, IClientTokenManager<TInterface>
+    {
+        if (_useClientTokenManager)
+        {
+            throw new InvalidOperationException(
+                $"The {nameof(IClientTokenManager<>)} is already registered for {nameof(TImplementation)}!");
+        }
+
+        if (factory is not null)
+        {
+            services.TryAddSingleton(factory);
+        }
+        else
+        {
+            services.TryAddSingleton<IClientTokenManager<TInterface>, TResolver>();
+        }
+
         _useClientTokenManager = true;
         return this;
     }
@@ -147,10 +175,11 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
             });
         }
 
+        var urlResolver = _baseUrlResolver!;
         if (_tokenResolver is not null)
         {
             services.AddSingleton<TInterface, TImplementation>(sp =>
-                ActivatorUtilities.CreateInstance<TImplementation>(sp, _baseUrlResolver, _tokenResolver));
+                ActivatorUtilities.CreateInstance<TImplementation>(sp, urlResolver, _tokenResolver));
             return;
         }
 
@@ -158,27 +187,27 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
         {
             if (_tokenResolver is not null)
             {
-                return ActivatorUtilities.CreateInstance<TImplementation>(sp, _baseUrlResolver, _tokenResolver);
+                return ActivatorUtilities.CreateInstance<TImplementation>(sp, urlResolver, _tokenResolver);
             }
 
             if (_useClientTokenManager)
             {
-                return ActivatorUtilities.CreateInstance<TImplementation>(sp, _baseUrlResolver,
+                return ActivatorUtilities.CreateInstance<TImplementation>(sp, urlResolver,
                     GetTokenResolverWithTokenManager(sp));
             }
 
-            return ActivatorUtilities.CreateInstance<TImplementation>(sp, _baseUrlResolver);
+            return ActivatorUtilities.CreateInstance<TImplementation>(sp, urlResolver);
         });
     }
 
-    private static Func<Task<string>> GetTokenResolverWithTokenManager(IServiceProvider sp)
+    private static ClientBaseTokenResolver GetTokenResolverWithTokenManager(IServiceProvider sp)
     {
-        return async () =>
+        return new ClientBaseTokenResolver(async () =>
         {
             var manager = sp.GetRequiredService<IClientTokenManager<TInterface>>();
             var token = await manager.GetTokenAsync() ?? string.Empty;
             return token;
-        };
+        });
     }
 }
 
@@ -186,7 +215,7 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
 ///     The <see cref="ClientBase" /> configuration class.
 /// </summary>
 [PublicAPI]
-public sealed class ClientConfiguration
+public record ClientConfiguration
 {
     /// <summary>
     ///     The service url.

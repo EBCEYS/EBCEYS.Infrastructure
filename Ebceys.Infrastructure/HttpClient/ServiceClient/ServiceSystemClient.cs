@@ -58,8 +58,8 @@ public class ServiceSystemClient(
     IOptions<ServiceApiInfo> apiInfo,
     IFlurlClientCache clientCache,
     ILoggerFactory loggerFactory,
-    Func<string> baseUrlResolver,
-    Func<Task<string>>? tokenResolver = null)
+    ClientBaseUrlResolver baseUrlResolver,
+    ClientBaseTokenResolver? tokenResolver = null)
     : ClientBase(clientCache, loggerFactory, baseUrlResolver, tokenResolver), IServiceSystemClient
 {
     /// <inheritdoc />

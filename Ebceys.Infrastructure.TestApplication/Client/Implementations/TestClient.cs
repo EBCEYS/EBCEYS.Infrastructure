@@ -13,8 +13,8 @@ namespace Ebceys.Infrastructure.TestApplication.Client.Implementations;
 public class TestClient(
     IFlurlClientCache clientCache,
     ILoggerFactory loggerFactory,
-    Func<string> baseUrlResolver,
-    Func<Task<string>>? tokenResolver = null)
+    ClientBaseUrlResolver baseUrlResolver,
+    ClientBaseTokenResolver? tokenResolver = null)
     : ClientBase(clientCache, loggerFactory, baseUrlResolver, tokenResolver), ITestClient
 {
     private const string BasePath = RoutesDictionary.TestControllerV1.BaseRoute;
