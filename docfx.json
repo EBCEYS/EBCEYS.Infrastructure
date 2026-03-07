@@ -22,8 +22,7 @@
         "files": ["articles/**.md"]
       }
     ],
-    "dest": ".",
-    "output": "_site",
+    "dest": "_site",
     "template": ["modern"],
     "globalMetadata": {
       "_appTitle": "EBCEYS.Infrastructure",
