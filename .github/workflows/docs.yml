@@ -17,12 +17,12 @@ jobs:
 
       - name: Install DocFX
         run: dotnet tool install -g docfx
-
-      - name: Add .nojekyll
-          run: touch ./docs/.nojekyll
       
       - name: Build Documentation
         run: docfx docfx.json
+        
+      - name: Add .nojekyll
+          run: touch ./docs/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

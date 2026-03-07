@@ -10,7 +10,25 @@
         <PackageId>Ebceys.Tests.Infrastructure</PackageId>
         <Authors>EBCEYS</Authors>
         <RepositoryUrl>https://github.com/Basova-Angelina-Michailovna/Infrastructure</RepositoryUrl>
+        <Title>Ebceys.Infrastructure</Title>
+        <Copyright>EBCEYS</Copyright>
+        <PackageProjectUrl>https://github.com/EBCEYS/EBCEYS.Infrastructure</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\LICENSE.txt">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include=".\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="AwesomeAssertions" Version="9.4.0"/>
