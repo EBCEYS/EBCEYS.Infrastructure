@@ -17,17 +17,14 @@
       },
       {
         "files": ["index.md", "toc.yml"]
-      },
-      {
-        "files": ["articles/**.md"]
       }
     ],
     "dest": "_site",
-    "template": ["modern"],
+    "template": ["default", "modern"],
     "globalMetadata": {
       "_appTitle": "EBCEYS.Infrastructure",
       "_enableSearch": true,
-      "_appFooter": "Released under THE BEER-WARE LICENSE"
+      "pdf": false
     }
   }
 }
