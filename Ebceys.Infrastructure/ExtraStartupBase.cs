@@ -150,10 +150,11 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
         }
 
         app.UsePathBase(ServiceApiInfo.BaseAddress);
+        
         app.UseRouting();
 
         app.UseRequestLogging();
-
+        
         app.UseStatusCodePages(async ctx =>
         {
             var problemDetails = ctx.HttpContext.RequestServices.GetRequiredService<IProblemDetailsService>();
@@ -165,9 +166,9 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
             await problemDetails.TryWriteAsync(problemDetailsContext);
         });
 
-        app.UseCors(c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
-
         app.UseExceptionCatcher();
+
+        app.UseCors(c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
         app.UseMetricServer();
         app.UseHttpMetrics();
