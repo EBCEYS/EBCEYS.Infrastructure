@@ -15,12 +15,12 @@
       {
         "files": [
           "api/**.yml",
-          "api/README.md"
+          "api/index.md"
         ]
       },
       {
         "files": [
-          "README.md",
+          "index.md",
           "toc.yml"
         ]
       }
