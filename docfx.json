@@ -13,10 +13,16 @@
   "build": {
     "content": [
       {
-        "files": ["api/**.yml", "api/index.md"]
+        "files": [
+          "api/**.yml",
+          "api/README.md"
+        ]
       },
       {
-        "files": ["index.md", "toc.yml"]
+        "files": [
+          "README.md",
+          "toc.yml"
+        ]
       }
     ],
     "dest": "_site",
