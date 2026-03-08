@@ -1691,6 +1691,57 @@ references:
   fullName.vb: Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.ExecuteAsync(Of TContext, TResult)(TContext, System.Threading.CancellationToken)
   nameWithType: IScopedCommandExecutor.ExecuteAsync<TContext, TResult>(TContext, CancellationToken)
   nameWithType.vb: IScopedCommandExecutor.ExecuteAsync(Of TContext, TResult)(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Json
+  name: Ebceys.Infrastructure.Helpers.Json
+  href: api/Ebceys.Infrastructure.Helpers.Json.html
+  commentId: N:Ebceys.Infrastructure.Helpers.Json
+  fullName: Ebceys.Infrastructure.Helpers.Json
+  nameWithType: Ebceys.Infrastructure.Helpers.Json
+- uid: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions
+  name: DefaultJsonSerializerOptions
+  href: api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions
+  fullName: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions
+  nameWithType: DefaultJsonSerializerOptions
+- uid: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonOptions
+  name: DefaultJsonOptions
+  href: api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html#Ebceys_Infrastructure_Helpers_Json_DefaultJsonSerializerOptions_DefaultJsonOptions
+  commentId: P:Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonOptions
+  fullName: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonOptions
+  nameWithType: DefaultJsonSerializerOptions.DefaultJsonOptions
+- uid: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonOptions*
+  name: DefaultJsonOptions
+  href: api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html#Ebceys_Infrastructure_Helpers_Json_DefaultJsonSerializerOptions_DefaultJsonOptions_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonOptions
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonOptions
+  nameWithType: DefaultJsonSerializerOptions.DefaultJsonOptions
+- uid: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonSerializer
+  name: DefaultJsonSerializer
+  href: api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html#Ebceys_Infrastructure_Helpers_Json_DefaultJsonSerializerOptions_DefaultJsonSerializer
+  commentId: P:Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonSerializer
+  fullName: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonSerializer
+  nameWithType: DefaultJsonSerializerOptions.DefaultJsonSerializer
+- uid: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonSerializer*
+  name: DefaultJsonSerializer
+  href: api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html#Ebceys_Infrastructure_Helpers_Json_DefaultJsonSerializerOptions_DefaultJsonSerializer_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonSerializer
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DefaultJsonSerializer
+  nameWithType: DefaultJsonSerializerOptions.DefaultJsonSerializer
+- uid: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DiagnosticJsonOptions
+  name: DiagnosticJsonOptions
+  href: api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html#Ebceys_Infrastructure_Helpers_Json_DefaultJsonSerializerOptions_DiagnosticJsonOptions
+  commentId: P:Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DiagnosticJsonOptions
+  fullName: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DiagnosticJsonOptions
+  nameWithType: DefaultJsonSerializerOptions.DiagnosticJsonOptions
+- uid: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DiagnosticJsonOptions*
+  name: DiagnosticJsonOptions
+  href: api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html#Ebceys_Infrastructure_Helpers_Json_DefaultJsonSerializerOptions_DiagnosticJsonOptions_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DiagnosticJsonOptions
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.DiagnosticJsonOptions
+  nameWithType: DefaultJsonSerializerOptions.DiagnosticJsonOptions
 - uid: Ebceys.Infrastructure.Helpers.Jwt
   name: Ebceys.Infrastructure.Helpers.Jwt
   href: api/Ebceys.Infrastructure.Helpers.Jwt.html
@@ -1804,6 +1855,130 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.TryValidate
   nameWithType: JwtValidator.TryValidate
+- uid: Ebceys.Infrastructure.Helpers.PaginationData
+  name: PaginationData
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html
+  commentId: T:Ebceys.Infrastructure.Helpers.PaginationData
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData
+  nameWithType: PaginationData
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.#ctor
+  name: PaginationData()
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData__ctor
+  commentId: M:Ebceys.Infrastructure.Helpers.PaginationData.#ctor
+  name.vb: New()
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.PaginationData()
+  fullName.vb: Ebceys.Infrastructure.Helpers.PaginationData.New()
+  nameWithType: PaginationData.PaginationData()
+  nameWithType.vb: PaginationData.New()
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.#ctor(System.Int32)
+  name: PaginationData(int)
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData__ctor_System_Int32_
+  commentId: M:Ebceys.Infrastructure.Helpers.PaginationData.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.PaginationData(int)
+  fullName.vb: Ebceys.Infrastructure.Helpers.PaginationData.New(Integer)
+  nameWithType: PaginationData.PaginationData(int)
+  nameWithType.vb: PaginationData.New(Integer)
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.#ctor*
+  name: PaginationData
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.PaginationData.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.PaginationData
+  fullName.vb: Ebceys.Infrastructure.Helpers.PaginationData.New
+  nameWithType: PaginationData.PaginationData
+  nameWithType.vb: PaginationData.New
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.BatchSize
+  name: BatchSize
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_BatchSize
+  commentId: P:Ebceys.Infrastructure.Helpers.PaginationData.BatchSize
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.BatchSize
+  nameWithType: PaginationData.BatchSize
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.BatchSize*
+  name: BatchSize
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_BatchSize_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.PaginationData.BatchSize
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.BatchSize
+  nameWithType: PaginationData.BatchSize
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.Iterations
+  name: Iterations
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_Iterations
+  commentId: P:Ebceys.Infrastructure.Helpers.PaginationData.Iterations
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.Iterations
+  nameWithType: PaginationData.Iterations
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.Iterations*
+  name: Iterations
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_Iterations_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.PaginationData.Iterations
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.Iterations
+  nameWithType: PaginationData.Iterations
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.NextIteration
+  name: NextIteration()
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_NextIteration
+  commentId: M:Ebceys.Infrastructure.Helpers.PaginationData.NextIteration
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.NextIteration()
+  nameWithType: PaginationData.NextIteration()
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.NextIteration*
+  name: NextIteration
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_NextIteration_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.PaginationData.NextIteration
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.NextIteration
+  nameWithType: PaginationData.NextIteration
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.Skip
+  name: Skip
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_Skip
+  commentId: P:Ebceys.Infrastructure.Helpers.PaginationData.Skip
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.Skip
+  nameWithType: PaginationData.Skip
+- uid: Ebceys.Infrastructure.Helpers.PaginationData.Skip*
+  name: Skip
+  href: api/Ebceys.Infrastructure.Helpers.PaginationData.html#Ebceys_Infrastructure_Helpers_PaginationData_Skip_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.PaginationData.Skip
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.PaginationData.Skip
+  nameWithType: PaginationData.Skip
+- uid: Ebceys.Infrastructure.Helpers.PaginationExecutor
+  name: PaginationExecutor
+  href: api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html
+  commentId: T:Ebceys.Infrastructure.Helpers.PaginationExecutor
+  fullName: Ebceys.Infrastructure.Helpers.PaginationExecutor
+  nameWithType: PaginationExecutor
+- uid: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute*
+  name: PaginationExecute
+  href: api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html#Ebceys_Infrastructure_Helpers_PaginationExecutor_PaginationExecute_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute
+  nameWithType: PaginationExecutor.PaginationExecute
+- uid: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync*
+  name: PaginationExecuteAsync
+  href: api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html#Ebceys_Infrastructure_Helpers_PaginationExecutor_PaginationExecuteAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync
+  nameWithType: PaginationExecutor.PaginationExecuteAsync
+- uid: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync``1(System.Func{Ebceys.Infrastructure.Helpers.PaginationData,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Collections.Generic.ICollection{``0}}},System.Int32,System.Int32,System.Threading.CancellationToken)
+  name: PaginationExecuteAsync<TData>(Func<PaginationData, CancellationToken, Task<ICollection<TData>>>, int, int, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html#Ebceys_Infrastructure_Helpers_PaginationExecutor_PaginationExecuteAsync__1_System_Func_Ebceys_Infrastructure_Helpers_PaginationData_System_Threading_CancellationToken_System_Threading_Tasks_Task_System_Collections_Generic_ICollection___0____System_Int32_System_Int32_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync``1(System.Func{Ebceys.Infrastructure.Helpers.PaginationData,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Collections.Generic.ICollection{``0}}},System.Int32,System.Int32,System.Threading.CancellationToken)
+  name.vb: PaginationExecuteAsync(Of TData)(Func(Of PaginationData, CancellationToken, Task(Of ICollection(Of TData))), Integer, Integer, CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync<TData>(System.Func<Ebceys.Infrastructure.Helpers.PaginationData, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.ICollection<TData>>>, int, int, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync(Of TData)(System.Func(Of Ebceys.Infrastructure.Helpers.PaginationData, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of System.Collections.Generic.ICollection(Of TData))), Integer, Integer, System.Threading.CancellationToken)
+  nameWithType: PaginationExecutor.PaginationExecuteAsync<TData>(Func<PaginationData, CancellationToken, Task<ICollection<TData>>>, int, int, CancellationToken)
+  nameWithType.vb: PaginationExecutor.PaginationExecuteAsync(Of TData)(Func(Of PaginationData, CancellationToken, Task(Of ICollection(Of TData))), Integer, Integer, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute``1(System.Func{Ebceys.Infrastructure.Helpers.PaginationData,System.Collections.Generic.ICollection{``0}},System.Int32,System.Int32)
+  name: PaginationExecute<TData>(Func<PaginationData, ICollection<TData>>, int, int)
+  href: api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html#Ebceys_Infrastructure_Helpers_PaginationExecutor_PaginationExecute__1_System_Func_Ebceys_Infrastructure_Helpers_PaginationData_System_Collections_Generic_ICollection___0___System_Int32_System_Int32_
+  commentId: M:Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute``1(System.Func{Ebceys.Infrastructure.Helpers.PaginationData,System.Collections.Generic.ICollection{``0}},System.Int32,System.Int32)
+  name.vb: PaginationExecute(Of TData)(Func(Of PaginationData, ICollection(Of TData)), Integer, Integer)
+  fullName: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute<TData>(System.Func<Ebceys.Infrastructure.Helpers.PaginationData, System.Collections.Generic.ICollection<TData>>, int, int)
+  fullName.vb: Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute(Of TData)(System.Func(Of Ebceys.Infrastructure.Helpers.PaginationData, System.Collections.Generic.ICollection(Of TData)), Integer, Integer)
+  nameWithType: PaginationExecutor.PaginationExecute<TData>(Func<PaginationData, ICollection<TData>>, int, int)
+  nameWithType.vb: PaginationExecutor.PaginationExecute(Of TData)(Func(Of PaginationData, ICollection(Of TData)), Integer, Integer)
 - uid: Ebceys.Infrastructure.Helpers.ScopedCommandExecutor
   name: ScopedCommandExecutor
   href: api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.html
@@ -6368,6 +6543,108 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.Tests.DiTests.DiCTests.When_AppIsRunning_With_TestApp_Result_ServiceClientExists
   nameWithType: DiCTests.When_AppIsRunning_With_TestApp_Result_ServiceClientExists
+- uid: Ebceys.Infrastructure.Tests.Helpers
+  name: Ebceys.Infrastructure.Tests.Helpers
+  href: api/Ebceys.Infrastructure.Tests.Helpers.html
+  commentId: N:Ebceys.Infrastructure.Tests.Helpers
+  fullName: Ebceys.Infrastructure.Tests.Helpers
+  nameWithType: Ebceys.Infrastructure.Tests.Helpers
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests
+  name: PaginationExecutorTests
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html
+  commentId: T:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests
+  nameWithType: PaginationExecutorTests
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.SetUp
+  name: SetUp()
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_SetUp
+  commentId: M:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.SetUp
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.SetUp()
+  nameWithType: PaginationExecutorTests.SetUp()
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.SetUp*
+  name: SetUp
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_SetUp_
+  commentId: Overload:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.SetUp
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.SetUp
+  nameWithType: PaginationExecutorTests.SetUp
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.TearDown
+  name: TearDown()
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_TearDown
+  commentId: M:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.TearDown
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.TearDown()
+  nameWithType: PaginationExecutorTests.TearDown()
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.TearDown*
+  name: TearDown
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_TearDown_
+  commentId: Overload:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.TearDown
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.TearDown
+  nameWithType: PaginationExecutorTests.TearDown
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name: When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_System_Int32_System_Int32_
+  commentId: M:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name.vb: When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  fullName.vb: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  nameWithType.vb: PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly*
+  name: When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_
+  commentId: Overload:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name: When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_System_Int32_System_Int32_
+  commentId: M:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name.vb: When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  fullName.vb: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  nameWithType.vb: PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly*
+  name: When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_
+  commentId: Overload:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name: When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_System_Int32_System_Int32_
+  commentId: M:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name.vb: When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  fullName.vb: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  nameWithType.vb: PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly*
+  name: When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_
+  commentId: Overload:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name: When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_System_Int32_System_Int32_
+  commentId: M:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(System.Int32,System.Int32)
+  name.vb: When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  fullName.vb: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int)
+  nameWithType.vb: PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(Integer, Integer)
+- uid: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly*
+  name: When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  href: api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html#Ebceys_Infrastructure_Tests_Helpers_PaginationExecutorTests_When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly_
+  commentId: Overload:Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
+  nameWithType: PaginationExecutorTests.When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly
 - uid: Ebceys.Infrastructure.Tests.Middlewares
   name: Ebceys.Infrastructure.Tests.Middlewares
   href: api/Ebceys.Infrastructure.Tests.Middlewares.html

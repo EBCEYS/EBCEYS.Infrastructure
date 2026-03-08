@@ -740,6 +740,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Json.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Json",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.yml",
       "output": {
         ".html": {
@@ -807,6 +835,34 @@
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Jwt",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.PaginationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.PaginationData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.PaginationData",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.PaginationData.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.PaginationData\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.PaginationExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.PaginationExecutor",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.PaginationExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.PaginationExecutor\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2276,6 +2332,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Tests.DiTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.Helpers",
       "Summary": null
     },
     {

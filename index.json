@@ -259,6 +259,16 @@
     "title": "Interface IScopedCommandExecutor | EBCEYS.Infrastructure",
     "summary": "Interface IScopedCommandExecutor Namespace Ebceys.Infrastructure.Helpers Assembly Ebceys.Infrastructure.dll The IScopedCommandExecutor interface. public interface IScopedCommandExecutor Methods ExecuteAsync<TContext, TResult>(TContext, CancellationToken) Executes the command. Task<TResult> ExecuteAsync<TContext, TResult>(TContext context, CancellationToken token = default) Parameters context TContext The command context. token CancellationToken The cancellation token. Returns Task<TResult> The new Task which result contains TResult. Type Parameters TContext The command context type. TResult The command result type."
   },
+  "api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html": {
+    "href": "api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.html",
+    "title": "Class DefaultJsonSerializerOptions | EBCEYS.Infrastructure",
+    "summary": "Class DefaultJsonSerializerOptions Namespace Ebceys.Infrastructure.Helpers.Json Assembly Ebceys.Infrastructure.dll The DefaultJsonSerializerOptions class. [PublicAPI] public static class DefaultJsonSerializerOptions Inheritance object DefaultJsonSerializerOptions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties DefaultJsonOptions The default JSON options. public static JsonSerializerOptions DefaultJsonOptions { get; } Property Value JsonSerializerOptions DefaultJsonSerializer The default JSON serializer. public static ISerializer DefaultJsonSerializer { get; } Property Value ISerializer DiagnosticJsonOptions The diagnostic JSON options. public static JsonSerializerOptions DiagnosticJsonOptions { get; } Property Value JsonSerializerOptions"
+  },
+  "api/Ebceys.Infrastructure.Helpers.Json.html": {
+    "href": "api/Ebceys.Infrastructure.Helpers.Json.html",
+    "title": "Namespace Ebceys.Infrastructure.Helpers.Json | EBCEYS.Infrastructure",
+    "summary": "Namespace Ebceys.Infrastructure.Helpers.Json Classes DefaultJsonSerializerOptions The DefaultJsonSerializerOptions class."
+  },
   "api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.html": {
     "href": "api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.html",
     "title": "Interface IJwtGenerator | EBCEYS.Infrastructure",
@@ -283,6 +293,16 @@
     "href": "api/Ebceys.Infrastructure.Helpers.Jwt.html",
     "title": "Namespace Ebceys.Infrastructure.Helpers.Jwt | EBCEYS.Infrastructure",
     "summary": "Namespace Ebceys.Infrastructure.Helpers.Jwt Classes JwtObjectsExtensions The JwtObjectsExtensions extensions class. JwtValidator The JwtValidator class. Interfaces IJwtGenerator The IJwtGenerator interface. IJwtValidator The IJwtValidator interface."
+  },
+  "api/Ebceys.Infrastructure.Helpers.PaginationData.html": {
+    "href": "api/Ebceys.Infrastructure.Helpers.PaginationData.html",
+    "title": "Struct PaginationData | EBCEYS.Infrastructure",
+    "summary": "Struct PaginationData Namespace Ebceys.Infrastructure.Helpers Assembly Ebceys.Infrastructure.dll The PaginationData struct. [PublicAPI] public struct PaginationData Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors PaginationData() Initiates the default instance of PaginationData. public PaginationData() PaginationData(int) Initiates the new instance of PaginationData with specified batch size. public PaginationData(int batchSize) Parameters batchSize int The batch size. Exceptions ArgumentOutOfRangeException If batch size negative or zero. Properties BatchSize The num elements to take. public readonly int BatchSize { get; } Property Value int Iterations The num of iterations. public readonly int Iterations { get; } Property Value int Skip The num elements to skip. public readonly int Skip { get; } Property Value int Methods NextIteration() Switch pagination data to next iteration. public void NextIteration()"
+  },
+  "api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html": {
+    "href": "api/Ebceys.Infrastructure.Helpers.PaginationExecutor.html",
+    "title": "Class PaginationExecutor | EBCEYS.Infrastructure",
+    "summary": "Class PaginationExecutor Namespace Ebceys.Infrastructure.Helpers Assembly Ebceys.Infrastructure.dll The PaginationExecutor class. [PublicAPI] public static class PaginationExecutor Inheritance object PaginationExecutor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods PaginationExecuteAsync<TData>(Func<PaginationData, CancellationToken, Task<ICollection<TData>>>, int, int, CancellationToken) Executes the execution with auto increments PaginationData. public static IAsyncEnumerable<TData> PaginationExecuteAsync<TData>(Func<PaginationData, CancellationToken, Task<ICollection<TData>>> execution, int batchSize, int maxIterations = 100, CancellationToken token = default) Parameters execution Func<PaginationData, CancellationToken, Task<ICollection<TData>>> The execution func. batchSize int The num of elements to take per iteration. maxIterations int The max num of iterations. token CancellationToken The cancellation token. Returns IAsyncEnumerable<TData> Enumerates the TData elements. Type Parameters TData Exceptions InvalidOperationException Throws when maxIterations is reached. PaginationExecute<TData>(Func<PaginationData, ICollection<TData>>, int, int) Executes the execution with auto increments PaginationData. public static IEnumerable<TData> PaginationExecute<TData>(Func<PaginationData, ICollection<TData>> execution, int batchSize, int maxIterations = 100) Parameters execution Func<PaginationData, ICollection<TData>> The execution func. batchSize int The num of elements to take per iteration. maxIterations int The max num of iterations. Returns IEnumerable<TData> Enumerates the TData elements. Type Parameters TData Exceptions InvalidOperationException Throws when maxIterations is reached."
   },
   "api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.html": {
     "href": "api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.html",
@@ -327,7 +347,7 @@
   "api/Ebceys.Infrastructure.Helpers.html": {
     "href": "api/Ebceys.Infrastructure.Helpers.html",
     "title": "Namespace Ebceys.Infrastructure.Helpers | EBCEYS.Infrastructure",
-    "summary": "Namespace Ebceys.Infrastructure.Helpers Classes CommandExecutor The CommandExecutor class. ScopedCommandExecutor The ScopedCommandExecutor class. Interfaces ICommandExecutor The ICommandExecutor interface. IScopedCommandExecutor The IScopedCommandExecutor interface."
+    "summary": "Namespace Ebceys.Infrastructure.Helpers Classes CommandExecutor The CommandExecutor class. PaginationExecutor The PaginationExecutor class. ScopedCommandExecutor The ScopedCommandExecutor class. Structs PaginationData The PaginationData struct. Interfaces ICommandExecutor The ICommandExecutor interface. IScopedCommandExecutor The IScopedCommandExecutor interface."
   },
   "api/Ebceys.Infrastructure.HttpClient.ClientBase.html": {
     "href": "api/Ebceys.Infrastructure.HttpClient.ClientBase.html",
@@ -808,6 +828,16 @@
     "href": "api/Ebceys.Infrastructure.Tests.DiTests.html",
     "title": "Namespace Ebceys.Infrastructure.Tests.DiTests | EBCEYS.Infrastructure",
     "summary": "Namespace Ebceys.Infrastructure.Tests.DiTests Classes DiCTests"
+  },
+  "api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html": {
+    "href": "api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorTests.html",
+    "title": "Class PaginationExecutorTests | EBCEYS.Infrastructure",
+    "summary": "Class PaginationExecutorTests Namespace Ebceys.Infrastructure.Tests.Helpers Assembly Ebceys.Infrastructure.Tests.dll public class PaginationExecutorTests Inheritance object PaginationExecutorTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods SetUp() [SetUp] public void SetUp() TearDown() [TearDown] public void TearDown() When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int) [TestCase(10000, 1)] public Task When_GetElementsWithPaginationAsyncReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int numOfElements, int batchSize) Parameters numOfElements int batchSize int Returns Task When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int) [TestCase(10000, 100)] public Task When_GetElementsWithPaginationAsync_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int numOfElements, int batchSize) Parameters numOfElements int batchSize int Returns Task When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int) [TestCase(10000, 1)] public Task When_GetElementsWithPaginationReachMaxIterations_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int numOfElements, int batchSize) Parameters numOfElements int batchSize int Returns Task When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int, int) [TestCase(10000, 100)] public Task When_GetElementsWithPagination_With_SpecifiedNumOfElementsAndBatchSize_Result_GotDataCorrectly(int numOfElements, int batchSize) Parameters numOfElements int batchSize int Returns Task"
+  },
+  "api/Ebceys.Infrastructure.Tests.Helpers.html": {
+    "href": "api/Ebceys.Infrastructure.Tests.Helpers.html",
+    "title": "Namespace Ebceys.Infrastructure.Tests.Helpers | EBCEYS.Infrastructure",
+    "summary": "Namespace Ebceys.Infrastructure.Tests.Helpers Classes PaginationExecutorTests"
   },
   "api/Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.html": {
     "href": "api/Ebceys.Infrastructure.Tests.Middlewares.RequestLoggingMiddlewareTests.html",
