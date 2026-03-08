@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Ebceys.Infrastructure.Helpers.Json;
 using Flurl;
 using Flurl.Http;
 using Flurl.Http.Configuration;
@@ -67,7 +68,7 @@ public abstract class ClientBase
     /// <summary>
     ///     The default request and response serializer.
     /// </summary>
-    public ISerializer DefaultSerializer { get; init; } = new DefaultJsonSerializer();
+    public ISerializer DefaultSerializer { get; init; } = DefaultJsonSerializerOptions.DefaultJsonSerializer;
 
     private void ConfigureClient(IFlurlClientBuilder obj)
     {

@@ -1,5 +1,5 @@
 using System.Text.Json;
-using System.Text.Json.Serialization;
+using Ebceys.Infrastructure.Helpers.Json;
 using JetBrains.Annotations;
 
 namespace Ebceys.Infrastructure.Extensions;
@@ -10,17 +10,6 @@ namespace Ebceys.Infrastructure.Extensions;
 [PublicAPI]
 public static class EbObjectExtensions
 {
-    private static JsonSerializerOptions DiagnosticJsonOptions { get; } = new(JsonSerializerDefaults.Web)
-    {
-        Converters = { new JsonStringEnumConverter() },
-        WriteIndented = true
-    };
-
-    private static JsonSerializerOptions DefaultJsonOptions { get; } = new(JsonSerializerDefaults.Web)
-    {
-        Converters = { new JsonStringEnumConverter() }
-    };
-
     /// <summary>
     ///     Casts the <paramref name="value" /> to <see cref="uint" /> value.
     /// </summary>
@@ -50,7 +39,7 @@ public static class EbObjectExtensions
         /// <returns>The serialized JSON string.</returns>
         public string ToDiagnosticJson()
         {
-            var json = JsonSerializer.Serialize(obj, DiagnosticJsonOptions);
+            var json = JsonSerializer.Serialize(obj, DefaultJsonSerializerOptions.DiagnosticJsonOptions);
             return json;
         }
 
@@ -60,7 +49,7 @@ public static class EbObjectExtensions
         /// <returns>The serialized JSON string.</returns>
         public string ToJson()
         {
-            var json = JsonSerializer.Serialize(obj, DefaultJsonOptions);
+            var json = JsonSerializer.Serialize(obj, DefaultJsonSerializerOptions.DefaultJsonOptions);
             return json;
         }
     }
