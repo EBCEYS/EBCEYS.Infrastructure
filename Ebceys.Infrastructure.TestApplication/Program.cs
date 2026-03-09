@@ -35,6 +35,8 @@ public static class TestAppInitiator
 public class Startup(IConfiguration configuration) : ExtraStartupBase(configuration)
 {
     protected override int? HealthCheckPort { get; init; } = 8080;
+    protected override bool ProxyToken { get; init; } = true;
+    protected override bool UseAuthentication { get; init; } = true;
 
     protected override Action<HttpLoggingOptions>? HttpContextLogging { get; } = opts =>
     {
@@ -73,7 +75,8 @@ public class Startup(IConfiguration configuration) : ExtraStartupBase(configurat
 
         services.AddClient<IAuthAppClient, AuthAppClient>()
             .FromConfiguration(Configuration, AuthorizationTestApplication.BoundedContext.RoutesDictionary.ServiceName)
-            .AddAuthTokenFromHttpContextResolver().Register();
+            .AddAuthTokenFromHttpContextResolver()
+            .Register();
     }
 
     protected override void ConfigureMiddlewares(IApplicationBuilder app, IHostEnvironment env)
