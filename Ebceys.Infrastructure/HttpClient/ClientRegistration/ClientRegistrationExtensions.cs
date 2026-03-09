@@ -182,12 +182,6 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
         }
 
         var urlResolver = _baseUrlResolver!;
-        if (_tokenResolver is not null)
-        {
-            services.AddSingleton<TInterface, TImplementation>(sp =>
-                ActivatorUtilities.CreateInstance<TImplementation>(sp, urlResolver, _tokenResolver));
-            return;
-        }
 
         services.AddSingleton<TInterface, TImplementation>(sp =>
         {
