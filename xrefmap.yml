@@ -5833,6 +5833,19 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.TestApplication.Startup.HttpContextLogging
   nameWithType: Startup.HttpContextLogging
+- uid: Ebceys.Infrastructure.TestApplication.Startup.ProxyToken
+  name: ProxyToken
+  href: api/Ebceys.Infrastructure.TestApplication.Startup.html#Ebceys_Infrastructure_TestApplication_Startup_ProxyToken
+  commentId: P:Ebceys.Infrastructure.TestApplication.Startup.ProxyToken
+  fullName: Ebceys.Infrastructure.TestApplication.Startup.ProxyToken
+  nameWithType: Startup.ProxyToken
+- uid: Ebceys.Infrastructure.TestApplication.Startup.ProxyToken*
+  name: ProxyToken
+  href: api/Ebceys.Infrastructure.TestApplication.Startup.html#Ebceys_Infrastructure_TestApplication_Startup_ProxyToken_
+  commentId: Overload:Ebceys.Infrastructure.TestApplication.Startup.ProxyToken
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.TestApplication.Startup.ProxyToken
+  nameWithType: Startup.ProxyToken
 - uid: Ebceys.Infrastructure.TestApplication.Startup.ServiceApiInfo
   name: ServiceApiInfo
   href: api/Ebceys.Infrastructure.TestApplication.Startup.html#Ebceys_Infrastructure_TestApplication_Startup_ServiceApiInfo
@@ -5859,6 +5872,19 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.TestApplication.Startup.ServicesConfiguration
   nameWithType: Startup.ServicesConfiguration
+- uid: Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication
+  name: UseAuthentication
+  href: api/Ebceys.Infrastructure.TestApplication.Startup.html#Ebceys_Infrastructure_TestApplication_Startup_UseAuthentication
+  commentId: P:Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication
+  fullName: Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication
+  nameWithType: Startup.UseAuthentication
+- uid: Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication*
+  name: UseAuthentication
+  href: api/Ebceys.Infrastructure.TestApplication.Startup.html#Ebceys_Infrastructure_TestApplication_Startup_UseAuthentication_
+  commentId: Overload:Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication
+  nameWithType: Startup.UseAuthentication
 - uid: Ebceys.Infrastructure.TestApplication.TestAppInitiator
   name: TestAppInitiator
   href: api/Ebceys.Infrastructure.TestApplication.TestAppInitiator.html

@@ -122,12 +122,6 @@ Class Startup  <a class="header-action link-secondary" title="View source" href=
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_UseAuthentication">ExtraStartupBase.UseAuthentication</a>
-    </div>
-    <div>
-      <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ProxyToken">ExtraStartupBase.ProxyToken</a>
-    </div>
-    <div>
       <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_Configuration">ExtraStartupBase.Configuration</a>
     </div>
     <div>
@@ -245,7 +239,7 @@ Class Startup  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Startup_HttpContextLogging" data-uid="Ebceys.Infrastructure.TestApplication.Startup.HttpContextLogging">
   HttpContextLogging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The http context logging options.</p>
@@ -273,11 +267,43 @@ Class Startup  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <a id="Ebceys_Infrastructure_TestApplication_Startup_ProxyToken_" data-uid="Ebceys.Infrastructure.TestApplication.Startup.ProxyToken*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Startup_ProxyToken" data-uid="Ebceys.Infrastructure.TestApplication.Startup.ProxyToken">
+  ProxyToken
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates that jwt should be proxied and not be configured at the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ProxyToken { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Ebceys_Infrastructure_TestApplication_Startup_ServiceApiInfo_" data-uid="Ebceys.Infrastructure.TestApplication.Startup.ServiceApiInfo*"></a>
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Startup_ServiceApiInfo" data-uid="Ebceys.Infrastructure.TestApplication.Startup.ServiceApiInfo">
   ServiceApiInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The service api info.</p>
@@ -305,6 +331,38 @@ Class Startup  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <a id="Ebceys_Infrastructure_TestApplication_Startup_UseAuthentication_" data-uid="Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Startup_UseAuthentication" data-uid="Ebceys.Infrastructure.TestApplication.Startup.UseAuthentication">
+  UseAuthentication
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates that server should use authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool UseAuthentication { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -313,7 +371,7 @@ Class Startup  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Startup_ConfigureMiddlewares_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Ebceys.Infrastructure.TestApplication.Startup.ConfigureMiddlewares(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment)">
   ConfigureMiddlewares(IApplicationBuilder, IHostEnvironment)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures the app. It calls before controllers.
@@ -349,7 +407,7 @@ The middlewares could be configured here.</p>
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Startup_ServicesConfiguration_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Ebceys.Infrastructure.TestApplication.Startup.ServicesConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   ServicesConfiguration(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Program.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Service configuration.</p>
