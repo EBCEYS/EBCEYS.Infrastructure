@@ -223,7 +223,8 @@ public void Validate_ShouldBeInvalid(CreateOrderRequest? request)
 #### TestWebApplicationFactory
 
 `TestWebApplicationFactory<TStartup>` — расширение `WebApplicationFactory<TStartup>` с поддержкой настроек и запуска
-`IBeforeHostingStartedService`.
+`IBeforeHostingStartedService`. Использует `IHostBuilder` внутри для поддержки классических Startup-классов (
+`UseStartup<TStartup>()`).
 
 **Переопределяемые члены:**
 

@@ -9,9 +9,12 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 namespace Ebceys.Infrastructure.Helpers.Swagger;
 
 /// <summary>
-///     The <see cref="ConfigureSwaggerOptions" /> class.
+///     Configures Swagger/OpenAPI document generation options for each discovered API version.
+///     Generates a separate Swagger document per API version with the service name and description
+///     from <see cref="ServiceApiInfo" />.
 /// </summary>
-/// <param name="provider"></param>
+/// <param name="provider">The API version description provider.</param>
+/// <param name="serviceApiInfo">The service API metadata (name and description).</param>
 [PublicAPI]
 public class ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider, IOptions<ServiceApiInfo> serviceApiInfo)
     : IConfigureOptions<SwaggerGenOptions>

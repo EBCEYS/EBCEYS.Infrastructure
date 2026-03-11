@@ -3,10 +3,11 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Attributes;
 
 /// <summary>
-///     The <see cref="NoResponseBodyLoggingAttribute" /> class.
+///     Attribute that suppresses response body logging in <see cref="Middlewares.RequestLoggingMiddleware" />.
 /// </summary>
 /// <remarks>
-///     Use it to hide response logging.
+///     Apply this attribute to controller action methods whose response body should not appear in logs
+///     (e.g., endpoints returning sensitive data such as tokens or personal information).
 /// </remarks>
 [PublicAPI]
 [AttributeUsage(AttributeTargets.Method)]

@@ -5,7 +5,8 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 namespace Ebceys.Infrastructure.Helpers.Sequences;
 
 /// <summary>
-///     The <see cref="AtomicGeneratorsExtensions" /> class.
+///     Extension methods for registering <see cref="IAtomGenerator{T}" /> implementations
+///     (thread-safe atomic long and int generators) in the DI container.
 /// </summary>
 [PublicAPI]
 public static class AtomicGeneratorsExtensions

@@ -5,42 +5,46 @@ using NUnit.Framework;
 namespace Ebceys.Tests.Infrastructure.Helpers.TestCaseSources;
 
 /// <summary>
-///     The test case source.
+///     Abstract base class for NUnit parameterized test case sources. Provides a pattern for defining
+///     valid and invalid test data generators with a shared base data setup.
+///     Used with <see cref="EbTestDataValidExecutor{TEnumerator,TData}" /> and
+///     <see cref="EbTestDataInvalidExecutor{TEnumerator,TData}" />.
 /// </summary>
-/// <typeparam name="TData">The test data.</typeparam>
+/// <typeparam name="TData">The type of test data.</typeparam>
 [PublicAPI]
 public abstract class EbTestCaseSource<TData>
 {
     /// <summary>
-    ///     Setups the data, that will be used as base for test case functions.
+    ///     Setups the valid base data that serves as the starting point for valid test case transformations.
     /// </summary>
-    /// <returns>The new instance of <see cref="TData" />.</returns>
+    /// <returns>A new instance of <typeparamref name="TData" /> representing valid base data.</returns>
     public abstract TData SetupValidBase();
 
     /// <summary>
-    ///     Setups the data, that will be used as base for test case functions.
+    ///     Setups the invalid base data that serves as the starting point for invalid test case transformations.
     /// </summary>
-    /// <returns>The new instance of <see cref="TData" />.</returns>
+    /// <returns>A new instance of <typeparamref name="TData" /> representing invalid base data, or <c>null</c>.</returns>
     public abstract TData? SetupInvalidBase();
 
     /// <summary>
-    ///     Gets the test cases that should be valid.
+    ///     Gets the collection of test case transformations that should produce valid data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>An enumerable of tuples containing the data transformation function and a test case description.</returns>
     public abstract IEnumerable<(Func<TData?, TData?>, string)> GetValidCases();
 
     /// <summary>
-    ///     Gets the test cases that should be invalid.
+    ///     Gets the collection of test case transformations that should produce invalid data.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>An enumerable of tuples containing the data transformation function and a test case description.</returns>
     public abstract IEnumerable<(Func<TData?, TData?>, string)> GetInvalidCases();
 }
 
 /// <summary>
-///     The valid test case executor. Executes the <see cref="EbTestCaseSource{TData}.GetValidCases" />.
+///     NUnit test case enumerator that generates valid test cases from <see cref="EbTestCaseSource{TData}" />.
+///     Yields the valid base data plus all cases returned by <see cref="EbTestCaseSource{TData}.GetValidCases" />.
 /// </summary>
-/// <typeparam name="TData">The test data.</typeparam>
-/// <typeparam name="TEnumerator">The test case enumerator</typeparam>
+/// <typeparam name="TData">The type of test data.</typeparam>
+/// <typeparam name="TEnumerator">The <see cref="EbTestCaseSource{TData}" /> implementation providing valid cases.</typeparam>
 [PublicAPI]
 public sealed class EbTestDataValidExecutor<TEnumerator, TData> : TestCaseEnumerator<TData>
     where TEnumerator : EbTestCaseSource<TData>
@@ -72,10 +76,11 @@ public sealed class EbTestDataValidExecutor<TEnumerator, TData> : TestCaseEnumer
 }
 
 /// <summary>
-///     The invalid test case executor. Executes the <see cref="EbTestCaseSource{TData}.GetInvalidCases" />.
+///     NUnit test case enumerator that generates invalid test cases from <see cref="EbTestCaseSource{TData}" />.
+///     Yields all cases returned by <see cref="EbTestCaseSource{TData}.GetInvalidCases" /> using the invalid base data.
 /// </summary>
-/// <typeparam name="TData">The test data.</typeparam>
-/// <typeparam name="TEnumerator">The test case enumearator.</typeparam>
+/// <typeparam name="TData">The type of test data.</typeparam>
+/// <typeparam name="TEnumerator">The <see cref="EbTestCaseSource{TData}" /> implementation providing invalid cases.</typeparam>
 [PublicAPI]
 public sealed class EbTestDataInvalidExecutor<TEnumerator, TData> : TestCaseEnumerator<TData>
     where TEnumerator : EbTestCaseSource<TData>
@@ -99,9 +104,10 @@ public sealed class EbTestDataInvalidExecutor<TEnumerator, TData> : TestCaseEnum
 }
 
 /// <summary>
-///     The <see cref="TestCaseEnumerator{TData}" /> class.
+///     Abstract base class for NUnit <see cref="TestCaseData" /> enumerators that converts
+///     test case transformation functions into <see cref="TestCaseData" /> instances.
 /// </summary>
-/// <typeparam name="TData"></typeparam>
+/// <typeparam name="TData">The type of test data.</typeparam>
 [PublicAPI]
 public abstract class TestCaseEnumerator<TData> : IEnumerable<TestCaseData>
 {
@@ -127,9 +133,9 @@ public abstract class TestCaseEnumerator<TData> : IEnumerable<TestCaseData>
     }
 
     /// <summary>
-    ///     Gets the data.
+    ///     Gets the test case data source and the base data for constructing test cases.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>A tuple containing the test case transformation functions with descriptions, and the base data instance.</returns>
     protected abstract (IEnumerable<(Func<TData?, TData?>, string)> dataSource, TData? baseData) GetData();
 
     private IEnumerable<TestCaseData> Enumerate()

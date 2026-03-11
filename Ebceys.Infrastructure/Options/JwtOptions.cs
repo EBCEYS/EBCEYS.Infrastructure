@@ -3,7 +3,8 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Options;
 
 /// <summary>
-///     The <see cref="JwtOptions" /> class.
+///     Configuration options for JWT token generation and validation.
+///     Typically bound from the <c>JwtOptions</c> section in <c>appsettings.json</c>.
 /// </summary>
 [PublicAPI]
 public class JwtOptions

@@ -4,6 +4,9 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace Ebceys.Infrastructure.HealthChecks;
 
+/// <summary>
+///     Internal extension methods for registering health checks for collected external dependencies.
+/// </summary>
 internal static class HealthchecksRegistrationExtensions
 {
     private const string PsqlHealthNamePrefix = "psql";
@@ -11,6 +14,13 @@ internal static class HealthchecksRegistrationExtensions
 
     extension(IHealthChecksBuilder hcBuilder)
     {
+        /// <summary>
+        ///     Registers RabbitMQ health checks for all RabbitMQ connections collected by
+        ///     <see cref="HealthChecksCollectorService" />.
+        /// </summary>
+        /// <param name="configuration">
+        ///     The health check configuration. If <c>null</c>, the default configuration will be used.
+        /// </param>
         public void AddRabbitMqHealthChecks(HealthCheckConfiguration? configuration = null)
         {
             configuration ??= new HealthCheckConfiguration();
@@ -25,6 +35,13 @@ internal static class HealthchecksRegistrationExtensions
             }
         }
 
+        /// <summary>
+        ///     Registers PostgreSQL (Npgsql) health checks for all PostgreSQL connection strings collected by
+        ///     <see cref="HealthChecksCollectorService" />.
+        /// </summary>
+        /// <param name="configuration">
+        ///     The health check configuration. If <c>null</c>, the default configuration will be used.
+        /// </param>
         public void AddNpgsqlHealthChecks(HealthCheckConfiguration? configuration = null)
         {
             configuration ??= new HealthCheckConfiguration();
@@ -42,7 +59,7 @@ internal static class HealthchecksRegistrationExtensions
 }
 
 /// <summary>
-///     The <see cref="HealthCheckConfiguration" /> struct.
+///     Configuration options for health check registration, including naming, tags, failure status, and timeout.
 /// </summary>
 [PublicAPI]
 public record HealthCheckConfiguration

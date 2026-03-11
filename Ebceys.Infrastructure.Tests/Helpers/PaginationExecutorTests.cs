@@ -9,9 +9,9 @@ namespace Ebceys.Infrastructure.Tests.Helpers;
 
 public class PaginationExecutorTests
 {
+    private static readonly EbRandomizer Randomizer = new();
     private IDbContextFactory<DataModelContext> _contextFactory;
     private AtomicIntGenerator _seqGen;
-    private static readonly EbRandomizer Randomizer = new();
 
     [SetUp]
     public void SetUp()

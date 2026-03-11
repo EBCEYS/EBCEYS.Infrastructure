@@ -4,7 +4,9 @@ using Testcontainers.RabbitMq;
 namespace Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers;
 
 /// <summary>
-///     The <see cref="RabbitMqInitializer" /> class.
+///     Initializer for a RabbitMQ Testcontainer with the management plugin.
+///     Manages the lifecycle of a RabbitMQ Docker container for use in integration tests.
+///     Configurable with custom username, password, and image.
 /// </summary>
 [PublicAPI]
 public class RabbitMqInitializer : IDependencyInitializer<RabbitMqContainer>

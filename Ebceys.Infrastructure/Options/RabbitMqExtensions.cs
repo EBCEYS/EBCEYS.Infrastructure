@@ -7,7 +7,9 @@ using RabbitMQ.Client;
 namespace Ebceys.Infrastructure.Options;
 
 /// <summary>
-///     The <see cref="RabbitMqExtensions" /> class.
+///     Extension methods for <see cref="IConfiguration" /> to read and construct
+///     <see cref="RabbitMQConfiguration" /> from configuration sections.
+///     Supports both <see cref="SimpleRabbitMqConfiguration" /> shorthand and full detailed configuration.
 /// </summary>
 [PublicAPI]
 public static class RabbitMqExtensions
@@ -89,58 +91,58 @@ public static class RabbitMqExtensions
         ///     Gets the <see cref="ExchangeConfiguration" /> from <paramref name="configuration" /> by
         ///     <paramref name="fieldName" />.
         /// </summary>
-        /// <param name="fieldName">The field name.</param>
-        /// <returns></returns>
+        /// <param name="fieldName">The configuration section name.</param>
+        /// <returns>The <see cref="ExchangeConfiguration" /> instance, or <c>null</c> if the section is missing.</returns>
         public ExchangeConfiguration? GetExchangeConfiguration(string fieldName)
         {
             return configuration.GetSection(fieldName).Get<ExchangeConfiguration>();
         }
 
         /// <summary>
-        ///     Gets the <see cref="QueueConfiguration" />.
+        ///     Gets the <see cref="QueueConfiguration" /> from the specified configuration section.
         /// </summary>
-        /// <param name="fieldName">The field name.</param>
-        /// <returns></returns>
+        /// <param name="fieldName">The configuration section name.</param>
+        /// <returns>The <see cref="QueueConfiguration" /> instance, or <c>null</c> if the section is missing.</returns>
         public QueueConfiguration? GetQueueConfiguration(string fieldName)
         {
             return configuration.GetSection(fieldName).Get<QueueConfiguration>();
         }
 
         /// <summary>
-        ///     Gets the <see cref="QoSConfiguration" />.
+        ///     Gets the <see cref="QoSConfiguration" /> from the specified configuration section.
         /// </summary>
-        /// <param name="fieldName"></param>
-        /// <returns></returns>
+        /// <param name="fieldName">The configuration section name.</param>
+        /// <returns>The <see cref="QoSConfiguration" /> instance, or <c>null</c> if the section is missing.</returns>
         public QoSConfiguration? GetQoSConfiguration(string fieldName)
         {
             return configuration.GetSection(fieldName).Get<QoSConfiguration>();
         }
 
         /// <summary>
-        ///     Gets the callback conf.
+        ///     Gets the <see cref="CallbackRabbitMQConfiguration" /> from the specified configuration section.
         /// </summary>
-        /// <param name="fieldName"></param>
-        /// <returns></returns>
+        /// <param name="fieldName">The configuration section name.</param>
+        /// <returns>The <see cref="CallbackRabbitMQConfiguration" /> instance, or <c>null</c> if the section is missing.</returns>
         public CallbackRabbitMQConfiguration? GetCallbackConfiguration(string fieldName)
         {
             return configuration.GetSection(fieldName).Get<CallbackRabbitMQConfiguration>();
         }
 
         /// <summary>
-        ///     Gets on start configs.
+        ///     Gets the <see cref="RabbitMQOnStartConfigs" /> from the specified configuration section.
         /// </summary>
-        /// <param name="fieldName"></param>
-        /// <returns></returns>
+        /// <param name="fieldName">The configuration section name.</param>
+        /// <returns>The <see cref="RabbitMQOnStartConfigs" /> instance, or <c>null</c> if the section is missing.</returns>
         public RabbitMQOnStartConfigs? GetOnStartConfigs(string fieldName)
         {
             return configuration.GetSection(fieldName).Get<RabbitMQOnStartConfigs>();
         }
 
         /// <summary>
-        ///     Gets the create channel options.
+        ///     Gets the <see cref="CreateChannelOptions" /> from the specified configuration section.
         /// </summary>
-        /// <param name="fieldName"></param>
-        /// <returns></returns>
+        /// <param name="fieldName">The configuration section name.</param>
+        /// <returns>The <see cref="CreateChannelOptions" /> instance, or <c>null</c> if the section is missing.</returns>
         public CreateChannelOptions? GetCreateChannelOptions(string fieldName)
         {
             return configuration.GetSection(fieldName).Get<CreateChannelOptions>();

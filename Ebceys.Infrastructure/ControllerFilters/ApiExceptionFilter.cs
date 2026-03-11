@@ -8,9 +8,11 @@ using Microsoft.Extensions.Logging;
 namespace Ebceys.Infrastructure.ControllerFilters;
 
 /// <summary>
-///     The <see cref="ApiExceptionFilter" /> class.
+///     Exception filter that handles exceptions thrown during controller action execution.
+///     Converts <see cref="ApiException" /> into a proper <see cref="ProblemDetailsResult" /> response,
+///     and wraps all other exceptions into a generic 500 Internal Server Error <see cref="ProblemDetails" /> response.
 /// </summary>
-/// <param name="logger">The logger.</param>
+/// <param name="logger">The logger for error diagnostics.</param>
 public class ApiExceptionFilter(ILogger<ApiExceptionFilter> logger) : ExceptionFilterAttribute
 {
     /// <inheritdoc />

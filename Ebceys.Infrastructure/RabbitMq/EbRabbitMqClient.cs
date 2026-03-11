@@ -8,7 +8,9 @@ using Newtonsoft.Json;
 namespace Ebceys.Infrastructure.RabbitMq;
 
 /// <summary>
-///     The <see cref="EbRabbitMqClient" /> wrapper class for <see cref="RabbitMQClient" />.
+///     Abstract wrapper class around <see cref="RabbitMQClient" /> that provides convenient
+///     typed message sending and request/response methods. Derive from this class to create
+///     application-specific RabbitMQ clients. Registered as a hosted service for automatic lifecycle management.
 /// </summary>
 [PublicAPI]
 public abstract class EbRabbitMqClient : IRabbitMQClient

@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace Ebceys.Infrastructure.Exceptions;
 
 /// <summary>
-///     The <see cref="ApiException" /> class.
+///     Custom exception that wraps <see cref="ProblemDetails" /> for consistent API error responses.
+///     Caught by <see cref="ControllerFilters.ApiExceptionFilter" /> and converted to a proper HTTP response.
 /// </summary>
 [PublicAPI]
 public class ApiException : Exception

@@ -14,9 +14,12 @@ using Serilog;
 namespace Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication;
 
 /// <summary>
-///     The <see cref="TestWebApplicationFactory{TStartup}" /> class.
+///     Abstract test web application factory that creates an in-memory test server for integration testing.
+///     Extends <see cref="WebApplicationFactory{TStartup}" /> with support for Serilog logging,
+///     optional production appsettings loading, and automatic execution of
+///     <see cref="IBeforeHostingStartedService" /> implementations during host creation.
 /// </summary>
-/// <typeparam name="TStartup">The startup.</typeparam>
+/// <typeparam name="TStartup">The application startup class.</typeparam>
 [PublicAPI]
 public abstract class TestWebApplicationFactory<TStartup> : WebApplicationFactory<TStartup> where TStartup : class
 {

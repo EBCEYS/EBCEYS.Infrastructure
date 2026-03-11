@@ -4,9 +4,13 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Helpers.Sequences;
 
 /// <summary>
-///     The atomic generator for <see cref="long" />.
+///     Thread-safe atomic generator that produces incrementing <see cref="long" /> values
+///     using <see cref="Interlocked.Increment(ref long)" />.
 /// </summary>
-/// <param name="seed">The base seed.</param>
+/// <param name="seed">
+///     The optional seed for the initial random starting value. If <c>null</c>, uses
+///     <see cref="Environment.TickCount" />.
+/// </param>
 [PublicAPI]
 public class AtomicLongGenerator(int? seed = null) : IAtomGenerator<long>
 {
@@ -20,9 +24,13 @@ public class AtomicLongGenerator(int? seed = null) : IAtomGenerator<long>
 }
 
 /// <summary>
-///     The atomic generator for <see cref="long" />.
+///     Thread-safe atomic generator that produces incrementing <see cref="int" /> values
+///     using <see cref="Interlocked.Increment(ref int)" />.
 /// </summary>
-/// <param name="seed">The base seed.</param>
+/// <param name="seed">
+///     The optional seed for the initial random starting value. If <c>null</c>, uses
+///     <see cref="Environment.TickCount" />.
+/// </param>
 [PublicAPI]
 public class AtomicIntGenerator(int? seed = null) : IAtomGenerator<int>
 {
@@ -36,15 +44,15 @@ public class AtomicIntGenerator(int? seed = null) : IAtomGenerator<int>
 }
 
 /// <summary>
-///     The atomic num generator.
+///     Interface for a thread-safe atomic number generator that produces monotonically incrementing values.
 /// </summary>
-/// <typeparam name="T">The number.</typeparam>
+/// <typeparam name="T">The numeric type to generate (must implement <see cref="INumber{T}" />).</typeparam>
 [PublicAPI]
 public interface IAtomGenerator<out T> where T : struct, INumber<T>
 {
     /// <summary>
-    ///     Gets the next value.
+    ///     Gets the next incremented value in a thread-safe manner.
     /// </summary>
-    /// <returns>The next value.</returns>
+    /// <returns>The next value of type <typeparamref name="T" />.</returns>
     T Next();
 }

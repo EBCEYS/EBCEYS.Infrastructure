@@ -134,8 +134,9 @@ await WebApplicationBase<Startup>
 
 #### WebApplicationBase
 
-`WebApplicationBase<TStartup>` — точка входа для построения приложения. Создаёт `IWebHost` на базе `TStartup`, который
-должен наследоваться от `ExtraStartupBase`.
+`WebApplicationBase<TStartup>` — точка входа для построения приложения. Создаёт `WebApplication` на базе `TStartup`,
+который
+должен наследоваться от `ExtraStartupBase`. Использует `WebApplication.CreateBuilder` + `UseStartup<TStartup>()`.
 
 ```csharp
 // Program.cs
@@ -208,8 +209,11 @@ public class Startup(IConfiguration configuration) : ExtraStartupBase(configurat
 
 #### ConfiguredApp
 
-Обёртка над `IWebHost`, которую возвращает `WebApplicationBase.Build()`. Запускает все `IBeforeHostingStartedService`
+Обёртка над `IHost`, которую возвращает `WebApplicationBase.Build()`. Запускает все `IBeforeHostingStartedService`
 перед стартом хоста.
+
+> **Примечание:** `ServiceProvider` доступен только **после** вызова `BuildAndRunAsync()`.
+> Обращение к нему до построения приложения выбросит `InvalidOperationException`.
 
 ```csharp
 var app = WebApplicationBase<Startup>.Create(args).Build(args);
@@ -219,9 +223,6 @@ await app.BuildAndRunAsync(configureConf: builder =>
 {
     builder.AddJsonFile("extra-settings.json", optional: true);
 });
-
-// Доступ к ServiceProvider до запуска
-var myService = app.ServiceProvider.GetRequiredService<IMyService>();
 ```
 
 ---
@@ -258,12 +259,18 @@ throw new ApiException(StatusCodes.Status500InternalServerError, innerException)
 
 Доступные методы:
 
-| Метод                                                 | HTTP-статус   |
-|-------------------------------------------------------|---------------|
-| `ThrowNotFound<TResult>(message)`                     | 404 Not Found |
-| `ThrowConflict<TResult>(message)`                     | 409 Conflict  |
-| `ThrowValidation<TResult>(problemDetails)`            | 422           |
-| `ThrowException<TResult, TException>(ex, statusCode)` | произвольный  |
+| Метод                                                         | HTTP-статус        |
+|---------------------------------------------------------------|--------------------|
+| `ThrowNotFound<TResult>(message)`                             | 404 Not Found      |
+| `ThrowNotFound<TResult, TException>(exception)`               | 404 Not Found      |
+| `ThrowConflict<TResult>(message)`                             | 409 Conflict       |
+| `ThrowConflict<TResult, TException>(exception)`               | 409 Conflict       |
+| `ThrowValidation<TResult>(ValidationProblemDetails)`          | 422 Unprocessable  |
+| `ThrowException<TResult, TException>(ex, statusCode?)`        | произвольный       |
+| `ThrowException<TException>(ex, statusCode?)`                 | произвольный       |
+| `ThrowApiException<TResult>(problemDetails, statusCode?)`     | произвольный       |
+| `ThrowApiException(problemDetails, statusCode?)`              | произвольный       |
+| `ThrowApiException<TResult, TError>(OperationResult<TError>)` | из OperationResult |
 
 ```csharp
 public async Task<Order> GetOrderAsync(Guid id)
@@ -466,16 +473,22 @@ public class OrderProcessor(IScopedCommandExecutor executor)
 
 Методы для каждого HTTP-метода (GET, POST, PUT, PATCH, DELETE):
 
-| Метод                                | Описание                          |
-|--------------------------------------|-----------------------------------|
-| `GetJsonAsync<TResponse, TError>`    | GET с десериализацией тела ответа |
-| `GetAsync<TError>`                   | GET без тела успешного ответа     |
-| `GetStreamAsync<TError>`             | GET → Stream                      |
-| `GetRawAsync<TError>`                | GET → byte[]                      |
-| `PostJsonAsync<TResponse, TError>`   | POST с JSON-телом                 |
-| `PutJsonAsync<TResponse, TError>`    | PUT с JSON-телом                  |
-| `PatchJsonAsync<TResponse, TError>`  | PATCH с JSON-телом                |
-| `DeleteJsonAsync<TResponse, TError>` | DELETE с телом ответа             |
+| Метод                                        | Описание                          |
+|----------------------------------------------|-----------------------------------|
+| `GetJsonAsync<TResponse, TError>`            | GET с десериализацией тела ответа |
+| `GetAsync<TError>`                           | GET без тела успешного ответа     |
+| `GetStreamAsync<TError>`                     | GET → Stream                      |
+| `GetRawAsync<TError>`                        | GET → byte[]                      |
+| `PostAsync<TError>`                          | POST без тела запроса             |
+| `PostJsonAsync<TRequest, TError>`            | POST с JSON-телом запроса         |
+| `PostJsonAsync<TResponse, TError>`           | POST без тела, с ответом          |
+| `PostJsonAsync<TRequest, TResponse, TError>` | POST с JSON-телом и ответом       |
+| `PostStreamAsync<TError>`                    | POST со Stream-телом              |
+| `PostStreamAsync<TResponse, TError>`         | POST со Stream-телом и ответом    |
+| `PutJsonAsync<TRequest, TError>`             | PUT с JSON-телом                  |
+| `PutJsonAsync<TRequest, TResponse, TError>`  | PUT с JSON-телом и ответом        |
+| `DeleteAsync<TError>`                        | DELETE без тела ответа            |
+| `DeleteJsonAsync<TResponse, TError>`         | DELETE с телом ответа             |
 
 ```csharp
 public interface IProductClient
@@ -851,14 +864,15 @@ services.AddSchedulingServices(
     waitForJobsToComplete: true,
     configureSchedulerJobs: async schedulerFactory =>
     {
-        // По интервалу:
+        // По интервалу (extension-метод):
         await schedulerFactory.ScheduleJobAsync<CleanupJob>(
             jobIdentity: "cleanup",
             interval: TimeSpan.FromHours(1),
             delay: TimeSpan.FromSeconds(10));
 
-        // По cron-выражению:
-        await schedulerFactory.ScheduleJobAsync<ReportJob>(
+        // По cron-выражению (статический метод):
+        await SchedulingExtensions.ScheduleJobAsync<ReportJob>(
+            schedulerFactory,
             jobIdentity: "daily-report",
             cronExpression: "0 0 8 * * ?"); // каждый день в 08:00
     });

@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 namespace Ebceys.Tests.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="PortSelector" /> class.
+///     Utility class for finding available TCP ports for use in integration tests.
 /// </summary>
 [PublicAPI]
 public static class PortSelector

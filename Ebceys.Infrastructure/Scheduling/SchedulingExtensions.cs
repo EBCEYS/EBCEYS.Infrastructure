@@ -6,7 +6,9 @@ using Quartz;
 namespace Ebceys.Infrastructure.Scheduling;
 
 /// <summary>
-///     The <see cref="IServiceCollection" /> extensions class for scheduling processes.
+///     Extension methods for configuring Quartz.NET-based job scheduling in the DI container.
+///     Provides methods to register the scheduling infrastructure and to schedule jobs
+///     with interval-based or cron-based triggers.
 /// </summary>
 [PublicAPI]
 public static class SchedulingExtensions

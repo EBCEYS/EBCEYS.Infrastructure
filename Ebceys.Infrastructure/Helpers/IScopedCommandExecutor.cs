@@ -1,7 +1,8 @@
 namespace Ebceys.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="IScopedCommandExecutor" /> interface.
+///     Scoped command executor interface. Resolves <see cref="ICommand{TContext,TResult}" /> from the current DI scope,
+///     ensuring proper scoped service lifetime management (e.g., DbContext, scoped repositories).
 /// </summary>
 public interface IScopedCommandExecutor
 {

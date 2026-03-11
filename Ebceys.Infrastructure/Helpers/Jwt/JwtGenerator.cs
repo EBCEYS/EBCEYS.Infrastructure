@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 namespace Ebceys.Infrastructure.Helpers.Jwt;
 
 /// <summary>
-///     The <see cref="IJwtGenerator" /> interface.
+///     Interface for generating JWT tokens with specified claims.
 /// </summary>
 [PublicAPI]
 public interface IJwtGenerator
@@ -23,9 +23,10 @@ public interface IJwtGenerator
 }
 
 /// <summary>
-///     The <see cref="JwtGenerator" /> class.
+///     Internal JWT generator that creates signed JWT tokens using HMAC-SHA256 with configurable
+///     issuer, audience, and optional token expiration from <see cref="JwtOptions" />.
 /// </summary>
-/// <param name="options">The jwt options.</param>
+/// <param name="options">The JWT configuration options.</param>
 internal class JwtGenerator(IOptions<JwtOptions> options) : IJwtGenerator
 {
     /// <summary>

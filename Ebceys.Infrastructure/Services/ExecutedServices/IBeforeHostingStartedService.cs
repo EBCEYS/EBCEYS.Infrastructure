@@ -4,20 +4,22 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Ebceys.Infrastructure.Services.ExecutedServices;
 
 /// <summary>
-///     The <see cref="IBeforeHostingStartedService" /> interface.
+///     Interface for services that need to execute logic after DI registration is complete
+///     but before the web host starts accepting requests (e.g., database migrations, cache warming).
 /// </summary>
 [PublicAPI]
 public interface IBeforeHostingStartedService
 {
     /// <summary>
-    ///     Executes the action.
+    ///     Executes the startup action before the host starts accepting requests.
     /// </summary>
-    /// <returns></returns>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    /// <returns>A <see cref="Task" /> representing the asynchronous startup operation.</returns>
     Task ExecuteAsync(CancellationToken cancellationToken);
 }
 
 /// <summary>
-///     The <see cref="BeforeHostingStartedServiceExtensions" /> extensions class.
+///     Extension methods for registering and executing <see cref="IBeforeHostingStartedService" /> implementations.
 /// </summary>
 [PublicAPI]
 public static class BeforeHostingStartedServiceExtensions

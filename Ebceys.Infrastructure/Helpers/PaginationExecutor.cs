@@ -4,7 +4,8 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="PaginationExecutor" /> class.
+///     Utility class for executing paginated queries. Automatically manages skip/take offsets
+///     and yields results in batches until all data is consumed or max iterations are reached.
 /// </summary>
 [PublicAPI]
 public static class PaginationExecutor
@@ -89,7 +90,8 @@ public static class PaginationExecutor
 }
 
 /// <summary>
-///     The <see cref="PaginationData" /> struct.
+///     Mutable struct that tracks pagination state (batch size, skip offset, and iteration count)
+///     used by <see cref="PaginationExecutor" /> to manage paginated data retrieval.
 /// </summary>
 [PublicAPI]
 public struct PaginationData

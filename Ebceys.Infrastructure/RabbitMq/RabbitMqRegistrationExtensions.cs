@@ -10,7 +10,8 @@ using Newtonsoft.Json;
 namespace Ebceys.Infrastructure.RabbitMq;
 
 /// <summary>
-///     The <see cref="RabbitMqRegistrationExtensions" /> class.
+///     Extension methods for registering RabbitMQ clients and smart controllers in the DI container.
+///     Automatically registers health checks for all added RabbitMQ connections.
 /// </summary>
 [PublicAPI]
 public static class RabbitMqRegistrationExtensions

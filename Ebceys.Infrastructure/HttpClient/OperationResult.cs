@@ -4,10 +4,11 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.HttpClient;
 
 /// <summary>
-///     The <see cref="OperationResult{TResponse,TError}" /> struct.
+///     Represents the result of an HTTP operation that can either succeed with a <typeparamref name="TResponse" />
+///     or fail with a <typeparamref name="TError" />. Includes the HTTP status code and success indicator.
 /// </summary>
-/// <typeparam name="TResponse">The success response type.</typeparam>
-/// <typeparam name="TError">The error response type.</typeparam>
+/// <typeparam name="TResponse">The type of the success response body.</typeparam>
+/// <typeparam name="TError">The type of the error response body.</typeparam>
 [PublicAPI]
 public struct OperationResult<TResponse, TError>
     where TError : class
@@ -107,9 +108,11 @@ public struct OperationResult<TResponse, TError>
 }
 
 /// <summary>
-///     The <see cref="OperationResult{TError}" /> struct.
+///     Represents the result of an HTTP operation without a success response body.
+///     Can either succeed (no body) or fail with a <typeparamref name="TError" />.
+///     Includes the HTTP status code and success indicator.
 /// </summary>
-/// <typeparam name="TError">The error response type.</typeparam>
+/// <typeparam name="TError">The type of the error response body.</typeparam>
 [PublicAPI]
 public struct OperationResult<TError>
     where TError : class

@@ -9,7 +9,9 @@ using Testcontainers.RabbitMq;
 namespace Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers;
 
 /// <summary>
-///     The <see cref="ExternalDependenciesExtensions" /> class.
+///     Extension methods for configuring Testcontainers-based external dependencies (RabbitMQ, PostgreSQL)
+///     in integration tests. Provides helpers to extract connection factories and inject configuration
+///     into the test web host builder.
 /// </summary>
 [PublicAPI]
 public static class ExternalDependenciesExtensions

@@ -6,7 +6,9 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Helpers.Json;
 
 /// <summary>
-///     The <see cref="DefaultJsonSerializerOptions" /> class.
+///     Provides pre-configured <see cref="JsonSerializerOptions" /> instances for consistent JSON serialization
+///     across the infrastructure. Includes a diagnostic (pretty-printed) and a default (compact) configuration,
+///     both with enum-to-string conversion and web defaults.
 /// </summary>
 [PublicAPI]
 public static class DefaultJsonSerializerOptions

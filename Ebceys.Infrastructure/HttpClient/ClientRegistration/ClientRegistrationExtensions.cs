@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 namespace Ebceys.Infrastructure.HttpClient.ClientRegistration;
 
 /// <summary>
-///     The <see cref="ClientRegistrationExtensions" /> extensions.
+///     Extension methods for fluent registration of <see cref="ClientBase" /> implementations in the DI container.
 /// </summary>
 [PublicAPI]
 public static class ClientRegistrationExtensions
@@ -34,12 +34,13 @@ public static class ClientRegistrationExtensions
 }
 
 /// <summary>
-///     The <see cref="ClientBaseRegistrationRegistrator{TInterface,TImplementation}" /> class.<br />
-///     Creates the new instance of <see cref="ClientBaseRegistrationRegistrator{TInterface,TImplementation}" />.
+///     Fluent builder for configuring and registering a <see cref="ClientBase" />-derived HTTP client
+///     in the service collection. Supports URL configuration, token resolvers, Flurl client cache customization,
+///     and HTTP context-based auth token forwarding.
 /// </summary>
-/// <param name="services">The service collection.</param>
-/// <typeparam name="TInterface">The <see cref="ClientBase" /> interface.</typeparam>
-/// <typeparam name="TImplementation">The <see cref="ClientBase" /> implementation.</typeparam>
+/// <param name="services">The service collection to register the client in.</param>
+/// <typeparam name="TInterface">The service interface that the client implements.</typeparam>
+/// <typeparam name="TImplementation">The concrete <see cref="ClientBase" /> implementation type.</typeparam>
 [PublicAPI]
 public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(IServiceCollection services)
     where TImplementation : ClientBase, TInterface where TInterface : class
@@ -77,7 +78,7 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
                                       $"Configuration section '{serviceName}' not found");
         var validator = new ClientConfigurationValidator();
         validator.ValidateAndThrow(clientConfiguration);
-        
+
         _baseUrlResolver = ClientBaseUrlResolver.Create(clientConfiguration.ServiceUrl);
         return this;
     }
@@ -212,7 +213,8 @@ public class ClientBaseRegistrationRegistrator<TInterface, TImplementation>(ISer
 }
 
 /// <summary>
-///     The <see cref="ClientBase" /> configuration class.
+///     Configuration record for <see cref="ClientBase" /> service URL, typically bound from
+///     <see cref="IConfiguration" /> sections.
 /// </summary>
 [PublicAPI]
 public record ClientConfiguration

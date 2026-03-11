@@ -4,7 +4,9 @@ using JetBrains.Annotations;
 namespace Ebceys.Tests.Infrastructure.IntegrationTests;
 
 /// <summary>
-///     The <see cref="TestRoutingMessageHandler" /> class.
+///     Test HTTP message handler that routes outgoing HTTP requests to in-memory test server handlers
+///     based on the request host. Used for Flurl/HttpClient integration testing to intercept and redirect
+///     requests to <see cref="TestWebApplicationFactory{TStartup}" /> instances without actual network calls.
 /// </summary>
 [PublicAPI]
 public class TestRoutingMessageHandler : DelegatingHandler

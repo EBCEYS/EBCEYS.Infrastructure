@@ -4,7 +4,8 @@ using Microsoft.Extensions.Logging;
 namespace Ebceys.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="ScopedCommandExecutor" /> class.
+///     Scoped implementation of <see cref="IScopedCommandExecutor" /> that resolves commands from the current
+///     DI scope and executes them with diagnostic logging of context and result.
 /// </summary>
 public class ScopedCommandExecutor(ILogger<ScopedCommandExecutor> logger, IServiceProvider serviceProvider)
     : IScopedCommandExecutor

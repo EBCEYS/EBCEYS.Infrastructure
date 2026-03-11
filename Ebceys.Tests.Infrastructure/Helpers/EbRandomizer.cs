@@ -10,9 +10,13 @@ using Microsoft.IdentityModel.Tokens;
 namespace Ebceys.Tests.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="EbRandomizer" /> class.
+///     Comprehensive random data generator for use in tests. Provides methods for generating random
+///     primitives (int, long, byte, double, decimal, bool), strings, hex strings, arrays, emails, domains,
+///     dates, timespans, URLs, enums, JWTs, and more. Supports reproducible sequences via seed parameter.
 /// </summary>
-/// <param name="seed">The seed.</param>
+/// <param name="seed">
+///     The seed for the random generator. Use <c>0</c> for a random seed.
+/// </param>
 [PublicAPI]
 public partial class EbRandomizer(int seed = 0)
 {
@@ -95,8 +99,9 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random int value.
+    ///     Gets the random int value within the range [<paramref name="minValue" />, <see cref="int.MaxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
     /// <returns>The random int value.</returns>
     public int Int(int minValue)
     {
@@ -104,8 +109,10 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random int value.
+    ///     Gets the random int value within the range [<paramref name="minValue" />, <paramref name="maxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
+    /// <param name="maxValue">The exclusive upper bound.</param>
     /// <returns>The random int value.</returns>
     public int Int(int minValue, int maxValue)
     {
@@ -113,27 +120,30 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random int value.
+    ///     Gets the random uint value within the range [0, <see cref="uint.MaxValue" />].
     /// </summary>
-    /// <returns>The random int value.</returns>
+    /// <returns>The random uint value.</returns>
     public uint UInt()
     {
         return UInt(0, uint.MaxValue);
     }
 
     /// <summary>
-    ///     Gets the random int value.
+    ///     Gets the random uint value within the range [<paramref name="minValue" />, <see cref="uint.MaxValue" />].
     /// </summary>
-    /// <returns>The random int value.</returns>
+    /// <param name="minValue">The inclusive lower bound.</param>
+    /// <returns>The random uint value.</returns>
     public uint UInt(uint minValue)
     {
         return UInt(minValue, uint.MaxValue);
     }
 
     /// <summary>
-    ///     Gets the random int value.
+    ///     Gets the random uint value within the range [<paramref name="minValue" />, <paramref name="maxValue" />].
     /// </summary>
-    /// <returns>The random int value.</returns>
+    /// <param name="minValue">The inclusive lower bound.</param>
+    /// <param name="maxValue">The inclusive upper bound.</param>
+    /// <returns>The random uint value.</returns>
     public uint UInt(uint minValue, uint maxValue)
     {
         return (uint)
@@ -151,8 +161,9 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random long value.
+    ///     Gets the random long value within the range [<paramref name="minValue" />, <see cref="long.MaxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
     /// <returns>The random long value.</returns>
     public long Long(long minValue)
     {
@@ -160,8 +171,10 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random long value.
+    ///     Gets the random long value within the range [<paramref name="minValue" />, <paramref name="maxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
+    /// <param name="maxValue">The exclusive upper bound.</param>
     /// <returns>The random long value.</returns>
     public long Long(long minValue, long maxValue)
     {
@@ -178,8 +191,9 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random byte value.
+    ///     Gets a random byte value.
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound (unused, kept for API compatibility).</param>
     /// <returns>The random byte value.</returns>
     public byte Byte(long minValue)
     {
@@ -187,8 +201,10 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random byte value.
+    ///     Gets a random byte value.
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound (unused, kept for API compatibility).</param>
+    /// <param name="maxValue">The inclusive upper bound (unused, kept for API compatibility).</param>
     /// <returns>The random byte value.</returns>
     public byte Byte(long minValue, long maxValue)
     {
@@ -207,8 +223,9 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random double value.
+    ///     Gets the random double value within the range [<paramref name="minValue" />, <see cref="double.MaxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
     /// <returns>The random double value.</returns>
     public double Double(double minValue)
     {
@@ -216,8 +233,10 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random double value.
+    ///     Gets the random double value within the range [<paramref name="minValue" />, <paramref name="maxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
+    /// <param name="maxValue">The exclusive upper bound.</param>
     /// <returns>The random double value.</returns>
     public double Double(double minValue, double maxValue)
     {
@@ -234,8 +253,9 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random decimal value.
+    ///     Gets the random decimal value within the range [<paramref name="minValue" />, <see cref="decimal.MaxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
     /// <returns>The random decimal value.</returns>
     public decimal Decimal(decimal minValue)
     {
@@ -243,8 +263,10 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random decimal value.
+    ///     Gets the random decimal value within the range [<paramref name="minValue" />, <paramref name="maxValue" />).
     /// </summary>
+    /// <param name="minValue">The inclusive lower bound.</param>
+    /// <param name="maxValue">The exclusive upper bound.</param>
     /// <returns>The random decimal value.</returns>
     public decimal Decimal(decimal minValue, decimal maxValue)
     {
@@ -357,12 +379,12 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     The random email with random domain.
+    ///     Generates a random email address with a random domain.
     /// </summary>
     /// <param name="length">The prefix length.</param>
     /// <param name="domainLength">The domain prefix length.</param>
     /// <param name="postfix">The email postfix. Default is <c>com</c>.</param>
-    /// <returns></returns>
+    /// <returns>The new random email string.</returns>
     public string Email(uint length = 16, uint domainLength = 8, string postfix = "com")
     {
         return Email(length, Domain(domainLength, postfix));
@@ -482,22 +504,22 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random element of collection.
+    ///     Gets a random element from the specified collection.
     /// </summary>
-    /// <param name="elements">The elements.</param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="elements">The source collection.</param>
+    /// <typeparam name="T">The element type.</typeparam>
+    /// <returns>A random element of type <typeparamref name="T" />.</returns>
     public T RandomElement<T>(IEnumerable<T> elements)
     {
         return RandomElements(elements, 1).First();
     }
 
     /// <summary>
-    ///     Gets the random elements from collection.
+    ///     Gets random elements from the specified collection.
     /// </summary>
-    /// <param name="elements">The elements.</param>
-    /// <param name="count">The result collection length.</param>
-    /// <typeparam name="T"></typeparam>
+    /// <param name="elements">The source collection.</param>
+    /// <param name="count">The number of elements to select.</param>
+    /// <typeparam name="T">The element type.</typeparam>
     /// <returns>The new instance of <typeparamref name="T" /> collection.</returns>
     /// <exception cref="ArgumentOutOfRangeException">
     ///     Throw if <paramref name="count" /> is greater then
@@ -513,9 +535,9 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random enum entity.
+    ///     Gets a random enum value.
     /// </summary>
-    /// <typeparam name="TEnum"></typeparam>
+    /// <typeparam name="TEnum">The enum type.</typeparam>
     /// <returns>The <typeparamref name="TEnum" /> exemplar.</returns>
     public TEnum Enum<TEnum>()
         where TEnum : struct, Enum
@@ -525,11 +547,11 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Gets the random enum entities.
+    ///     Gets random enum values.
     /// </summary>
-    /// <param name="count">The num of random enums to get.</param>
-    /// <typeparam name="TEnum"></typeparam>
-    /// <returns>The <typeparamref name="TEnum" /> exemplar.</returns>
+    /// <param name="count">The number of random enums to get.</param>
+    /// <typeparam name="TEnum">The enum type.</typeparam>
+    /// <returns>A collection of random <typeparamref name="TEnum" /> values.</returns>
     public IEnumerable<TEnum> Enums<TEnum>(uint count)
         where TEnum : struct, Enum
     {
@@ -584,12 +606,12 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     Generates the random jwt with specified <typeparamref name="TJwtGenerator" /> and <paramref name="claims" />.
+    ///     Generates a JWT token using the specified generator and claims.
     /// </summary>
-    /// <param name="generator">The jwt generator.</param>
-    /// <param name="claims">The claims.</param>
-    /// <typeparam name="TJwtGenerator"></typeparam>
-    /// <returns></returns>
+    /// <param name="generator">The JWT generator.</param>
+    /// <param name="claims">The claims to include in the token.</param>
+    /// <typeparam name="TJwtGenerator">The JWT generator implementation type.</typeparam>
+    /// <returns>The generated JWT string with prefix <c>Bearer {token}</c>.</returns>
     public string Jwt<TJwtGenerator>(TJwtGenerator generator, IEnumerable<Claim> claims)
         where TJwtGenerator : IJwtGenerator
     {
@@ -647,9 +669,9 @@ public partial class EbRandomizer(int seed = 0)
     }
 
     /// <summary>
-    ///     The <see cref="RandomJwtGenerator" /> class.
+    ///     Internal JWT generator for tests that creates signed tokens using random <see cref="JwtOptions" />.
     /// </summary>
-    /// <param name="options">The jwt options.</param>
+    /// <param name="options">The JWT options for token generation.</param>
     private class RandomJwtGenerator(JwtOptions options) : IJwtGenerator
     {
         /// <summary>
@@ -680,6 +702,11 @@ public partial class EbRandomizer(int seed = 0)
             return $"{AuthSchema} {new JwtSecurityTokenHandler().WriteToken(jwt)}";
         }
 
+        /// <summary>
+        ///     Generates random <see cref="JwtOptions" /> with random issuer, audience, key, and optional TTL.
+        /// </summary>
+        /// <param name="randomizer">The randomizer instance for generating values.</param>
+        /// <returns>The new instance of <see cref="JwtOptions" /> with random values.</returns>
         public static JwtOptions GenerateRandomOptions(EbRandomizer randomizer)
         {
             return new JwtOptions

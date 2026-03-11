@@ -11,7 +11,8 @@ using Microsoft.Extensions.Options;
 namespace Ebceys.Infrastructure.HttpClient.ServiceClient;
 
 /// <summary>
-///     The <see cref="IServiceSystemClient" /> interface.
+///     Interface for a system-level HTTP client that interacts with <see cref="ServiceController" /> endpoints
+///     of another service (ping, health check, health status, metrics).
 /// </summary>
 public interface IServiceSystemClient
 {
@@ -48,12 +49,14 @@ public interface IServiceSystemClient
 }
 
 /// <summary>
-///     The <see cref="ServiceSystemClient" /> class.
+///     Default implementation of <see cref="IServiceSystemClient" /> that communicates with
+///     <see cref="ServiceController" /> endpoints of a remote service via HTTP.
 /// </summary>
-/// <param name="clientCache"></param>
-/// <param name="loggerFactory"></param>
-/// <param name="baseUrlResolver"></param>
-/// <param name="tokenResolver"></param>
+/// <param name="apiInfo">The service API info containing base address and service metadata.</param>
+/// <param name="clientCache">The Flurl client cache.</param>
+/// <param name="loggerFactory">The logger factory for request/response logging.</param>
+/// <param name="baseUrlResolver">The resolver providing the target service base URL.</param>
+/// <param name="tokenResolver">The optional resolver providing the authorization token.</param>
 public class ServiceSystemClient(
     IOptions<ServiceApiInfo> apiInfo,
     IFlurlClientCache clientCache,

@@ -11,7 +11,8 @@ using Microsoft.Extensions.Options;
 namespace Ebceys.Infrastructure.Middlewares;
 
 /// <summary>
-///     The <see cref="HttpLoggingOptions" /> class.
+///     Configuration options for the <see cref="RequestLoggingMiddleware" />. Allows fine-grained control
+///     over which request/response paths and content types are logged, and at which log level.
 /// </summary>
 [PublicAPI]
 public class HttpLoggingOptions
@@ -46,10 +47,13 @@ public class HttpLoggingOptions
 }
 
 /// <summary>
-///     The request logging middleware.
+///     Middleware that logs incoming HTTP requests and outgoing responses including method, URL, status code,
+///     duration, and optionally request/response bodies. Respects <see cref="NoRequestBodyLoggingAttribute" />,
+///     <see cref="NoResponseBodyLoggingAttribute" />, and <see cref="HttpLoggingOptions" /> settings.
 /// </summary>
-/// <param name="next">The request delegate.</param>
-/// <param name="logger">The logger.</param>
+/// <param name="next">The next middleware in the request pipeline.</param>
+/// <param name="loggingOpts">The HTTP logging options.</param>
+/// <param name="logger">The logger instance.</param>
 [PublicAPI]
 public class RequestLoggingMiddleware(
     RequestDelegate next,
@@ -177,14 +181,10 @@ public class RequestLoggingMiddleware(
     private bool IsInNoLogsList(PathString path)
     {
         var pathString = path.HasValue ? path.Value : string.Empty;
-        return ExtraNoLoggingPaths.Aggregate(false,
-                   (current, noLoggingPath) => current | pathString.Contains(noLoggingPath))
-               || loggingOpts.Value.PathStartExcludeLogging.Aggregate(false,
-                   (current, noLoggingPath) => current | pathString.StartsWith(noLoggingPath))
-               || loggingOpts.Value.PathContainsExcludeLogging.Aggregate(false,
-                   (current, noLoggingPath) => current | pathString.Contains(noLoggingPath))
-               || loggingOpts.Value.PathEndExcludeLogging.Aggregate(false,
-                   (current, noLoggingPath) => current | pathString.EndsWith(noLoggingPath));
+        return ExtraNoLoggingPaths.Any(x => pathString.Contains(x))
+               || loggingOpts.Value.PathStartExcludeLogging.Any(x => pathString.StartsWith(x))
+               || loggingOpts.Value.PathContainsExcludeLogging.Any(x => pathString.Contains(x))
+               || loggingOpts.Value.PathEndExcludeLogging.Any(x => pathString.EndsWith(x));
     }
 
     private bool IsCorrectContentType(string contentType)

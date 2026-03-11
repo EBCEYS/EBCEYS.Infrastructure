@@ -4,7 +4,9 @@ using JetBrains.Annotations;
 namespace Ebceys.Tests.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="StopWatchElapser" /> class.
+///     Disposable stopwatch wrapper that measures elapsed time between creation and disposal,
+///     then invokes a callback with the elapsed <see cref="TimeSpan" />.
+///     Useful for timing test operations in a <c>using</c> block.
 /// </summary>
 [PublicAPI]
 public class StopWatchElapser : IDisposable

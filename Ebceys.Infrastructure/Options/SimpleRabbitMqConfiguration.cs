@@ -9,7 +9,9 @@ using RabbitMQ.Client;
 namespace Ebceys.Infrastructure.Options;
 
 /// <summary>
-///     The <see cref="SimpleRabbitMqConfiguration" /> class.
+///     Simplified RabbitMQ configuration record that can be bound from <c>appsettings.json</c>.
+///     Provides a convenient shorthand for configuring exchange, queue, and optional callback settings.
+///     Use <see cref="ToConfig" /> to convert to a full <see cref="RabbitMQConfiguration" />.
 /// </summary>
 [PublicAPI]
 public record SimpleRabbitMqConfiguration
@@ -73,7 +75,13 @@ public record SimpleRabbitMqConfiguration
             })
             .AddEncoding(Encoding.UTF8)
             .AddExchangeConfiguration(new ExchangeConfiguration(ExName, ExType, autoDelete: true))
-            .AddQueueConfiguration(new QueueConfiguration(QueueName, RoutingKey ?? QueueName, autoDelete: true));
+            .AddQueueConfiguration(new QueueConfiguration(QueueName, RoutingKey ?? QueueName, autoDelete: true))
+            .AddOnStartConfiguration(new RabbitMQOnStartConfigs
+            {
+                ConnectionReties = 3,
+                DelayBeforeRetries = TimeSpan.FromSeconds(3),
+                ThrowServerExceptionsOnReceivingResponse = true
+            });
         if (TimeoutCallback is not null)
         {
             builder.AddCallbackConfiguration(new CallbackRabbitMQConfiguration(
@@ -86,7 +94,7 @@ public record SimpleRabbitMqConfiguration
 }
 
 /// <summary>
-///     The <see cref="SimpleRabbitMqConfiguration" /> extensions.
+///     Validation extension methods for <see cref="SimpleRabbitMqConfiguration" />.
 /// </summary>
 [PublicAPI]
 public static class SimpleRabbitMqConfigurationExtensions

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Ebceys.Infrastructure.Extensions;
 
 /// <summary>
-///     The <see cref="EbServerExtensions" /> class.
+///     Server-related extension methods including <see cref="ProblemDetails" /> factory and async wait utilities.
 /// </summary>
 [PublicAPI]
 public static class EbServerExtensions

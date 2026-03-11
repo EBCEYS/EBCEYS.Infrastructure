@@ -8,7 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Ebceys.Infrastructure.DatabaseRegistration;
 
 /// <summary>
-///     The <see cref="DbContextRegistrationExtensions" /> extension class.
+///     Extension methods for registering Entity Framework Core <see cref="DbContext" /> implementations
+///     with PostgreSQL (Npgsql) support, automatic migration on startup, and health check integration.
 /// </summary>
 [PublicAPI]
 public static class DbContextRegistrationExtensions
@@ -56,7 +57,8 @@ public static class DbContextRegistrationExtensions
 }
 
 /// <summary>
-///     The <see cref="DbContextRegistrationOptions" /> record.
+///     Configuration options for registering a <see cref="DbContext" /> via
+///     <see cref="DbContextRegistrationExtensions.RegisterDbContext{TDbContext}" />.
 /// </summary>
 [PublicAPI]
 public sealed record DbContextRegistrationOptions

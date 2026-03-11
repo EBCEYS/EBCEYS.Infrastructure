@@ -5,7 +5,8 @@ using Microsoft.Extensions.Configuration;
 namespace Ebceys.Tests.Infrastructure.IntegrationTests;
 
 /// <summary>
-///     The <see cref="TestsExtensions" /> class.
+///     Extension methods for <see cref="IWebHostBuilder" /> providing convenient configuration helpers
+///     for integration tests, such as adding in-memory configuration values.
 /// </summary>
 [PublicAPI]
 public static class TestsExtensions

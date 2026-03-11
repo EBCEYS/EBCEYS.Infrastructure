@@ -11,7 +11,9 @@ using Polly;
 namespace Ebceys.Infrastructure.HttpClient;
 
 /// <summary>
-///     The <see cref="ClientBase" /> class.
+///     Abstract base class for HTTP clients built on Flurl. Provides standardized methods for
+///     GET, POST, PUT, DELETE requests with JSON serialization/deserialization, automatic authorization
+///     header injection, Polly retry policies, and structured logging of requests and responses.
 /// </summary>
 [PublicAPI]
 public abstract class ClientBase

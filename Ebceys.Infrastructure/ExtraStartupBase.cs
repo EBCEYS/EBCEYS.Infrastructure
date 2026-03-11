@@ -37,9 +37,11 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 namespace Ebceys.Infrastructure;
 
 /// <summary>
-///     The extra startup base class.
+///     Abstract base class for application startup configuration. Provides default configurations for
+///     logging (Serilog), Swagger/OpenAPI, health checks, Prometheus metrics, API versioning, JWT authentication,
+///     FluentValidation, and standard middlewares. Derive from this class to configure your service.
 /// </summary>
-/// <param name="configuration">The configuration.</param>
+/// <param name="configuration">The application configuration.</param>
 [PublicAPI]
 public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupBase
 {
@@ -110,11 +112,7 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
                 ctx.ProblemDetails.Instance = $"{ctx.HttpContext.Request.Method} {ctx.HttpContext.Request.Path}";
             };
         });
-        services.Configure<FormOptions>(x =>
-        {
-            x.ValueLengthLimit = int.MaxValue;
-            x.MultipartBodyLengthLimit = int.MaxValue;
-        });
+        services.Configure<FormOptions>(ConfigureFormOptions);
 
         if (UseAuthentication)
         {
@@ -138,10 +136,11 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
     }
 
     /// <summary>
-    ///     Configures the <paramref name="app" /> with <paramref name="env" />.
+    ///     Configures the application request pipeline including routing, logging, CORS, Prometheus metrics,
+    ///     health checks, authentication, Swagger UI, and custom middlewares.
     /// </summary>
-    /// <param name="app"></param>
-    /// <param name="env"></param>
+    /// <param name="app">The application builder used to configure the request pipeline.</param>
+    /// <param name="env">The hosting environment information.</param>
     public void Configure(IApplicationBuilder app, IHostEnvironment env)
     {
         if (env.IsDevelopment())
@@ -150,11 +149,11 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
         }
 
         app.UsePathBase(ServiceApiInfo.BaseAddress);
-        
+
         app.UseRouting();
 
         app.UseRequestLogging();
-        
+
         app.UseStatusCodePages(async ctx =>
         {
             var problemDetails = ctx.HttpContext.RequestServices.GetRequiredService<IProblemDetailsService>();
@@ -200,7 +199,6 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
             }
 
             opts.DocumentTitle = ServiceApiInfo.ServiceName;
-            opts.DocumentTitle = ServiceApiInfo.Description;
         });
 
 
@@ -215,6 +213,25 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
     /// <param name="filters">The filters.</param>
     protected virtual void ConfigureFilters(FilterCollection filters)
     {
+    }
+
+    /// <summary>
+    ///     Use it to configure your custom Swagger/OpenAPI options. Called during service configuration after default options
+    ///     are set.
+    /// </summary>
+    /// <param name="options">The swagger gen options.</param>
+    protected virtual void ConfigureSwagger(SwaggerGenOptions options)
+    {
+    }
+
+    /// <summary>
+    ///     Use it to configure form options, e.g. for file uploads.
+    /// </summary>
+    /// <param name="options">The form options.</param>
+    protected virtual void ConfigureFormOptions(FormOptions options)
+    {
+        options.ValueLengthLimit = int.MaxValue;
+        options.MultipartBodyLengthLimit = int.MaxValue;
     }
 
     /// <summary>
@@ -234,12 +251,10 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
     protected abstract void ServicesConfiguration(IServiceCollection services);
 
     /// <summary>
-    ///     Configures the app. It calls before controllers.
-    ///     <br />
-    ///     The middlewares could be configured here.
+    ///     Configures custom middlewares for the application pipeline. Called before controller endpoints are mapped.
     /// </summary>
-    /// <param name="app"></param>
-    /// <param name="env"></param>
+    /// <param name="app">The application builder.</param>
+    /// <param name="env">The hosting environment.</param>
     protected abstract void ConfigureMiddlewares(IApplicationBuilder app, IHostEnvironment env);
 
     private void ConfigureAuthentication(IServiceCollection services)
@@ -251,7 +266,7 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
             opts.DefaultChallengeScheme = JwtGenerator.AuthSchema;
         });
 
-        if (ProxyToken) // do it later after users-service realization!!! On start request users-service for jwt settings and apply it here
+        if (ProxyToken)
         {
             builder.AddJwtBearer();
             return;
@@ -302,6 +317,7 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
             }
 
             opts.IncludeXmlComments(Assembly.GetExecutingAssembly(), true);
+            ConfigureSwagger(opts);
         });
 
         services.AddApiVersioning(options =>

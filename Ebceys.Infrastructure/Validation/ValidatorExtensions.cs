@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Validation;
 
 /// <summary>
-///     The <see cref="ValidatorExtensions" /> class.
+///     FluentValidation custom rule builder extensions for URL validation.
 /// </summary>
 [PublicAPI]
 public static class ValidatorExtensions

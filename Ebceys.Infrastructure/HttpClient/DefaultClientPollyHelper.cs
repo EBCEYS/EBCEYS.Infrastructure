@@ -5,7 +5,8 @@ using Polly;
 namespace Ebceys.Infrastructure.HttpClient;
 
 /// <summary>
-///     The <see cref="DefaultClientPollyHelper" /> class.
+///     Helper class that creates default Polly retry policies for HTTP requests
+///     made via Flurl. Handles <see cref="FlurlHttpException" /> with a single retry after the specified delay.
 /// </summary>
 [PublicAPI]
 public static class DefaultClientPollyHelper

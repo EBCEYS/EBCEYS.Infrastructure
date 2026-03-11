@@ -5,10 +5,11 @@ using Microsoft.Extensions.Logging;
 namespace Ebceys.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="CommandExecutor" /> class.
+///     Singleton command executor that resolves <see cref="ICommand{TContext,TResult}" /> implementations
+///     from the root <see cref="IServiceProvider" /> and executes them with diagnostic logging.
 /// </summary>
-/// <param name="logger">The logger.</param>
-/// <param name="serviceProvider">The service provider.</param>
+/// <param name="logger">The logger for command execution diagnostics.</param>
+/// <param name="serviceProvider">The service provider to resolve command implementations.</param>
 [PublicAPI]
 public class CommandExecutor(ILogger<CommandExecutor> logger, IServiceProvider serviceProvider) : ICommandExecutor
 {

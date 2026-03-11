@@ -3,9 +3,10 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.HttpClient;
 
 /// <summary>
-///     The <see cref="ClientBaseUrlResolver" /> class.
+///     Resolver that provides the base URL for <see cref="ClientBase" /> instances.
+///     Supports implicit conversion from <see cref="Func{String}" /> for convenient inline usage.
 /// </summary>
-/// <param name="resolver"></param>
+/// <param name="resolver">The function that returns the base URL string.</param>
 [PublicAPI]
 public sealed class ClientBaseUrlResolver(Func<string> resolver) : IClientBaseResolver<string>
 {
@@ -40,9 +41,11 @@ public sealed class ClientBaseUrlResolver(Func<string> resolver) : IClientBaseRe
 }
 
 /// <summary>
-///     The <see cref="ClientBaseTokenResolver" /> class.
+///     Resolver that provides the authorization token for <see cref="ClientBase" /> instances.
+///     The resolved token is automatically added to the <c>Authorization</c> request header.
+///     Supports implicit conversion from <see cref="Func{Task}" /> for convenient inline usage.
 /// </summary>
-/// <param name="resolver"></param>
+/// <param name="resolver">The asynchronous function that returns the auth token, or <c>null</c> if no token is available.</param>
 [PublicAPI]
 public sealed class ClientBaseTokenResolver(Func<Task<string?>>? resolver) : IClientBaseResolver<Task<string?>>
 {
@@ -77,20 +80,20 @@ public sealed class ClientBaseTokenResolver(Func<Task<string?>>? resolver) : ICl
 }
 
 /// <summary>
-///     The <see cref="IClientBaseResolver{TResolve}" /> interface.
+///     Generic interface for value resolvers used by <see cref="ClientBase" />.
 /// </summary>
-/// <typeparam name="TResolve"></typeparam>
+/// <typeparam name="TResolve">The type of the resolved value.</typeparam>
 [PublicAPI]
 public interface IClientBaseResolver<out TResolve>
 {
     /// <summary>
-    ///     The invoker.
+    ///     The underlying delegate function that produces the resolved value.
     /// </summary>
     public Func<TResolve>? Invoker { get; }
 
     /// <summary>
-    ///     Invokes the resolver.
+    ///     Invokes the resolver and returns the resolved value.
     /// </summary>
-    /// <returns></returns>
+    /// <returns>The resolved value of type <typeparamref name="TResolve" />.</returns>
     public TResolve Invoke();
 }

@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace Ebceys.Infrastructure.Exceptions;
 
 /// <summary>
-///     The <see cref="ApiException" /> helper class.
+///     Static helper class providing convenient methods to throw <see cref="ApiException" /> instances
+///     for common HTTP error scenarios (NotFound, Conflict, Validation, InternalServerError, etc.).
 /// </summary>
 [PublicAPI]
 public static class ApiExceptionHelper

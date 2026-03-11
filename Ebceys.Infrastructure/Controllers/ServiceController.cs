@@ -10,9 +10,10 @@ using Prometheus;
 namespace Ebceys.Infrastructure.Controllers;
 
 /// <summary>
-///     The <see cref="ServiceController" /> class.
+///     Built-in API controller that provides service infrastructure endpoints including
+///     ping, health checks, health status reports, and Prometheus metrics.
 /// </summary>
-/// <param name="health"></param>
+/// <param name="health">The health check service used to verify service health.</param>
 [ApiController]
 [Route(ServiceControllerRoutes.Controller)]
 [ProducesErrorResponseType(typeof(ProblemDetails))]
@@ -20,10 +21,10 @@ namespace Ebceys.Infrastructure.Controllers;
 public class ServiceController(HealthCheckService health) : ControllerBase
 {
     /// <summary>
-    ///     The ping.
+    ///     Simple ping endpoint that returns "pong" to verify the service is reachable.
     /// </summary>
     /// <response code="200">Pong</response>
-    /// <returns></returns>
+    /// <returns>An <see cref="IActionResult" /> containing the "pong" string.</returns>
     [ProducesResponseType<string>(StatusCodes.Status200OK)]
     [HttpGet(ServiceControllerRoutes.Methods.Ping)]
     public IActionResult Ping()
@@ -34,7 +35,7 @@ public class ServiceController(HealthCheckService health) : ControllerBase
     /// <summary>
     ///     Health checks the service without body payload.
     /// </summary>
-    /// <param name="cancellationToken"></param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <response code="200">Service is healthy.</response>
     /// <response code="500">Service is unhealthy.</response>
     [HttpGet(ServiceControllerRoutes.Methods.Healthz)]
@@ -52,7 +53,7 @@ public class ServiceController(HealthCheckService health) : ControllerBase
     /// <summary>
     ///     Health checks the service with response body payload.
     /// </summary>
-    /// <param name="cancellationToken"></param>
+    /// <param name="cancellationToken">The cancellation token.</param>
     /// <response code="200">Service health info.</response>
     [HttpGet(ServiceControllerRoutes.Methods.HealthzStatus)]
     [ProducesResponseType<UIHealthReport>(StatusCodes.Status200OK)]
@@ -90,7 +91,7 @@ public class ServiceController(HealthCheckService health) : ControllerBase
 }
 
 /// <summary>
-///     The <see cref="ServiceControllerRoutes" /> class.
+///     Contains route constants for the <see cref="ServiceController" />.
 /// </summary>
 [PublicAPI]
 public static class ServiceControllerRoutes

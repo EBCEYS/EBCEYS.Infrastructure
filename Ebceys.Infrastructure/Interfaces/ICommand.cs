@@ -3,10 +3,13 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Interfaces;
 
 /// <summary>
-///     The <see cref="ICommand{TContext,TResult}" /> interface.
+///     Generic command interface implementing the Command pattern. Encapsulates a unit of work
+///     that takes a context of type <typeparamref name="TContext" /> and returns a result of type
+///     <typeparamref name="TResult" />. Commands are resolved from DI and executed via
+///     <see cref="Helpers.ICommandExecutor" /> or <see cref="Helpers.IScopedCommandExecutor" />.
 /// </summary>
-/// <typeparam name="TContext">The command context.</typeparam>
-/// <typeparam name="TResult">The command execution result.</typeparam>
+/// <typeparam name="TContext">The input context (parameters/data) for the command.</typeparam>
+/// <typeparam name="TResult">The result type returned after command execution.</typeparam>
 [PublicAPI]
 public interface ICommand<in TContext, TResult>
 {

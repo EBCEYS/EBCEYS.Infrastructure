@@ -4,7 +4,8 @@ using Testcontainers.PostgreSql;
 namespace Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers;
 
 /// <summary>
-///     The <see cref="PostgresInitializer" /> class.
+///     Initializer for a PostgreSQL Testcontainer. Manages the lifecycle of a PostgreSQL Docker container
+///     for use in integration tests. Configurable with custom user, password, database, and image.
 /// </summary>
 [PublicAPI]
 public class PostgresInitializer : IDependencyInitializer<PostgreSqlContainer>

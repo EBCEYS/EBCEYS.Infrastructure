@@ -18,10 +18,12 @@ using Serilog.Extensions.Logging;
 namespace Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication;
 
 /// <summary>
-///     The <see cref="ClientTestContext{TClient,TEntrypoint}" /> class.
+///     Abstract test context for integration testing of <see cref="ClientBase" />-derived HTTP clients
+///     against an in-memory test server. Provides client creation, service system client access,
+///     and Flurl client cache integration with request routing to the test server.
 /// </summary>
-/// <typeparam name="TClient">The client.</typeparam>
-/// <typeparam name="TEntrypoint">The entry point</typeparam>
+/// <typeparam name="TClient">The HTTP client type under test.</typeparam>
+/// <typeparam name="TEntrypoint">The application startup/entry point class.</typeparam>
 [PublicAPI]
 public abstract class ClientTestContext<TClient, TEntrypoint> : ServiceTestContext<TEntrypoint>
     where TEntrypoint : class where TClient : class
@@ -86,9 +88,10 @@ public abstract class ClientTestContext<TClient, TEntrypoint> : ServiceTestConte
 }
 
 /// <summary>
-///     The <see cref="ServiceTestContext{TEntrypoint}" /> class.
+///     Abstract test context that manages the lifecycle of a <see cref="WebApplicationFactory{TEntrypoint}" />
+///     for integration testing. Provides initialization, teardown, and request routing capabilities.
 /// </summary>
-/// <typeparam name="TEntrypoint">The entry point.</typeparam>
+/// <typeparam name="TEntrypoint">The application startup/entry point class.</typeparam>
 [PublicAPI]
 public abstract class ServiceTestContext<TEntrypoint> where TEntrypoint : class
 {
@@ -179,7 +182,8 @@ public abstract class ServiceTestContext<TEntrypoint> where TEntrypoint : class
 }
 
 /// <summary>
-///     The <see cref="TestClientInitializeOptions" /> class.
+///     Options for configuring a test context during initialization, including base address,
+///     content root path, builder configuration, and app settings mode.
 /// </summary>
 [PublicAPI]
 public class TestClientInitializeOptions
@@ -294,7 +298,9 @@ public class RoutingMessageHandler : DelegatingHandler
 }
 
 /// <summary>
-///     The <see cref="RoutingMessageHandlerConfiguration" /> class.
+///     Configuration for routing HTTP requests to in-memory test server handlers based on URL.
+///     Used by <see cref="RoutingMessageHandler" /> and <see cref="TestRoutingMessageHandler" />
+///     to redirect HTTP client calls to test servers during integration tests.
 /// </summary>
 [PublicAPI]
 public class RoutingMessageHandlerConfiguration

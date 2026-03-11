@@ -1,7 +1,8 @@
 namespace Ebceys.Infrastructure.Helpers;
 
 /// <summary>
-///     The <see cref="ICommandExecutor" /> interface.
+///     Interface for executing commands resolved from the DI container.
+///     Registered as a singleton service. Use <see cref="IScopedCommandExecutor" /> when scoped resolution is needed.
 /// </summary>
 public interface ICommandExecutor
 {

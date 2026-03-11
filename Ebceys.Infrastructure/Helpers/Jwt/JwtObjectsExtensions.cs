@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 namespace Ebceys.Infrastructure.Helpers.Jwt;
 
 /// <summary>
-///     The <see cref="JwtObjectsExtensions" /> extensions class.
+///     Extension methods for convenient JWT-related object conversions.
 /// </summary>
 [PublicAPI]
 public static class JwtObjectsExtensions
