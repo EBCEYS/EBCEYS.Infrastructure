@@ -10,7 +10,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
   packages: write
 
 jobs:
@@ -27,6 +27,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
       - name: Calculate version
         run: |
           BASE_VERSION=$(cat .version)
@@ -37,18 +45,52 @@ jobs:
       - name: Restore all projects
         run: dotnet restore
 
-      - name: Build all projects
+      - name: Build solution
+        run: dotnet build Infrastructure.sln -p:Version=${{ env.VERSION }} --no-restore
+
+      - name: Run tests with coverage
         run: |
-          for proj in $(find . -name '*.csproj'); do
-            dotnet build "$proj" -p:Version=${{ env.VERSION }}
+          mkdir -p ./coverage
+          for testproj in $(find . -name '*.csproj' | grep -i 'Tests'); do
+            name=$(basename "$testproj" .csproj)
+            echo "Running tests: $testproj"
+            dotnet test "$testproj" --no-build \
+              --collect:"XPlat Code Coverage" \
+              --results-directory "./coverage/$name" \
+              --logger "trx;LogFileName=$name.trx" \
+              -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
           done
 
-      - name: Detect and run test projects
+      - name: Install ReportGenerator
+        run: dotnet tool install -g dotnet-reportgenerator-globaltool
+
+      - name: Merge coverage reports
         run: |
-          for testproj in $(find . -name '*.csproj' | grep -i 'Tests'); do
-            echo "Running tests: $testproj"
-            dotnet test "$testproj" --no-build
-          done
+          reportgenerator \
+            -reports:"./coverage/**/coverage.cobertura.xml" \
+            -targetdir:"./coverage/report" \
+            -reporttypes:"Cobertura;MarkdownSummaryGithub;Badges" \
+            -verbosity:Warning
+
+      - name: Write coverage summary to GitHub Step Summary
+        run: cat ./coverage/report/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload coverage report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: ./coverage/report/
+          retention-days: 30
+
+      - name: Upload coverage badge to gh-pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./coverage/report
+          destination_dir: badges
+          publish_branch: gh-pages
+          keep_files: true
 
   publish:
     name: Publish NuGet Packages
@@ -65,6 +107,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
       - name: Calculate version
         run: |
           BASE_VERSION=$(cat .version)
@@ -72,16 +122,16 @@ jobs:
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "Calculated version: $VERSION"
 
-      - name: Restore all projects
-        run: dotnet restore
+      - name: Restore solution
+        run: dotnet restore Infrastructure.sln
 
       - name: Detect and pack packable projects
         run: |
           for proj in $(find . -name '*.csproj'); do
             if grep -q "<IsPackable>true</IsPackable>" "$proj"; then
               echo "Packing project: $proj"
-              dotnet build "$proj" -c Release -p:Version=${{ env.VERSION }}
-              dotnet pack "$proj" -p:PackageVersion=${{ env.VERSION }} -o ./artifacts
+              dotnet build "$proj" -c Release -p:Version=${{ env.VERSION }} --no-restore
+              dotnet pack "$proj" -c Release -p:PackageVersion=${{ env.VERSION }} --no-build -o ./artifacts
             fi
           done
 
@@ -91,3 +141,11 @@ jobs:
             --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
             --api-key ${{ secrets.GITHUB_TOKEN }} \
             --skip-duplicate
+
+      - name: Publish packages to NuGet.org
+        run: |
+          dotnet nuget push ./artifacts/*.nupkg \
+            --source "https://api.nuget.org/v3/index.json" \
+            --api-key ${{ secrets.NUGET_API_KEY }} \
+            --skip-duplicate
+

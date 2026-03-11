@@ -1,5 +1,9 @@
 # EBCEYS.Infrastructure
 
+[![CI / CD](https://github.com/EBCEYS/EBCEYS.Infrastructure/actions/workflows/dotnet-master.yml/badge.svg?branch=main)](https://github.com/EBCEYS/EBCEYS.Infrastructure/actions/workflows/dotnet-master.yml)
+[![Deploy Documentation](https://github.com/EBCEYS/EBCEYS.Infrastructure/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/EBCEYS/EBCEYS.Infrastructure/actions/workflows/docs.yml)
+[![Coverage](https://ebceys.github.io/EBCEYS.Infrastructure/badges/badge_linecoverage.svg)](https://ebceys.github.io/EBCEYS.Infrastructure/badges/index.html)
+
 Комплексная инфраструктурная библиотека на C#, предоставляющая готовые утилиты и компоненты для построения надёжных
 ASP.NET Core приложений.
 
