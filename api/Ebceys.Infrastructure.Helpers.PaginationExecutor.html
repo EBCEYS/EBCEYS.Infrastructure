@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PaginationExecutor | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Utility class for executing paginated queries. Automatically manages skip/take offsets and yields results in batches until all data is consumed or max iterations are reached.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Helpers_PaginationExecutor" data-uid="Ebceys.Infrastructure.Helpers.PaginationExecutor" class="text-break">
-Class PaginationExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class PaginationExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class PaginationExecutor  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.PaginationExecutor.html">PaginationExecutor</a> class.</p>
+  <div class="markdown summary"><p>Utility class for executing paginated queries. Automatically manages skip/take offsets
+and yields results in batches until all data is consumed or max iterations are reached.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -158,7 +159,7 @@ public static class PaginationExecutor</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_PaginationExecutor_PaginationExecuteAsync__1_System_Func_Ebceys_Infrastructure_Helpers_PaginationData_System_Threading_CancellationToken_System_Threading_Tasks_Task_System_Collections_Generic_ICollection___0____System_Int32_System_Int32_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecuteAsync``1(System.Func{Ebceys.Infrastructure.Helpers.PaginationData,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Collections.Generic.ICollection{``0}}},System.Int32,System.Int32,System.Threading.CancellationToken)">
   PaginationExecuteAsync&lt;TData&gt;(Func&lt;PaginationData, CancellationToken, Task&lt;ICollection&lt;TData&gt;&gt;&gt;, int, int, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the <code class="paramref">execution</code> with auto increments <a class="xref" href="Ebceys.Infrastructure.Helpers.PaginationData.html">PaginationData</a>.</p>
@@ -217,7 +218,7 @@ public static class PaginationExecutor</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_PaginationExecutor_PaginationExecute__1_System_Func_Ebceys_Infrastructure_Helpers_PaginationData_System_Collections_Generic_ICollection___0___System_Int32_System_Int32_" data-uid="Ebceys.Infrastructure.Helpers.PaginationExecutor.PaginationExecute``1(System.Func{Ebceys.Infrastructure.Helpers.PaginationData,System.Collections.Generic.ICollection{``0}},System.Int32,System.Int32)">
   PaginationExecute&lt;TData&gt;(Func&lt;PaginationData, ICollection&lt;TData&gt;&gt;, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the <code class="paramref">execution</code> with auto increments <a class="xref" href="Ebceys.Infrastructure.Helpers.PaginationData.html">PaginationData</a>.</p>
@@ -273,7 +274,7 @@ public static class PaginationExecutor</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/PaginationExecutor.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

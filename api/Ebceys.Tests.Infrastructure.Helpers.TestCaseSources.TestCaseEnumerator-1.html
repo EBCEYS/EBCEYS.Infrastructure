@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TestCaseEnumerator&lt;TData&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Abstract base class for NUnit  enumerators that converts test case transformation functions into  instances.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_TestCaseEnumerator_1" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator`1" class="text-break">
-Class TestCaseEnumerator&lt;TData&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L105"><i class="bi bi-code-slash"></i></a>
+Class TestCaseEnumerator&lt;TData&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class TestCaseEnumerator&lt;TData&gt;  <a class="header-action link-secondary" t
   <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.html">TestCaseEnumerator&lt;TData&gt;</a> class.</p>
+  <div class="markdown summary"><p>Abstract base class for NUnit <span class="xref">NUnit.Framework.TestCaseData</span> enumerators that converts
+test case transformation functions into <span class="xref">NUnit.Framework.TestCaseData</span> instances.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +112,8 @@ public abstract class TestCaseEnumerator&lt;TData&gt; : IEnumerable&lt;TestCaseD
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TData</code></dt>
-    <dd></dd>
+    <dd><p>The type of test data.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -177,7 +179,7 @@ public abstract class TestCaseEnumerator&lt;TData&gt; : IEnumerable&lt;TestCaseD
 
   <h3 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_TestCaseEnumerator_1__ctor" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator`1.#ctor">
   TestCaseEnumerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initiates the new instance of <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.html">TestCaseEnumerator&lt;TData&gt;</a>.</p>
@@ -208,10 +210,10 @@ public abstract class TestCaseEnumerator&lt;TData&gt; : IEnumerable&lt;TestCaseD
 
   <h3 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_TestCaseEnumerator_1_GetData" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator`1.GetData">
   GetData()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the data.</p>
+  <div class="markdown level1 summary"><p>Gets the test case data source and the base data for constructing test cases.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -223,7 +225,8 @@ public abstract class TestCaseEnumerator&lt;TData&gt; : IEnumerable&lt;TestCaseD
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TData, TData&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.ienumerable-system.valuetuple-system.func--1,-1-,system.string--,-1-.datasource">dataSource</a>, TData <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.collections.generic.ienumerable-system.valuetuple-system.func--1,-1-,system.string--,-1-.basedata">baseData</a>)</dt>
-    <dd></dd>
+    <dd><p>A tuple containing the test case transformation functions with descriptions, and the base data instance.</p>
+</dd>
   </dl>
 
 
@@ -240,7 +243,7 @@ public abstract class TestCaseEnumerator&lt;TData&gt; : IEnumerable&lt;TestCaseD
 
   <h3 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_TestCaseEnumerator_1_GetEnumerator" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator`1.GetEnumerator">
   GetEnumerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
@@ -273,7 +276,7 @@ public abstract class TestCaseEnumerator&lt;TData&gt; : IEnumerable&lt;TestCaseD
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L105" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L111" class="edit-link">Edit this page</a>
         </div>
 
 

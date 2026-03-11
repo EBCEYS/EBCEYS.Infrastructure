@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IClientTokenManager&lt;TInterface&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  interface.">
+      <meta name="description" content="Interface for managing authorization tokens for a specific HTTP client. Implementations provide tokens that are automatically attached to outgoing requests.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_HttpClient_TokenManager_IClientTokenManager_1" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager`1" class="text-break">
-Interface IClientTokenManager&lt;TInterface&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Interface IClientTokenManager&lt;TInterface&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Interface IClientTokenManager&lt;TInterface&gt;  <a class="header-action link-se
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html">IClientTokenManager&lt;TInterface&gt;</a> interface.</p>
+  <div class="markdown summary"><p>Interface for managing authorization tokens for a specific HTTP client.
+Implementations provide tokens that are automatically attached to outgoing requests.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +112,7 @@ public interface IClientTokenManager&lt;TInterface&gt;</code></pre>
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TInterface</code></dt>
-    <dd><p>The interface of client.</p>
+    <dd><p>The client interface type, used to distinguish token managers for different clients.</p>
 </dd>
   </dl>
 
@@ -132,10 +133,10 @@ public interface IClientTokenManager&lt;TInterface&gt;</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_TokenManager_IClientTokenManager_1_GetTokenAsync" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager`1.GetTokenAsync">
   GetTokenAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the auth token.</p>
+  <div class="markdown level1 summary"><p>Gets the authorization token to be used in outgoing HTTP requests.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -146,8 +147,9 @@ public interface IClientTokenManager&lt;TInterface&gt;</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>The auth token string, or <code>null</code> if no token is available.</p>
+</dd>
   </dl>
 
 
@@ -164,7 +166,7 @@ public interface IClientTokenManager&lt;TInterface&gt;</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

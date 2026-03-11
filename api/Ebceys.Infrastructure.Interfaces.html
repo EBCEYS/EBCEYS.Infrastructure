@@ -96,7 +96,10 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Interfaces.ICommand-2.html">ICommand&lt;TContext, TResult&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Interfaces.ICommand-2.html">ICommand&lt;TContext, TResult&gt;</a> interface.</p>
+      <dd><p>Generic command interface implementing the Command pattern. Encapsulates a unit of work
+that takes a context of type <code class="typeparamref">TContext</code> and returns a result of type
+<code class="typeparamref">TResult</code>. Commands are resolved from DI and executed via
+<a class="xref" href="Ebceys.Infrastructure.Helpers.ICommandExecutor.html">ICommandExecutor</a> or <a class="xref" href="Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.html">IScopedCommandExecutor</a>.</p>
 </dd>
     </dl>
 

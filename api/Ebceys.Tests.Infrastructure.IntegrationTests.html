@@ -96,12 +96,15 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.html">TestRoutingMessageHandler</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.html">TestRoutingMessageHandler</a> class.</p>
+      <dd><p>Test HTTP message handler that routes outgoing HTTP requests to in-memory test server handlers
+based on the request host. Used for Flurl/HttpClient integration testing to intercept and redirect
+requests to <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.html">TestWebApplicationFactory&lt;TStartup&gt;</a> instances without actual network calls.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions.html">TestsExtensions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions.html">TestsExtensions</a> class.</p>
+      <dd><p>Extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.iwebhostbuilder">IWebHostBuilder</a> providing convenient configuration helpers
+for integration tests, such as adding in-memory configuration values.</p>
 </dd>
     </dl>
 

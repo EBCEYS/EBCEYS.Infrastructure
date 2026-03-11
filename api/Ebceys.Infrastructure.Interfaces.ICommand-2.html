@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ICommand&lt;TContext, TResult&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  interface.">
+      <meta name="description" content="Generic command interface implementing the Command pattern. Encapsulates a unit of work that takes a context of type TContext and returns a result of type TResult. Commands are resolved from DI and executed via  or .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Interfaces_ICommand_2" data-uid="Ebceys.Infrastructure.Interfaces.ICommand`2" class="text-break">
-Interface ICommand&lt;TContext, TResult&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Interfaces/ICommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Interface ICommand&lt;TContext, TResult&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Interfaces/ICommand.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Interface ICommand&lt;TContext, TResult&gt;  <a class="header-action link-second
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Interfaces.ICommand-2.html">ICommand&lt;TContext, TResult&gt;</a> interface.</p>
+  <div class="markdown summary"><p>Generic command interface implementing the Command pattern. Encapsulates a unit of work
+that takes a context of type <code class="typeparamref">TContext</code> and returns a result of type
+<code class="typeparamref">TResult</code>. Commands are resolved from DI and executed via
+<a class="xref" href="Ebceys.Infrastructure.Helpers.ICommandExecutor.html">ICommandExecutor</a> or <a class="xref" href="Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.html">IScopedCommandExecutor</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,10 +114,10 @@ public interface ICommand&lt;in TContext, TResult&gt;</code></pre>
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TContext</code></dt>
-    <dd><p>The command context.</p>
+    <dd><p>The input context (parameters/data) for the command.</p>
 </dd>
     <dt><code>TResult</code></dt>
-    <dd><p>The command execution result.</p>
+    <dd><p>The result type returned after command execution.</p>
 </dd>
   </dl>
 
@@ -135,7 +138,7 @@ public interface ICommand&lt;in TContext, TResult&gt;</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Interfaces_ICommand_2_ExecuteAsync__0_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Interfaces.ICommand`2.ExecuteAsync(`0,System.Threading.CancellationToken)">
   ExecuteAsync(TContext, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Interfaces/ICommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Interfaces/ICommand.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the command.</p>
@@ -177,7 +180,7 @@ public interface ICommand&lt;in TContext, TResult&gt;</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Interfaces/ICommand.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Interfaces/ICommand.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

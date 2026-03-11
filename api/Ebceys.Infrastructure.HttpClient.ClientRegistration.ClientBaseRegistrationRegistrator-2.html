@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class. Creates the new instance of .">
+      <meta name="description" content="Fluent builder for configuring and registering a -derived HTTP client in the service collection. Supports URL configuration, token resolvers, Flurl client cache customization, and HTTP context-based auth token forwarding.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2" class="text-break">
-Class ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
+Class ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,9 @@ Class ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;  <a c
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.html">ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;</a> class.<br>
-Creates the new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.html">ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;</a>.</p>
+  <div class="markdown summary"><p>Fluent builder for configuring and registering a <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a>-derived HTTP client
+in the service collection. Supports URL configuration, token resolvers, Flurl client cache customization,
+and HTTP context-based auth token forwarding.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -112,10 +113,10 @@ public class ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TInterface</code></dt>
-    <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> interface.</p>
+    <dd><p>The service interface that the client implements.</p>
 </dd>
     <dt><code>TImplementation</code></dt>
-    <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> implementation.</p>
+    <dd><p>The concrete <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> implementation type.</p>
 </dd>
   </dl>
 
@@ -168,11 +169,12 @@ public class ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   ClientBaseRegistrationRegistrator(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.html">ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;</a> class.<br>
-Creates the new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.html">ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;</a>.</p>
+  <div class="markdown level1 summary"><p>Fluent builder for configuring and registering a <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a>-derived HTTP client
+in the service collection. Supports URL configuration, token resolvers, Flurl client cache customization,
+and HTTP context-based auth token forwarding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -183,7 +185,7 @@ Creates the new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd><p>The service collection.</p>
+    <dd><p>The service collection to register the client in.</p>
 </dd>
   </dl>
 
@@ -206,7 +208,7 @@ Creates the new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClie
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2_AddAuthTokenFromHttpContextResolver" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.AddAuthTokenFromHttpContextResolver">
   AddAuthTokenFromHttpContextResolver()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html">IClientTokenManager&lt;TInterface&gt;</a> with <code class="typeparamref">TInterface</code> type to service
@@ -241,7 +243,7 @@ It uses for access to auth token from http context. See default implementation (
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2_AddAuthTokenResolver_System_Func_System_Threading_Tasks_Task_System_String___" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.AddAuthTokenResolver(System.Func{System.Threading.Tasks.Task{System.String}})">
   AddAuthTokenResolver(Func&lt;Task&lt;string?&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the auth token resolver to <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.html">ClientBaseRegistrationRegistrator&lt;TInterface, TImplementation&gt;</a>.<br>
@@ -279,7 +281,7 @@ Token will be placed in request headers with key <a class="xref" href="Ebceys.In
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2_AddCustomAuthTokenResolver__1_System_Func_System_IServiceProvider_Ebceys_Infrastructure_HttpClient_TokenManager_IClientTokenManager__0___" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.AddCustomAuthTokenResolver``1(System.Func{System.IServiceProvider,Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager{`0}})">
   AddCustomAuthTokenResolver&lt;TResolver&gt;(Func&lt;IServiceProvider, IClientTokenManager&lt;TInterface&gt;&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the custom auth token resolver with TInterface mapping.</p>
@@ -329,7 +331,7 @@ Token will be placed in request headers with key <a class="xref" href="Ebceys.In
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2_ConfigureClientCache_System_Func_System_IServiceProvider_System_Collections_Generic_IEnumerable_System_Func_System_Net_Http_DelegatingHandler___Flurl_Http_Configuration_IFlurlClientCache__" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.ConfigureClientCache(System.Func{System.IServiceProvider,System.Collections.Generic.IEnumerable{System.Func{System.Net.Http.DelegatingHandler}},Flurl.Http.Configuration.IFlurlClientCache})">
   ConfigureClientCache(Func&lt;IServiceProvider, IEnumerable&lt;Func&lt;DelegatingHandler&gt;&gt;, IFlurlClientCache&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures <span class="xref">Flurl.Http.Configuration.IFlurlClientCache</span>. If it wasn't configured the default implementation will be used.</p>
@@ -367,7 +369,7 @@ Token will be placed in request headers with key <a class="xref" href="Ebceys.In
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2_FromConfiguration_Microsoft_Extensions_Configuration_IConfiguration_System_String_" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.FromConfiguration(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
   FromConfiguration(IConfiguration, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures the server url for client from <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a>.</p>
@@ -417,7 +419,7 @@ Token will be placed in request headers with key <a class="xref" href="Ebceys.In
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2_FromUrl_System_String_" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.FromUrl(System.String)">
   FromUrl(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures the url for client from string.</p>
@@ -455,7 +457,7 @@ Token will be placed in request headers with key <a class="xref" href="Ebceys.In
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientRegistration_ClientBaseRegistrationRegistrator_2_Register" data-uid="Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator`2.Register">
   Register()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Registration of the <code class="typeparamref">TImplementation</code> in <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
@@ -487,7 +489,7 @@ Token will be placed in request headers with key <a class="xref" href="Ebceys.In
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L43" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientRegistration/ClientRegistrationExtensions.cs/#L44" class="edit-link">Edit this page</a>
         </div>
 
 

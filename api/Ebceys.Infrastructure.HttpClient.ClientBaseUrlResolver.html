@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ClientBaseUrlResolver | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Resolver that provides the base URL for  instances. Supports implicit conversion from  for convenient inline usage.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver" data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver" class="text-break">
-Class ClientBaseUrlResolver  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class ClientBaseUrlResolver  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ClientBaseUrlResolver  <a class="header-action link-secondary" title="View
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html">ClientBaseUrlResolver</a> class.</p>
+  <div class="markdown summary"><p>Resolver that provides the base URL for <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> instances.
+Supports implicit conversion from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a> for convenient inline usage.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -161,10 +162,11 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver__ctor_System_Func_System_String__" data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.#ctor(System.Func{System.String})">
   ClientBaseUrlResolver(Func&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html">ClientBaseUrlResolver</a> class.</p>
+  <div class="markdown level1 summary"><p>Resolver that provides the base URL for <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> instances.
+Supports implicit conversion from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a> for convenient inline usage.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -175,7 +177,8 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>resolver</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The function that returns the base URL string.</p>
+</dd>
   </dl>
 
 
@@ -197,10 +200,10 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver_Invoker" data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.Invoker">
   Invoker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The invoker.</p>
+  <div class="markdown level1 summary"><p>The underlying delegate function that produces the resolved value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -233,7 +236,7 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver_Create_System_String_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.Create(System.String)">
   Create(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html">ClientBaseUrlResolver</a>.</p>
@@ -272,10 +275,10 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver_Invoke" data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.Invoke">
   Invoke()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invokes the resolver.</p>
+  <div class="markdown level1 summary"><p>Invokes the resolver and returns the resolved value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -287,7 +290,8 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The resolved value of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>.</p>
+</dd>
   </dl>
 
 
@@ -308,7 +312,7 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver_op_Implicit_System_Func_System_String___Ebceys_Infrastructure_HttpClient_ClientBaseUrlResolver" data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.op_Implicit(System.Func{System.String})~Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver">
   implicit operator ClientBaseUrlResolver(Func&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Casts the <code class="paramref">resolver</code> to <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html">ClientBaseUrlResolver</a>.</p>
@@ -347,7 +351,7 @@ public sealed class ClientBaseUrlResolver : IClientBaseResolver&lt;string&gt;</c
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class JwtValidator | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Default implementation of  that parses JWT tokens by stripping the &amp;quot;Bearer &amp;quot; prefix and reading the token using .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Helpers_Jwt_JwtValidator" data-uid="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator" class="text-break">
-Class JwtValidator  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L27"><i class="bi bi-code-slash"></i></a>
+Class JwtValidator  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class JwtValidator  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.html">JwtValidator</a> class.</p>
+  <div class="markdown summary"><p>Default implementation of <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.html">IJwtValidator</a> that parses JWT tokens
+by stripping the &quot;Bearer &quot; prefix and reading the token using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytokenhandler">JwtSecurityTokenHandler</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -164,10 +165,11 @@ public class JwtValidator : IJwtValidator</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_Jwt_JwtValidator__ctor_Microsoft_Extensions_Logging_ILogger_Ebceys_Infrastructure_Helpers_Jwt_JwtValidator__" data-uid="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.#ctor(Microsoft.Extensions.Logging.ILogger{Ebceys.Infrastructure.Helpers.Jwt.JwtValidator})">
   JwtValidator(ILogger&lt;JwtValidator&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.html">JwtValidator</a> class.</p>
+  <div class="markdown level1 summary"><p>Default implementation of <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.html">IJwtValidator</a> that parses JWT tokens
+by stripping the &quot;Bearer &quot; prefix and reading the token using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytokenhandler">JwtSecurityTokenHandler</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -178,7 +180,7 @@ public class JwtValidator : IJwtValidator</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.html">JwtValidator</a>&gt;</dt>
-    <dd><p>The logger.</p>
+    <dd><p>The logger for validation warnings.</p>
 </dd>
   </dl>
 
@@ -201,10 +203,10 @@ public class JwtValidator : IJwtValidator</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_Jwt_JwtValidator_TryValidate_System_String_System_IdentityModel_Tokens_Jwt_JwtSecurityToken__" data-uid="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.TryValidate(System.String,System.IdentityModel.Tokens.Jwt.JwtSecurityToken@)">
   TryValidate(string, out JwtSecurityToken?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Tries to validate <code class="paramref">token</code>.</p>
+  <div class="markdown level1 summary"><p>Tries to validate and parse the specified JWT <code class="paramref">token</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -215,17 +217,19 @@ public class JwtValidator : IJwtValidator</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The token.</p>
+    <dd><p>The JWT token string (may include the &quot;Bearer &quot; prefix).</p>
 </dd>
     <dt><code>jwtSecurityToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytoken">JwtSecurityToken</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytoken">JwtSecurityToken</a> if validated successfully.</p>
+    <dd><p>The parsed <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytoken">JwtSecurityToken</a> if validation succeeds; otherwise <code>null</code>
+.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><code>true</code> if the token was successfully parsed; otherwise <code>false</code>.</p>
+</dd>
   </dl>
 
 
@@ -242,7 +246,7 @@ public class JwtValidator : IJwtValidator</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L27" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Jwt/JwtValidator.cs/#L31" class="edit-link">Edit this page</a>
         </div>
 
 

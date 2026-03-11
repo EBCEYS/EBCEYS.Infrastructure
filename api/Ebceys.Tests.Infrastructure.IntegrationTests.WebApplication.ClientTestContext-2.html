@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ClientTestContext&lt;TClient, TEntrypoint&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Abstract test context for integration testing of -derived HTTP clients against an in-memory test server. Provides client creation, service system client access, and Flurl client cache integration with request routing to the test server.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_ClientTestContext_2" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext`2" class="text-break">
-Class ClientTestContext&lt;TClient, TEntrypoint&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L25"><i class="bi bi-code-slash"></i></a>
+Class ClientTestContext&lt;TClient, TEntrypoint&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class ClientTestContext&lt;TClient, TEntrypoint&gt;  <a class="header-action lin
   <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.html">ClientTestContext&lt;TClient, TEntrypoint&gt;</a> class.</p>
+  <div class="markdown summary"><p>Abstract test context for integration testing of <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a>-derived HTTP clients
+against an in-memory test server. Provides client creation, service system client access,
+and Flurl client cache integration with request routing to the test server.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,10 +113,10 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TClient</code></dt>
-    <dd><p>The client.</p>
+    <dd><p>The HTTP client type under test.</p>
 </dd>
     <dt><code>TEntrypoint</code></dt>
-    <dd><p>The entry point</p>
+    <dd><p>The application startup/entry point class.</p>
 </dd>
   </dl>
 
@@ -187,7 +189,7 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_ClientTestContext_2_ServiceClient" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext`2.ServiceClient">
   ServiceClient
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The service client.</p>
@@ -219,7 +221,7 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_ClientTestContext_2_Services" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext`2.Services">
   Services
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The services.</p>
@@ -255,7 +257,7 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_ClientTestContext_2_CreateFlurlCache" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext`2.CreateFlurlCache">
   CreateFlurlCache()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the <span class="xref">Flurl.Http.Configuration.IFlurlClientCache</span> with default middlewares.</p>
@@ -288,7 +290,7 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_ClientTestContext_2_CreateServiceClient_System_String_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext`2.CreateServiceClient(System.String)">
   CreateServiceClient(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the service client.</p>
@@ -327,7 +329,7 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_ClientTestContext_2_CreateServiceSystemClient_Microsoft_Extensions_Logging_ILoggerFactory_Ebceys_Infrastructure_HttpClient_ClientBaseTokenResolver_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext`2.CreateServiceSystemClient(Microsoft.Extensions.Logging.ILoggerFactory,Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver)">
   CreateServiceSystemClient(ILoggerFactory?, ClientBaseTokenResolver?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.html">IServiceSystemClient</a>.</p>
@@ -369,7 +371,7 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_ClientTestContext_2_Initialize_System_Action_Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestClientInitializeOptions__" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext`2.Initialize(System.Action{Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions})">
   Initialize(Action&lt;TestClientInitializeOptions&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes the context.</p>
@@ -401,7 +403,7 @@ public abstract class ClientTestContext&lt;TClient, TEntrypoint&gt; : ServiceTes
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L25" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/ClientTestContext.cs/#L27" class="edit-link">Edit this page</a>
         </div>
 
 

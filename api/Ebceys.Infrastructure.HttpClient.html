@@ -96,22 +96,28 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> class.</p>
+      <dd><p>Abstract base class for HTTP clients built on Flurl. Provides standardized methods for
+GET, POST, PUT, DELETE requests with JSON serialization/deserialization, automatic authorization
+header injection, Polly retry policies, and structured logging of requests and responses.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.html">ClientBaseTokenResolver</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.html">ClientBaseTokenResolver</a> class.</p>
+      <dd><p>Resolver that provides the authorization token for <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> instances.
+The resolved token is automatically added to the <code>Authorization</code> request header.
+Supports implicit conversion from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a> for convenient inline usage.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html">ClientBaseUrlResolver</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.html">ClientBaseUrlResolver</a> class.</p>
+      <dd><p>Resolver that provides the base URL for <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> instances.
+Supports implicit conversion from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a> for convenient inline usage.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.html">DefaultClientPollyHelper</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.html">DefaultClientPollyHelper</a> class.</p>
+      <dd><p>Helper class that creates default Polly retry policies for HTTP requests
+made via Flurl. Handles <span class="xref">Flurl.Http.FlurlHttpException</span> with a single retry after the specified delay.</p>
 </dd>
     </dl>
     <h3 id="structs">
@@ -119,12 +125,15 @@ Structs
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a> struct.</p>
+      <dd><p>Represents the result of an HTTP operation without a success response body.
+Can either succeed (no body) or fail with a <code class="typeparamref">TError</code>.
+Includes the HTTP status code and success indicator.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a> struct.</p>
+      <dd><p>Represents the result of an HTTP operation that can either succeed with a <code class="typeparamref">TResponse</code>
+or fail with a <code class="typeparamref">TError</code>. Includes the HTTP status code and success indicator.</p>
 </dd>
     </dl>
     <h3 id="interfaces">
@@ -132,7 +141,7 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.html">IClientBaseResolver&lt;TResolve&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.html">IClientBaseResolver&lt;TResolve&gt;</a> interface.</p>
+      <dd><p>Generic interface for value resolvers used by <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a>.</p>
 </dd>
     </dl>
 

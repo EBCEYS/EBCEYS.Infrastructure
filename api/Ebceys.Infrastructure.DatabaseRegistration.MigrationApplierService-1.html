@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MigrationApplierService&lt;TDbContext&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Service that applies database migrations on application startup before hosting begins. Only runs if  is set to true.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_DatabaseRegistration_MigrationApplierService_1" data-uid="Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService`1" class="text-break">
-Class MigrationApplierService&lt;TDbContext&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class MigrationApplierService&lt;TDbContext&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class MigrationApplierService&lt;TDbContext&gt;  <a class="header-action link-se
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.html">MigrationApplierService&lt;TDbContext&gt;</a> class.</p>
+  <div class="markdown summary"><p>Service that applies database migrations on application startup before hosting begins.
+Only runs if <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html#Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_MigrateDb">MigrateDb</a> is set to <code>true</code>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +112,7 @@ public class MigrationApplierService&lt;TDbContext&gt; : IBeforeHostingStartedSe
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TDbContext</code></dt>
-    <dd><p>The db context to migrate.</p>
+    <dd><p>The db context type whose migrations should be applied.</p>
 </dd>
   </dl>
 
@@ -170,10 +171,11 @@ public class MigrationApplierService&lt;TDbContext&gt; : IBeforeHostingStartedSe
 
   <h3 id="Ebceys_Infrastructure_DatabaseRegistration_MigrationApplierService_1__ctor_Microsoft_Extensions_Options_IOptions_Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions__Microsoft_EntityFrameworkCore_IDbContextFactory__0__" data-uid="Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService`1.#ctor(Microsoft.Extensions.Options.IOptions{Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions},Microsoft.EntityFrameworkCore.IDbContextFactory{`0})">
   MigrationApplierService(IOptions&lt;DbContextRegistrationOptions&gt;, IDbContextFactory&lt;TDbContext&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.html">MigrationApplierService&lt;TDbContext&gt;</a> class.</p>
+  <div class="markdown level1 summary"><p>Service that applies database migrations on application startup before hosting begins.
+Only runs if <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html#Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_MigrateDb">MigrateDb</a> is set to <code>true</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -210,10 +212,10 @@ public class MigrationApplierService&lt;TDbContext&gt; : IBeforeHostingStartedSe
 
   <h3 id="Ebceys_Infrastructure_DatabaseRegistration_MigrationApplierService_1_ExecuteAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService`1.ExecuteAsync(System.Threading.CancellationToken)">
   ExecuteAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Applies the migrations.</p>
+  <div class="markdown level1 summary"><p>Applies the database migrations if <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html#Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_MigrateDb">MigrateDb</a> is enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -231,7 +233,8 @@ public class MigrationApplierService&lt;TDbContext&gt; : IBeforeHostingStartedSe
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the asynchronous migration operation.</p>
+</dd>
   </dl>
 
 
@@ -248,7 +251,7 @@ public class MigrationApplierService&lt;TDbContext&gt; : IBeforeHostingStartedSe
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/MigrationApplierService.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

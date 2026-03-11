@@ -665,15 +665,15 @@ references:
   commentId: T:Ebceys.Infrastructure.ConfiguredApp
   fullName: Ebceys.Infrastructure.ConfiguredApp
   nameWithType: ConfiguredApp
-- uid: Ebceys.Infrastructure.ConfiguredApp.#ctor(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
-  name: ConfiguredApp(IWebHostBuilder)
-  href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp__ctor_Microsoft_AspNetCore_Hosting_IWebHostBuilder_
-  commentId: M:Ebceys.Infrastructure.ConfiguredApp.#ctor(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
-  name.vb: New(IWebHostBuilder)
-  fullName: Ebceys.Infrastructure.ConfiguredApp.ConfiguredApp(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
-  fullName.vb: Ebceys.Infrastructure.ConfiguredApp.New(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
-  nameWithType: ConfiguredApp.ConfiguredApp(IWebHostBuilder)
-  nameWithType.vb: ConfiguredApp.New(IWebHostBuilder)
+- uid: Ebceys.Infrastructure.ConfiguredApp.#ctor(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: ConfiguredApp(IHostBuilder)
+  href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp__ctor_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:Ebceys.Infrastructure.ConfiguredApp.#ctor(Microsoft.Extensions.Hosting.IHostBuilder)
+  name.vb: New(IHostBuilder)
+  fullName: Ebceys.Infrastructure.ConfiguredApp.ConfiguredApp(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName.vb: Ebceys.Infrastructure.ConfiguredApp.New(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: ConfiguredApp.ConfiguredApp(IHostBuilder)
+  nameWithType.vb: ConfiguredApp.New(IHostBuilder)
 - uid: Ebceys.Infrastructure.ConfiguredApp.#ctor*
   name: ConfiguredApp
   href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp__ctor_
@@ -1416,6 +1416,19 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureFilters
   nameWithType: ExtraStartupBase.ConfigureFilters
+- uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions(Microsoft.AspNetCore.Http.Features.FormOptions)
+  name: ConfigureFormOptions(FormOptions)
+  href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureFormOptions_Microsoft_AspNetCore_Http_Features_FormOptions_
+  commentId: M:Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions(Microsoft.AspNetCore.Http.Features.FormOptions)
+  fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions(Microsoft.AspNetCore.Http.Features.FormOptions)
+  nameWithType: ExtraStartupBase.ConfigureFormOptions(FormOptions)
+- uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions*
+  name: ConfigureFormOptions
+  href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureFormOptions_
+  commentId: Overload:Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions
+  nameWithType: ExtraStartupBase.ConfigureFormOptions
 - uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureHealthChecks(Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder)
   name: ConfigureHealthChecks(IHealthChecksBuilder?)
   href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureHealthChecks_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_
@@ -1458,6 +1471,19 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureServices
   nameWithType: ExtraStartupBase.ConfigureServices
+- uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)
+  name: ConfigureSwagger(SwaggerGenOptions)
+  href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureSwagger_Swashbuckle_AspNetCore_SwaggerGen_SwaggerGenOptions_
+  commentId: M:Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)
+  fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)
+  nameWithType: ExtraStartupBase.ConfigureSwagger(SwaggerGenOptions)
+- uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger*
+  name: ConfigureSwagger
+  href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureSwagger_
+  commentId: Overload:Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger
+  nameWithType: ExtraStartupBase.ConfigureSwagger
 - uid: Ebceys.Infrastructure.ExtraStartupBase.HealthCheckPort
   name: HealthCheckPort
   href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_HealthCheckPort

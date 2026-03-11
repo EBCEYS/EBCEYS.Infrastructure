@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IDependencyInitializer&lt;TDependency&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The dependency initializer.">
+      <meta name="description" content="Interface for initializing and tearing down external test dependencies (e.g., Docker containers). Implementations manage the lifecycle of infrastructure components required for integration tests.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_IDependencyInitializer_1" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer`1" class="text-break">
-Interface IDependencyInitializer&lt;TDependency&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Interface IDependencyInitializer&lt;TDependency&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Interface IDependencyInitializer&lt;TDependency&gt;  <a class="header-action lin
   <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The dependency initializer.</p>
+  <div class="markdown summary"><p>Interface for initializing and tearing down external test dependencies (e.g., Docker containers).
+Implementations manage the lifecycle of infrastructure components required for integration tests.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +112,8 @@ public interface IDependencyInitializer&lt;TDependency&gt;</code></pre>
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TDependency</code></dt>
-    <dd></dd>
+    <dd><p>The type of the initialized dependency (e.g., a Testcontainers container).</p>
+</dd>
   </dl>
 
 
@@ -131,10 +133,10 @@ public interface IDependencyInitializer&lt;TDependency&gt;</code></pre>
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_IDependencyInitializer_1_InitializeAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer`1.InitializeAsync(System.Threading.CancellationToken)">
   InitializeAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initialize the dependency.</p>
+  <div class="markdown level1 summary"><p>Initializes the external dependency (e.g., starts a Docker container).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -152,7 +154,8 @@ public interface IDependencyInitializer&lt;TDependency&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TDependency&gt;</dt>
-    <dd></dd>
+    <dd><p>The initialized dependency instance.</p>
+</dd>
   </dl>
 
 
@@ -169,10 +172,10 @@ public interface IDependencyInitializer&lt;TDependency&gt;</code></pre>
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_IDependencyInitializer_1_TeardownAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer`1.TeardownAsync(System.Threading.CancellationToken)">
   TeardownAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Teardowns the dependency.</p>
+  <div class="markdown level1 summary"><p>Tears down the external dependency (e.g., stops and removes a Docker container).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -190,7 +193,8 @@ public interface IDependencyInitializer&lt;TDependency&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the teardown operation.</p>
+</dd>
   </dl>
 
 
@@ -207,7 +211,7 @@ public interface IDependencyInitializer&lt;TDependency&gt;</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/IDependencyInitializer.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

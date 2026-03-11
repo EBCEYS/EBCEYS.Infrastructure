@@ -96,17 +96,21 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.ConfiguredApp.html">ConfiguredApp</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.ConfiguredApp.html">ConfiguredApp</a> class.</p>
+      <dd><p>Represents a configured web application that wraps <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplicationbuilder">WebApplicationBuilder</a> and provides
+methods to build and run it. Implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a>
+for proper lifecycle management.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html">ExtraStartupBase</a></dt>
-      <dd><p>The extra startup base class.</p>
+      <dd><p>Abstract base class for application startup configuration. Provides default configurations for
+logging (Serilog), Swagger/OpenAPI, health checks, Prometheus metrics, API versioning, JWT authentication,
+FluentValidation, and standard middlewares. Derive from this class to configure your service.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.WebApplicationBase-1.html">WebApplicationBase&lt;TStartup&gt;</a></dt>
-      <dd><p>Initiates the new instance of <a class="xref" href="Ebceys.Infrastructure.WebApplicationBase-1.html">WebApplicationBase&lt;TStartup&gt;</a>.</p>
+      <dd><p>Factory class for building and creating configured web applications using the specified startup class.</p>
 </dd>
     </dl>
 

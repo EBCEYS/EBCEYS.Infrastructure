@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ExtraStartupBase | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The extra startup base class.">
+      <meta name="description" content="Abstract base class for application startup configuration. Provides default configurations for logging (Serilog), Swagger/OpenAPI, health checks, Prometheus metrics, API versioning, JWT authentication, FluentValidation, and standard middlewares. Derive from this class to configure your service.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_ExtraStartupBase" data-uid="Ebceys.Infrastructure.ExtraStartupBase" class="text-break">
-Class ExtraStartupBase  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L43"><i class="bi bi-code-slash"></i></a>
+Class ExtraStartupBase  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class ExtraStartupBase  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The extra startup base class.</p>
+  <div class="markdown summary"><p>Abstract base class for application startup configuration. Provides default configurations for
+logging (Serilog), Swagger/OpenAPI, health checks, Prometheus metrics, API versioning, JWT authentication,
+FluentValidation, and standard middlewares. Derive from this class to configure your service.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -165,10 +167,12 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase__ctor_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
   ExtraStartupBase(IConfiguration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The extra startup base class.</p>
+  <div class="markdown level1 summary"><p>Abstract base class for application startup configuration. Provides default configurations for
+logging (Serilog), Swagger/OpenAPI, health checks, Prometheus metrics, API versioning, JWT authentication,
+FluentValidation, and standard middlewares. Derive from this class to configure your service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -179,7 +183,7 @@ public abstract class ExtraStartupBase</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
-    <dd><p>The configuration.</p>
+    <dd><p>The application configuration.</p>
 </dd>
   </dl>
 
@@ -202,7 +206,7 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_Configuration" data-uid="Ebceys.Infrastructure.ExtraStartupBase.Configuration">
   Configuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The configuration.</p>
@@ -234,7 +238,7 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_HealthCheckPort" data-uid="Ebceys.Infrastructure.ExtraStartupBase.HealthCheckPort">
   HealthCheckPort
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The health check server port.</p>
@@ -266,7 +270,7 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_HttpContextLogging" data-uid="Ebceys.Infrastructure.ExtraStartupBase.HttpContextLogging">
   HttpContextLogging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The http context logging options.</p>
@@ -298,7 +302,7 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ProxyToken" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ProxyToken">
   ProxyToken
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates that jwt should be proxied and not be configured at the service.</p>
@@ -330,7 +334,7 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ServiceApiInfo" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ServiceApiInfo">
   ServiceApiInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The service api info.</p>
@@ -362,7 +366,7 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_UseAuthentication" data-uid="Ebceys.Infrastructure.ExtraStartupBase.UseAuthentication">
   UseAuthentication
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates that server should use authentication.</p>
@@ -398,10 +402,11 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment)">
   Configure(IApplicationBuilder, IHostEnvironment)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Configures the <code class="paramref">app</code> with <code class="paramref">env</code>.</p>
+  <div class="markdown level1 summary"><p>Configures the application request pipeline including routing, logging, CORS, Prometheus metrics,
+health checks, authentication, Swagger UI, and custom middlewares.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -412,9 +417,11 @@ public abstract class ExtraStartupBase</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>app</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder">IApplicationBuilder</a></dt>
-    <dd></dd>
+    <dd><p>The application builder used to configure the request pipeline.</p>
+</dd>
     <dt><code>env</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
-    <dd></dd>
+    <dd><p>The hosting environment information.</p>
+</dd>
   </dl>
 
 
@@ -432,7 +439,7 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureFilters_Microsoft_AspNetCore_Mvc_Filters_FilterCollection_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureFilters(Microsoft.AspNetCore.Mvc.Filters.FilterCollection)">
   ConfigureFilters(FilterCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Use it to configure your custom filters.</p>
@@ -461,11 +468,44 @@ public abstract class ExtraStartupBase</code></pre>
 
 
 
+  <a id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureFormOptions_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions*"></a>
+
+  <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureFormOptions_Microsoft_AspNetCore_Http_Features_FormOptions_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureFormOptions(Microsoft.AspNetCore.Http.Features.FormOptions)">
+  ConfigureFormOptions(FormOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use it to configure form options, e.g. for file uploads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ConfigureFormOptions(FormOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.features.formoptions">FormOptions</a></dt>
+    <dd><p>The form options.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureHealthChecks_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureHealthChecks*"></a>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureHealthChecks_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureHealthChecks(Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder)">
   ConfigureHealthChecks(IHealthChecksBuilder?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures the health checks.</p>
@@ -504,12 +544,10 @@ public abstract class ExtraStartupBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureMiddlewares_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureMiddlewares(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment)">
   ConfigureMiddlewares(IApplicationBuilder, IHostEnvironment)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Configures the app. It calls before controllers.
-<br>
-The middlewares could be configured here.</p>
+  <div class="markdown level1 summary"><p>Configures custom middlewares for the application pipeline. Called before controller endpoints are mapped.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -520,9 +558,11 @@ The middlewares could be configured here.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>app</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder">IApplicationBuilder</a></dt>
-    <dd></dd>
+    <dd><p>The application builder.</p>
+</dd>
     <dt><code>env</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
-    <dd></dd>
+    <dd><p>The hosting environment.</p>
+</dd>
   </dl>
 
 
@@ -540,7 +580,7 @@ The middlewares could be configured here.</p>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   ConfigureServices(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures the <code class="paramref">services</code>.</p>
@@ -569,11 +609,45 @@ The middlewares could be configured here.</p>
 
 
 
+  <a id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureSwagger_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger*"></a>
+
+  <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ConfigureSwagger_Swashbuckle_AspNetCore_SwaggerGen_SwaggerGenOptions_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ConfigureSwagger(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+  ConfigureSwagger(SwaggerGenOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use it to configure your custom Swagger/OpenAPI options. Called during service configuration after default options
+are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ConfigureSwagger(SwaggerGenOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/main/src/Swashbuckle.AspNetCore.SwaggerGen/DependencyInjection/SwaggerGenOptions.cs">SwaggerGenOptions</a></dt>
+    <dd><p>The swagger gen options.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ebceys_Infrastructure_ExtraStartupBase_ServicesConfiguration_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ServicesConfiguration*"></a>
 
   <h3 id="Ebceys_Infrastructure_ExtraStartupBase_ServicesConfiguration_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Ebceys.Infrastructure.ExtraStartupBase.ServicesConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   ServicesConfiguration(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Service configuration.</p>
@@ -606,7 +680,7 @@ The middlewares could be configured here.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L43" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ExtraStartupBase.cs/#L45" class="edit-link">Edit this page</a>
         </div>
 
 

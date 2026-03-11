@@ -96,12 +96,15 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.html">EbRabbitMqClient</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.html">EbRabbitMqClient</a> wrapper class for <span class="xref">EBCEYS.RabbitMQ.Client.RabbitMQClient</span>.</p>
+      <dd><p>Abstract wrapper class around <span class="xref">EBCEYS.RabbitMQ.Client.RabbitMQClient</span> that provides convenient
+typed message sending and request/response methods. Derive from this class to create
+application-specific RabbitMQ clients. Registered as a hosted service for automatic lifecycle management.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions.html">RabbitMqRegistrationExtensions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions.html">RabbitMqRegistrationExtensions</a> class.</p>
+      <dd><p>Extension methods for registering RabbitMQ clients and smart controllers in the DI container.
+Automatically registers health checks for all added RabbitMQ connections.</p>
 </dd>
     </dl>
 

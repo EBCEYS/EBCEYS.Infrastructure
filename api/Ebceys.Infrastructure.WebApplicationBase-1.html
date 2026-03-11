@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class WebApplicationBase&lt;TStartup&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="Initiates the new instance of .">
+      <meta name="description" content="Factory class for building and creating configured web applications using the specified startup class.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_WebApplicationBase_1" data-uid="Ebceys.Infrastructure.WebApplicationBase`1" class="text-break">
-Class WebApplicationBase&lt;TStartup&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class WebApplicationBase&lt;TStartup&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class WebApplicationBase&lt;TStartup&gt;  <a class="header-action link-secondary
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Initiates the new instance of <a class="xref" href="Ebceys.Infrastructure.WebApplicationBase-1.html">WebApplicationBase&lt;TStartup&gt;</a>.</p>
+  <div class="markdown summary"><p>Factory class for building and creating configured web applications using the specified startup class.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +111,7 @@ public class WebApplicationBase&lt;TStartup&gt; where TStartup : ExtraStartupBas
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TStartup</code></dt>
-    <dd><p>The startup class based on <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html">ExtraStartupBase</a>.</p>
+    <dd><p>The startup class derived from <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html">ExtraStartupBase</a>.</p>
 </dd>
   </dl>
 
@@ -164,10 +164,11 @@ public class WebApplicationBase&lt;TStartup&gt; where TStartup : ExtraStartupBas
 
   <h3 id="Ebceys_Infrastructure_WebApplicationBase_1_Build_System_String___" data-uid="Ebceys.Infrastructure.WebApplicationBase`1.Build(System.String[])">
   Build(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Builds the application.</p>
+  <div class="markdown level1 summary"><p>Builds the application using <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication.createbuilder#microsoft-aspnetcore-builder-webapplication-createbuilder(system-string())">CreateBuilder(string[])</a> and configures
+the web host with <code class="typeparamref">TStartup</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -178,14 +179,15 @@ public class WebApplicationBase&lt;TStartup&gt; where TStartup : ExtraStartupBas
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>The arguments.</p>
+    <dd><p>The command-line arguments.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Ebceys.Infrastructure.ConfiguredApp.html">ConfiguredApp</a></dt>
-    <dd></dd>
+    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.ConfiguredApp.html">ConfiguredApp</a> ready to be run.</p>
+</dd>
   </dl>
 
 
@@ -202,7 +204,7 @@ public class WebApplicationBase&lt;TStartup&gt; where TStartup : ExtraStartupBas
 
   <h3 id="Ebceys_Infrastructure_WebApplicationBase_1_Create_System_String___" data-uid="Ebceys.Infrastructure.WebApplicationBase`1.Create(System.String[])">
   Create(params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the new instance of <a class="xref" href="Ebceys.Infrastructure.WebApplicationBase-1.html">WebApplicationBase&lt;TStartup&gt;</a>.</p>
@@ -241,7 +243,7 @@ public class WebApplicationBase&lt;TStartup&gt; where TStartup : ExtraStartupBas
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -96,12 +96,13 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions.html">JwtObjectsExtensions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions.html">JwtObjectsExtensions</a> extensions class.</p>
+      <dd><p>Extension methods for convenient JWT-related object conversions.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.html">JwtValidator</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.html">JwtValidator</a> class.</p>
+      <dd><p>Default implementation of <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.html">IJwtValidator</a> that parses JWT tokens
+by stripping the &quot;Bearer &quot; prefix and reading the token using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytokenhandler">JwtSecurityTokenHandler</a>.</p>
 </dd>
     </dl>
     <h3 id="interfaces">
@@ -109,12 +110,12 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.html">IJwtGenerator</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.html">IJwtGenerator</a> interface.</p>
+      <dd><p>Interface for generating JWT tokens with specified claims.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.html">IJwtValidator</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.html">IJwtValidator</a> interface.</p>
+      <dd><p>Interface for validating and parsing JWT tokens.</p>
 </dd>
     </dl>
 

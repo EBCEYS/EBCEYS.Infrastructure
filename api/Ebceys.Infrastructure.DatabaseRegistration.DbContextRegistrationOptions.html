@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DbContextRegistrationOptions | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  record.">
+      <meta name="description" content="Configuration options for registering a  via .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions" data-uid="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions" class="text-break">
-Class DbContextRegistrationOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L61"><i class="bi bi-code-slash"></i></a>
+Class DbContextRegistrationOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class DbContextRegistrationOptions  <a class="header-action link-secondary" titl
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html">DbContextRegistrationOptions</a> record.</p>
+  <div class="markdown summary"><p>Configuration options for registering a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> via
+<a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.html#Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationExtensions_RegisterDbContext__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions__">RegisterDbContext&lt;TDbContext&gt;(IServiceCollection, Action&lt;DbContextRegistrationOptions&gt;)</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -161,7 +162,7 @@ public sealed record DbContextRegistrationOptions : IEquatable&lt;DbContextRegis
 
   <h3 id="Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_ConnectionString" data-uid="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.ConnectionString">
   ConnectionString
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The database connection string.</p>
@@ -193,7 +194,7 @@ public sealed record DbContextRegistrationOptions : IEquatable&lt;DbContextRegis
 
   <h3 id="Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_MigrateDb" data-uid="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.MigrateDb">
   MigrateDb
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates that migrations should be applied on service startup.</p>
@@ -225,7 +226,7 @@ public sealed record DbContextRegistrationOptions : IEquatable&lt;DbContextRegis
 
   <h3 id="Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_Retries" data-uid="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.Retries">
   Retries
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The retries num. Set <code>null</code> if you want default.</p>
@@ -257,7 +258,7 @@ public sealed record DbContextRegistrationOptions : IEquatable&lt;DbContextRegis
 
   <h3 id="Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_Timeout" data-uid="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.Timeout">
   Timeout
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The timeout. Set <code>null</code> if you want default.</p>
@@ -289,7 +290,7 @@ public sealed record DbContextRegistrationOptions : IEquatable&lt;DbContextRegis
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L61" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/DbContextRegistrationExtensions.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

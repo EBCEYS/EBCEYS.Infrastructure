@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TestRoutingMessageHandler | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Test HTTP message handler that routes outgoing HTTP requests to in-memory test server handlers based on the request host. Used for Flurl/HttpClient integration testing to intercept and redirect requests to  instances without actual network calls.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Tests_Infrastructure_IntegrationTests_TestRoutingMessageHandler" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler" class="text-break">
-Class TestRoutingMessageHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class TestRoutingMessageHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class TestRoutingMessageHandler  <a class="header-action link-secondary" title="
   <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.html">TestRoutingMessageHandler</a> class.</p>
+  <div class="markdown summary"><p>Test HTTP message handler that routes outgoing HTTP requests to in-memory test server handlers
+based on the request host. Used for Flurl/HttpClient integration testing to intercept and redirect
+requests to <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.html">TestWebApplicationFactory&lt;TStartup&gt;</a> instances without actual network calls.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -178,7 +180,7 @@ public class TestRoutingMessageHandler : DelegatingHandler, IDisposable</code></
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_TestRoutingMessageHandler_RouteConfiguration" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.RouteConfiguration">
   RouteConfiguration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The route configuration.</p>
@@ -214,7 +216,7 @@ public class TestRoutingMessageHandler : DelegatingHandler, IDisposable</code></
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_TestRoutingMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
   SendAsync(HttpRequestMessage, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends an HTTP request to the inner handler to send to the server as an asynchronous operation.</p>
@@ -265,7 +267,7 @@ public class TestRoutingMessageHandler : DelegatingHandler, IDisposable</code></
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/TestRoutingMessageHandler.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

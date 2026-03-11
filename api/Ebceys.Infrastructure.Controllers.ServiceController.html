@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ServiceController | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Built-in API controller that provides service infrastructure endpoints including ping, health checks, health status reports, and Prometheus metrics.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Controllers_ServiceController" data-uid="Ebceys.Infrastructure.Controllers.ServiceController" class="text-break">
-Class ServiceController  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class ServiceController  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ServiceController  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Controllers.ServiceController.html">ServiceController</a> class.</p>
+  <div class="markdown summary"><p>Built-in API controller that provides service infrastructure endpoints including
+ping, health checks, health status reports, and Prometheus metrics.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -687,10 +688,11 @@ public class ServiceController : ControllerBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Controllers_ServiceController__ctor_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckService_" data-uid="Ebceys.Infrastructure.Controllers.ServiceController.#ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService)">
   ServiceController(HealthCheckService)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Controllers.ServiceController.html">ServiceController</a> class.</p>
+  <div class="markdown level1 summary"><p>Built-in API controller that provides service infrastructure endpoints including
+ping, health checks, health status reports, and Prometheus metrics.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -701,7 +703,8 @@ public class ServiceController : ControllerBase</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>health</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.diagnostics.healthchecks.healthcheckservice">HealthCheckService</a></dt>
-    <dd></dd>
+    <dd><p>The health check service used to verify service health.</p>
+</dd>
   </dl>
 
 
@@ -723,7 +726,7 @@ public class ServiceController : ControllerBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Controllers_ServiceController_GetMetricsAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Controllers.ServiceController.GetMetricsAsync(System.Threading.CancellationToken)">
   GetMetricsAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the service metrics.</p>
@@ -762,7 +765,7 @@ public Task GetMetricsAsync(CancellationToken token)</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Controllers_ServiceController_HealthCheckAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Controllers.ServiceController.HealthCheckAsync(System.Threading.CancellationToken)">
   HealthCheckAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Health checks the service without body payload.</p>
@@ -779,7 +782,8 @@ public Task&lt;IActionResult&gt; HealthCheckAsync(CancellationToken cancellation
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -802,7 +806,7 @@ public Task&lt;IActionResult&gt; HealthCheckAsync(CancellationToken cancellation
 
   <h3 id="Ebceys_Infrastructure_Controllers_ServiceController_HealthCheckStatusAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Controllers.ServiceController.HealthCheckStatusAsync(System.Threading.CancellationToken)">
   HealthCheckStatusAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Health checks the service with response body payload.</p>
@@ -818,7 +822,8 @@ public Task&lt;IActionResult&gt; HealthCheckStatusAsync(CancellationToken cancel
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd></dd>
+    <dd><p>The cancellation token.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -841,10 +846,10 @@ public Task&lt;IActionResult&gt; HealthCheckStatusAsync(CancellationToken cancel
 
   <h3 id="Ebceys_Infrastructure_Controllers_ServiceController_Ping" data-uid="Ebceys.Infrastructure.Controllers.ServiceController.Ping">
   Ping()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The ping.</p>
+  <div class="markdown level1 summary"><p>Simple ping endpoint that returns &quot;pong&quot; to verify the service is reachable.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -858,7 +863,8 @@ public IActionResult Ping()</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a> containing the &quot;pong&quot; string.</p>
+</dd>
   </dl>
 
 
@@ -875,7 +881,7 @@ public IActionResult Ping()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Controllers/ServiceController.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

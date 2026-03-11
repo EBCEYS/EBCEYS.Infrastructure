@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TestWebApplicationFactory&lt;TStartup&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Abstract test web application factory that creates an in-memory test server for integration testing. Extends  with support for Serilog logging, optional production appsettings loading, and automatic execution of  implementations during host creation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1" class="text-break">
-Class TestWebApplicationFactory&lt;TStartup&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L20"><i class="bi bi-code-slash"></i></a>
+Class TestWebApplicationFactory&lt;TStartup&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Class TestWebApplicationFactory&lt;TStartup&gt;  <a class="header-action link-se
   <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.html">TestWebApplicationFactory&lt;TStartup&gt;</a> class.</p>
+  <div class="markdown summary"><p>Abstract test web application factory that creates an in-memory test server for integration testing.
+Extends <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.testing.webapplicationfactory-1">WebApplicationFactory&lt;TEntryPoint&gt;</a> with support for Serilog logging,
+optional production appsettings loading, and automatic execution of
+<a class="xref" href="Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService.html">IBeforeHostingStartedService</a> implementations during host creation.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +114,7 @@ public abstract class TestWebApplicationFactory&lt;TStartup&gt; : WebApplication
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TStartup</code></dt>
-    <dd><p>The startup.</p>
+    <dd><p>The application startup class.</p>
 </dd>
   </dl>
 
@@ -239,7 +242,7 @@ public abstract class TestWebApplicationFactory&lt;TStartup&gt; : WebApplication
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_BaseAddress" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.BaseAddress">
   BaseAddress
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The base address.</p>
@@ -271,7 +274,7 @@ public abstract class TestWebApplicationFactory&lt;TStartup&gt; : WebApplication
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_ServiceId" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.ServiceId">
   ServiceId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The service id.</p>
@@ -303,7 +306,7 @@ public abstract class TestWebApplicationFactory&lt;TStartup&gt; : WebApplication
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_UseProductionAppSettings" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.UseProductionAppSettings">
   UseProductionAppSettings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates that <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.html">TestWebApplicationFactory&lt;TStartup&gt;</a> should use production appsettings.json file.</p>
@@ -339,7 +342,7 @@ public abstract class TestWebApplicationFactory&lt;TStartup&gt; : WebApplication
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_ConfigureTestServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.ConfigureTestServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   ConfigureTestServices(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures the test services.</p>
@@ -372,7 +375,7 @@ public abstract class TestWebApplicationFactory&lt;TStartup&gt; : WebApplication
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_ConfigureWebHost_Microsoft_AspNetCore_Hosting_IWebHostBuilder_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.ConfigureWebHost(Microsoft.AspNetCore.Hosting.IWebHostBuilder)">
   ConfigureWebHost(IWebHostBuilder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gives a fixture an opportunity to configure the application before it gets built.</p>
@@ -405,7 +408,7 @@ public abstract class TestWebApplicationFactory&lt;TStartup&gt; : WebApplication
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_CreateHost_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.CreateHost(Microsoft.Extensions.Hosting.IHostBuilder)">
   CreateHost(IHostBuilder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihost">IHost</a> with the bootstrapped application in <code class="paramref">builder</code>.
@@ -446,7 +449,7 @@ This is only called for applications using <a class="xref" href="https://learn.m
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_CreateServer_Microsoft_AspNetCore_Hosting_IWebHostBuilder_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.CreateServer(Microsoft.AspNetCore.Hosting.IWebHostBuilder)">
   CreateServer(IWebHostBuilder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.testhost.testserver">TestServer</a> with the bootstrapped application in <code class="paramref">builder</code>.
@@ -488,7 +491,7 @@ create the server.</p>
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_CreateWebHostBuilder" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.CreateWebHostBuilder">
   CreateWebHostBuilder()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.iwebhostbuilder">IWebHostBuilder</a> used to set up <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.testhost.testserver">TestServer</a>.</p>
@@ -526,7 +529,7 @@ array as arguments.</p>
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_WebApplication_TestWebApplicationFactory_1_SetConfiguration_Microsoft_Extensions_Configuration_IConfigurationBuilder_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory`1.SetConfiguration(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
   SetConfiguration(IConfigurationBuilder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the configuration.</p>
@@ -559,7 +562,7 @@ array as arguments.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L20" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/WebApplication/TestWebApplicationFactory.cs/#L23" class="edit-link">Edit this page</a>
         </div>
 
 

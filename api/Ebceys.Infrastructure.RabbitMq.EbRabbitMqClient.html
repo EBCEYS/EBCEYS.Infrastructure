@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class EbRabbitMqClient | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  wrapper class for .">
+      <meta name="description" content="Abstract wrapper class around  that provides convenient typed message sending and request/response methods. Derive from this class to create application-specific RabbitMQ clients. Registered as a hosted service for automatic lifecycle management.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient" class="text-break">
-Class EbRabbitMqClient  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class EbRabbitMqClient  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class EbRabbitMqClient  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.html">EbRabbitMqClient</a> wrapper class for <span class="xref">EBCEYS.RabbitMQ.Client.RabbitMQClient</span>.</p>
+  <div class="markdown summary"><p>Abstract wrapper class around <span class="xref">EBCEYS.RabbitMQ.Client.RabbitMQClient</span> that provides convenient
+typed message sending and request/response methods. Derive from this class to create
+application-specific RabbitMQ clients. Registered as a hosted service for automatic lifecycle management.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -173,7 +175,7 @@ public abstract class EbRabbitMqClient : IRabbitMQClient, IHostedService, IDispo
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient__ctor_Microsoft_Extensions_Logging_ILogger_EBCEYS_RabbitMQ_Client_RabbitMQClient__EBCEYS_RabbitMQ_Configuration_RabbitMQConfiguration_Newtonsoft_Json_JsonSerializerSettings_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.#ctor(Microsoft.Extensions.Logging.ILogger{EBCEYS.RabbitMQ.Client.RabbitMQClient},EBCEYS.RabbitMQ.Configuration.RabbitMQConfiguration,Newtonsoft.Json.JsonSerializerSettings)">
   EbRabbitMqClient(ILogger&lt;RabbitMQClient&gt;, RabbitMQConfiguration, JsonSerializerSettings?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initiates the new instance of <a class="xref" href="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.html">EbRabbitMqClient</a>.</p>
@@ -216,7 +218,7 @@ public abstract class EbRabbitMqClient : IRabbitMQClient, IHostedService, IDispo
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_Dispose" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
@@ -243,7 +245,7 @@ public abstract class EbRabbitMqClient : IRabbitMQClient, IHostedService, IDispo
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_DisposeAsync" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.DisposeAsync">
   DisposeAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or
@@ -277,7 +279,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_SendMessageAsync_EBCEYS_RabbitMQ_Server_MappedService_Data_RabbitMQRequestData_System_Boolean_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync(EBCEYS.RabbitMQ.Server.MappedService.Data.RabbitMQRequestData,System.Boolean,System.Threading.CancellationToken)">
   SendMessageAsync(RabbitMQRequestData, bool, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends a message without response.</p>
@@ -321,7 +323,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_SendMessageAsync_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync(System.String,System.Boolean,System.Threading.CancellationToken)">
   SendMessageAsync(string, bool, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the messages.</p>
@@ -365,7 +367,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_SendMessageAsync__1___0_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendMessageAsync``1(``0,System.String,System.Boolean,System.Threading.CancellationToken)">
   SendMessageAsync&lt;TMessage&gt;(TMessage, string, bool, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the messages.</p>
@@ -417,7 +419,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_SendRequestAsync__1_EBCEYS_RabbitMQ_Server_MappedService_Data_RabbitMQRequestData_System_Boolean_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync``1(EBCEYS.RabbitMQ.Server.MappedService.Data.RabbitMQRequestData,System.Boolean,System.Threading.CancellationToken)">
   SendRequestAsync&lt;T&gt;(RabbitMQRequestData, bool, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends request with response.</p>
@@ -468,7 +470,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_SendRequestAsync__1_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync``1(System.String,System.Boolean,System.Threading.CancellationToken)">
   SendRequestAsync&lt;TResponse&gt;(string, bool, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the request.</p>
@@ -517,7 +519,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_SendRequestAsync__2___0_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.SendRequestAsync``2(``0,System.String,System.Boolean,System.Threading.CancellationToken)">
   SendRequestAsync&lt;TRequest, TResponse&gt;(TRequest, string, bool, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the request.</p>
@@ -571,7 +573,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_StartAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StartAsync(System.Threading.CancellationToken)">
   StartAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when the application host is ready to start the service.</p>
@@ -610,7 +612,7 @@ resetting unmanaged resources asynchronously.</p>
 
   <h3 id="Ebceys_Infrastructure_RabbitMq_EbRabbitMqClient_StopAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.StopAsync(System.Threading.CancellationToken)">
   StopAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when the application host is performing a graceful shutdown.</p>
@@ -649,7 +651,7 @@ resetting unmanaged resources asynchronously.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/RabbitMq/EbRabbitMqClient.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

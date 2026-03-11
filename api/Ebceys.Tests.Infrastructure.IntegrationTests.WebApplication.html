@@ -96,7 +96,9 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.html">ClientTestContext&lt;TClient, TEntrypoint&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.html">ClientTestContext&lt;TClient, TEntrypoint&gt;</a> class.</p>
+      <dd><p>Abstract test context for integration testing of <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a>-derived HTTP clients
+against an in-memory test server. Provides client creation, service system client access,
+and Flurl client cache integration with request routing to the test server.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -106,22 +108,29 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration.html">RoutingMessageHandlerConfiguration</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration.html">RoutingMessageHandlerConfiguration</a> class.</p>
+      <dd><p>Configuration for routing HTTP requests to in-memory test server handlers based on URL.
+Used by <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler.html">RoutingMessageHandler</a> and <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.html">TestRoutingMessageHandler</a>
+to redirect HTTP client calls to test servers during integration tests.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext-1.html">ServiceTestContext&lt;TEntrypoint&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext-1.html">ServiceTestContext&lt;TEntrypoint&gt;</a> class.</p>
+      <dd><p>Abstract test context that manages the lifecycle of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.testing.webapplicationfactory-1">WebApplicationFactory&lt;TEntryPoint&gt;</a>
+for integration testing. Provides initialization, teardown, and request routing capabilities.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.html">TestClientInitializeOptions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.html">TestClientInitializeOptions</a> class.</p>
+      <dd><p>Options for configuring a test context during initialization, including base address,
+content root path, builder configuration, and app settings mode.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.html">TestWebApplicationFactory&lt;TStartup&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.html">TestWebApplicationFactory&lt;TStartup&gt;</a> class.</p>
+      <dd><p>Abstract test web application factory that creates an in-memory test server for integration testing.
+Extends <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.testing.webapplicationfactory-1">WebApplicationFactory&lt;TEntryPoint&gt;</a> with support for Serilog logging,
+optional production appsettings loading, and automatic execution of
+<a class="xref" href="Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService.html">IBeforeHostingStartedService</a> implementations during host creation.</p>
 </dd>
     </dl>
 

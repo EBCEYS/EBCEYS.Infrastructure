@@ -96,12 +96,15 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.html">HttpLoggingOptions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.html">HttpLoggingOptions</a> class.</p>
+      <dd><p>Configuration options for the <a class="xref" href="Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware.html">RequestLoggingMiddleware</a>. Allows fine-grained control
+over which request/response paths and content types are logged, and at which log level.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware.html">RequestLoggingMiddleware</a></dt>
-      <dd><p>The request logging middleware.</p>
+      <dd><p>Middleware that logs incoming HTTP requests and outgoing responses including method, URL, status code,
+duration, and optionally request/response bodies. Respects <a class="xref" href="Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute.html">NoRequestBodyLoggingAttribute</a>,
+<a class="xref" href="Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute.html">NoResponseBodyLoggingAttribute</a>, and <a class="xref" href="Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.html">HttpLoggingOptions</a> settings.</p>
 </dd>
     </dl>
 

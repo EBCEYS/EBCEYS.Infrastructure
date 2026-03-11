@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DateTimeOffsetConverter | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="Defines conversions from an object of one type in a model to an object of the same or different type in the store.">
+      <meta name="description" content="Value converter for Entity Framework Core that ensures  values are always stored and retrieved in UTC format.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_DatabaseRegistration_Conversions_DateTimeOffsetConverter" data-uid="Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter" class="text-break">
-Class DateTimeOffsetConverter  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/Conversions/DateTimeOffsetConverter.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class DateTimeOffsetConverter  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/Conversions/DateTimeOffsetConverter.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,8 @@ Class DateTimeOffsetConverter  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Defines conversions from an object of one type in a model to an object of the same or
-different type in the store.</p>
+  <div class="markdown summary"><p>Value converter for Entity Framework Core that ensures <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> values
+are always stored and retrieved in UTC format.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -211,9 +211,6 @@ public class DateTimeOffsetConverter : ValueConverter&lt;DateTimeOffset, DateTim
 
 
 
-  <h2 id="Ebceys_Infrastructure_DatabaseRegistration_Conversions_DateTimeOffsetConverter_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>See <a href="https://aka.ms/efcore-docs-value-converters">EF Core value converters</a> for more information and examples.</p>
-</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -224,10 +221,12 @@ public class DateTimeOffsetConverter : ValueConverter&lt;DateTimeOffset, DateTim
 
   <h3 id="Ebceys_Infrastructure_DatabaseRegistration_Conversions_DateTimeOffsetConverter__ctor" data-uid="Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter.#ctor">
   DateTimeOffsetConverter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/Conversions/DateTimeOffsetConverter.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/Conversions/DateTimeOffsetConverter.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Value converter for Entity Framework Core that ensures <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a> values
+are always stored and retrieved in UTC format.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -250,7 +249,7 @@ public class DateTimeOffsetConverter : ValueConverter&lt;DateTimeOffset, DateTim
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/Conversions/DateTimeOffsetConverter.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/DatabaseRegistration/Conversions/DateTimeOffsetConverter.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

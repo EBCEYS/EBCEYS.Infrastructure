@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Struct OperationResult&lt;TError&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  struct.">
+      <meta name="description" content="Represents the result of an HTTP operation without a success response body. Can either succeed (no body) or fail with a TError. Includes the HTTP status code and success indicator.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_HttpClient_OperationResult_1" data-uid="Ebceys.Infrastructure.HttpClient.OperationResult`1" class="text-break">
-Struct OperationResult&lt;TError&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L113"><i class="bi bi-code-slash"></i></a>
+Struct OperationResult&lt;TError&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Struct OperationResult&lt;TError&gt;  <a class="header-action link-secondary" ti
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a> struct.</p>
+  <div class="markdown summary"><p>Represents the result of an HTTP operation without a success response body.
+Can either succeed (no body) or fail with a <code class="typeparamref">TError</code>.
+Includes the HTTP status code and success indicator.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +113,7 @@ public struct OperationResult&lt;TError&gt; where TError : class</code></pre>
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
+    <dd><p>The type of the error response body.</p>
 </dd>
   </dl>
 
@@ -154,7 +156,7 @@ public struct OperationResult&lt;TError&gt; where TError : class</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_OperationResult_1_Error" data-uid="Ebceys.Infrastructure.HttpClient.OperationResult`1.Error">
   Error
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The error result.</p>
@@ -186,7 +188,7 @@ public struct OperationResult&lt;TError&gt; where TError : class</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_OperationResult_1_IsSuccess" data-uid="Ebceys.Infrastructure.HttpClient.OperationResult`1.IsSuccess">
   IsSuccess
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates that response is success.</p>
@@ -218,7 +220,7 @@ public struct OperationResult&lt;TError&gt; where TError : class</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_OperationResult_1_StatusCode" data-uid="Ebceys.Infrastructure.HttpClient.OperationResult`1.StatusCode">
   StatusCode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The status code. Default is '-1'.</p>
@@ -254,7 +256,7 @@ public struct OperationResult&lt;TError&gt; where TError : class</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_OperationResult_1_Failure__0_System_Int32_" data-uid="Ebceys.Infrastructure.HttpClient.OperationResult`1.Failure(`0,System.Int32)">
   Failure(TError, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the failure result with specified error.</p>
@@ -296,7 +298,7 @@ public struct OperationResult&lt;TError&gt; where TError : class</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_OperationResult_1_Success_System_Int32_" data-uid="Ebceys.Infrastructure.HttpClient.OperationResult`1.Success(System.Int32)">
   Success(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the success result with specified result.</p>
@@ -335,7 +337,7 @@ public struct OperationResult&lt;TError&gt; where TError : class</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L113" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/OperationResult.cs/#L116" class="edit-link">Edit this page</a>
         </div>
 
 

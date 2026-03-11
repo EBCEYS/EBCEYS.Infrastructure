@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CommandExecutor | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Singleton command executor that resolves ICommand&amp;lt;TContext,TResult&amp;gt; implementations from the root  and executes them with diagnostic logging.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Helpers_CommandExecutor" data-uid="Ebceys.Infrastructure.Helpers.CommandExecutor" class="text-break">
-Class CommandExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class CommandExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class CommandExecutor  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.CommandExecutor.html">CommandExecutor</a> class.</p>
+  <div class="markdown summary"><p>Singleton command executor that resolves ICommand&lt;TContext,TResult&gt; implementations
+from the root <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> and executes them with diagnostic logging.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -164,10 +165,11 @@ public class CommandExecutor : ICommandExecutor</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_CommandExecutor__ctor_Microsoft_Extensions_Logging_ILogger_Ebceys_Infrastructure_Helpers_CommandExecutor__System_IServiceProvider_" data-uid="Ebceys.Infrastructure.Helpers.CommandExecutor.#ctor(Microsoft.Extensions.Logging.ILogger{Ebceys.Infrastructure.Helpers.CommandExecutor},System.IServiceProvider)">
   CommandExecutor(ILogger&lt;CommandExecutor&gt;, IServiceProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.CommandExecutor.html">CommandExecutor</a> class.</p>
+  <div class="markdown level1 summary"><p>Singleton command executor that resolves ICommand&lt;TContext,TResult&gt; implementations
+from the root <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> and executes them with diagnostic logging.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -178,10 +180,10 @@ public class CommandExecutor : ICommandExecutor</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Ebceys.Infrastructure.Helpers.CommandExecutor.html">CommandExecutor</a>&gt;</dt>
-    <dd><p>The logger.</p>
+    <dd><p>The logger for command execution diagnostics.</p>
 </dd>
     <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
-    <dd><p>The service provider.</p>
+    <dd><p>The service provider to resolve command implementations.</p>
 </dd>
   </dl>
 
@@ -204,7 +206,7 @@ public class CommandExecutor : ICommandExecutor</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_CommandExecutor_ExecuteCommandAsync__2___0_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Helpers.CommandExecutor.ExecuteCommandAsync``2(``0,System.Threading.CancellationToken)">
   ExecuteCommandAsync&lt;TContext, TResult&gt;(TContext, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the command.</p>
@@ -255,7 +257,7 @@ public class CommandExecutor : ICommandExecutor</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/CommandExecutor.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

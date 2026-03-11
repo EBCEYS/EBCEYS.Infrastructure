@@ -96,17 +96,20 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.html">DbContextRegistrationExtensions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.html">DbContextRegistrationExtensions</a> extension class.</p>
+      <dd><p>Extension methods for registering Entity Framework Core <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> implementations
+with PostgreSQL (Npgsql) support, automatic migration on startup, and health check integration.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html">DbContextRegistrationOptions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html">DbContextRegistrationOptions</a> record.</p>
+      <dd><p>Configuration options for registering a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> via
+<a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.html#Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationExtensions_RegisterDbContext__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions__">RegisterDbContext&lt;TDbContext&gt;(IServiceCollection, Action&lt;DbContextRegistrationOptions&gt;)</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.html">MigrationApplierService&lt;TDbContext&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.html">MigrationApplierService&lt;TDbContext&gt;</a> class.</p>
+      <dd><p>Service that applies database migrations on application startup before hosting begins.
+Only runs if <a class="xref" href="Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.html#Ebceys_Infrastructure_DatabaseRegistration_DbContextRegistrationOptions_MigrateDb">MigrateDb</a> is set to <code>true</code>.</p>
 </dd>
     </dl>
 

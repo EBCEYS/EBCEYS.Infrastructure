@@ -144,7 +144,13 @@ public class RabbitMqController : RabbitMQSmartControllerBase, IHostedService, I
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">RabbitMQSmartControllerBase.StopAsync(CancellationToken)</a>
     </div>
     <div>
+      <span class="xref">RabbitMQSmartControllerBase.SetMiddlewares(RabbitMqControllerMiddlewaresCollection)</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">RabbitMQSmartControllerBase.InitializeNewController&lt;T&gt;(RabbitMQConfiguration, IServiceProvider, GZipSettings?, JsonSerializerSettings)</a>
+    </div>
+    <div>
+      <span class="xref">RabbitMQSmartControllerBase.CustomParametersProcessing</span>
     </div>
     <div>
       <span class="xref">RabbitMQSmartControllerBase.Request</span>
@@ -271,7 +277,7 @@ public Task&lt;string&gt; GetOk()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
 

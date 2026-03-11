@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PostgresInitializer | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Initializer for a PostgreSQL Testcontainer. Manages the lifecycle of a PostgreSQL Docker container for use in integration tests. Configurable with custom user, password, database, and image.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_PostgresInitializer" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer" class="text-break">
-Class PostgresInitializer  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class PostgresInitializer  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class PostgresInitializer  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.html">PostgresInitializer</a> class.</p>
+  <div class="markdown summary"><p>Initializer for a PostgreSQL Testcontainer. Manages the lifecycle of a PostgreSQL Docker container
+for use in integration tests. Configurable with custom user, password, database, and image.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -164,7 +165,7 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_PostgresInitializer__ctor_System_String_System_String_System_String_System_String_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.#ctor(System.String,System.String,System.String,System.String)">
   PostgresInitializer(string, string, string?, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initiates the new instance of <a class="xref" href="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.html">PostgresInitializer</a>.</p>
@@ -209,7 +210,7 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_PostgresInitializer_Image" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.Image">
   Image
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The postgres container image.</p>
@@ -245,7 +246,7 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_PostgresInitializer_PsqlBuilder" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.PsqlBuilder">
   PsqlBuilder
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The psql builder.</p>
@@ -281,10 +282,10 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_PostgresInitializer_InitializeAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.InitializeAsync(System.Threading.CancellationToken)">
   InitializeAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initialize the dependency.</p>
+  <div class="markdown level1 summary"><p>Initializes the external dependency (e.g., starts a Docker container).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -302,7 +303,8 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">PostgreSqlContainer</span>&gt;</dt>
-    <dd></dd>
+    <dd><p>The initialized dependency instance.</p>
+</dd>
   </dl>
 
 
@@ -319,10 +321,10 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
 
   <h3 id="Ebceys_Tests_Infrastructure_IntegrationTests_ExternalServices_Containers_PostgresInitializer_TeardownAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.TeardownAsync(System.Threading.CancellationToken)">
   TeardownAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Teardowns the dependency.</p>
+  <div class="markdown level1 summary"><p>Tears down the external dependency (e.g., stops and removes a Docker container).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -340,7 +342,8 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the teardown operation.</p>
+</dd>
   </dl>
 
 
@@ -357,7 +360,7 @@ public class PostgresInitializer : IDependencyInitializer&lt;PostgreSqlContainer
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/IntegrationTests/ExternalServices/Containers/PostgresInitializer.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

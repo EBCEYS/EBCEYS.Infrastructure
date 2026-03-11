@@ -96,7 +96,9 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.html">ApiExceptionFilter</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.html">ApiExceptionFilter</a> class.</p>
+      <dd><p>Exception filter that handles exceptions thrown during controller action execution.
+Converts <a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html">ApiException</a> into a proper <a class="xref" href="Ebceys.Infrastructure.Models.ProblemDetailsResult.html">ProblemDetailsResult</a> response,
+and wraps all other exceptions into a generic 500 Internal Server Error <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails">ProblemDetails</a> response.</p>
 </dd>
     </dl>
 

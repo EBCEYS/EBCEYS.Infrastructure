@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class FromContextClientTokenManager&lt;TInterface&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Default  implementation that extracts the authorization token from the current HTTP context&#39;s Authorization header, effectively forwarding the caller&#39;s token to downstream service calls.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_HttpClient_TokenManager_FromContextClientTokenManager_1" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager`1" class="text-break">
-Class FromContextClientTokenManager&lt;TInterface&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L25"><i class="bi bi-code-slash"></i></a>
+Class FromContextClientTokenManager&lt;TInterface&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class FromContextClientTokenManager&lt;TInterface&gt;  <a class="header-action l
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.html">FromContextClientTokenManager&lt;TInterface&gt;</a> class.</p>
+  <div class="markdown summary"><p>Default <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html">IClientTokenManager&lt;TInterface&gt;</a> implementation that extracts the authorization token
+from the current HTTP context's <code>Authorization</code> header, effectively forwarding the caller's token
+to downstream service calls.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +113,7 @@ public class FromContextClientTokenManager&lt;TInterface&gt; : IClientTokenManag
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TInterface</code></dt>
-    <dd><p>The interface of client.</p>
+    <dd><p>The client interface type for token manager resolution.</p>
 </dd>
   </dl>
 
@@ -170,10 +172,12 @@ public class FromContextClientTokenManager&lt;TInterface&gt; : IClientTokenManag
 
   <h3 id="Ebceys_Infrastructure_HttpClient_TokenManager_FromContextClientTokenManager_1__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager`1.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
   FromContextClientTokenManager(IHttpContextAccessor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.html">FromContextClientTokenManager&lt;TInterface&gt;</a> class.</p>
+  <div class="markdown level1 summary"><p>Default <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html">IClientTokenManager&lt;TInterface&gt;</a> implementation that extracts the authorization token
+from the current HTTP context's <code>Authorization</code> header, effectively forwarding the caller's token
+to downstream service calls.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -184,7 +188,7 @@ public class FromContextClientTokenManager&lt;TInterface&gt; : IClientTokenManag
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>contextAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor">IHttpContextAccessor</a></dt>
-    <dd><p>The http context accessor.</p>
+    <dd><p>The HTTP context accessor to read the incoming request headers.</p>
 </dd>
   </dl>
 
@@ -207,10 +211,10 @@ public class FromContextClientTokenManager&lt;TInterface&gt; : IClientTokenManag
 
   <h3 id="Ebceys_Infrastructure_HttpClient_TokenManager_FromContextClientTokenManager_1_GetTokenAsync" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager`1.GetTokenAsync">
   GetTokenAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the auth token.</p>
+  <div class="markdown level1 summary"><p>Gets the authorization token to be used in outgoing HTTP requests.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -221,8 +225,9 @@ public class FromContextClientTokenManager&lt;TInterface&gt; : IClientTokenManag
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>The auth token string, or <code>null</code> if no token is available.</p>
+</dd>
   </dl>
 
 
@@ -239,7 +244,7 @@ public class FromContextClientTokenManager&lt;TInterface&gt; : IClientTokenManag
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L25" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L28" class="edit-link">Edit this page</a>
         </div>
 
 

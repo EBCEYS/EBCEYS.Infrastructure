@@ -140,6 +140,12 @@ Class AuthorizationStartup  <a class="header-action link-secondary" title="View 
       <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureFilters_Microsoft_AspNetCore_Mvc_Filters_FilterCollection_">ExtraStartupBase.ConfigureFilters(FilterCollection)</a>
     </div>
     <div>
+      <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureSwagger_Swashbuckle_AspNetCore_SwaggerGen_SwaggerGenOptions_">ExtraStartupBase.ConfigureSwagger(SwaggerGenOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureFormOptions_Microsoft_AspNetCore_Http_Features_FormOptions_">ExtraStartupBase.ConfigureFormOptions(FormOptions)</a>
+    </div>
+    <div>
       <a class="xref" href="Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureHealthChecks_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_">ExtraStartupBase.ConfigureHealthChecks(IHealthChecksBuilder)</a>
     </div>
     <div>
@@ -316,9 +322,7 @@ Class AuthorizationStartup  <a class="header-action link-secondary" title="View 
   <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.AuthorizationTestApplication/Program.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Configures the app. It calls before controllers.
-<br>
-The middlewares could be configured here.</p>
+  <div class="markdown level1 summary"><p>Configures custom middlewares for the application pipeline. Called before controller endpoints are mapped.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -329,9 +333,11 @@ The middlewares could be configured here.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>app</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder">IApplicationBuilder</a></dt>
-    <dd></dd>
+    <dd><p>The application builder.</p>
+</dd>
     <dt><code>env</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
-    <dd></dd>
+    <dd><p>The hosting environment.</p>
+</dd>
   </dl>
 
 

@@ -22,7 +22,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute.yml\" sourcestartlinenumber=\"1\">Attribute that suppresses request body logging in <xref href=\"Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -36,7 +36,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute.yml\" sourcestartlinenumber=\"1\">Attribute that suppresses response body logging in <xref href=\"Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -372,7 +372,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.ConfiguredApp",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ConfiguredApp.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.ConfiguredApp\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ConfiguredApp.yml\" sourcestartlinenumber=\"1\">Represents a configured web application that wraps <xref href=\"Microsoft.AspNetCore.Builder.WebApplicationBuilder\" data-throw-if-not-resolved=\"false\"></xref> and provides\nmethods to build and run it. Implements <xref href=\"System.IAsyncDisposable\" data-throw-if-not-resolved=\"false\"></xref>\nfor proper lifecycle management.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -386,7 +386,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.yml\" sourcestartlinenumber=\"1\">Exception filter that handles exceptions thrown during controller action execution.\nConverts <xref href=\"Ebceys.Infrastructure.Exceptions.ApiException\" data-throw-if-not-resolved=\"false\"></xref> into a proper <xref href=\"Ebceys.Infrastructure.Models.ProblemDetailsResult\" data-throw-if-not-resolved=\"false\"></xref> response,\nand wraps all other exceptions into a generic 500 Internal Server Error <xref href=\"Microsoft.AspNetCore.Mvc.ProblemDetails\" data-throw-if-not-resolved=\"false\"></xref> response.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -414,7 +414,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Controllers.ServiceController",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Controllers.ServiceController.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Controllers.ServiceController\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Controllers.ServiceController.yml\" sourcestartlinenumber=\"1\">Built-in API controller that provides service infrastructure endpoints including\nping, health checks, health status reports, and Prometheus metrics.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -442,7 +442,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Controllers.ServiceControllerRoutes",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Controllers.ServiceControllerRoutes\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Controllers.ServiceControllerRoutes.yml\" sourcestartlinenumber=\"1\">Contains route constants for the <xref href=\"Ebceys.Infrastructure.Controllers.ServiceController\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -470,7 +470,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter.yml\" sourcestartlinenumber=\"1\">Defines conversions from an object of one type in a model to an object of the same or\ndifferent type in the store.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.Conversions.DateTimeOffsetConverter.yml\" sourcestartlinenumber=\"1\">Value converter for Entity Framework Core that ensures <xref href=\"System.DateTimeOffset\" data-throw-if-not-resolved=\"false\"></xref> values\nare always stored and retrieved in UTC format.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -498,7 +498,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions\" data-throw-if-not-resolved=\"false\"></xref> extension class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for registering Entity Framework Core <xref href=\"Microsoft.EntityFrameworkCore.DbContext\" data-throw-if-not-resolved=\"false\"></xref> implementations\nwith PostgreSQL (Npgsql) support, automatic migration on startup, and health check integration.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -512,7 +512,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions\" data-throw-if-not-resolved=\"false\"></xref> record.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.yml\" sourcestartlinenumber=\"1\">Configuration options for registering a <xref href=\"Microsoft.EntityFrameworkCore.DbContext\" data-throw-if-not-resolved=\"false\"></xref> via\n<xref href=\"Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationExtensions.RegisterDbContext%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection%2cSystem.Action%7bEbceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions%7d)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -526,7 +526,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService<TDbContext>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.DatabaseRegistration.MigrationApplierService-1.yml\" sourcestartlinenumber=\"1\">Service that applies database migrations on application startup before hosting begins.\nOnly runs if <xref href=\"Ebceys.Infrastructure.DatabaseRegistration.DbContextRegistrationOptions.MigrateDb\" data-throw-if-not-resolved=\"false\"></xref> is set to <code>true</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -554,7 +554,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Exceptions.ApiException",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Exceptions.ApiException.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Exceptions.ApiException\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Exceptions.ApiException.yml\" sourcestartlinenumber=\"1\">Custom exception that wraps <xref href=\"Ebceys.Infrastructure.Exceptions.ApiException.ProblemDetails\" data-throw-if-not-resolved=\"false\"></xref> for consistent API error responses.\nCaught by <xref href=\"Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter\" data-throw-if-not-resolved=\"false\"></xref> and converted to a proper HTTP response.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -568,7 +568,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Exceptions.ApiExceptionHelper",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Exceptions.ApiException\" data-throw-if-not-resolved=\"false\"></xref> helper class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.yml\" sourcestartlinenumber=\"1\">Static helper class providing convenient methods to throw <xref href=\"Ebceys.Infrastructure.Exceptions.ApiException\" data-throw-if-not-resolved=\"false\"></xref> instances\nfor common HTTP error scenarios (NotFound, Conflict, Validation, InternalServerError, etc.).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -638,7 +638,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Extensions.EbServerExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Extensions.EbServerExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Extensions.EbServerExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Extensions.EbServerExtensions.yml\" sourcestartlinenumber=\"1\">Server-related extension methods including <xref href=\"Microsoft.AspNetCore.Mvc.ProblemDetails\" data-throw-if-not-resolved=\"false\"></xref> factory and async wait utilities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -666,7 +666,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.ExtraStartupBase",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ExtraStartupBase.yml\" sourcestartlinenumber=\"1\">The extra startup base class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.ExtraStartupBase.yml\" sourcestartlinenumber=\"1\">Abstract base class for application startup configuration. Provides default configurations for\nlogging (Serilog), Swagger/OpenAPI, health checks, Prometheus metrics, API versioning, JWT authentication,\nFluentValidation, and standard middlewares. Derive from this class to configure your service.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -680,7 +680,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HealthChecks.HealthCheckConfiguration.yml\" sourcestartlinenumber=\"1\">Configuration options for health check registration, including naming, tags, failure status, and timeout.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -708,7 +708,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.CommandExecutor",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.CommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.CommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.CommandExecutor.yml\" sourcestartlinenumber=\"1\">Singleton command executor that resolves ICommand&lt;TContext,TResult&gt; implementations\nfrom the root <xref href=\"System.IServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> and executes them with diagnostic logging.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -722,7 +722,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.ICommandExecutor",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.ICommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.ICommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.ICommandExecutor.yml\" sourcestartlinenumber=\"1\">Interface for executing commands resolved from the DI container.\nRegistered as a singleton service. Use <xref href=\"Ebceys.Infrastructure.Helpers.IScopedCommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> when scoped resolution is needed.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -736,7 +736,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.IScopedCommandExecutor",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.IScopedCommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.IScopedCommandExecutor.yml\" sourcestartlinenumber=\"1\">Scoped command executor interface. Resolves ICommand&lt;TContext,TResult&gt; from the current DI scope,\nensuring proper scoped service lifetime management (e.g., DbContext, scoped repositories).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -750,7 +750,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Json.DefaultJsonSerializerOptions.yml\" sourcestartlinenumber=\"1\">Provides pre-configured <xref href=\"System.Text.Json.JsonSerializerOptions\" data-throw-if-not-resolved=\"false\"></xref> instances for consistent JSON serialization\nacross the infrastructure. Includes a diagnostic (pretty-printed) and a default (compact) configuration,\nboth with enum-to-string conversion and web defaults.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -778,7 +778,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.IJwtGenerator.yml\" sourcestartlinenumber=\"1\">Interface for generating JWT tokens with specified claims.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -792,7 +792,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator.yml\" sourcestartlinenumber=\"1\">Interface for validating and parsing JWT tokens.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -806,7 +806,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.JwtObjectsExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for convenient JWT-related object conversions.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -820,7 +820,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Jwt.JwtValidator",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.JwtValidator\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.yml\" sourcestartlinenumber=\"1\">Default implementation of <xref href=\"Ebceys.Infrastructure.Helpers.Jwt.IJwtValidator\" data-throw-if-not-resolved=\"false\"></xref> that parses JWT tokens\nby stripping the &quot;Bearer &quot; prefix and reading the token using <xref href=\"System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -848,7 +848,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.PaginationData",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.PaginationData.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.PaginationData\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.PaginationData.yml\" sourcestartlinenumber=\"1\">Mutable struct that tracks pagination state (batch size, skip offset, and iteration count)\nused by <xref href=\"Ebceys.Infrastructure.Helpers.PaginationExecutor\" data-throw-if-not-resolved=\"false\"></xref> to manage paginated data retrieval.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -862,7 +862,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.PaginationExecutor",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.PaginationExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.PaginationExecutor\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.PaginationExecutor.yml\" sourcestartlinenumber=\"1\">Utility class for executing paginated queries. Automatically manages skip/take offsets\nand yields results in batches until all data is consumed or max iterations are reached.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -876,7 +876,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.ScopedCommandExecutor",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.ScopedCommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.ScopedCommandExecutor.yml\" sourcestartlinenumber=\"1\">Scoped implementation of <xref href=\"Ebceys.Infrastructure.Helpers.IScopedCommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> that resolves commands from the current\nDI scope and executes them with diagnostic logging of context and result.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -890,7 +890,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for registering <xref href=\"Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator%601\" data-throw-if-not-resolved=\"false\"></xref> implementations\n(thread-safe atomic long and int generators) in the DI container.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -904,7 +904,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator.yml\" sourcestartlinenumber=\"1\">The atomic generator for <xref href=\"System.Int64\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator.yml\" sourcestartlinenumber=\"1\">Thread-safe atomic generator that produces incrementing <xref href=\"System.Int32\" data-throw-if-not-resolved=\"false\"></xref> values\nusing <xref href=\"System.Threading.Interlocked.Increment(System.Int32%40)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -918,7 +918,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.yml\" sourcestartlinenumber=\"1\">The atomic generator for <xref href=\"System.Int64\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.yml\" sourcestartlinenumber=\"1\">Thread-safe atomic generator that produces incrementing <xref href=\"System.Int64\" data-throw-if-not-resolved=\"false\"></xref> values\nusing <xref href=\"System.Threading.Interlocked.Increment(System.Int64%40)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -932,7 +932,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator<T>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator-1.yml\" sourcestartlinenumber=\"1\">The atomic num generator.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator-1.yml\" sourcestartlinenumber=\"1\">Interface for a thread-safe atomic number generator that produces monotonically incrementing values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -960,7 +960,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.yml\" sourcestartlinenumber=\"1\">Configures Swagger/OpenAPI document generation options for each discovered API version.\nGenerates a separate Swagger document per API version with the service name and description\nfrom <xref href=\"Ebceys.Infrastructure.Models.ServiceApiInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1002,7 +1002,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ClientBase",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBase.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBase.yml\" sourcestartlinenumber=\"1\">Abstract base class for HTTP clients built on Flurl. Provides standardized methods for\nGET, POST, PUT, DELETE requests with JSON serialization/deserialization, automatic authorization\nheader injection, Polly retry policies, and structured logging of requests and responses.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1016,7 +1016,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.yml\" sourcestartlinenumber=\"1\">Resolver that provides the authorization token for <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> instances.\nThe resolved token is automatically added to the <code>Authorization</code> request header.\nSupports implicit conversion from <xref href=\"System.Func%601\" data-throw-if-not-resolved=\"false\"></xref> for convenient inline usage.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1030,7 +1030,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseUrlResolver.yml\" sourcestartlinenumber=\"1\">Resolver that provides the base URL for <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> instances.\nSupports implicit conversion from <xref href=\"System.Func%601\" data-throw-if-not-resolved=\"false\"></xref> for convenient inline usage.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1044,7 +1044,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator<TInterface, TImplementation>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator%602\" data-throw-if-not-resolved=\"false\"></xref> class.<br>\nCreates the new instance of <xref href=\"Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator%602\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientBaseRegistrationRegistrator-2.yml\" sourcestartlinenumber=\"1\">Fluent builder for configuring and registering a <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref>-derived HTTP client\nin the service collection. Supports URL configuration, token resolvers, Flurl client cache customization,\nand HTTP context-based auth token forwarding.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1058,7 +1058,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientConfiguration",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> configuration class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientConfiguration.yml\" sourcestartlinenumber=\"1\">Configuration record for <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> service URL, typically bound from\n<xref href=\"Microsoft.Extensions.Configuration.IConfiguration\" data-throw-if-not-resolved=\"false\"></xref> sections.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1072,7 +1072,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientRegistration.ClientRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for fluent registration of <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref> implementations in the DI container.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1100,7 +1100,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.yml\" sourcestartlinenumber=\"1\">Helper class that creates default Polly retry policies for HTTP requests\nmade via Flurl. Handles <xref href=\"Flurl.Http.FlurlHttpException\" data-throw-if-not-resolved=\"false\"></xref> with a single retry after the specified delay.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1114,7 +1114,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.IClientBaseResolver<TResolve>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.IClientBaseResolver%601\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.yml\" sourcestartlinenumber=\"1\">Generic interface for value resolvers used by <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1128,7 +1128,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.OperationResult<TError>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.OperationResult-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.OperationResult%601\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.OperationResult-1.yml\" sourcestartlinenumber=\"1\">Represents the result of an HTTP operation without a success response body.\nCan either succeed (no body) or fail with a <code class=\"typeparamref\">TError</code>.\nIncludes the HTTP status code and success indicator.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1142,7 +1142,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.OperationResult<TResponse, TError>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.OperationResult-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.OperationResult%602\" data-throw-if-not-resolved=\"false\"></xref> struct.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.OperationResult-2.yml\" sourcestartlinenumber=\"1\">Represents the result of an HTTP operation that can either succeed with a <code class=\"typeparamref\">TResponse</code>\nor fail with a <code class=\"typeparamref\">TError</code>. Includes the HTTP status code and success indicator.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1156,7 +1156,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient.yml\" sourcestartlinenumber=\"1\">Interface for a system-level HTTP client that interacts with <xref href=\"Ebceys.Infrastructure.Controllers.ServiceController\" data-throw-if-not-resolved=\"false\"></xref> endpoints\nof another service (ping, health check, health status, metrics).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1170,7 +1170,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ServiceClient.ServiceSystemClient.yml\" sourcestartlinenumber=\"1\">Default implementation of <xref href=\"Ebceys.Infrastructure.HttpClient.ServiceClient.IServiceSystemClient\" data-throw-if-not-resolved=\"false\"></xref> that communicates with\n<xref href=\"Ebceys.Infrastructure.Controllers.ServiceController\" data-throw-if-not-resolved=\"false\"></xref> endpoints of a remote service via HTTP.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1198,7 +1198,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager<TInterface>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.yml\" sourcestartlinenumber=\"1\">Default <xref href=\"Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager%601\" data-throw-if-not-resolved=\"false\"></xref> implementation that extracts the authorization token\nfrom the current HTTP context's <code>Authorization</code> header, effectively forwarding the caller's token\nto downstream service calls.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1212,7 +1212,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager<TInterface>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager%601\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.yml\" sourcestartlinenumber=\"1\">Interface for managing authorization tokens for a specific HTTP client.\nImplementations provide tokens that are automatically attached to outgoing requests.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1254,7 +1254,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Interfaces.ICommand<TContext, TResult>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Interfaces.ICommand-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Interfaces.ICommand%602\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Interfaces.ICommand-2.yml\" sourcestartlinenumber=\"1\">Generic command interface implementing the Command pattern. Encapsulates a unit of work\nthat takes a context of type <code class=\"typeparamref\">TContext</code> and returns a result of type\n<code class=\"typeparamref\">TResult</code>. Commands are resolved from DI and executed via\n<xref href=\"Ebceys.Infrastructure.Helpers.ICommandExecutor\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Ebceys.Infrastructure.Helpers.IScopedCommandExecutor\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1282,7 +1282,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Middlewares.HttpLoggingOptions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Middlewares.HttpLoggingOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Middlewares.HttpLoggingOptions.yml\" sourcestartlinenumber=\"1\">Configuration options for the <xref href=\"Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware\" data-throw-if-not-resolved=\"false\"></xref>. Allows fine-grained control\nover which request/response paths and content types are logged, and at which log level.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1296,7 +1296,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware.yml\" sourcestartlinenumber=\"1\">The request logging middleware.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Middlewares.RequestLoggingMiddleware.yml\" sourcestartlinenumber=\"1\">Middleware that logs incoming HTTP requests and outgoing responses including method, URL, status code,\nduration, and optionally request/response bodies. Respects <xref href=\"Ebceys.Infrastructure.Attributes.NoRequestBodyLoggingAttribute\" data-throw-if-not-resolved=\"false\"></xref>,\n<xref href=\"Ebceys.Infrastructure.Attributes.NoResponseBodyLoggingAttribute\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"Ebceys.Infrastructure.Middlewares.HttpLoggingOptions\" data-throw-if-not-resolved=\"false\"></xref> settings.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1324,7 +1324,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Models.ProblemDetailsResult",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Models.ProblemDetailsResult.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Models.ProblemDetailsResult\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Models.ProblemDetailsResult.yml\" sourcestartlinenumber=\"1\">An <xref href=\"Microsoft.AspNetCore.Mvc.ObjectResult\" data-throw-if-not-resolved=\"false\"></xref> that wraps <xref href=\"Microsoft.AspNetCore.Mvc.ProblemDetails\" data-throw-if-not-resolved=\"false\"></xref> and sets the correct\nHTTP status code and <code>application/problem+json</code> content type in the response.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1338,7 +1338,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Models.ServiceApiInfo",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Models.ServiceApiInfo.yml\" sourcestartlinenumber=\"1\">The service api info.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Models.ServiceApiInfo.yml\" sourcestartlinenumber=\"1\">Immutable record containing service metadata used for Swagger documentation, routing base path,\nand service identification throughout the infrastructure.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1366,7 +1366,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Options.JwtOptions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.JwtOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.JwtOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.JwtOptions.yml\" sourcestartlinenumber=\"1\">Configuration options for JWT token generation and validation.\nTypically bound from the <code>JwtOptions</code> section in <code>appsettings.json</code>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1380,7 +1380,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Options.RabbitMqExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.RabbitMqExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.RabbitMqExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.RabbitMqExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"Microsoft.Extensions.Configuration.IConfiguration\" data-throw-if-not-resolved=\"false\"></xref> to read and construct\n<xref href=\"EBCEYS.RabbitMQ.Configuration.RabbitMQConfiguration\" data-throw-if-not-resolved=\"false\"></xref> from configuration sections.\nSupports both <xref href=\"Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration\" data-throw-if-not-resolved=\"false\"></xref> shorthand and full detailed configuration.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1394,7 +1394,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.yml\" sourcestartlinenumber=\"1\">Simplified RabbitMQ configuration record that can be bound from <code>appsettings.json</code>.\nProvides a convenient shorthand for configuring exchange, queue, and optional callback settings.\nUse <xref href=\"Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.ToConfig\" data-throw-if-not-resolved=\"false\"></xref> to convert to a full <xref href=\"EBCEYS.RabbitMQ.Configuration.RabbitMQConfiguration\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1408,7 +1408,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.yml\" sourcestartlinenumber=\"1\">Validation extension methods for <xref href=\"Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1436,7 +1436,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient\" data-throw-if-not-resolved=\"false\"></xref> wrapper class for <xref href=\"EBCEYS.RabbitMQ.Client.RabbitMQClient\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.RabbitMq.EbRabbitMqClient.yml\" sourcestartlinenumber=\"1\">Abstract wrapper class around <xref href=\"EBCEYS.RabbitMQ.Client.RabbitMQClient\" data-throw-if-not-resolved=\"false\"></xref> that provides convenient\ntyped message sending and request/response methods. Derive from this class to create\napplication-specific RabbitMQ clients. Registered as a hosted service for automatic lifecycle management.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1450,7 +1450,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.RabbitMq.RabbitMqRegistrationExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for registering RabbitMQ clients and smart controllers in the DI container.\nAutomatically registers health checks for all added RabbitMQ connections.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1478,7 +1478,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Scheduling.SchedulingExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Scheduling.SchedulingExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref> extensions class for scheduling processes.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Scheduling.SchedulingExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for configuring Quartz.NET-based job scheduling in the DI container.\nProvides methods to register the scheduling infrastructure and to schedule jobs\nwith interval-based or cron-based triggers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1506,7 +1506,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions\" data-throw-if-not-resolved=\"false\"></xref> extensions class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Services.ExecutedServices.BeforeHostingStartedServiceExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for registering and executing <xref href=\"Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService\" data-throw-if-not-resolved=\"false\"></xref> implementations.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1520,7 +1520,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService\" data-throw-if-not-resolved=\"false\"></xref> interface.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService.yml\" sourcestartlinenumber=\"1\">Interface for services that need to execute logic after DI registration is complete\nbut before the web host starts accepting requests (e.g., database migrations, cache warming).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2598,7 +2598,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Validation.ValidatorExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Validation.ValidatorExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Validation.ValidatorExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Validation.ValidatorExtensions.yml\" sourcestartlinenumber=\"1\">FluentValidation custom rule builder extensions for URL validation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2626,7 +2626,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.WebApplicationBase<TStartup>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.WebApplicationBase-1.yml\" sourcestartlinenumber=\"1\">Initiates the new instance of <xref href=\"Ebceys.Infrastructure.WebApplicationBase%601\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.WebApplicationBase-1.yml\" sourcestartlinenumber=\"1\">Factory class for building and creating configured web applications using the specified startup class.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2654,7 +2654,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.Helpers.EbRandomizer",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.EbRandomizer\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.EbRandomizer.yml\" sourcestartlinenumber=\"1\">Comprehensive random data generator for use in tests. Provides methods for generating random\nprimitives (int, long, byte, double, decimal, bool), strings, hex strings, arrays, emails, domains,\ndates, timespans, URLs, enums, JWTs, and more. Supports reproducible sequences via seed parameter.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2668,7 +2668,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.Helpers.PortSelector",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.PortSelector.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.PortSelector\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.PortSelector.yml\" sourcestartlinenumber=\"1\">Utility class for finding available TCP ports for use in integration tests.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2682,7 +2682,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.StopWatchElapser.yml\" sourcestartlinenumber=\"1\">Disposable stopwatch wrapper that measures elapsed time between creation and disposal,\nthen invokes a callback with the elapsed <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref>.\nUseful for timing test operations in a <code>using</code> block.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2696,7 +2696,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource<TData>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.yml\" sourcestartlinenumber=\"1\">The test case source.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.yml\" sourcestartlinenumber=\"1\">Abstract base class for NUnit parameterized test case sources. Provides a pattern for defining\nvalid and invalid test data generators with a shared base data setup.\nUsed with <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor%602\" data-throw-if-not-resolved=\"false\"></xref> and\n<xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor%602\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2710,7 +2710,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor<TEnumerator, TData>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.yml\" sourcestartlinenumber=\"1\">The invalid test case executor. Executes the <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601.GetInvalidCases\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.yml\" sourcestartlinenumber=\"1\">NUnit test case enumerator that generates invalid test cases from <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601\" data-throw-if-not-resolved=\"false\"></xref>.\nYields all cases returned by <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601.GetInvalidCases\" data-throw-if-not-resolved=\"false\"></xref> using the invalid base data.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2724,7 +2724,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor<TEnumerator, TData>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.yml\" sourcestartlinenumber=\"1\">The valid test case executor. Executes the <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601.GetValidCases\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.yml\" sourcestartlinenumber=\"1\">NUnit test case enumerator that generates valid test cases from <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601\" data-throw-if-not-resolved=\"false\"></xref>.\nYields the valid base data plus all cases returned by <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource%601.GetValidCases\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2738,7 +2738,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator<TData>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.yml\" sourcestartlinenumber=\"1\">Abstract base class for NUnit <xref href=\"NUnit.Framework.TestCaseData\" data-throw-if-not-resolved=\"false\"></xref> enumerators that converts\ntest case transformation functions into <xref href=\"NUnit.Framework.TestCaseData\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2780,7 +2780,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.ExternalDependenciesExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for configuring Testcontainers-based external dependencies (RabbitMQ, PostgreSQL)\nin integration tests. Provides helpers to extract connection factories and inject configuration\ninto the test web host builder.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2794,7 +2794,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer<TDependency>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer-1.yml\" sourcestartlinenumber=\"1\">The dependency initializer.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.IDependencyInitializer-1.yml\" sourcestartlinenumber=\"1\">Interface for initializing and tearing down external test dependencies (e.g., Docker containers).\nImplementations manage the lifecycle of infrastructure components required for integration tests.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2808,7 +2808,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.PostgresInitializer.yml\" sourcestartlinenumber=\"1\">Initializer for a PostgreSQL Testcontainer. Manages the lifecycle of a PostgreSQL Docker container\nfor use in integration tests. Configurable with custom user, password, database, and image.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2822,7 +2822,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.ExternalServices.Containers.RabbitMqInitializer.yml\" sourcestartlinenumber=\"1\">Initializer for a RabbitMQ Testcontainer with the management plugin.\nManages the lifecycle of a RabbitMQ Docker container for use in integration tests.\nConfigurable with custom username, password, and image.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2850,7 +2850,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler.yml\" sourcestartlinenumber=\"1\">Test HTTP message handler that routes outgoing HTTP requests to in-memory test server handlers\nbased on the request host. Used for Flurl/HttpClient integration testing to intercept and redirect\nrequests to <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory%601\" data-throw-if-not-resolved=\"false\"></xref> instances without actual network calls.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2864,7 +2864,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.TestsExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"Microsoft.AspNetCore.Hosting.IWebHostBuilder\" data-throw-if-not-resolved=\"false\"></xref> providing convenient configuration helpers\nfor integration tests, such as adding in-memory configuration values.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2878,7 +2878,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext<TClient, TEntrypoint>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext%602\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ClientTestContext-2.yml\" sourcestartlinenumber=\"1\">Abstract test context for integration testing of <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref>-derived HTTP clients\nagainst an in-memory test server. Provides client creation, service system client access,\nand Flurl client cache integration with request routing to the test server.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2906,7 +2906,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandlerConfiguration.yml\" sourcestartlinenumber=\"1\">Configuration for routing HTTP requests to in-memory test server handlers based on URL.\nUsed by <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.RoutingMessageHandler\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.TestRoutingMessageHandler\" data-throw-if-not-resolved=\"false\"></xref>\nto redirect HTTP client calls to test servers during integration tests.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2920,7 +2920,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext<TEntrypoint>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.ServiceTestContext-1.yml\" sourcestartlinenumber=\"1\">Abstract test context that manages the lifecycle of a <xref href=\"Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory%601\" data-throw-if-not-resolved=\"false\"></xref>\nfor integration testing. Provides initialization, teardown, and request routing capabilities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2934,7 +2934,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestClientInitializeOptions.yml\" sourcestartlinenumber=\"1\">Options for configuring a test context during initialization, including base address,\ncontent root path, builder configuration, and app settings mode.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2948,7 +2948,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory<TStartup>",
-      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory%601\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+      "Summary": "<p sourcefile=\"api/Ebceys.Tests.Infrastructure.IntegrationTests.WebApplication.TestWebApplicationFactory-1.yml\" sourcestartlinenumber=\"1\">Abstract test web application factory that creates an in-memory test server for integration testing.\nExtends <xref href=\"Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory%601\" data-throw-if-not-resolved=\"false\"></xref> with support for Serilog logging,\noptional production appsettings loading, and automatic execution of\n<xref href=\"Ebceys.Infrastructure.Services.ExecutedServices.IBeforeHostingStartedService\" data-throw-if-not-resolved=\"false\"></xref> implementations during host creation.</p>\n"
     },
     {
       "type": "ManagedReference",

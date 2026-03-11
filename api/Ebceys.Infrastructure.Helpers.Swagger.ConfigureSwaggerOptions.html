@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ConfigureSwaggerOptions | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Configures Swagger/OpenAPI document generation options for each discovered API version. Generates a separate Swagger document per API version with the service name and description from .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Helpers_Swagger_ConfigureSwaggerOptions" data-uid="Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions" class="text-break">
-Class ConfigureSwaggerOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class ConfigureSwaggerOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class ConfigureSwaggerOptions  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.html">ConfigureSwaggerOptions</a> class.</p>
+  <div class="markdown summary"><p>Configures Swagger/OpenAPI document generation options for each discovered API version.
+Generates a separate Swagger document per API version with the service name and description
+from <a class="xref" href="Ebceys.Infrastructure.Models.ServiceApiInfo.html">ServiceApiInfo</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -164,10 +166,12 @@ public class ConfigureSwaggerOptions : IConfigureOptions&lt;SwaggerGenOptions&gt
 
   <h3 id="Ebceys_Infrastructure_Helpers_Swagger_ConfigureSwaggerOptions__ctor_Asp_Versioning_ApiExplorer_IApiVersionDescriptionProvider_Microsoft_Extensions_Options_IOptions_Ebceys_Infrastructure_Models_ServiceApiInfo__" data-uid="Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.#ctor(Asp.Versioning.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.Extensions.Options.IOptions{Ebceys.Infrastructure.Models.ServiceApiInfo})">
   ConfigureSwaggerOptions(IApiVersionDescriptionProvider, IOptions&lt;ServiceApiInfo&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.html">ConfigureSwaggerOptions</a> class.</p>
+  <div class="markdown level1 summary"><p>Configures Swagger/OpenAPI document generation options for each discovered API version.
+Generates a separate Swagger document per API version with the service name and description
+from <a class="xref" href="Ebceys.Infrastructure.Models.ServiceApiInfo.html">ServiceApiInfo</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -178,9 +182,11 @@ public class ConfigureSwaggerOptions : IConfigureOptions&lt;SwaggerGenOptions&gt
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>provider</code> <span class="xref">IApiVersionDescriptionProvider</span></dt>
-    <dd></dd>
+    <dd><p>The API version description provider.</p>
+</dd>
     <dt><code>serviceApiInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Ebceys.Infrastructure.Models.ServiceApiInfo.html">ServiceApiInfo</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The service API metadata (name and description).</p>
+</dd>
   </dl>
 
 
@@ -202,7 +208,7 @@ public class ConfigureSwaggerOptions : IConfigureOptions&lt;SwaggerGenOptions&gt
 
   <h3 id="Ebceys_Infrastructure_Helpers_Swagger_ConfigureSwaggerOptions_ApiInfo" data-uid="Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.ApiInfo">
   ApiInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The api info. Will use instead of default if specified.</p>
@@ -238,7 +244,7 @@ public class ConfigureSwaggerOptions : IConfigureOptions&lt;SwaggerGenOptions&gt
 
   <h3 id="Ebceys_Infrastructure_Helpers_Swagger_ConfigureSwaggerOptions_Configure_Swashbuckle_AspNetCore_SwaggerGen_SwaggerGenOptions_" data-uid="Ebceys.Infrastructure.Helpers.Swagger.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
   Configure(SwaggerGenOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures a <a class="xref" href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/main/src/Swashbuckle.AspNetCore.SwaggerGen/DependencyInjection/SwaggerGenOptions.cs">SwaggerGenOptions</a> instance.</p>
@@ -271,7 +277,7 @@ public class ConfigureSwaggerOptions : IConfigureOptions&lt;SwaggerGenOptions&gt
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Swagger/ConfigureSwaggerOptions.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -96,7 +96,9 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.html">FromContextClientTokenManager&lt;TInterface&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.FromContextClientTokenManager-1.html">FromContextClientTokenManager&lt;TInterface&gt;</a> class.</p>
+      <dd><p>Default <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html">IClientTokenManager&lt;TInterface&gt;</a> implementation that extracts the authorization token
+from the current HTTP context's <code>Authorization</code> header, effectively forwarding the caller's token
+to downstream service calls.</p>
 </dd>
     </dl>
     <h3 id="interfaces">
@@ -104,7 +106,8 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html">IClientTokenManager&lt;TInterface&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager-1.html">IClientTokenManager&lt;TInterface&gt;</a> interface.</p>
+      <dd><p>Interface for managing authorization tokens for a specific HTTP client.
+Implementations provide tokens that are automatically attached to outgoing requests.</p>
 </dd>
     </dl>
 

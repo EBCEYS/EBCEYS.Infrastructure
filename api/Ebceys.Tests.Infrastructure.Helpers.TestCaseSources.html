@@ -96,22 +96,28 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html">EbTestCaseSource&lt;TData&gt;</a></dt>
-      <dd><p>The test case source.</p>
+      <dd><p>Abstract base class for NUnit parameterized test case sources. Provides a pattern for defining
+valid and invalid test data generators with a shared base data setup.
+Used with <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.html">EbTestDataValidExecutor&lt;TEnumerator, TData&gt;</a> and
+<a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.html">EbTestDataInvalidExecutor&lt;TEnumerator, TData&gt;</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.html">EbTestDataInvalidExecutor&lt;TEnumerator, TData&gt;</a></dt>
-      <dd><p>The invalid test case executor. Executes the <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html#Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_GetInvalidCases">GetInvalidCases()</a>.</p>
+      <dd><p>NUnit test case enumerator that generates invalid test cases from <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html">EbTestCaseSource&lt;TData&gt;</a>.
+Yields all cases returned by <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html#Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_GetInvalidCases">GetInvalidCases()</a> using the invalid base data.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.html">EbTestDataValidExecutor&lt;TEnumerator, TData&gt;</a></dt>
-      <dd><p>The valid test case executor. Executes the <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html#Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_GetValidCases">GetValidCases()</a>.</p>
+      <dd><p>NUnit test case enumerator that generates valid test cases from <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html">EbTestCaseSource&lt;TData&gt;</a>.
+Yields the valid base data plus all cases returned by <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource-1.html#Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_GetValidCases">GetValidCases()</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.html">TestCaseEnumerator&lt;TData&gt;</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.TestCaseEnumerator-1.html">TestCaseEnumerator&lt;TData&gt;</a> class.</p>
+      <dd><p>Abstract base class for NUnit <span class="xref">NUnit.Framework.TestCaseData</span> enumerators that converts
+test case transformation functions into <span class="xref">NUnit.Framework.TestCaseData</span> instances.</p>
 </dd>
     </dl>
 

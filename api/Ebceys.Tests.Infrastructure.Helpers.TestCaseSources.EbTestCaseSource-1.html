@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class EbTestCaseSource&lt;TData&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The test case source.">
+      <meta name="description" content="Abstract base class for NUnit parameterized test case sources. Provides a pattern for defining valid and invalid test data generators with a shared base data setup. Used with  and .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource`1" class="text-break">
-Class EbTestCaseSource&lt;TData&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class EbTestCaseSource&lt;TData&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Class EbTestCaseSource&lt;TData&gt;  <a class="header-action link-secondary" tit
   <dl><dt>Assembly</dt><dd>Ebceys.Tests.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The test case source.</p>
+  <div class="markdown summary"><p>Abstract base class for NUnit parameterized test case sources. Provides a pattern for defining
+valid and invalid test data generators with a shared base data setup.
+Used with <a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataValidExecutor-2.html">EbTestDataValidExecutor&lt;TEnumerator, TData&gt;</a> and
+<a class="xref" href="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestDataInvalidExecutor-2.html">EbTestDataInvalidExecutor&lt;TEnumerator, TData&gt;</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +114,7 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TData</code></dt>
-    <dd><p>The test data.</p>
+    <dd><p>The type of test data.</p>
 </dd>
   </dl>
 
@@ -164,10 +167,10 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
 
   <h3 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_GetInvalidCases" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource`1.GetInvalidCases">
   GetInvalidCases()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the test cases that should be invalid.</p>
+  <div class="markdown level1 summary"><p>Gets the collection of test case transformations that should produce invalid data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -179,7 +182,8 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TData, TData&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)&gt;</dt>
-    <dd></dd>
+    <dd><p>An enumerable of tuples containing the data transformation function and a test case description.</p>
+</dd>
   </dl>
 
 
@@ -196,10 +200,10 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
 
   <h3 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_GetValidCases" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource`1.GetValidCases">
   GetValidCases()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the test cases that should be valid.</p>
+  <div class="markdown level1 summary"><p>Gets the collection of test case transformations that should produce valid data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -211,7 +215,8 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TData, TData&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)&gt;</dt>
-    <dd></dd>
+    <dd><p>An enumerable of tuples containing the data transformation function and a test case description.</p>
+</dd>
   </dl>
 
 
@@ -228,10 +233,10 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
 
   <h3 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_SetupInvalidBase" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource`1.SetupInvalidBase">
   SetupInvalidBase()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Setups the data, that will be used as base for test case functions.</p>
+  <div class="markdown level1 summary"><p>Setups the invalid base data that serves as the starting point for invalid test case transformations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -243,7 +248,7 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">TData</span></dt>
-    <dd><p>The new instance of TData.</p>
+    <dd><p>A new instance of <code class="typeparamref">TData</code> representing invalid base data, or <code>null</code>.</p>
 </dd>
   </dl>
 
@@ -261,10 +266,10 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
 
   <h3 id="Ebceys_Tests_Infrastructure_Helpers_TestCaseSources_EbTestCaseSource_1_SetupValidBase" data-uid="Ebceys.Tests.Infrastructure.Helpers.TestCaseSources.EbTestCaseSource`1.SetupValidBase">
   SetupValidBase()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Setups the data, that will be used as base for test case functions.</p>
+  <div class="markdown level1 summary"><p>Setups the valid base data that serves as the starting point for valid test case transformations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -276,7 +281,7 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">TData</span></dt>
-    <dd><p>The new instance of TData.</p>
+    <dd><p>A new instance of <code class="typeparamref">TData</code> representing valid base data.</p>
 </dd>
   </dl>
 
@@ -294,7 +299,7 @@ public abstract class EbTestCaseSource&lt;TData&gt;</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Tests.Infrastructure/Helpers/TestCaseSources/EbTestCaseSource.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

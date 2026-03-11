@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IClientBaseResolver&lt;TResolve&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  interface.">
+      <meta name="description" content="Generic interface for value resolvers used by .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_HttpClient_IClientBaseResolver_1" data-uid="Ebceys.Infrastructure.HttpClient.IClientBaseResolver`1" class="text-break">
-Interface IClientBaseResolver&lt;TResolve&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L83"><i class="bi bi-code-slash"></i></a>
+Interface IClientBaseResolver&lt;TResolve&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Interface IClientBaseResolver&lt;TResolve&gt;  <a class="header-action link-seco
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.html">IClientBaseResolver&lt;TResolve&gt;</a> interface.</p>
+  <div class="markdown summary"><p>Generic interface for value resolvers used by <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +111,8 @@ public interface IClientBaseResolver&lt;out TResolve&gt;</code></pre>
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TResolve</code></dt>
-    <dd></dd>
+    <dd><p>The type of the resolved value.</p>
+</dd>
   </dl>
 
 
@@ -131,10 +132,10 @@ public interface IClientBaseResolver&lt;out TResolve&gt;</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_IClientBaseResolver_1_Invoker" data-uid="Ebceys.Infrastructure.HttpClient.IClientBaseResolver`1.Invoker">
   Invoker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The invoker.</p>
+  <div class="markdown level1 summary"><p>The underlying delegate function that produces the resolved value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -167,10 +168,10 @@ public interface IClientBaseResolver&lt;out TResolve&gt;</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_IClientBaseResolver_1_Invoke" data-uid="Ebceys.Infrastructure.HttpClient.IClientBaseResolver`1.Invoke">
   Invoke()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Invokes the resolver.</p>
+  <div class="markdown level1 summary"><p>Invokes the resolver and returns the resolved value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -182,7 +183,8 @@ public interface IClientBaseResolver&lt;out TResolve&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">TResolve</span></dt>
-    <dd></dd>
+    <dd><p>The resolved value of type <code class="typeparamref">TResolve</code>.</p>
+</dd>
   </dl>
 
 
@@ -199,7 +201,7 @@ public interface IClientBaseResolver&lt;out TResolve&gt;</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L83" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseResolvers.cs/#L86" class="edit-link">Edit this page</a>
         </div>
 
 

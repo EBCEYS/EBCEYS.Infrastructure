@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SchedulingExtensions | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  extensions class for scheduling processes.">
+      <meta name="description" content="Extension methods for configuring Quartz.NET-based job scheduling in the DI container. Provides methods to register the scheduling infrastructure and to schedule jobs with interval-based or cron-based triggers.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Scheduling_SchedulingExtensions" data-uid="Ebceys.Infrastructure.Scheduling.SchedulingExtensions" class="text-break">
-Class SchedulingExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class SchedulingExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class SchedulingExtensions  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> extensions class for scheduling processes.</p>
+  <div class="markdown summary"><p>Extension methods for configuring Quartz.NET-based job scheduling in the DI container.
+Provides methods to register the scheduling infrastructure and to schedule jobs
+with interval-based or cron-based triggers.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -158,7 +160,7 @@ public static class SchedulingExtensions</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Scheduling_SchedulingExtensions_AddSchedulingServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean_System_Func_Quartz_ISchedulerFactory_System_Threading_Tasks_Task__" data-uid="Ebceys.Infrastructure.Scheduling.SchedulingExtensions.AddSchedulingServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean,System.Func{Quartz.ISchedulerFactory,System.Threading.Tasks.Task})">
   AddSchedulingServices(IServiceCollection, bool, Func&lt;ISchedulerFactory, Task&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds the scheduling services to <code class="paramref">services</code>.</p>
@@ -203,7 +205,7 @@ public static class SchedulingExtensions</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Scheduling_SchedulingExtensions_ScheduleJobAsync__1_Quartz_ISchedulerFactory_System_String_System_String_System_TimeSpan_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Scheduling.SchedulingExtensions.ScheduleJobAsync``1(Quartz.ISchedulerFactory,System.String,System.String,System.TimeSpan,System.Threading.CancellationToken)">
   ScheduleJobAsync&lt;TJob&gt;(ISchedulerFactory, string, string, TimeSpan, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Schedules the <code class="typeparamref">TJob</code> with specified <code class="paramref">cronExpression</code>.</p>
@@ -259,7 +261,7 @@ public static class SchedulingExtensions</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Scheduling_SchedulingExtensions_ScheduleJobAsync__1_Quartz_ISchedulerFactory_System_String_System_TimeSpan_System_TimeSpan_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.Scheduling.SchedulingExtensions.ScheduleJobAsync``1(Quartz.ISchedulerFactory,System.String,System.TimeSpan,System.TimeSpan,System.Threading.CancellationToken)">
   ScheduleJobAsync&lt;TJob&gt;(ISchedulerFactory, string, TimeSpan, TimeSpan, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Schedules the <code class="typeparamref">TJob</code> with specified <code class="paramref">interval</code>.</p>
@@ -315,7 +317,7 @@ public static class SchedulingExtensions</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Scheduling/SchedulingExtensions.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

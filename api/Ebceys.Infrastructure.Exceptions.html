@@ -96,12 +96,14 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html">ApiException</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html">ApiException</a> class.</p>
+      <dd><p>Custom exception that wraps <a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html#Ebceys_Infrastructure_Exceptions_ApiException_ProblemDetails">ProblemDetails</a> for consistent API error responses.
+Caught by <a class="xref" href="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.html">ApiExceptionFilter</a> and converted to a proper HTTP response.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiExceptionHelper.html">ApiExceptionHelper</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html">ApiException</a> helper class.</p>
+      <dd><p>Static helper class providing convenient methods to throw <a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html">ApiException</a> instances
+for common HTTP error scenarios (NotFound, Conflict, Validation, InternalServerError, etc.).</p>
 </dd>
     </dl>
 

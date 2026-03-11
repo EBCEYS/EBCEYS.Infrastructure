@@ -96,22 +96,27 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Options.JwtOptions.html">JwtOptions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Options.JwtOptions.html">JwtOptions</a> class.</p>
+      <dd><p>Configuration options for JWT token generation and validation.
+Typically bound from the <code>JwtOptions</code> section in <code>appsettings.json</code>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Options.RabbitMqExtensions.html">RabbitMqExtensions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Options.RabbitMqExtensions.html">RabbitMqExtensions</a> class.</p>
+      <dd><p>Extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a> to read and construct
+<span class="xref">EBCEYS.RabbitMQ.Configuration.RabbitMQConfiguration</span> from configuration sections.
+Supports both <a class="xref" href="Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.html">SimpleRabbitMqConfiguration</a> shorthand and full detailed configuration.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.html">SimpleRabbitMqConfiguration</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.html">SimpleRabbitMqConfiguration</a> class.</p>
+      <dd><p>Simplified RabbitMQ configuration record that can be bound from <code>appsettings.json</code>.
+Provides a convenient shorthand for configuring exchange, queue, and optional callback settings.
+Use <a class="xref" href="Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.html#Ebceys_Infrastructure_Options_SimpleRabbitMqConfiguration_ToConfig">ToConfig()</a> to convert to a full <span class="xref">EBCEYS.RabbitMQ.Configuration.RabbitMQConfiguration</span>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Options.SimpleRabbitMqConfigurationExtensions.html">SimpleRabbitMqConfigurationExtensions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.html">SimpleRabbitMqConfiguration</a> extensions.</p>
+      <dd><p>Validation extension methods for <a class="xref" href="Ebceys.Infrastructure.Options.SimpleRabbitMqConfiguration.html">SimpleRabbitMqConfiguration</a>.</p>
 </dd>
     </dl>
 

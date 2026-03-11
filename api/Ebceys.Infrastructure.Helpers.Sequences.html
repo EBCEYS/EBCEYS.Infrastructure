@@ -96,17 +96,20 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.html">AtomicGeneratorsExtensions</a></dt>
-      <dd><p>The <a class="xref" href="Ebceys.Infrastructure.Helpers.Sequences.AtomicGeneratorsExtensions.html">AtomicGeneratorsExtensions</a> class.</p>
+      <dd><p>Extension methods for registering <a class="xref" href="Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator-1.html">IAtomGenerator&lt;T&gt;</a> implementations
+(thread-safe atomic long and int generators) in the DI container.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Sequences.AtomicIntGenerator.html">AtomicIntGenerator</a></dt>
-      <dd><p>The atomic generator for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
+      <dd><p>Thread-safe atomic generator that produces incrementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> values
+using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.interlocked.increment#system-threading-interlocked-increment(system-int32@)">Increment(ref int)</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.html">AtomicLongGenerator</a></dt>
-      <dd><p>The atomic generator for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
+      <dd><p>Thread-safe atomic generator that produces incrementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> values
+using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.interlocked.increment#system-threading-interlocked-increment(system-int64@)">Increment(ref long)</a>.</p>
 </dd>
     </dl>
     <h3 id="interfaces">
@@ -114,7 +117,7 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator-1.html">IAtomGenerator&lt;T&gt;</a></dt>
-      <dd><p>The atomic num generator.</p>
+      <dd><p>Interface for a thread-safe atomic number generator that produces monotonically incrementing values.</p>
 </dd>
     </dl>
 

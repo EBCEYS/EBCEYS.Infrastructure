@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AtomicLongGenerator | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The atomic generator for .">
+      <meta name="description" content="Thread-safe atomic generator that produces incrementing  values using .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Helpers_Sequences_AtomicLongGenerator" data-uid="Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator" class="text-break">
-Class AtomicLongGenerator  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class AtomicLongGenerator  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class AtomicLongGenerator  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The atomic generator for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
+  <div class="markdown summary"><p>Thread-safe atomic generator that produces incrementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> values
+using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.interlocked.increment#system-threading-interlocked-increment(system-int64@)">Increment(ref long)</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -164,10 +165,11 @@ public class AtomicLongGenerator : IAtomGenerator&lt;long&gt;</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_Sequences_AtomicLongGenerator__ctor_System_Nullable_System_Int32__" data-uid="Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.#ctor(System.Nullable{System.Int32})">
   AtomicLongGenerator(int?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The atomic generator for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
+  <div class="markdown level1 summary"><p>Thread-safe atomic generator that produces incrementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a> values
+using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.interlocked.increment#system-threading-interlocked-increment(system-int64@)">Increment(ref long)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -178,7 +180,8 @@ public class AtomicLongGenerator : IAtomGenerator&lt;long&gt;</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>seed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd><p>The base seed.</p>
+    <dd><p>The optional seed for the initial random starting value. If <code>null</code>, uses
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.environment.tickcount">TickCount</a>.</p>
 </dd>
   </dl>
 
@@ -201,10 +204,10 @@ public class AtomicLongGenerator : IAtomGenerator&lt;long&gt;</code></pre>
 
   <h3 id="Ebceys_Infrastructure_Helpers_Sequences_AtomicLongGenerator_Next" data-uid="Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.Next">
   Next()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the next value.</p>
+  <div class="markdown level1 summary"><p>Gets the next incremented value in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -216,7 +219,7 @@ public class AtomicLongGenerator : IAtomGenerator&lt;long&gt;</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd><p>The next value.</p>
+    <dd><p>The next value of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
 </dd>
   </dl>
 
@@ -234,7 +237,7 @@ public class AtomicLongGenerator : IAtomGenerator&lt;long&gt;</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

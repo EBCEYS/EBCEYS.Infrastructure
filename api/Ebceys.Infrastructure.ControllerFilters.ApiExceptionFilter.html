@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ApiExceptionFilter | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The  class.">
+      <meta name="description" content="Exception filter that handles exceptions thrown during controller action execution. Converts  into a proper  response, and wraps all other exceptions into a generic 500 Internal Server Error  response.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_ControllerFilters_ApiExceptionFilter" data-uid="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter" class="text-break">
-Class ApiExceptionFilter  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class ApiExceptionFilter  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class ApiExceptionFilter  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The <a class="xref" href="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.html">ApiExceptionFilter</a> class.</p>
+  <div class="markdown summary"><p>Exception filter that handles exceptions thrown during controller action execution.
+Converts <a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html">ApiException</a> into a proper <a class="xref" href="Ebceys.Infrastructure.Models.ProblemDetailsResult.html">ProblemDetailsResult</a> response,
+and wraps all other exceptions into a generic 500 Internal Server Error <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails">ProblemDetails</a> response.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -279,10 +281,12 @@ Class ApiExceptionFilter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ebceys_Infrastructure_ControllerFilters_ApiExceptionFilter__ctor_Microsoft_Extensions_Logging_ILogger_Ebceys_Infrastructure_ControllerFilters_ApiExceptionFilter__" data-uid="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.#ctor(Microsoft.Extensions.Logging.ILogger{Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter})">
   ApiExceptionFilter(ILogger&lt;ApiExceptionFilter&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.html">ApiExceptionFilter</a> class.</p>
+  <div class="markdown level1 summary"><p>Exception filter that handles exceptions thrown during controller action execution.
+Converts <a class="xref" href="Ebceys.Infrastructure.Exceptions.ApiException.html">ApiException</a> into a proper <a class="xref" href="Ebceys.Infrastructure.Models.ProblemDetailsResult.html">ProblemDetailsResult</a> response,
+and wraps all other exceptions into a generic 500 Internal Server Error <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.problemdetails">ProblemDetails</a> response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -293,7 +297,7 @@ Class ApiExceptionFilter  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.html">ApiExceptionFilter</a>&gt;</dt>
-    <dd><p>The logger.</p>
+    <dd><p>The logger for error diagnostics.</p>
 </dd>
   </dl>
 
@@ -316,7 +320,7 @@ Class ApiExceptionFilter  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ebceys_Infrastructure_ControllerFilters_ApiExceptionFilter_OnException_Microsoft_AspNetCore_Mvc_Filters_ExceptionContext_" data-uid="Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
   OnException(ExceptionContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called after an action has thrown an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>.</p>
@@ -349,7 +353,7 @@ Class ApiExceptionFilter  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/ControllerFilters/ApiExceptionFilter.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

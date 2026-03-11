@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IAtomGenerator&lt;T&gt; | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="The atomic num generator.">
+      <meta name="description" content="Interface for a thread-safe atomic number generator that produces monotonically incrementing values.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ebceys_Infrastructure_Helpers_Sequences_IAtomGenerator_1" data-uid="Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator`1" class="text-break">
-Interface IAtomGenerator&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L42"><i class="bi bi-code-slash"></i></a>
+Interface IAtomGenerator&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Interface IAtomGenerator&lt;T&gt;  <a class="header-action link-secondary" title
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The atomic num generator.</p>
+  <div class="markdown summary"><p>Interface for a thread-safe atomic number generator that produces monotonically incrementing values.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -111,7 +111,7 @@ public interface IAtomGenerator&lt;out T&gt; where T : struct, INumber&lt;out T&
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>The number.</p>
+    <dd><p>The numeric type to generate (must implement <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.inumber-1">INumber&lt;TSelf&gt;</a>).</p>
 </dd>
   </dl>
 
@@ -132,10 +132,10 @@ public interface IAtomGenerator&lt;out T&gt; where T : struct, INumber&lt;out T&
 
   <h3 id="Ebceys_Infrastructure_Helpers_Sequences_IAtomGenerator_1_Next" data-uid="Ebceys.Infrastructure.Helpers.Sequences.IAtomGenerator`1.Next">
   Next()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the next value.</p>
+  <div class="markdown level1 summary"><p>Gets the next incremented value in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -147,7 +147,7 @@ public interface IAtomGenerator&lt;out T&gt; where T : struct, INumber&lt;out T&
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd><p>The next value.</p>
+    <dd><p>The next value of type <code class="typeparamref">T</code>.</p>
 </dd>
   </dl>
 
@@ -165,7 +165,7 @@ public interface IAtomGenerator&lt;out T&gt; where T : struct, INumber&lt;out T&
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L42" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/Helpers/Sequences/IAtomGenerator.cs/#L50" class="edit-link">Edit this page</a>
         </div>
 
 
