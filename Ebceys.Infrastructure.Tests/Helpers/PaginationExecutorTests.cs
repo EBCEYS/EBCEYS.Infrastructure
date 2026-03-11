@@ -136,6 +136,6 @@ public class PaginationExecutorTests
                     }, batchSize, 1).ToArray();
         };
 
-        act.Should().Throw<InvalidOperationException>();
+        act.Should().NotThrow<InvalidOperationException>();
     }
 }

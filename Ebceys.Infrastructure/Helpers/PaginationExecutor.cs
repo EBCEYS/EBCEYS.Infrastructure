@@ -30,11 +30,6 @@ public static class PaginationExecutor
         do
         {
             token.ThrowIfCancellationRequested();
-            if (paginationData.Iterations >= maxIterations)
-            {
-                throw new InvalidOperationException("Maximum number of iterations exceeded");
-            }
-
             var collection = await execution(paginationData, token);
 
             foreach (var data in collection)
@@ -47,6 +42,11 @@ public static class PaginationExecutor
                 yield break;
             }
 
+            if (paginationData.Iterations >= maxIterations)
+            {
+                throw new InvalidOperationException("Maximum number of iterations exceeded");
+            }
+            
             paginationData.NextIteration();
         } while (!token.IsCancellationRequested);
     }
@@ -79,12 +79,12 @@ public static class PaginationExecutor
                 yield break;
             }
 
-            paginationData.NextIteration();
-
             if (paginationData.Iterations >= maxIterations)
             {
                 throw new InvalidOperationException("Maximum number of iterations exceeded");
             }
+
+            paginationData.NextIteration();
         } while (paginationData.Iterations < maxIterations);
     }
 }

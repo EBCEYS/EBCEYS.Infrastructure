@@ -7,6 +7,7 @@ namespace Ebceys.Infrastructure.TestApplication.Client.Interfaces;
 public interface ITestClient
 {
     Task GetOkAsync(CancellationToken token);
+    Task<SomeBodyResponse> GetJsonAsync(CancellationToken token);
     Task GetExceptionAsync(CancellationToken token);
     Task<SomeBodyResponse> PostBodyAsync(SomeBodyRequest body, CancellationToken token);
     Task<SomeBodyResponse> GetQueryAsync(int value, CancellationToken token);

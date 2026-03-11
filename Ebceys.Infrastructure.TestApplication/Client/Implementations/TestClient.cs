@@ -30,6 +30,20 @@ public class TestClient(
         }
     }
 
+    public async Task<SomeBodyResponse> GetJsonAsync(CancellationToken token)
+    {
+        var result = await GetJsonAsync<SomeBodyResponse, ProblemDetails>(
+            url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetJson),
+            token: token);
+
+        if (result is { IsSuccess: true, Result: not null })
+        {
+            return result.Result;
+        }
+
+        return ApiExceptionHelper.ThrowApiException(result);
+    }
+
     public async Task GetExceptionAsync(CancellationToken token)
     {
         var result = await GetAsync<ProblemDetails>(
