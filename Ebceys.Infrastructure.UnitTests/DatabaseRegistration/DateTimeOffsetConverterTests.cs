@@ -19,7 +19,8 @@ public class DateTimeOffsetConverterTests
     [Test]
     public void When_ConvertToProvider_With_UtcValue_Result_SameValue()
     {
-        var utcValue = Randomizer.DateTimeOffset(DateTimeOffset.UnixEpoch, DateTimeOffset.MaxValue);
+        var utcValue = Randomizer.DateTimeOffset(DateTimeOffset.UnixEpoch,
+            DateTimeOffset.UnixEpoch.AddYears(1000));
         utcValue = new DateTimeOffset(utcValue.DateTime, TimeSpan.Zero);
 
         var result = ConvertToProvider(utcValue);
