@@ -2266,6 +2266,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientAdditionalTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientAdditionalTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientAdditionalTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests.yml",
       "output": {
         ".html": {
@@ -2276,6 +2290,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Tests.ClientTests.RabbitMqClientTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.ServiceSystemClientAdditionalTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ClientTests.ServiceSystemClientAdditionalTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ClientTests.ServiceSystemClientAdditionalTests",
       "Summary": null
     },
     {
@@ -2332,6 +2360,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Tests.DiTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorAdditionalTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorAdditionalTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.Helpers.PaginationExecutorAdditionalTests",
       "Summary": null
     },
     {
@@ -2420,6 +2462,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingAdditionalTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingAdditionalTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingAdditionalTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.Tests.ScheduledTests.SchedulingTests.yml",
       "output": {
         ".html": {
@@ -2444,6 +2500,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.Tests.ScheduledTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.DatabaseRegistration.DateTimeOffsetConverterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.DatabaseRegistration.DateTimeOffsetConverterTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.DatabaseRegistration.DateTimeOffsetConverterTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.DatabaseRegistration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.DatabaseRegistration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.DatabaseRegistration",
       "Summary": null
     },
     {
@@ -2476,6 +2560,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Extensions.EbServerExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Extensions.EbServerExtensionsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Extensions.EbServerExtensionsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.AtomicLongGeneratorTests.yml",
       "output": {
         ".html": {
@@ -2504,6 +2630,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.PaginationDataTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.PaginationDataTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.PaginationDataTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.PaginationExecutorUnitTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.PaginationExecutorUnitTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.PaginationExecutorUnitTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.TestEnum.yml",
       "output": {
         ".html": {
@@ -2528,6 +2682,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.UnitTests.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Middlewares.ExceptionCatcherMiddlewareTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Middlewares.ExceptionCatcherMiddlewareTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Middlewares.ExceptionCatcherMiddlewareTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Middlewares.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Middlewares.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Middlewares",
       "Summary": null
     },
     {

@@ -124,7 +124,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_DeleteCommandAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.DeleteCommandAsync(System.String,System.Threading.CancellationToken)">
   DeleteCommandAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -162,7 +162,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_GenerateTokenAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.GenerateTokenAsync(System.Threading.CancellationToken)">
   GenerateTokenAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -198,7 +198,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_GetCommandAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.GetCommandAsync(System.Threading.CancellationToken)">
   GetCommandAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -234,7 +234,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_GetExceptionAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.GetExceptionAsync(System.Threading.CancellationToken)">
   GetExceptionAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -253,6 +253,42 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_GetJsonAsync_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.GetJsonAsync*"></a>
+
+  <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_GetJsonAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.GetJsonAsync(System.Threading.CancellationToken)">
+  GetJsonAsync(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SomeBodyResponse&gt; GetJsonAsync(CancellationToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.TestApplication.BoundedContext.Responses.SomeBodyResponse.html">SomeBodyResponse</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -306,7 +342,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_GetQueryAsync_System_Int32_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.GetQueryAsync(System.Int32,System.Threading.CancellationToken)">
   GetQueryAsync(int, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -344,7 +380,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_MethodWithoutResponseBodyAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.MethodWithoutResponseBodyAsync(System.Threading.CancellationToken)">
   MethodWithoutResponseBodyAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -380,7 +416,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_NonExistsMethodAsync_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.NonExistsMethodAsync(System.Threading.CancellationToken)">
   NonExistsMethodAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -416,7 +452,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_PostBodyAsync_Ebceys_Infrastructure_TestApplication_BoundedContext_Requests_SomeBodyRequest_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.PostBodyAsync(Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.SomeBodyRequest,System.Threading.CancellationToken)">
   PostBodyAsync(SomeBodyRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -454,7 +490,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_PostCommandAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.PostCommandAsync(System.String,System.Threading.CancellationToken)">
   PostCommandAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -492,7 +528,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_PutCommandAsync_System_String_Ebceys_Infrastructure_TestApplication_BoundedContext_Requests_ChangeNameRequest_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.PutCommandAsync(System.String,Ebceys.Infrastructure.TestApplication.BoundedContext.Requests.ChangeNameRequest,System.Threading.CancellationToken)">
   PutCommandAsync(string, ChangeNameRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -532,7 +568,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_ValidateAuthAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.ValidateAuthAsync(System.String,System.Threading.CancellationToken)">
   ValidateAuthAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -570,7 +606,7 @@ Interface ITestClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Ebceys_Infrastructure_TestApplication_Client_Interfaces_ITestClient_ValidateTokenAsync_System_String_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.TestApplication.Client.Interfaces.ITestClient.ValidateTokenAsync(System.String,System.Threading.CancellationToken)">
   ValidateTokenAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure.TestApplication/Client/Interfaces/ITestClient.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
