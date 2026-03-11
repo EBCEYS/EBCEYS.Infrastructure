@@ -487,10 +487,10 @@ public partial class EbRandomizer(int seed = 0)
     /// <returns>The random DateTimeOffset.</returns>
     public DateTimeOffset DateTimeOffset(DateTimeOffset minValue, DateTimeOffset maxValue)
     {
-        var year = Int(0, maxValue.Year + 1);
-        var month = Int(0, maxValue.Month + 1);
-        var day = Int(0, maxValue.Day + 1);
-        var hour = Int(0, maxValue.Hour + 1);
+        var year = Int(0, maxValue.Year);
+        var month = Int(0, maxValue.Month);
+        var day = Int(0, maxValue.Day);
+        var hour = Int(0, maxValue.Hour);
         var minute = Int(0, maxValue.Minute);
         var second = Int(0, maxValue.Second);
         return minValue
@@ -500,7 +500,7 @@ public partial class EbRandomizer(int seed = 0)
             .AddHours(hour)
             .AddMinutes(minute)
             .AddSeconds(second)
-            .ToOffset(System.TimeSpan.FromHours(Int(-12, 13)));
+            .ToOffset(System.TimeSpan.FromHours(Int(-12, 12)));
     }
 
     /// <summary>
