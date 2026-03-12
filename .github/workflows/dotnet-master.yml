@@ -51,14 +51,16 @@ jobs:
       - name: Run tests with coverage
         run: |
           mkdir -p ./coverage
-          for testproj in $(find . -name '*.csproj' | grep -i 'Tests'); do
-            name=$(basename "$testproj" .csproj)
-            echo "Running tests: $testproj"
-            dotnet test "$testproj" --no-build \
-              --collect:"XPlat Code Coverage" \
-              --results-directory "./coverage/$name" \
-              --logger "trx;LogFileName=$name.trx" \
-              -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
+          for testproj in $(find . -name '*.csproj' -not -path '*/bin/*' -not -path '*/obj/*'); do
+            if grep -q "Microsoft.NET.Test.Sdk" "$testproj" && ! grep -q "<IsPackable>true</IsPackable>" "$testproj"; then
+              name=$(basename "$testproj" .csproj)
+              echo "Running tests: $testproj"
+              dotnet test "$testproj" --no-build \
+                --collect:"XPlat Code Coverage" \
+                --results-directory "./coverage/$name" \
+                --logger "trx;LogFileName=$name.trx" \
+                -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
+            fi
           done
 
       - name: Install ReportGenerator
