@@ -7,6 +7,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IsPackable>true</IsPackable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
         <PackageId>Ebceys.Infrastructure</PackageId>
         <Authors>EBCEYS</Authors>
         <RepositoryUrl>https://github.com/EBCEYS/EBCEYS.Infrastructure</RepositoryUrl>
@@ -26,6 +27,7 @@
             <Pack>True</Pack>
             <PackagePath>\</PackagePath>
         </None>
+        <None Remove="bin\**"/>
     </ItemGroup>
 
     <ItemGroup>
@@ -79,7 +81,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="bin\Debug\net10.0\Ebceys.Infrastructure.xml"/>
+        <Content Include="bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml">
+            <Pack>True</Pack>
+            <PackagePath>lib\$(TargetFramework)</PackagePath>
+        </Content>
     </ItemGroup>
 
 </Project>
