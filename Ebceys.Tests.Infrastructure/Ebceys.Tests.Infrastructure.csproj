@@ -55,4 +55,8 @@
     <ItemGroup>
         <ProjectReference Include="..\Ebceys.Infrastructure\Ebceys.Infrastructure.csproj"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="bin\Debug\net10.0\Ebceys.Tests.Infrastructure.xml"/>
+    </ItemGroup>
 </Project>

@@ -78,4 +78,8 @@
         <InternalsVisibleTo Include="Ebceys.Infrastructure.UnitTests"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <Content Include="bin\Debug\net10.0\Ebceys.Infrastructure.xml"/>
+    </ItemGroup>
+
 </Project>
