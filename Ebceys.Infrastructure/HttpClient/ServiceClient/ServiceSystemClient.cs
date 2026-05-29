@@ -68,7 +68,7 @@ public class ServiceSystemClient(
     /// <inheritdoc />
     public async Task PingAsync(CancellationToken token = default)
     {
-        var response = await GetAsync<ProblemDetails>(
+        var response = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(apiInfo.Value.BaseAddress, ServiceControllerRoutes.Controller,
                 ServiceControllerRoutes.Methods.Ping),
             token: token);
@@ -82,7 +82,7 @@ public class ServiceSystemClient(
     /// <inheritdoc />
     public async Task HealthCheckAsync(CancellationToken token = default)
     {
-        var response = await GetAsync<ProblemDetails>(
+        var response = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(apiInfo.Value.BaseAddress, ServiceControllerRoutes.Controller,
                 ServiceControllerRoutes.Methods.Healthz),
             token: token);
@@ -96,7 +96,7 @@ public class ServiceSystemClient(
     /// <inheritdoc />
     public async Task<UIHealthReport> HealthStatusCheckAsync(CancellationToken token = default)
     {
-        var response = await GetJsonAsync<UIHealthReport, ProblemDetails>(
+        var response = await this.GetJsonAsync<UIHealthReport, ProblemDetails>(
             url => url.AppendPathSegments(apiInfo.Value.BaseAddress, ServiceControllerRoutes.Controller,
                 ServiceControllerRoutes.Methods.HealthzStatus),
             token: token);
@@ -112,7 +112,7 @@ public class ServiceSystemClient(
     /// <inheritdoc />
     public async Task<string> GetMetricsAsync(CancellationToken token = default)
     {
-        var response = await GetRawAsync<ProblemDetails>(
+        var response = await this.GetRawAsync<ProblemDetails>(
             url => url.AppendPathSegments(apiInfo.Value.BaseAddress, ServiceControllerRoutes.Controller,
                 ServiceControllerRoutes.Methods.Metrics)
             , token: token);

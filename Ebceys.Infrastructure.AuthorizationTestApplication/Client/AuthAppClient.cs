@@ -28,7 +28,7 @@ public class AuthAppClient(
         CancellationToken token = default)
     {
         var response =
-            await PostJsonAsync<GenerateTokenRequest, GenerateTokenResponse, ProblemDetails>(
+            await this.PostJsonAsync<GenerateTokenRequest, GenerateTokenResponse, ProblemDetails>(
                 url => url.AppendPathSegments(
                     BaseRoute, Methods.GetToken),
                 request,
@@ -45,7 +45,7 @@ public class AuthAppClient(
 
     public async Task ValidateTokenAsync(CancellationToken token = default)
     {
-        var response = await PostAsync<ProblemDetails>(
+        var response = await this.PostAsync<ProblemDetails>(
             url => url.AppendPathSegments(BaseRoute, Methods.ValidateToken),
             token: token);
 
@@ -57,7 +57,7 @@ public class AuthAppClient(
 
     public async Task ValidateAuthAsync(CancellationToken token = default)
     {
-        var response = await GetAsync<ProblemDetails>(
+        var response = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BaseRoute, Methods.ValidateAuth), token: token);
 
         if (!response.IsSuccess)

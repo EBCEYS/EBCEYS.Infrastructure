@@ -193,8 +193,7 @@ public class PaginationExecutorAdditionalTests
             async (pages, token) =>
                 await _contextFactory.CreateDbContext().TestTable
                     .OrderBy(x => x.Id).Skip(pages.Skip).Take(pages.BatchSize).ToArrayAsync(token),
-            10,
-            100).ToArrayAsync();
+            10).ToArrayAsync();
 
         result.Should().HaveCount(30);
         result.Select(x => x.Id).Should().BeInAscendingOrder();

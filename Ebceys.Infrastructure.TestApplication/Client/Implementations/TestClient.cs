@@ -21,7 +21,7 @@ public class TestClient(
 
     public async Task GetOkAsync(CancellationToken token)
     {
-        var result = await GetAsync<ProblemDetails>(
+        var result = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetOk), token: token);
 
         if (!result.IsSuccess)
@@ -32,7 +32,7 @@ public class TestClient(
 
     public async Task<SomeBodyResponse> GetJsonAsync(CancellationToken token)
     {
-        var result = await GetJsonAsync<SomeBodyResponse, ProblemDetails>(
+        var result = await this.GetJsonAsync<SomeBodyResponse, ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetJson),
             token: token);
 
@@ -46,7 +46,7 @@ public class TestClient(
 
     public async Task GetExceptionAsync(CancellationToken token)
     {
-        var result = await GetAsync<ProblemDetails>(
+        var result = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetException),
             token: token);
 
@@ -58,7 +58,7 @@ public class TestClient(
 
     public async Task<SomeBodyResponse> PostBodyAsync(SomeBodyRequest body, CancellationToken token)
     {
-        var result = await PostJsonAsync<SomeBodyRequest, SomeBodyResponse, ProblemDetails>(
+        var result = await this.PostJsonAsync<SomeBodyRequest, SomeBodyResponse, ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.PostBody),
             body,
             token: token);
@@ -72,7 +72,7 @@ public class TestClient(
 
     public async Task<SomeBodyResponse> GetQueryAsync(int value, CancellationToken token)
     {
-        var result = await GetJsonAsync<SomeBodyResponse, ProblemDetails>(
+        var result = await this.GetJsonAsync<SomeBodyResponse, ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetQuery)
                 .AppendQueryParam("value", value),
             token: token);
@@ -87,7 +87,7 @@ public class TestClient(
 
     public async Task<CommandResultResponse> PostCommandAsync(string name, CancellationToken token)
     {
-        var result = await PostJsonAsync<CommandResultResponse, ProblemDetails>(
+        var result = await this.PostJsonAsync<CommandResultResponse, ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.PostCommand)
                 .AppendQueryParam("name", name),
             token: token);
@@ -102,7 +102,7 @@ public class TestClient(
 
     public async Task<CommandResultResponse> GetCommandAsync(CancellationToken token)
     {
-        var result = await GetJsonAsync<CommandResultResponse, ProblemDetails>(
+        var result = await this.GetJsonAsync<CommandResultResponse, ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetCommand),
             token: token);
 
@@ -116,7 +116,7 @@ public class TestClient(
 
     public async Task DeleteCommandAsync(string name, CancellationToken token)
     {
-        var result = await DeleteAsync<ProblemDetails>(
+        var result = await this.DeleteAsync<ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.DeleteCommand)
                 .AppendQueryParam("name", name),
             token: token);
@@ -129,7 +129,7 @@ public class TestClient(
 
     public async Task PutCommandAsync(string name, ChangeNameRequest request, CancellationToken token)
     {
-        var result = await PutJsonAsync<ChangeNameRequest, ProblemDetails>(url => url
+        var result = await this.PutJsonAsync<ChangeNameRequest, ProblemDetails>(url => url
                 .AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.PutCommand)
                 .AppendQueryParam("name", name),
             request,
@@ -143,7 +143,7 @@ public class TestClient(
 
     public async Task<GenerateTokenResponse> GenerateTokenAsync(CancellationToken token)
     {
-        var result = await GetJsonAsync<GenerateTokenResponse, ProblemDetails>(
+        var result = await this.GetJsonAsync<GenerateTokenResponse, ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetToken),
             token: token);
 
@@ -157,7 +157,7 @@ public class TestClient(
 
     public async Task ValidateTokenAsync(string jwt, CancellationToken token)
     {
-        var result = await GetAsync<ProblemDetails>(
+        var result = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateToken),
             GetAuthHeaders(jwt), token);
 
@@ -169,7 +169,7 @@ public class TestClient(
 
     public async Task ValidateAuthAsync(string jwt, CancellationToken token)
     {
-        var result = await GetAsync<ProblemDetails>(
+        var result = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateAuth),
             GetAuthHeaders(jwt),
             token);
@@ -182,7 +182,7 @@ public class TestClient(
 
     public async Task NonExistsMethodAsync(CancellationToken token)
     {
-        var result = await GetAsync<ProblemDetails>(
+        var result = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BasePath, "some", "non", "exists", "method"),
             null,
             token);
@@ -197,7 +197,7 @@ public class TestClient(
     {
         var jwt = await GenerateTokenAsync(token);
 
-        var result = await GetJsonAsync<CommandResultResponse, ProblemDetails>(
+        var result = await this.GetJsonAsync<CommandResultResponse, ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateToken),
             GetAuthHeaders(jwt.Token), token);
 

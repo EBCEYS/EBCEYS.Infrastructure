@@ -46,7 +46,7 @@ public static class PaginationExecutor
             {
                 throw new InvalidOperationException("Maximum number of iterations exceeded");
             }
-            
+
             paginationData.NextIteration();
         } while (!token.IsCancellationRequested);
     }
