@@ -2267,6 +2267,19 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.HttpClient.ClientBase.ClientName
   nameWithType: ClientBase.ClientName
+- uid: Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy
+  name: CreateExecutionPolicy()
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_CreateExecutionPolicy
+  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy()
+  nameWithType: ClientBase.CreateExecutionPolicy()
+- uid: Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy*
+  name: CreateExecutionPolicy
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_CreateExecutionPolicy_
+  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy
+  nameWithType: ClientBase.CreateExecutionPolicy
 - uid: Ebceys.Infrastructure.HttpClient.ClientBase.DefaultSerializer
   name: DefaultSerializer
   href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DefaultSerializer
@@ -2293,38 +2306,6 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.HttpClient.ClientBase.DelayBetweenRetries
   nameWithType: ClientBase.DelayBetweenRetries
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync*
-  name: DeleteAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DeleteAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync
-  nameWithType: ClientBase.DeleteAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: DeleteAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DeleteAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: DeleteAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync<TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync(Of TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.DeleteAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.DeleteAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync*
-  name: DeleteJsonAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DeleteJsonAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync
-  nameWithType: ClientBase.DeleteJsonAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: DeleteJsonAsync<TResponse, TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_DeleteJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: DeleteJsonAsync(Of TResponse, TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync<TResponse, TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync(Of TResponse, TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.DeleteJsonAsync<TResponse, TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.DeleteJsonAsync(Of TResponse, TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
 - uid: Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync(Flurl.Http.IFlurlRequest,System.Net.Http.HttpMethod,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
   name: ExecuteWithPolicyAsync(IFlurlRequest, HttpMethod, HttpCompletionOption, CancellationToken)
   href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_ExecuteWithPolicyAsync_Flurl_Http_IFlurlRequest_System_Net_Http_HttpMethod_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_
@@ -2354,22 +2335,6 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithoutPolicyAsync
   nameWithType: ClientBase.ExecuteWithoutPolicyAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync*
-  name: GetAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync
-  nameWithType: ClientBase.GetAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: GetAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: GetAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync<TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync(Of TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.GetAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.GetAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
 - uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetAuthHeaders(System.String)
   name: GetAuthHeaders(string)
   href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetAuthHeaders_System_String_
@@ -2399,54 +2364,22 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetClientName
   nameWithType: ClientBase.GetClientName
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync*
-  name: GetJsonAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetJsonAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync
+- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: GetDefaultHeaders(IDictionary<string, object>?)
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetDefaultHeaders_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: GetDefaultHeaders(IDictionary(Of String, Object))
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders(System.Collections.Generic.IDictionary<string, object>?)
+  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders(System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: ClientBase.GetDefaultHeaders(IDictionary<string, object>?)
+  nameWithType.vb: ClientBase.GetDefaultHeaders(IDictionary(Of String, Object))
+- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders*
+  name: GetDefaultHeaders
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetDefaultHeaders_
+  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders
   isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync
-  nameWithType: ClientBase.GetJsonAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: GetJsonAsync<TResponse, TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: GetJsonAsync(Of TResponse, TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync<TResponse, TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync(Of TResponse, TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.GetJsonAsync<TResponse, TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.GetJsonAsync(Of TResponse, TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync*
-  name: GetRawAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetRawAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync
-  nameWithType: ClientBase.GetRawAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: GetRawAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetRawAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: GetRawAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync<TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync(Of TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.GetRawAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.GetRawAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync*
-  name: GetStreamAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetStreamAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync
-  nameWithType: ClientBase.GetStreamAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: GetStreamAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetStreamAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: GetStreamAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync<TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync(Of TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.GetStreamAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.GetStreamAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders
+  nameWithType: ClientBase.GetDefaultHeaders
 - uid: Ebceys.Infrastructure.HttpClient.ClientBase.Policy
   name: Policy
   href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_Policy
@@ -2460,115 +2393,22 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.HttpClient.ClientBase.Policy
   nameWithType: ClientBase.Policy
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync*
-  name: PostAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync
+- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: PrepareRequest(Action<Url>, IDictionary<string, object>?)
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PrepareRequest_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: PrepareRequest(Action(Of Url), IDictionary(Of String, Object))
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?)
+  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: ClientBase.PrepareRequest(Action<Url>, IDictionary<string, object>?)
+  nameWithType.vb: ClientBase.PrepareRequest(Action(Of Url), IDictionary(Of String, Object))
+- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest*
+  name: PrepareRequest
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PrepareRequest_
+  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest
   isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync
-  nameWithType: ClientBase.PostAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PostAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PostAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync<TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync(Of TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PostAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PostAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync*
-  name: PostJsonAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync
-  nameWithType: ClientBase.PostJsonAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PostJsonAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PostJsonAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync<TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync(Of TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PostJsonAsync<TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PostJsonAsync(Of TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PostJsonAsync<TResponse, TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PostJsonAsync(Of TResponse, TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync<TResponse, TError>(System.Action<Flurl.Url>, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync(Of TResponse, TError)(System.Action(Of Flurl.Url), System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PostJsonAsync<TResponse, TError>(Action<Url>, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PostJsonAsync(Of TResponse, TError)(Action(Of Url), IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``2(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PostJsonAsync<TRequest, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__2_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``2(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PostJsonAsync(Of TRequest, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync<TRequest, TError>(System.Action<Flurl.Url>, TRequest, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync(Of TRequest, TError)(System.Action(Of Flurl.Url), TRequest, System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PostJsonAsync<TRequest, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PostJsonAsync(Of TRequest, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``3(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PostJsonAsync<TRequest, TResponse, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__3_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``3(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PostJsonAsync(Of TRequest, TResponse, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync<TRequest, TResponse, TError>(System.Action<Flurl.Url>, TRequest, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync(Of TRequest, TResponse, TError)(System.Action(Of Flurl.Url), TRequest, System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PostJsonAsync<TRequest, TResponse, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PostJsonAsync(Of TRequest, TResponse, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync*
-  name: PostStreamAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync
-  nameWithType: ClientBase.PostStreamAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync``1(System.Action{Flurl.Url},System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PostStreamAsync<TError>(Action<Url>, Stream, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync__1_System_Action_Flurl_Url__System_IO_Stream_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync``1(System.Action{Flurl.Url},System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PostStreamAsync(Of TError)(Action(Of Url), Stream, IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync<TError>(System.Action<Flurl.Url>, System.IO.Stream, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync(Of TError)(System.Action(Of Flurl.Url), System.IO.Stream, System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PostStreamAsync<TError>(Action<Url>, Stream, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PostStreamAsync(Of TError)(Action(Of Url), Stream, IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync``2(System.Action{Flurl.Url},System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PostStreamAsync<TResponse, TError>(Action<Url>, Stream, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync__2_System_Action_Flurl_Url__System_IO_Stream_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync``2(System.Action{Flurl.Url},System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PostStreamAsync(Of TResponse, TError)(Action(Of Url), Stream, IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync<TResponse, TError>(System.Action<Flurl.Url>, System.IO.Stream, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync(Of TResponse, TError)(System.Action(Of Flurl.Url), System.IO.Stream, System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PostStreamAsync<TResponse, TError>(Action<Url>, Stream, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PostStreamAsync(Of TResponse, TError)(Action(Of Url), Stream, IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync*
-  name: PutJsonAsync
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync_
-  commentId: Overload:Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync
-  nameWithType: ClientBase.PutJsonAsync
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync``2(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PutJsonAsync<TRequest, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync__2_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync``2(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PutJsonAsync(Of TRequest, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync<TRequest, TError>(System.Action<Flurl.Url>, TRequest, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync(Of TRequest, TError)(System.Action(Of Flurl.Url), TRequest, System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PutJsonAsync<TRequest, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PutJsonAsync(Of TRequest, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
-- uid: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync``3(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name: PutJsonAsync<TRequest, TResponse, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync__3_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync``3(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)
-  name.vb: PutJsonAsync(Of TRequest, TResponse, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
-  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync<TRequest, TResponse, TError>(System.Action<Flurl.Url>, TRequest, System.Collections.Generic.IDictionary<string, object>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync(Of TRequest, TResponse, TError)(System.Action(Of Flurl.Url), TRequest, System.Collections.Generic.IDictionary(Of String, Object), System.Threading.CancellationToken)
-  nameWithType: ClientBase.PutJsonAsync<TRequest, TResponse, TError>(Action<Url>, TRequest, IDictionary<string, object>?, CancellationToken)
-  nameWithType.vb: ClientBase.PutJsonAsync(Of TRequest, TResponse, TError)(Action(Of Url), TRequest, IDictionary(Of String, Object), CancellationToken)
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest
+  nameWithType: ClientBase.PrepareRequest
 - uid: Ebceys.Infrastructure.HttpClient.ClientBase.Timeout
   name: Timeout
   href: api/Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_Timeout
@@ -2582,6 +2422,30 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.HttpClient.ClientBase.Timeout
   nameWithType: ClientBase.Timeout
+- uid: Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions
+  name: ClientBaseDeleteExtensions
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions.html
+  commentId: T:Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions
+  nameWithType: ClientBaseDeleteExtensions
+- uid: Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions
+  name: ClientBaseGetExtensions
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions.html
+  commentId: T:Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions
+  nameWithType: ClientBaseGetExtensions
+- uid: Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions
+  name: ClientBasePostExtensions
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions.html
+  commentId: T:Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions
+  nameWithType: ClientBasePostExtensions
+- uid: Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions
+  name: ClientBasePutExtensions
+  href: api/Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions.html
+  commentId: T:Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions
+  fullName: Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions
+  nameWithType: ClientBasePutExtensions
 - uid: Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver
   name: ClientBaseTokenResolver
   href: api/Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.html

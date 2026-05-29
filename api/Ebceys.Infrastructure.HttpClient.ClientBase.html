@@ -410,45 +410,27 @@ public abstract class ClientBase</code></pre>
 </h2>
 
 
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_DeleteAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync*"></a>
+  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_CreateExecutionPolicy_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy*"></a>
 
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_DeleteAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.DeleteAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  DeleteAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_CreateExecutionPolicy" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.CreateExecutionPolicy">
+  CreateExecutionPolicy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sends DELETE request.</p>
+  <div class="markdown level1 summary"><p>Creates the <a class="xref" href="https://github.com/App-vNext/Polly/blob/main/src/Polly/IAsyncPolicy.TResult.cs">IAsyncPolicy&lt;TResult&gt;</a> that will be called on <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_ExecuteWithPolicyAsync_Flurl_Http_IFlurlRequest_System_Net_Http_HttpMethod_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_">ExecuteWithPolicyAsync(IFlurlRequest, HttpMethod, HttpCompletionOption, CancellationToken)</a>
+execution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TError&gt;&gt; DeleteAsync&lt;TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual IAsyncPolicy&lt;IFlurlResponse&gt;? CreateExecutionPolicy()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url transform.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult</a>&lt;TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
+    <dt><a class="xref" href="https://github.com/App-vNext/Polly/blob/main/src/Polly/IAsyncPolicy.TResult.cs">IAsyncPolicy</a>&lt;<span class="xref">IFlurlResponse</span>&gt;</dt>
+    <dd><p>The new instance of <a class="xref" href="https://github.com/App-vNext/Polly/blob/main/src/Polly/IAsyncPolicy.TResult.cs">IAsyncPolicy&lt;TResult&gt;</a>.</p>
 </dd>
   </dl>
 
@@ -458,59 +440,9 @@ public abstract class ClientBase</code></pre>
 
 
 
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_DeleteJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_DeleteJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.DeleteJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  DeleteJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L183"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends DELETE request with awaiting serialized body response.</p>
+  <h4 class="section" id="Ebceys_Infrastructure_HttpClient_ClientBase_CreateExecutionPolicy_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>By default the <a class="xref" href="Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.html#Ebceys_Infrastructure_HttpClient_DefaultClientPollyHelper_CreateDefaultHttpPolly__1_System_TimeSpan_System_Action_System_Exception_System_TimeSpan_System_Int32_Polly_Context__">CreateDefaultHttpPolly&lt;TResult&gt;(TimeSpan, Action&lt;Exception, TimeSpan, int, Context&gt;?)</a> will creates.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TResponse, TError&gt;&gt; DeleteJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TResponse : class where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url transform.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;TResponse, TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TResponse</code></dt>
-    <dd><p>The success response type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
 
 
 
@@ -519,7 +451,7 @@ public abstract class ClientBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_ExecuteWithPolicyAsync_Flurl_Http_IFlurlRequest_System_Net_Http_HttpMethod_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithPolicyAsync(Flurl.Http.IFlurlRequest,System.Net.Http.HttpMethod,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">
   ExecuteWithPolicyAsync(IFlurlRequest, HttpMethod, HttpCompletionOption, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the flurl request with <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_Policy">Policy</a>.</p>
@@ -567,7 +499,7 @@ public abstract class ClientBase</code></pre>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_ExecuteWithoutPolicyAsync_System_Func_Flurl_Http_IFlurlRequest_System_Threading_CancellationToken_System_Threading_Tasks_Task_Flurl_Http_IFlurlResponse___Flurl_Http_IFlurlRequest_System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.ExecuteWithoutPolicyAsync(System.Func{Flurl.Http.IFlurlRequest,System.Threading.CancellationToken,System.Threading.Tasks.Task{Flurl.Http.IFlurlResponse}},Flurl.Http.IFlurlRequest,System.Threading.CancellationToken)">
   ExecuteWithoutPolicyAsync(Func&lt;IFlurlRequest, CancellationToken, Task&lt;IFlurlResponse&gt;&gt;, IFlurlRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the request delegate without policy.</p>
@@ -608,62 +540,11 @@ public abstract class ClientBase</code></pre>
 
 
 
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_GetAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_GetAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  GetAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L121"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends GET request.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TError&gt;&gt; GetAsync&lt;TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url transform.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult</a>&lt;TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
   <a id="Ebceys_Infrastructure_HttpClient_ClientBase_GetAuthHeaders_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetAuthHeaders*"></a>
 
   <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_GetAuthHeaders_System_String_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetAuthHeaders(System.String)">
   GetAuthHeaders(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the auth headers.</p>
@@ -736,48 +617,32 @@ public abstract class ClientBase</code></pre>
 
 
 
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_GetJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync*"></a>
+  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_GetDefaultHeaders_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders*"></a>
 
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_GetJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  GetJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_GetDefaultHeaders_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetDefaultHeaders(System.Collections.Generic.IDictionary{System.String,System.Object})">
+  GetDefaultHeaders(IDictionary&lt;string, object&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sends GET request with awaiting serialized body response.</p>
+  <div class="markdown level1 summary"><p>Gets the default <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a> request headers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TResponse, TError&gt;&gt; GetJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TResponse : class where TError : class</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task&lt;Dictionary&lt;string, object&gt;&gt; GetDefaultHeaders(IDictionary&lt;string, object&gt;? additionalHeaders = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url transform.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
+    <dt><code>additionalHeaders</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The additional headers.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;TResponse, TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TResponse</code></dt>
-    <dd><p>The success response type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd><p>The headers for <span class="xref">Flurl.Http.IFlurlRequest</span>.</p>
 </dd>
   </dl>
 
@@ -787,48 +652,43 @@ public abstract class ClientBase</code></pre>
 
 
 
+  <h4 class="section" id="Ebceys_Infrastructure_HttpClient_ClientBase_GetDefaultHeaders_System_Collections_Generic_IDictionary_System_String_System_Object___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <code class="paramref">additionalHeaders</code> contains <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_AuthorizationHeader">AuthorizationHeader</a> the token resolver won't
+call.</p>
+</div>
 
 
 
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_GetRawAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync*"></a>
 
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_GetRawAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetRawAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  GetRawAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PrepareRequest_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest*"></a>
+
+  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PrepareRequest_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PrepareRequest(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object})">
+  PrepareRequest(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sends GET request with awaiting <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> array response.</p>
+  <div class="markdown level1 summary"><p>Prepares the <span class="xref">Flurl.Http.IFlurlRequest</span> with specified <code class="paramref">url</code> and <code class="paramref">headers</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;byte[], TError&gt;&gt; GetRawAsync&lt;TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task&lt;IFlurlRequest&gt; PrepareRequest(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url transform.</p>
+    <dd><p>The url configure action.</p>
 </dd>
     <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
+    <dd><p>The http headers.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[], TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">IFlurlRequest</span>&gt;</dt>
+    <dd><p>The new instance of <span class="xref">Flurl.Http.IFlurlRequest</span>.</p>
 </dd>
   </dl>
 
@@ -838,564 +698,9 @@ public abstract class ClientBase</code></pre>
 
 
 
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_GetStreamAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_GetStreamAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.GetStreamAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  GetStreamAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L141"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends GET request with awaiting <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a> response.</p>
+  <h4 class="section" id="Ebceys_Infrastructure_HttpClient_ClientBase_PrepareRequest_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To headers the <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html#Ebceys_Infrastructure_HttpClient_ClientBase_GetDefaultHeaders_System_Collections_Generic_IDictionary_System_String_System_Object__">GetDefaultHeaders(IDictionary&lt;string, object&gt;?)</a> method will applied.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;Stream, TError&gt;&gt; GetStreamAsync&lt;TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url transform.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>, TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult&lt;TResponse, TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PostAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PostAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PostAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L223"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends POST request.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TError&gt;&gt; PostAsync&lt;TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult</a>&lt;TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__1_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``1(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PostJsonAsync&lt;TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L372"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends POST request.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TError&gt;&gt; PostJsonAsync&lt;TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult</a>&lt;TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__2_System_Action_Flurl_Url__System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``2(System.Action{Flurl.Url},System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PostJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L352"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends POST request<br>
-and with awaiting <code class="typeparamref">TResponse</code> deserialized
-response.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TResponse, TError&gt;&gt; PostJsonAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt; url, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TResponse : class where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;TResponse, TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TResponse</code></dt>
-    <dd><p>The success response type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__2_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``2(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PostJsonAsync&lt;TRequest, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L245"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends POST request with specified serialized body.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TError&gt;&gt; PostJsonAsync&lt;TRequest, TError&gt;(Action&lt;Url&gt; url, TRequest body, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>body</code> <span class="xref">TRequest</span></dt>
-    <dd><p>The body.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult</a>&lt;TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TRequest</code></dt>
-    <dd><p>The request object type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PostJsonAsync__3_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostJsonAsync``3(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PostJsonAsync&lt;TRequest, TResponse, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L325"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends POST request with specified serialized body <br>
-and with awaiting <code class="typeparamref">TResponse</code> deserialized
-response.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TResponse, TError&gt;&gt; PostJsonAsync&lt;TRequest, TResponse, TError&gt;(Action&lt;Url&gt; url, TRequest body, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TResponse : class where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>body</code> <span class="xref">TRequest</span></dt>
-    <dd><p>The body.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;TResponse, TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TRequest</code></dt>
-    <dd><p>The request object type.</p>
-</dd>
-    <dt><code>TResponse</code></dt>
-    <dd><p>The success response type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync__1_System_Action_Flurl_Url__System_IO_Stream_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync``1(System.Action{Flurl.Url},System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PostStreamAsync&lt;TError&gt;(Action&lt;Url&gt;, Stream, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L297"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends POST request with specified stream body.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TError&gt;&gt; PostStreamAsync&lt;TError&gt;(Action&lt;Url&gt; url, Stream body, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd><p>The body.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult</a>&lt;TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PostStreamAsync__2_System_Action_Flurl_Url__System_IO_Stream_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PostStreamAsync``2(System.Action{Flurl.Url},System.IO.Stream,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PostStreamAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt;, Stream, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L273"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends POST request with specified stream body <br>
-and with awaiting <code class="typeparamref">TResponse</code> deserialized
-response.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TResponse, TError&gt;&gt; PostStreamAsync&lt;TResponse, TError&gt;(Action&lt;Url&gt; url, Stream body, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TResponse : class where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>body</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd><p>The body.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;TResponse, TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TResponse</code></dt>
-    <dd><p>The success response type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync__2_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync``2(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PutJsonAsync&lt;TRequest, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L394"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends PUT request with specified serialized body.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TError&gt;&gt; PutJsonAsync&lt;TRequest, TError&gt;(Action&lt;Url&gt; url, TRequest body, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>body</code> <span class="xref">TRequest</span></dt>
-    <dd><p>The body.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult</a>&lt;TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TRequest</code></dt>
-    <dd><p>The request object type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_ClientBase_PutJsonAsync__3_System_Action_Flurl_Url____0_System_Collections_Generic_IDictionary_System_String_System_Object__System_Threading_CancellationToken_" data-uid="Ebceys.Infrastructure.HttpClient.ClientBase.PutJsonAsync``3(System.Action{Flurl.Url},``0,System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)">
-  PutJsonAsync&lt;TRequest, TResponse, TError&gt;(Action&lt;Url&gt;, TRequest, IDictionary&lt;string, object&gt;?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBase.cs/#L422"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Sends PUT request with specified serialized body and with awaiting <code class="typeparamref">TResponse</code> deserialized
-response.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;OperationResult&lt;TResponse, TError&gt;&gt; PutJsonAsync&lt;TRequest, TResponse, TError&gt;(Action&lt;Url&gt; url, TRequest body, IDictionary&lt;string, object&gt;? headers = null, CancellationToken token = default) where TResponse : class where TError : class</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Url</span>&gt;</dt>
-    <dd><p>The url.</p>
-</dd>
-    <dt><code>body</code> <span class="xref">TRequest</span></dt>
-    <dd><p>The body.</p>
-</dd>
-    <dt><code>headers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The headers.</p>
-</dd>
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-2.html">OperationResult</a>&lt;TResponse, TError&gt;&gt;</dt>
-    <dd><p>The new instance of <a class="xref" href="Ebceys.Infrastructure.HttpClient.OperationResult-1.html">OperationResult&lt;TError&gt;</a>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TRequest</code></dt>
-    <dd><p>The request object type.</p>
-</dd>
-    <dt><code>TResponse</code></dt>
-    <dd><p>The success response type.</p>
-</dd>
-    <dt><code>TError</code></dt>
-    <dd><p>The error response type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
 
 
 

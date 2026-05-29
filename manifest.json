@@ -1006,6 +1006,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseDeleteExtensions.yml\" sourcestartlinenumber=\"1\">Extension class for DELETE HTTP requests on <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions.yml\" sourcestartlinenumber=\"1\">Extension class for GET HTTP requests on <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBasePostExtensions.yml\" sourcestartlinenumber=\"1\">Extension class for POST HTTP requests on <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.ClientBasePutExtensions.yml\" sourcestartlinenumber=\"1\">Extension class for PUT HTTP requests on <xref href=\"Ebceys.Infrastructure.HttpClient.ClientBase\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.ClientBaseTokenResolver.yml",
       "output": {
         ".html": {

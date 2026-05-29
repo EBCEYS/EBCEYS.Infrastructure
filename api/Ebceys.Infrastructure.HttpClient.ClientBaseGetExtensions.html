@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IClientTokenManager&lt;TInterface&gt; | EBCEYS.Infrastructure </title>
+      <title>Class ClientBaseGetExtensions | EBCEYS.Infrastructure </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IClientTokenManager&lt;TInterface&gt; | EBCEYS.Infrastructure ">
+      <meta name="title" content="Class ClientBaseGetExtensions | EBCEYS.Infrastructure ">
       
-      <meta name="description" content="Interface for managing authorization tokens for a specific HTTP client. Implementations provide tokens that are automatically attached to outgoing requests.">
+      <meta name="description" content="Extension class for GET HTTP requests on .">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/EBCEYS/EBCEYS.Infrastructure/new/main/apiSpec/new?filename=Ebceys_Infrastructure_HttpClient_TokenManager_IClientTokenManager_1.md&amp;value=---%0Auid%3A%20Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/EBCEYS/EBCEYS.Infrastructure/new/main/apiSpec/new?filename=Ebceys_Infrastructure_HttpClient_ClientBaseGetExtensions.md&amp;value=---%0Auid%3A%20Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,78 +84,66 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager`1">
+        <article data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions">
 
 
 
-  <h1 id="Ebceys_Infrastructure_HttpClient_TokenManager_IClientTokenManager_1" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager`1" class="text-break">
-Interface IClientTokenManager&lt;TInterface&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Ebceys_Infrastructure_HttpClient_ClientBaseGetExtensions" data-uid="Ebceys.Infrastructure.HttpClient.ClientBaseGetExtensions" class="text-break">
+Class ClientBaseGetExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseGetExtensions.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Ebceys.html">Ebceys</a>.<a class="xref" href="Ebceys.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Ebceys.Infrastructure.HttpClient.html">HttpClient</a>.<a class="xref" href="Ebceys.Infrastructure.HttpClient.TokenManager.html">TokenManager</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ebceys.html">Ebceys</a>.<a class="xref" href="Ebceys.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Ebceys.Infrastructure.HttpClient.html">HttpClient</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Ebceys.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Interface for managing authorization tokens for a specific HTTP client.
-Implementations provide tokens that are automatically attached to outgoing requests.</p>
+  <div class="markdown summary"><p>Extension class for GET HTTP requests on <a class="xref" href="Ebceys.Infrastructure.HttpClient.ClientBase.html">ClientBase</a>.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PublicAPI]
-public interface IClientTokenManager&lt;TInterface&gt;</code></pre>
+public static class ClientBaseGetExtensions</code></pre>
   </div>
 
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TInterface</code></dt>
-    <dd><p>The client interface type, used to distinguish token managers for different clients.</p>
-</dd>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ClientBaseGetExtensions</span></div>
+    </dd>
   </dl>
 
 
 
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Ebceys_Infrastructure_HttpClient_TokenManager_IClientTokenManager_1_GetTokenAsync_" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager`1.GetTokenAsync*"></a>
-
-  <h3 id="Ebceys_Infrastructure_HttpClient_TokenManager_IClientTokenManager_1_GetTokenAsync" data-uid="Ebceys.Infrastructure.HttpClient.TokenManager.IClientTokenManager`1.GetTokenAsync">
-  GetTokenAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets the authorization token to be used in outgoing HTTP requests.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;string?&gt; GetTokenAsync()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>The auth token string, or <code>null</code> if no token is available.</p>
-</dd>
-  </dl>
-
-
-
-
-
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -166,7 +154,7 @@ public interface IClientTokenManager&lt;TInterface&gt;</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/TokenManager/ClientTokenManager.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/HttpClient/ClientBaseGetExtensions.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 
