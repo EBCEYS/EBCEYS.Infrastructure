@@ -1160,6 +1160,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.HttpClient.OperationResult%602\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Ebceys.Infrastructure.HttpClient.OperationResult%601\" data-throw-if-not-resolved=\"false\"></xref> extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.HttpClient.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.HttpClient.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.yml",
       "output": {
         ".html": {

@@ -2839,6 +2839,34 @@ references:
   fullName.vb: Ebceys.Infrastructure.HttpClient.DefaultClientPollyHelper.CreateDefaultHttpPolly(Of TResult)(System.TimeSpan, System.Action(Of System.Exception, System.TimeSpan, Integer, Polly.Context))
   nameWithType: DefaultClientPollyHelper.CreateDefaultHttpPolly<TResult>(TimeSpan, Action<Exception, TimeSpan, int, Context>?)
   nameWithType.vb: DefaultClientPollyHelper.CreateDefaultHttpPolly(Of TResult)(TimeSpan, Action(Of Exception, TimeSpan, Integer, Context))
+- uid: Ebceys.Infrastructure.HttpClient.Extensions
+  name: Ebceys.Infrastructure.HttpClient.Extensions
+  href: api/Ebceys.Infrastructure.HttpClient.Extensions.html
+  commentId: N:Ebceys.Infrastructure.HttpClient.Extensions
+  fullName: Ebceys.Infrastructure.HttpClient.Extensions
+  nameWithType: Ebceys.Infrastructure.HttpClient.Extensions
+- uid: Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions
+  name: OperationResultExtensions
+  href: api/Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.html
+  commentId: T:Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions
+  fullName: Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions
+  nameWithType: OperationResultExtensions
+- uid: Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.ThrowIfUnsuccess*
+  name: ThrowIfUnsuccess
+  href: api/Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.html#Ebceys_Infrastructure_HttpClient_Extensions_OperationResultExtensions_ThrowIfUnsuccess_
+  commentId: Overload:Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.ThrowIfUnsuccess
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.ThrowIfUnsuccess
+  nameWithType: OperationResultExtensions.ThrowIfUnsuccess
+- uid: Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.ThrowIfUnsuccess``1(Ebceys.Infrastructure.HttpClient.OperationResult{``0},System.String)
+  name: ThrowIfUnsuccess<TError>(OperationResult<TError>, string)
+  href: api/Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.html#Ebceys_Infrastructure_HttpClient_Extensions_OperationResultExtensions_ThrowIfUnsuccess__1_Ebceys_Infrastructure_HttpClient_OperationResult___0__System_String_
+  commentId: M:Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.ThrowIfUnsuccess``1(Ebceys.Infrastructure.HttpClient.OperationResult{``0},System.String)
+  name.vb: ThrowIfUnsuccess(Of TError)(OperationResult(Of TError), String)
+  fullName: Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.ThrowIfUnsuccess<TError>(Ebceys.Infrastructure.HttpClient.OperationResult<TError>, string)
+  fullName.vb: Ebceys.Infrastructure.HttpClient.Extensions.OperationResultExtensions.ThrowIfUnsuccess(Of TError)(Ebceys.Infrastructure.HttpClient.OperationResult(Of TError), String)
+  nameWithType: OperationResultExtensions.ThrowIfUnsuccess<TError>(OperationResult<TError>, string)
+  nameWithType.vb: OperationResultExtensions.ThrowIfUnsuccess(Of TError)(OperationResult(Of TError), String)
 - uid: Ebceys.Infrastructure.HttpClient.IClientBaseResolver`1
   name: IClientBaseResolver<TResolve>
   href: api/Ebceys.Infrastructure.HttpClient.IClientBaseResolver-1.html
