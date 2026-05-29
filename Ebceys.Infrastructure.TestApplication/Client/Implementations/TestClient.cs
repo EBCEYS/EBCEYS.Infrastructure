@@ -1,6 +1,7 @@
 using Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext;
 using Ebceys.Infrastructure.Exceptions;
 using Ebceys.Infrastructure.HttpClient;
+using Ebceys.Infrastructure.HttpClient.Extensions;
 using Ebceys.Infrastructure.TestApplication.BoundedContext.Requests;
 using Ebceys.Infrastructure.TestApplication.BoundedContext.Responses;
 using Ebceys.Infrastructure.TestApplication.Client.Interfaces;
@@ -24,10 +25,7 @@ public class TestClient(
         var result = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetOk), token: token);
 
-        if (!result.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(result);
-        }
+        result.ThrowIfUnsuccess();
     }
 
     public async Task<SomeBodyResponse> GetJsonAsync(CancellationToken token)
@@ -36,12 +34,7 @@ public class TestClient(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetJson),
             token: token);
 
-        if (result is { IsSuccess: true, Result: not null })
-        {
-            return result.Result;
-        }
-
-        return ApiExceptionHelper.ThrowApiException(result);
+        return result.GetResponseOrThrow();
     }
 
     public async Task GetExceptionAsync(CancellationToken token)
@@ -50,10 +43,7 @@ public class TestClient(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetException),
             token: token);
 
-        if (!result.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(result);
-        }
+        result.ThrowIfUnsuccess();
     }
 
     public async Task<SomeBodyResponse> PostBodyAsync(SomeBodyRequest body, CancellationToken token)
@@ -62,12 +52,7 @@ public class TestClient(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.PostBody),
             body,
             token: token);
-        if (result is { IsSuccess: true, Result: not null })
-        {
-            return result.Result;
-        }
-
-        return ApiExceptionHelper.ThrowApiException(result);
+        return result.GetResponseOrThrow();
     }
 
     public async Task<SomeBodyResponse> GetQueryAsync(int value, CancellationToken token)
@@ -77,12 +62,7 @@ public class TestClient(
                 .AppendQueryParam("value", value),
             token: token);
 
-        if (result is { IsSuccess: true, Result: not null })
-        {
-            return result.Result;
-        }
-
-        return ApiExceptionHelper.ThrowApiException(result);
+        return result.GetResponseOrThrow();
     }
 
     public async Task<CommandResultResponse> PostCommandAsync(string name, CancellationToken token)
@@ -92,12 +72,7 @@ public class TestClient(
                 .AppendQueryParam("name", name),
             token: token);
 
-        if (result is { IsSuccess: true, Result: not null })
-        {
-            return result.Result;
-        }
-
-        return ApiExceptionHelper.ThrowApiException(result);
+        return result.GetResponseOrThrow();
     }
 
     public async Task<CommandResultResponse> GetCommandAsync(CancellationToken token)
@@ -106,12 +81,7 @@ public class TestClient(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.GetCommand),
             token: token);
 
-        if (result is { IsSuccess: true, Result: not null })
-        {
-            return result.Result;
-        }
-
-        return ApiExceptionHelper.ThrowApiException(result);
+        return result.GetResponseOrThrow();
     }
 
     public async Task DeleteCommandAsync(string name, CancellationToken token)
@@ -121,10 +91,7 @@ public class TestClient(
                 .AppendQueryParam("name", name),
             token: token);
 
-        if (!result.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(result);
-        }
+        result.ThrowIfUnsuccess();
     }
 
     public async Task PutCommandAsync(string name, ChangeNameRequest request, CancellationToken token)
@@ -135,10 +102,7 @@ public class TestClient(
             request,
             token: token);
 
-        if (!result.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(result);
-        }
+        result.ThrowIfUnsuccess();
     }
 
     public async Task<GenerateTokenResponse> GenerateTokenAsync(CancellationToken token)
@@ -161,10 +125,7 @@ public class TestClient(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateToken),
             GetAuthHeaders(jwt), token);
 
-        if (!result.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(result);
-        }
+        result.ThrowIfUnsuccess();
     }
 
     public async Task ValidateAuthAsync(string jwt, CancellationToken token)
@@ -174,10 +135,7 @@ public class TestClient(
             GetAuthHeaders(jwt),
             token);
 
-        if (!result.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(result);
-        }
+        result.ThrowIfUnsuccess();
     }
 
     public async Task NonExistsMethodAsync(CancellationToken token)
@@ -201,11 +159,6 @@ public class TestClient(
             url => url.AppendPathSegments(BasePath, RoutesDictionary.TestControllerV1.Methods.ValidateToken),
             GetAuthHeaders(jwt.Token), token);
 
-        if (result is { IsSuccess: true, Result: not null })
-        {
-            return result.Result;
-        }
-
-        return ApiExceptionHelper.ThrowApiException(result);
+        return result.GetResponseOrThrow();
     }
 }

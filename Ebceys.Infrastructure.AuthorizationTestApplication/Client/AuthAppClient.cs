@@ -1,6 +1,6 @@
 using Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext;
-using Ebceys.Infrastructure.Exceptions;
 using Ebceys.Infrastructure.HttpClient;
+using Ebceys.Infrastructure.HttpClient.Extensions;
 using Flurl.Http.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using static Ebceys.Infrastructure.AuthorizationTestApplication.BoundedContext.RoutesDictionary.AuthControllerV1;
@@ -35,12 +35,7 @@ public class AuthAppClient(
                 null,
                 token);
 
-        if (response is { IsSuccess: true, Result: not null })
-        {
-            return response.Result;
-        }
-
-        return ApiExceptionHelper.ThrowApiException(response);
+        return response.GetResponseOrThrow();
     }
 
     public async Task ValidateTokenAsync(CancellationToken token = default)
@@ -49,10 +44,7 @@ public class AuthAppClient(
             url => url.AppendPathSegments(BaseRoute, Methods.ValidateToken),
             token: token);
 
-        if (!response.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(response);
-        }
+        response.ThrowIfUnsuccess();
     }
 
     public async Task ValidateAuthAsync(CancellationToken token = default)
@@ -60,9 +52,6 @@ public class AuthAppClient(
         var response = await this.GetAsync<ProblemDetails>(
             url => url.AppendPathSegments(BaseRoute, Methods.ValidateAuth), token: token);
 
-        if (!response.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(response);
-        }
+        response.ThrowIfUnsuccess();
     }
 }

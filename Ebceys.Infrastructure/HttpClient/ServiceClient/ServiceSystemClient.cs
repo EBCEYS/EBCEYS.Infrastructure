@@ -1,6 +1,7 @@
 using System.Text;
 using Ebceys.Infrastructure.Controllers;
 using Ebceys.Infrastructure.Exceptions;
+using Ebceys.Infrastructure.HttpClient.Extensions;
 using Ebceys.Infrastructure.Models;
 using Flurl.Http.Configuration;
 using HealthChecks.UI.Core;
@@ -73,10 +74,7 @@ public class ServiceSystemClient(
                 ServiceControllerRoutes.Methods.Ping),
             token: token);
 
-        if (!response.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(response);
-        }
+        response.ThrowIfUnsuccess();
     }
 
     /// <inheritdoc />
@@ -87,10 +85,7 @@ public class ServiceSystemClient(
                 ServiceControllerRoutes.Methods.Healthz),
             token: token);
 
-        if (!response.IsSuccess)
-        {
-            ApiExceptionHelper.ThrowApiException(response);
-        }
+        response.ThrowIfUnsuccess();
     }
 
     /// <inheritdoc />
@@ -101,12 +96,7 @@ public class ServiceSystemClient(
                 ServiceControllerRoutes.Methods.HealthzStatus),
             token: token);
 
-        if (!response.IsSuccess || response.Result is null)
-        {
-            return ApiExceptionHelper.ThrowApiException(response);
-        }
-
-        return response.Result;
+        return response.GetResponseOrThrow();
     }
 
     /// <inheritdoc />
