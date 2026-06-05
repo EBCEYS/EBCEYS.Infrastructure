@@ -838,6 +838,118 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor%602\" data-throw-if-not-resolved=\"false\"></xref> abstract class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.yml\" sourcestartlinenumber=\"1\">The <xref href=\"Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor%602\" data-throw-if-not-resolved=\"false\"></xref> abstract class.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor<TContext, TResult>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.yml\" sourcestartlinenumber=\"1\">The blocking asynchronouse functions executor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.yml\" sourcestartlinenumber=\"1\">The blocking asynchronouse action processor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.yml\" sourcestartlinenumber=\"1\">The blocking lock configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor<TContext, TResult>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.yml\" sourcestartlinenumber=\"1\">The blocking synchronous functions executor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>",
+      "Summary": "<p sourcefile=\"api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.yml\" sourcestartlinenumber=\"1\">The blocking synchronouse actions processor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.Helpers.Multithreading.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.Helpers.Multithreading",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ebceys.Infrastructure.Helpers.PaginationData.yml",
       "output": {
         ".html": {
@@ -2696,6 +2808,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Ebceys.Infrastructure.UnitTests.Helpers.AtomicLongGeneratorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests",
       "Summary": null
     },
     {

@@ -1881,6 +1881,494 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.Helpers.Jwt.JwtValidator.TryValidate
   nameWithType: JwtValidator.TryValidate
+- uid: Ebceys.Infrastructure.Helpers.Multithreading
+  name: Ebceys.Infrastructure.Helpers.Multithreading
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.html
+  commentId: N:Ebceys.Infrastructure.Helpers.Multithreading
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading
+  nameWithType: Ebceys.Infrastructure.Helpers.Multithreading
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2
+  name: BlockingAsyncExecutor<TContext, TResult>
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2
+  name.vb: BlockingAsyncExecutor(Of TContext, TResult)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult)
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.#ctor(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name: BlockingAsyncExecutor(BlockingLockConfiguration?)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2__ctor_Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.#ctor(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name.vb: New(BlockingLockConfiguration)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.BlockingAsyncExecutor(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).New(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.BlockingAsyncExecutor(BlockingLockConfiguration?)
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).New(BlockingLockConfiguration)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.#ctor*
+  name: BlockingAsyncExecutor
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.BlockingAsyncExecutor
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).New
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.BlockingAsyncExecutor
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).New
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.EnqueJobAsync(`0,System.Threading.CancellationToken)
+  name: EnqueJobAsync(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_EnqueJobAsync__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.EnqueJobAsync(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.EnqueJobAsync(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).EnqueJobAsync(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.EnqueJobAsync(TContext, CancellationToken)
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).EnqueJobAsync(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.EnqueJobAsync*
+  name: EnqueJobAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_EnqueJobAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.EnqueJobAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.EnqueJobAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).EnqueJobAsync
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.EnqueJobAsync
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).EnqueJobAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.GetResultsAsync(System.Threading.CancellationToken)
+  name: GetResultsAsync(CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_GetResultsAsync_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.GetResultsAsync(System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.GetResultsAsync(System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).GetResultsAsync(System.Threading.CancellationToken)
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.GetResultsAsync(CancellationToken)
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).GetResultsAsync(CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.GetResultsAsync*
+  name: GetResultsAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_GetResultsAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.GetResultsAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.GetResultsAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).GetResultsAsync
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.GetResultsAsync
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).GetResultsAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFunc(`0,System.Threading.CancellationToken)
+  name: ProcessFunc(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_ProcessFunc__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFunc(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.ProcessFunc(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).ProcessFunc(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.ProcessFunc(TContext, CancellationToken)
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).ProcessFunc(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFunc*
+  name: ProcessFunc
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_ProcessFunc_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFunc
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.ProcessFunc
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).ProcessFunc
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.ProcessFunc
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).ProcessFunc
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFuncAsync(`0,System.Threading.CancellationToken)
+  name: ProcessFuncAsync(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_ProcessFuncAsync__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFuncAsync(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.ProcessFuncAsync(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).ProcessFuncAsync(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.ProcessFuncAsync(TContext, CancellationToken)
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).ProcessFuncAsync(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFuncAsync*
+  name: ProcessFuncAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingAsyncExecutor_2_ProcessFuncAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor`2.ProcessFuncAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor<TContext, TResult>.ProcessFuncAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingAsyncExecutor(Of TContext, TResult).ProcessFuncAsync
+  nameWithType: BlockingAsyncExecutor<TContext, TResult>.ProcessFuncAsync
+  nameWithType.vb: BlockingAsyncExecutor(Of TContext, TResult).ProcessFuncAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2
+  name: BlockingExecutor<TContext, TResult>
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2
+  name.vb: BlockingExecutor(Of TContext, TResult)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult)
+  nameWithType: BlockingExecutor<TContext, TResult>
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.#ctor(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name: BlockingExecutor(BlockingLockConfiguration?)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2__ctor_Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.#ctor(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name.vb: New(BlockingLockConfiguration)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.BlockingExecutor(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).New(Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  nameWithType: BlockingExecutor<TContext, TResult>.BlockingExecutor(BlockingLockConfiguration?)
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).New(BlockingLockConfiguration)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.#ctor*
+  name: BlockingExecutor
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.BlockingExecutor
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).New
+  nameWithType: BlockingExecutor<TContext, TResult>.BlockingExecutor
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).New
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Channel
+  name: Channel
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_Channel
+  commentId: P:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Channel
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.Channel
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).Channel
+  nameWithType: BlockingExecutor<TContext, TResult>.Channel
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).Channel
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Channel*
+  name: Channel
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_Channel_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Channel
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.Channel
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).Channel
+  nameWithType: BlockingExecutor<TContext, TResult>.Channel
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).Channel
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Dispose
+  name: Dispose()
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_Dispose
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Dispose
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.Dispose()
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).Dispose()
+  nameWithType: BlockingExecutor<TContext, TResult>.Dispose()
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).Dispose()
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Dispose*
+  name: Dispose
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_Dispose_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Dispose
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.Dispose
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).Dispose
+  nameWithType: BlockingExecutor<TContext, TResult>.Dispose
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).Dispose
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.EnqueJobAsync(`0,System.Threading.CancellationToken)
+  name: EnqueJobAsync(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_EnqueJobAsync__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.EnqueJobAsync(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.EnqueJobAsync(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).EnqueJobAsync(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingExecutor<TContext, TResult>.EnqueJobAsync(TContext, CancellationToken)
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).EnqueJobAsync(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.EnqueJobAsync*
+  name: EnqueJobAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_EnqueJobAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.EnqueJobAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.EnqueJobAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).EnqueJobAsync
+  nameWithType: BlockingExecutor<TContext, TResult>.EnqueJobAsync
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).EnqueJobAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.GetResultsAsync(System.Threading.CancellationToken)
+  name: GetResultsAsync(CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_GetResultsAsync_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.GetResultsAsync(System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.GetResultsAsync(System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).GetResultsAsync(System.Threading.CancellationToken)
+  nameWithType: BlockingExecutor<TContext, TResult>.GetResultsAsync(CancellationToken)
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).GetResultsAsync(CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.GetResultsAsync*
+  name: GetResultsAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_GetResultsAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.GetResultsAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.GetResultsAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).GetResultsAsync
+  nameWithType: BlockingExecutor<TContext, TResult>.GetResultsAsync
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).GetResultsAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.ProcessFunc(`0,System.Threading.CancellationToken)
+  name: ProcessFunc(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_ProcessFunc__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.ProcessFunc(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.ProcessFunc(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).ProcessFunc(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingExecutor<TContext, TResult>.ProcessFunc(TContext, CancellationToken)
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).ProcessFunc(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.ProcessFunc*
+  name: ProcessFunc
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_ProcessFunc_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.ProcessFunc
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.ProcessFunc
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).ProcessFunc
+  nameWithType: BlockingExecutor<TContext, TResult>.ProcessFunc
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).ProcessFunc
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Semaphore
+  name: Semaphore
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingExecutor_2_Semaphore
+  commentId: F:Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor`2.Semaphore
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor<TContext, TResult>.Semaphore
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingExecutor(Of TContext, TResult).Semaphore
+  nameWithType: BlockingExecutor<TContext, TResult>.Semaphore
+  nameWithType.vb: BlockingExecutor(Of TContext, TResult).Semaphore
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2
+  name: BlockingLockAsyncExecutor<TContext, TResult>
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2
+  name.vb: BlockingLockAsyncExecutor(Of TContext, TResult)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor<TContext, TResult>
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor(Of TContext, TResult)
+  nameWithType: BlockingLockAsyncExecutor<TContext, TResult>
+  nameWithType.vb: BlockingLockAsyncExecutor(Of TContext, TResult)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.#ctor(System.Func{`0,System.Threading.Tasks.Task{`1}},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name: BlockingLockAsyncExecutor(Func<TContext, Task<TResult>>, BlockingLockConfiguration?)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncExecutor_2__ctor_System_Func__0_System_Threading_Tasks_Task__1___Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.#ctor(System.Func{`0,System.Threading.Tasks.Task{`1}},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name.vb: New(Func(Of TContext, Task(Of TResult)), BlockingLockConfiguration)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor<TContext, TResult>.BlockingLockAsyncExecutor(System.Func<TContext, System.Threading.Tasks.Task<TResult>>, Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor(Of TContext, TResult).New(System.Func(Of TContext, System.Threading.Tasks.Task(Of TResult)), Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  nameWithType: BlockingLockAsyncExecutor<TContext, TResult>.BlockingLockAsyncExecutor(Func<TContext, Task<TResult>>, BlockingLockConfiguration?)
+  nameWithType.vb: BlockingLockAsyncExecutor(Of TContext, TResult).New(Func(Of TContext, Task(Of TResult)), BlockingLockConfiguration)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.#ctor*
+  name: BlockingLockAsyncExecutor
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncExecutor_2__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor<TContext, TResult>.BlockingLockAsyncExecutor
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor(Of TContext, TResult).New
+  nameWithType: BlockingLockAsyncExecutor<TContext, TResult>.BlockingLockAsyncExecutor
+  nameWithType.vb: BlockingLockAsyncExecutor(Of TContext, TResult).New
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.ProcessFuncAsync(`0,System.Threading.CancellationToken)
+  name: ProcessFuncAsync(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncExecutor_2_ProcessFuncAsync__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.ProcessFuncAsync(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor<TContext, TResult>.ProcessFuncAsync(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor(Of TContext, TResult).ProcessFuncAsync(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingLockAsyncExecutor<TContext, TResult>.ProcessFuncAsync(TContext, CancellationToken)
+  nameWithType.vb: BlockingLockAsyncExecutor(Of TContext, TResult).ProcessFuncAsync(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.ProcessFuncAsync*
+  name: ProcessFuncAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncExecutor_2_ProcessFuncAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor`2.ProcessFuncAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor<TContext, TResult>.ProcessFuncAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncExecutor(Of TContext, TResult).ProcessFuncAsync
+  nameWithType: BlockingLockAsyncExecutor<TContext, TResult>.ProcessFuncAsync
+  nameWithType.vb: BlockingLockAsyncExecutor(Of TContext, TResult).ProcessFuncAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1
+  name: BlockingLockAsyncProcessor<TContext>
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1
+  name.vb: BlockingLockAsyncProcessor(Of TContext)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor(Of TContext)
+  nameWithType: BlockingLockAsyncProcessor<TContext>
+  nameWithType.vb: BlockingLockAsyncProcessor(Of TContext)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name: BlockingLockAsyncProcessor(Func<TContext, Task>, BlockingLockConfiguration?)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncProcessor_1__ctor_System_Func__0_System_Threading_Tasks_Task__Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name.vb: New(Func(Of TContext, Task), BlockingLockConfiguration)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>.BlockingLockAsyncProcessor(System.Func<TContext, System.Threading.Tasks.Task>, Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor(Of TContext).New(System.Func(Of TContext, System.Threading.Tasks.Task), Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  nameWithType: BlockingLockAsyncProcessor<TContext>.BlockingLockAsyncProcessor(Func<TContext, Task>, BlockingLockConfiguration?)
+  nameWithType.vb: BlockingLockAsyncProcessor(Of TContext).New(Func(Of TContext, Task), BlockingLockConfiguration)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.#ctor*
+  name: BlockingLockAsyncProcessor
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncProcessor_1__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>.BlockingLockAsyncProcessor
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor(Of TContext).New
+  nameWithType: BlockingLockAsyncProcessor<TContext>.BlockingLockAsyncProcessor
+  nameWithType.vb: BlockingLockAsyncProcessor(Of TContext).New
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.GetResultsAsync(System.Threading.CancellationToken)
+  name: GetResultsAsync(CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncProcessor_1_GetResultsAsync_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.GetResultsAsync(System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>.GetResultsAsync(System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor(Of TContext).GetResultsAsync(System.Threading.CancellationToken)
+  nameWithType: BlockingLockAsyncProcessor<TContext>.GetResultsAsync(CancellationToken)
+  nameWithType.vb: BlockingLockAsyncProcessor(Of TContext).GetResultsAsync(CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.GetResultsAsync*
+  name: GetResultsAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncProcessor_1_GetResultsAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.GetResultsAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>.GetResultsAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor(Of TContext).GetResultsAsync
+  nameWithType: BlockingLockAsyncProcessor<TContext>.GetResultsAsync
+  nameWithType.vb: BlockingLockAsyncProcessor(Of TContext).GetResultsAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.ProcessFunc(`0,System.Threading.CancellationToken)
+  name: ProcessFunc(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncProcessor_1_ProcessFunc__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.ProcessFunc(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>.ProcessFunc(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor(Of TContext).ProcessFunc(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingLockAsyncProcessor<TContext>.ProcessFunc(TContext, CancellationToken)
+  nameWithType.vb: BlockingLockAsyncProcessor(Of TContext).ProcessFunc(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.ProcessFunc*
+  name: ProcessFunc
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockAsyncProcessor_1_ProcessFunc_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor`1.ProcessFunc
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor<TContext>.ProcessFunc
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockAsyncProcessor(Of TContext).ProcessFunc
+  nameWithType: BlockingLockAsyncProcessor<TContext>.ProcessFunc
+  nameWithType.vb: BlockingLockAsyncProcessor(Of TContext).ProcessFunc
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration
+  name: BlockingLockConfiguration
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration
+  nameWithType: BlockingLockConfiguration
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.#ctor(System.UInt16,System.Nullable{System.UInt16})
+  name: BlockingLockConfiguration(ushort, ushort?)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration__ctor_System_UInt16_System_Nullable_System_UInt16__
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.#ctor(System.UInt16,System.Nullable{System.UInt16})
+  name.vb: New(UShort, UShort?)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.BlockingLockConfiguration(ushort, ushort?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.New(UShort, UShort?)
+  nameWithType: BlockingLockConfiguration.BlockingLockConfiguration(ushort, ushort?)
+  nameWithType.vb: BlockingLockConfiguration.New(UShort, UShort?)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.#ctor*
+  name: BlockingLockConfiguration
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.BlockingLockConfiguration
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.New
+  nameWithType: BlockingLockConfiguration.BlockingLockConfiguration
+  nameWithType.vb: BlockingLockConfiguration.New
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.MaxDegreeOfParallelism
+  name: MaxDegreeOfParallelism
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_MaxDegreeOfParallelism
+  commentId: P:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.MaxDegreeOfParallelism
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.MaxDegreeOfParallelism
+  nameWithType: BlockingLockConfiguration.MaxDegreeOfParallelism
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.MaxDegreeOfParallelism*
+  name: MaxDegreeOfParallelism
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_MaxDegreeOfParallelism_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.MaxDegreeOfParallelism
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.MaxDegreeOfParallelism
+  nameWithType: BlockingLockConfiguration.MaxDegreeOfParallelism
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.ResultsCacheCapacity
+  name: ResultsCacheCapacity
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_ResultsCacheCapacity
+  commentId: P:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.ResultsCacheCapacity
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.ResultsCacheCapacity
+  nameWithType: BlockingLockConfiguration.ResultsCacheCapacity
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.ResultsCacheCapacity*
+  name: ResultsCacheCapacity
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_ResultsCacheCapacity_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.ResultsCacheCapacity
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration.ResultsCacheCapacity
+  nameWithType: BlockingLockConfiguration.ResultsCacheCapacity
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2
+  name: BlockingLockExecutor<TContext, TResult>
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2
+  name.vb: BlockingLockExecutor(Of TContext, TResult)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor<TContext, TResult>
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor(Of TContext, TResult)
+  nameWithType: BlockingLockExecutor<TContext, TResult>
+  nameWithType.vb: BlockingLockExecutor(Of TContext, TResult)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.#ctor(System.Func{`0,`1},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name: BlockingLockExecutor(Func<TContext, TResult>, BlockingLockConfiguration?)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockExecutor_2__ctor_System_Func__0__1__Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.#ctor(System.Func{`0,`1},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name.vb: New(Func(Of TContext, TResult), BlockingLockConfiguration)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor<TContext, TResult>.BlockingLockExecutor(System.Func<TContext, TResult>, Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor(Of TContext, TResult).New(System.Func(Of TContext, TResult), Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  nameWithType: BlockingLockExecutor<TContext, TResult>.BlockingLockExecutor(Func<TContext, TResult>, BlockingLockConfiguration?)
+  nameWithType.vb: BlockingLockExecutor(Of TContext, TResult).New(Func(Of TContext, TResult), BlockingLockConfiguration)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.#ctor*
+  name: BlockingLockExecutor
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockExecutor_2__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor<TContext, TResult>.BlockingLockExecutor
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor(Of TContext, TResult).New
+  nameWithType: BlockingLockExecutor<TContext, TResult>.BlockingLockExecutor
+  nameWithType.vb: BlockingLockExecutor(Of TContext, TResult).New
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.ProcessFunc(`0,System.Threading.CancellationToken)
+  name: ProcessFunc(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockExecutor_2_ProcessFunc__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.ProcessFunc(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor<TContext, TResult>.ProcessFunc(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor(Of TContext, TResult).ProcessFunc(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingLockExecutor<TContext, TResult>.ProcessFunc(TContext, CancellationToken)
+  nameWithType.vb: BlockingLockExecutor(Of TContext, TResult).ProcessFunc(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.ProcessFunc*
+  name: ProcessFunc
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor-2.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockExecutor_2_ProcessFunc_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor`2.ProcessFunc
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor<TContext, TResult>.ProcessFunc
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockExecutor(Of TContext, TResult).ProcessFunc
+  nameWithType: BlockingLockExecutor<TContext, TResult>.ProcessFunc
+  nameWithType.vb: BlockingLockExecutor(Of TContext, TResult).ProcessFunc
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1
+  name: BlockingLockProcessor<TContext>
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html
+  commentId: T:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1
+  name.vb: BlockingLockProcessor(Of TContext)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor(Of TContext)
+  nameWithType: BlockingLockProcessor<TContext>
+  nameWithType.vb: BlockingLockProcessor(Of TContext)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.#ctor(System.Action{`0},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name: BlockingLockProcessor(Action<TContext>, BlockingLockConfiguration?)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockProcessor_1__ctor_System_Action__0__Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockConfiguration_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.#ctor(System.Action{`0},Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  name.vb: New(Action(Of TContext), BlockingLockConfiguration)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>.BlockingLockProcessor(System.Action<TContext>, Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor(Of TContext).New(System.Action(Of TContext), Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockConfiguration)
+  nameWithType: BlockingLockProcessor<TContext>.BlockingLockProcessor(Action<TContext>, BlockingLockConfiguration?)
+  nameWithType.vb: BlockingLockProcessor(Of TContext).New(Action(Of TContext), BlockingLockConfiguration)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.#ctor*
+  name: BlockingLockProcessor
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockProcessor_1__ctor_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>.BlockingLockProcessor
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor(Of TContext).New
+  nameWithType: BlockingLockProcessor<TContext>.BlockingLockProcessor
+  nameWithType.vb: BlockingLockProcessor(Of TContext).New
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.GetResultsAsync(System.Threading.CancellationToken)
+  name: GetResultsAsync(CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockProcessor_1_GetResultsAsync_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.GetResultsAsync(System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>.GetResultsAsync(System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor(Of TContext).GetResultsAsync(System.Threading.CancellationToken)
+  nameWithType: BlockingLockProcessor<TContext>.GetResultsAsync(CancellationToken)
+  nameWithType.vb: BlockingLockProcessor(Of TContext).GetResultsAsync(CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.GetResultsAsync*
+  name: GetResultsAsync
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockProcessor_1_GetResultsAsync_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.GetResultsAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>.GetResultsAsync
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor(Of TContext).GetResultsAsync
+  nameWithType: BlockingLockProcessor<TContext>.GetResultsAsync
+  nameWithType.vb: BlockingLockProcessor(Of TContext).GetResultsAsync
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.ProcessFunc(`0,System.Threading.CancellationToken)
+  name: ProcessFunc(TContext, CancellationToken)
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockProcessor_1_ProcessFunc__0_System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.ProcessFunc(`0,System.Threading.CancellationToken)
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>.ProcessFunc(TContext, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor(Of TContext).ProcessFunc(TContext, System.Threading.CancellationToken)
+  nameWithType: BlockingLockProcessor<TContext>.ProcessFunc(TContext, CancellationToken)
+  nameWithType.vb: BlockingLockProcessor(Of TContext).ProcessFunc(TContext, CancellationToken)
+- uid: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.ProcessFunc*
+  name: ProcessFunc
+  href: api/Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor-1.html#Ebceys_Infrastructure_Helpers_Multithreading_BlockingLockProcessor_1_ProcessFunc_
+  commentId: Overload:Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor`1.ProcessFunc
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor<TContext>.ProcessFunc
+  fullName.vb: Ebceys.Infrastructure.Helpers.Multithreading.BlockingLockProcessor(Of TContext).ProcessFunc
+  nameWithType: BlockingLockProcessor<TContext>.ProcessFunc
+  nameWithType.vb: BlockingLockProcessor(Of TContext).ProcessFunc
 - uid: Ebceys.Infrastructure.Helpers.PaginationData
   name: PaginationData
   href: api/Ebceys.Infrastructure.Helpers.PaginationData.html
@@ -2102,15 +2590,15 @@ references:
   commentId: T:Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator
   fullName: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator
   nameWithType: AtomicLongGenerator
-- uid: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.#ctor(System.Nullable{System.Int32})
-  name: AtomicLongGenerator(int?)
-  href: api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.html#Ebceys_Infrastructure_Helpers_Sequences_AtomicLongGenerator__ctor_System_Nullable_System_Int32__
-  commentId: M:Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.#ctor(System.Nullable{System.Int32})
-  name.vb: New(Integer?)
-  fullName: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.AtomicLongGenerator(int?)
-  fullName.vb: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.New(Integer?)
-  nameWithType: AtomicLongGenerator.AtomicLongGenerator(int?)
-  nameWithType.vb: AtomicLongGenerator.New(Integer?)
+- uid: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.#ctor(System.Nullable{System.Int64})
+  name: AtomicLongGenerator(long?)
+  href: api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.html#Ebceys_Infrastructure_Helpers_Sequences_AtomicLongGenerator__ctor_System_Nullable_System_Int64__
+  commentId: M:Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.#ctor(System.Nullable{System.Int64})
+  name.vb: New(Long?)
+  fullName: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.AtomicLongGenerator(long?)
+  fullName.vb: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.New(Long?)
+  nameWithType: AtomicLongGenerator.AtomicLongGenerator(long?)
+  nameWithType.vb: AtomicLongGenerator.New(Long?)
 - uid: Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.#ctor*
   name: AtomicLongGenerator
   href: api/Ebceys.Infrastructure.Helpers.Sequences.AtomicLongGenerator.html#Ebceys_Infrastructure_Helpers_Sequences_AtomicLongGenerator__ctor_
@@ -7376,6 +7864,214 @@ references:
   commentId: T:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests
   fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests
   nameWithType: EbObjectExtensionsTests
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem
+  name: When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem()
+  nameWithType: EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem*
+  name: When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem
+  nameWithType: EbObjectExtensionsTests.When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted
+  name: When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted()
+  nameWithType: EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted*
+  name: When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted
+  nameWithType: EbObjectExtensionsTests.When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce
+  name: When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce()
+  nameWithType: EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce*
+  name: When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce
+  nameWithType: EbObjectExtensionsTests.When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded
+  name: When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded()
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded*
+  name: When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield
+  name: When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield()
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield*
+  name: When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded
+  name: When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded()
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded*
+  name: When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield
+  name: When_ForeachLazy_With_EmptyCollection_Result_EmptyYield()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazy_With_EmptyCollection_Result_EmptyYield
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield()
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield*
+  name: When_ForeachLazy_With_EmptyCollection_Result_EmptyYield
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazy_With_EmptyCollection_Result_EmptyYield_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazy_With_EmptyCollection_Result_EmptyYield
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration
+  name: When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration()
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration*
+  name: When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration
+  nameWithType: EbObjectExtensionsTests.When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem
+  name: When_Foreach_With_Collection_Result_ActionExecutedForEachItem()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_Foreach_With_Collection_Result_ActionExecutedForEachItem
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem()
+  nameWithType: EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem*
+  name: When_Foreach_With_Collection_Result_ActionExecutedForEachItem
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_Foreach_With_Collection_Result_ActionExecutedForEachItem_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem
+  nameWithType: EbObjectExtensionsTests.When_Foreach_With_Collection_Result_ActionExecutedForEachItem
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted
+  name: When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted()
+  nameWithType: EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted*
+  name: When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted
+  nameWithType: EbObjectExtensionsTests.When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce
+  name: When_Foreach_With_SingleElement_Result_ActionExecutedOnce()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_Foreach_With_SingleElement_Result_ActionExecutedOnce
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce()
+  nameWithType: EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce*
+  name: When_Foreach_With_SingleElement_Result_ActionExecutedOnce
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_Foreach_With_SingleElement_Result_ActionExecutedOnce_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce
+  nameWithType: EbObjectExtensionsTests.When_Foreach_With_SingleElement_Result_ActionExecutedOnce
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True
+  name: When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True()
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True*
+  name: When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True
+  name: When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True()
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True*
+  name: When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False
+  name: When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False()
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False*
+  name: When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False
+  name: When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False()
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False*
+  name: When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True
+  name: When_IsNullOrEmpty_Enumerable_With_Null_Result_True()
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_Null_Result_True
+  commentId: M:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True()
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True()
+- uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True*
+  name: When_IsNullOrEmpty_Enumerable_With_Null_Result_True
+  href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_Enumerable_With_Null_Result_True_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True
+  nameWithType: EbObjectExtensionsTests.When_IsNullOrEmpty_Enumerable_With_Null_Result_True
 - uid: Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.When_IsNullOrEmpty_With_VariousStrings_Result_CorrectBool(System.String,System.Boolean)
   name: When_IsNullOrEmpty_With_VariousStrings_Result_CorrectBool(string?, bool)
   href: api/Ebceys.Infrastructure.UnitTests.Extensions.EbObjectExtensionsTests.html#Ebceys_Infrastructure_UnitTests_Extensions_EbObjectExtensionsTests_When_IsNullOrEmpty_With_VariousStrings_Result_CorrectBool_System_String_System_Boolean_
@@ -7740,6 +8436,237 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.UnitTests.Helpers.AtomicLongGeneratorTests.When_intGenManyParallelIncrements_With_SpecifiedNumOfThreadsAndOperations_Result_NoDuplicates
   nameWithType: AtomicLongGeneratorTests.When_intGenManyParallelIncrements_With_SpecifiedNumOfThreadsAndOperations_Result_NoDuplicates
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests
+  name: BlockingLockAsyncExecutorTests
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html
+  commentId: T:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests
+  nameWithType: BlockingLockAsyncExecutorTests
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated
+  name: When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncExecutorTests_When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated()
+  nameWithType: BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated*
+  name: When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncExecutorTests_When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated
+  nameWithType: BlockingLockAsyncExecutorTests.When_EnqueJobAsync_WithExceptionInFunc_Result_ExceptionPropagated
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed
+  name: When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncExecutorTests_When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed()
+  nameWithType: BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed*
+  name: When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncExecutorTests_When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed
+  nameWithType: BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithMultipleJobs_Result_AllResultsProcessed
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed
+  name: When_GetResultsAsync_WithSingleJob_Result_ResultProcessed()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncExecutorTests_When_GetResultsAsync_WithSingleJob_Result_ResultProcessed
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed()
+  nameWithType: BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed*
+  name: When_GetResultsAsync_WithSingleJob_Result_ResultProcessed
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncExecutorTests_When_GetResultsAsync_WithSingleJob_Result_ResultProcessed_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed
+  nameWithType: BlockingLockAsyncExecutorTests.When_GetResultsAsync_WithSingleJob_Result_ResultProcessed
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests
+  name: BlockingLockAsyncProcessorTests
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.html
+  commentId: T:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests
+  nameWithType: BlockingLockAsyncProcessorTests
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted
+  name: When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncProcessorTests_When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted()
+  nameWithType: BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted*
+  name: When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncProcessorTests_When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted
+  nameWithType: BlockingLockAsyncProcessorTests.When_EnqueJobAsync_WithAsyncAction_Result_ActionExecuted
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException
+  name: When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncProcessorTests_When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException()
+  nameWithType: BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException*
+  name: When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockAsyncProcessorTests_When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException
+  nameWithType: BlockingLockAsyncProcessorTests.When_GetResultsAsync_WithAsyncProcessor_Result_NotSupportedException
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests
+  name: BlockingLockConfigurationTests
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html
+  commentId: T:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests
+  nameWithType: BlockingLockConfigurationTests
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(System.UInt16)
+  name: When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(ushort)
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithValidCapacity_Result_SuccessfullyCreated_System_UInt16_
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(System.UInt16)
+  name.vb: When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(UShort)
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(ushort)
+  fullName.vb: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(UShort)
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(ushort)
+  nameWithType.vb: BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated(UShort)
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated*
+  name: When_Constructor_WithValidCapacity_Result_SuccessfullyCreated
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithValidCapacity_Result_SuccessfullyCreated_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithValidCapacity_Result_SuccessfullyCreated
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(System.UInt16)
+  name: When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(ushort)
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithValidParallelism_Result_SuccessfullyCreated_System_UInt16_
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(System.UInt16)
+  name.vb: When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(UShort)
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(ushort)
+  fullName.vb: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(UShort)
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(ushort)
+  nameWithType.vb: BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated(UShort)
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated*
+  name: When_Constructor_WithValidParallelism_Result_SuccessfullyCreated
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithValidParallelism_Result_SuccessfullyCreated_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithValidParallelism_Result_SuccessfullyCreated
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException
+  name: When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException()
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException*
+  name: When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithZeroCapacity_Result_ArgumentOutOfRangeException
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException
+  name: When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException()
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException*
+  name: When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockConfigurationTests_When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException
+  nameWithType: BlockingLockConfigurationTests.When_Constructor_WithZeroParallelism_Result_ArgumentOutOfRangeException
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests
+  name: BlockingLockExecutorTests
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html
+  commentId: T:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests
+  nameWithType: BlockingLockExecutorTests
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled
+  name: When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled()
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled*
+  name: When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithCancellationToken_Result_TaskCancelled
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed
+  name: When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed()
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed*
+  name: When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithMultipleJobs_Result_AllResultsProcessed
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently
+  name: When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently()
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently*
+  name: When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithParallelism_Result_JobsProcessedConcurrently
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed
+  name: When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed()
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed*
+  name: When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockExecutorTests_When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed
+  nameWithType: BlockingLockExecutorTests.When_EnqueJobAsync_WithSingleJob_Result_ResultProcessed
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests
+  name: BlockingLockProcessorTests
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.html
+  commentId: T:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests
+  nameWithType: BlockingLockProcessorTests
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted
+  name: When_EnqueJobAsync_WithAction_Result_ActionExecuted()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockProcessorTests_When_EnqueJobAsync_WithAction_Result_ActionExecuted
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted()
+  nameWithType: BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted*
+  name: When_EnqueJobAsync_WithAction_Result_ActionExecuted
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockProcessorTests_When_EnqueJobAsync_WithAction_Result_ActionExecuted_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted
+  nameWithType: BlockingLockProcessorTests.When_EnqueJobAsync_WithAction_Result_ActionExecuted
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException
+  name: When_GetResultsAsync_WithProcessor_Result_NotSupportedException()
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockProcessorTests_When_GetResultsAsync_WithProcessor_Result_NotSupportedException
+  commentId: M:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException()
+  nameWithType: BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException()
+- uid: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException*
+  name: When_GetResultsAsync_WithProcessor_Result_NotSupportedException
+  href: api/Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.html#Ebceys_Infrastructure_UnitTests_Helpers_BlockingLockProcessorTests_When_GetResultsAsync_WithProcessor_Result_NotSupportedException_
+  commentId: Overload:Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.UnitTests.Helpers.BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException
+  nameWithType: BlockingLockProcessorTests.When_GetResultsAsync_WithProcessor_Result_NotSupportedException
 - uid: Ebceys.Infrastructure.UnitTests.Helpers.EbRandomizerTests
   name: EbRandomizerTests
   href: api/Ebceys.Infrastructure.UnitTests.Helpers.EbRandomizerTests.html
