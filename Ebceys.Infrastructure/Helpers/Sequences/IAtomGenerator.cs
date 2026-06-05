@@ -7,14 +7,14 @@ namespace Ebceys.Infrastructure.Helpers.Sequences;
 ///     Thread-safe atomic generator that produces incrementing <see cref="long" /> values
 ///     using <see cref="Interlocked.Increment(ref long)" />.
 /// </summary>
-/// <param name="seed">
-///     The optional seed for the initial random starting value. If <c>null</c>, uses
+/// <param name="baseValue">
+///     The optional base value for the initial random starting value. If <c>null</c>, uses
 ///     <see cref="Environment.TickCount" />.
 /// </param>
 [PublicAPI]
-public class AtomicLongGenerator(int? seed = null) : IAtomGenerator<long>
+public class AtomicLongGenerator(long? baseValue = null) : IAtomGenerator<long>
 {
-    private long _currentId = new Random(seed ?? Environment.TickCount).NextInt64();
+    private long _currentId = baseValue ?? new Random(Environment.TickCount).NextInt64();
 
     /// <inheritdoc />
     public long Next()
@@ -27,14 +27,14 @@ public class AtomicLongGenerator(int? seed = null) : IAtomGenerator<long>
 ///     Thread-safe atomic generator that produces incrementing <see cref="int" /> values
 ///     using <see cref="Interlocked.Increment(ref int)" />.
 /// </summary>
-/// <param name="seed">
-///     The optional seed for the initial random starting value. If <c>null</c>, uses
+/// <param name="baseValue">
+///     The optional base value for the initial random starting value. If <c>null</c>, uses
 ///     <see cref="Environment.TickCount" />.
 /// </param>
 [PublicAPI]
-public class AtomicIntGenerator(int? seed = null) : IAtomGenerator<int>
+public class AtomicIntGenerator(int? baseValue = null) : IAtomGenerator<int>
 {
-    private int _currentId = new Random(seed ?? Environment.TickCount).Next();
+    private int _currentId = baseValue ?? new Random(Environment.TickCount).Next();
 
     /// <inheritdoc />
     public int Next()

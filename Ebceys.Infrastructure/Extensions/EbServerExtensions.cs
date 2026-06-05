@@ -46,7 +46,7 @@ public static class EbServerExtensions
             CancellationToken token = default)
         {
             var cts = new CancellationTokenSource(timeout);
-            token.Register(() => cts.Cancel());
+            token.Register(cts.Cancel);
 
             while (!predicate(cts.Token) && !cts.IsCancellationRequested)
             {

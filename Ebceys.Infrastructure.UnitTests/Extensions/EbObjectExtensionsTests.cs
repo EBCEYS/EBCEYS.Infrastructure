@@ -173,4 +173,209 @@ public class EbObjectExtensionsTests
 
         result.Should().Be("foobarbaz");
     }
+
+    // ── Foreach ────────────────────────────────────────────────────────────────
+
+    [Test]
+    public void When_Foreach_With_Collection_Result_ActionExecutedForEachItem()
+    {
+        var items = new[] { 1, 2, 3, 4, 5 };
+        var results = new List<int>();
+
+        items.Foreach(x => results.Add(x * 2));
+
+        results.Should().Equal(2, 4, 6, 8, 10);
+    }
+
+    [Test]
+    public void When_Foreach_With_EmptyCollection_Result_ActionNeverExecuted()
+    {
+        var items = Array.Empty<int>();
+        var callCount = 0;
+
+        items.Foreach(_ => callCount++);
+
+        callCount.Should().Be(0);
+    }
+
+    [Test]
+    public void When_Foreach_With_SingleElement_Result_ActionExecutedOnce()
+    {
+        var items = new[] { 42 };
+        var results = new List<int>();
+
+        items.Foreach(x => results.Add(x));
+
+        results.Should().Equal(42);
+    }
+
+    // ── ForeachLazy ────────────────────────────────────────────────────────────
+
+    [Test]
+    public void When_ForeachLazy_With_Collection_Result_ActionExecutedAndElementsYielded()
+    {
+        var items = new[] { 1, 2, 3 };
+        var executedItems = new List<int>();
+
+        var result = items.ForeachLazy(x => executedItems.Add(x * 2)).ToList();
+
+        executedItems.Should().Equal(2, 4, 6);
+        result.Should().Equal(1, 2, 3);
+    }
+
+    [Test]
+    public void When_ForeachLazy_With_EmptyCollection_Result_EmptyYield()
+    {
+        var items = Array.Empty<int>();
+        var executedItems = new List<int>();
+
+        var result = items.ForeachLazy(x => executedItems.Add(x)).ToList();
+
+        executedItems.Should().BeEmpty();
+        result.Should().BeEmpty();
+    }
+
+    [Test]
+    public void When_ForeachLazy_With_LazyEvaluation_Result_ActionNotExecutedUntilEnumeration()
+    {
+        var items = new[] { 1, 2, 3 };
+        var callCount = 0;
+
+        var lazy = items.ForeachLazy(_ => callCount++);
+        callCount.Should().Be(0);
+
+        _ = lazy.ToList();
+        callCount.Should().Be(3);
+    }
+
+    // ── ForeachAsync ───────────────────────────────────────────────────────────
+
+    [Test]
+    public async Task When_ForeachAsync_With_Collection_Result_ActionExecutedForEachItem()
+    {
+        var items = new[] { 1, 2, 3, 4, 5 };
+        var results = new List<int>();
+
+        await items.ForeachAsync(async x =>
+        {
+            await Task.Delay(1);
+            results.Add(x * 2);
+        });
+
+        results.Should().Equal(2, 4, 6, 8, 10);
+    }
+
+    [Test]
+    public async Task When_ForeachAsync_With_EmptyCollection_Result_ActionNeverExecuted()
+    {
+        var items = Array.Empty<int>();
+        var callCount = 0;
+
+        await items.ForeachAsync(async _ =>
+        {
+            await Task.Delay(1);
+            callCount++;
+        });
+
+        callCount.Should().Be(0);
+    }
+
+    [Test]
+    public async Task When_ForeachAsync_With_SingleElement_Result_ActionExecutedOnce()
+    {
+        var items = new[] { 42 };
+        var results = new List<int>();
+
+        await items.ForeachAsync(async x =>
+        {
+            await Task.Delay(1);
+            results.Add(x);
+        });
+
+        results.Should().Equal(42);
+    }
+
+    // ── ForeachLazyAsync ───────────────────────────────────────────────────────
+
+    [Test]
+    public async Task When_ForeachLazyAsync_With_Collection_Result_ActionExecutedAndElementsYielded()
+    {
+        var items = new[] { 1, 2, 3 };
+        var executedItems = new List<int>();
+
+        var result = new List<int>();
+        await foreach (var item in items.ForeachLazyAsync(async x =>
+                       {
+                           await Task.Delay(1);
+                           executedItems.Add(x * 2);
+                       }))
+        {
+            result.Add(item);
+        }
+
+        executedItems.Should().Equal(2, 4, 6);
+        result.Should().Equal(1, 2, 3);
+    }
+
+    [Test]
+    public async Task When_ForeachLazyAsync_With_EmptyCollection_Result_EmptyYield()
+    {
+        var items = Array.Empty<int>();
+        var executedItems = new List<int>();
+
+        var result = new List<int>();
+        await foreach (var item in items.ForeachLazyAsync(async x =>
+                       {
+                           await Task.Delay(1);
+                           executedItems.Add(x);
+                       }))
+        {
+            result.Add(item);
+        }
+
+        executedItems.Should().BeEmpty();
+        result.Should().BeEmpty();
+    }
+
+    // ── IsNullOrEmpty (IEnumerable<T>?) ─────────────────────────────────────────
+
+    [Test]
+    public void When_IsNullOrEmpty_Enumerable_With_Null_Result_True()
+    {
+        IEnumerable<int>? items = null;
+
+        items.IsNullOrEmpty().Should().BeTrue();
+    }
+
+    [Test]
+    public void When_IsNullOrEmpty_Enumerable_With_EmptyArray_Result_True()
+    {
+        IEnumerable<int> items = Array.Empty<int>();
+
+        items.IsNullOrEmpty().Should().BeTrue();
+    }
+
+    [Test]
+    public void When_IsNullOrEmpty_Enumerable_With_EmptyList_Result_True()
+    {
+        IEnumerable<int> items = new List<int>();
+
+        items.IsNullOrEmpty().Should().BeTrue();
+    }
+
+    [Test]
+    public void When_IsNullOrEmpty_Enumerable_With_NonEmptyArray_Result_False()
+    {
+        IEnumerable<int> items = new[] { 1, 2, 3 };
+
+        items.IsNullOrEmpty().Should().BeFalse();
+    }
+
+    [Test]
+    public void When_IsNullOrEmpty_Enumerable_With_NonEmptyList_Result_False()
+    {
+        IEnumerable<int> items = new List<int> { 1, 2, 3 };
+
+        items.IsNullOrEmpty().Should().BeFalse();
+    }
 }
