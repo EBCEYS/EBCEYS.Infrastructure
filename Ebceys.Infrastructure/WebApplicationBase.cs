@@ -17,11 +17,14 @@ public class WebApplicationBase<TStartup> where TStartup : ExtraStartupBase
     ///     the web host with <typeparamref name="TStartup" />.
     /// </summary>
     /// <param name="args">The command-line arguments.</param>
+    /// <param name="configure">The action to configure <see cref="IHostBuilder"/>.</param>
     /// <returns>The new instance of <see cref="ConfiguredApp" /> ready to be run.</returns>
-    public ConfiguredApp Build(string[] args)
+    public ConfiguredApp Build(string[] args, Action<IHostBuilder>? configure = null)
     {
         var builder = Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(x => x.UseStartup<TStartup>());
+
+        configure?.Invoke(builder);
 
         return new ConfiguredApp(builder);
     }

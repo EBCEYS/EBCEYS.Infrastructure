@@ -13,7 +13,7 @@ public class Program
     public static async Task Main(string[] args)
     {
         var builder = WebApplicationBase<AuthorizationStartup>.Create(args);
-        await builder.Build(args).BuildAndRunAsync();
+        await builder.Build(args).RunAsync();
     }
 }
 

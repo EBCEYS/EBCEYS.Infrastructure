@@ -19,12 +19,12 @@ public sealed class ConfiguredApp(IHostBuilder builder) : IDisposable, IAsyncDis
 
     /// <summary>
     ///     The application service provider.
-    ///     Available only after <see cref="BuildAndRunAsync" /> has been called.
+    ///     Available only after <see cref="RunAsync" /> has been called.
     /// </summary>
-    /// <exception cref="InvalidOperationException">Thrown if accessed before <see cref="BuildAndRunAsync" />.</exception>
+    /// <exception cref="InvalidOperationException">Thrown if accessed before <see cref="RunAsync" />.</exception>
     public IServiceProvider ServiceProvider =>
         _app?.Services ?? throw new InvalidOperationException(
-            $"Application has not been built yet. Call {nameof(BuildAndRunAsync)} first.");
+            $"Application has not been built yet. Call {nameof(RunAsync)} first.");
 
     /// <inheritdoc />
     public async ValueTask DisposeAsync()
@@ -43,12 +43,12 @@ public sealed class ConfiguredApp(IHostBuilder builder) : IDisposable, IAsyncDis
     }
 
     /// <summary>
-    ///     Builds and runs the application.
+    ///     Runs the application.
     /// </summary>
     /// <param name="configureConf">An optional action to further configure the application configuration.</param>
     /// <param name="token">The cancellation token.</param>
     /// <returns>The <see cref="Task" /> that represents the app running instance.</returns>
-    public async Task BuildAndRunAsync(Action<IConfigurationBuilder>? configureConf = null,
+    public async Task RunAsync(Action<IConfigurationBuilder>? configureConf = null,
         CancellationToken token = default)
     {
         if (configureConf is not null)
