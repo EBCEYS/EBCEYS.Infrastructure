@@ -1403,6 +1403,19 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.ExtraStartupBase.Configure
   nameWithType: ExtraStartupBase.Configure
+- uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureEndpoints(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)
+  name: ConfigureEndpoints(IEndpointRouteBuilder)
+  href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureEndpoints_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_
+  commentId: M:Ebceys.Infrastructure.ExtraStartupBase.ConfigureEndpoints(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)
+  fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureEndpoints(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)
+  nameWithType: ExtraStartupBase.ConfigureEndpoints(IEndpointRouteBuilder)
+- uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureEndpoints*
+  name: ConfigureEndpoints
+  href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureEndpoints_
+  commentId: Overload:Ebceys.Infrastructure.ExtraStartupBase.ConfigureEndpoints
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.ExtraStartupBase.ConfigureEndpoints
+  nameWithType: ExtraStartupBase.ConfigureEndpoints
 - uid: Ebceys.Infrastructure.ExtraStartupBase.ConfigureFilters(Microsoft.AspNetCore.Mvc.Filters.FilterCollection)
   name: ConfigureFilters(FilterCollection)
   href: api/Ebceys.Infrastructure.ExtraStartupBase.html#Ebceys_Infrastructure_ExtraStartupBase_ConfigureFilters_Microsoft_AspNetCore_Mvc_Filters_FilterCollection_
