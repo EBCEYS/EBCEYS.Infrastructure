@@ -162,9 +162,9 @@ public class WebApplicationBase&lt;TStartup&gt; where TStartup : ExtraStartupBas
 
   <a id="Ebceys_Infrastructure_WebApplicationBase_1_Build_" data-uid="Ebceys.Infrastructure.WebApplicationBase`1.Build*"></a>
 
-  <h3 id="Ebceys_Infrastructure_WebApplicationBase_1_Build_System_String___" data-uid="Ebceys.Infrastructure.WebApplicationBase`1.Build(System.String[])">
-  Build(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ebceys_Infrastructure_WebApplicationBase_1_Build_System_String___System_Action_Microsoft_Extensions_Hosting_IHostBuilder__" data-uid="Ebceys.Infrastructure.WebApplicationBase`1.Build(System.String[],System.Action{Microsoft.Extensions.Hosting.IHostBuilder})">
+  Build(string[], Action&lt;IHostBuilder&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Builds the application using <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication.createbuilder#microsoft-aspnetcore-builder-webapplication-createbuilder(system-string())">CreateBuilder(string[])</a> and configures
@@ -173,13 +173,16 @@ the web host with <code class="typeparamref">TStartup</code>.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConfiguredApp Build(string[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConfiguredApp Build(string[] args, Action&lt;IHostBuilder&gt;? configure = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd><p>The command-line arguments.</p>
+</dd>
+    <dt><code>configure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a>&gt;</dt>
+    <dd><p>The action to configure <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a>.</p>
 </dd>
   </dl>
 
@@ -204,7 +207,7 @@ the web host with <code class="typeparamref">TStartup</code>.</p>
 
   <h3 id="Ebceys_Infrastructure_WebApplicationBase_1_Create_System_String___" data-uid="Ebceys.Infrastructure.WebApplicationBase`1.Create(System.String[])">
   Create(params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/EBCEYS/EBCEYS.Infrastructure/blob/main/Ebceys.Infrastructure/WebApplicationBase.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates the new instance of <a class="xref" href="Ebceys.Infrastructure.WebApplicationBase-1.html">WebApplicationBase&lt;TStartup&gt;</a>.</p>

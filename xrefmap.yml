@@ -684,22 +684,6 @@ references:
   fullName.vb: Ebceys.Infrastructure.ConfiguredApp.New
   nameWithType: ConfiguredApp.ConfiguredApp
   nameWithType.vb: ConfiguredApp.New
-- uid: Ebceys.Infrastructure.ConfiguredApp.BuildAndRunAsync(System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder},System.Threading.CancellationToken)
-  name: BuildAndRunAsync(Action<IConfigurationBuilder>?, CancellationToken)
-  href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp_BuildAndRunAsync_System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder__System_Threading_CancellationToken_
-  commentId: M:Ebceys.Infrastructure.ConfiguredApp.BuildAndRunAsync(System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder},System.Threading.CancellationToken)
-  name.vb: BuildAndRunAsync(Action(Of IConfigurationBuilder), CancellationToken)
-  fullName: Ebceys.Infrastructure.ConfiguredApp.BuildAndRunAsync(System.Action<Microsoft.Extensions.Configuration.IConfigurationBuilder>?, System.Threading.CancellationToken)
-  fullName.vb: Ebceys.Infrastructure.ConfiguredApp.BuildAndRunAsync(System.Action(Of Microsoft.Extensions.Configuration.IConfigurationBuilder), System.Threading.CancellationToken)
-  nameWithType: ConfiguredApp.BuildAndRunAsync(Action<IConfigurationBuilder>?, CancellationToken)
-  nameWithType.vb: ConfiguredApp.BuildAndRunAsync(Action(Of IConfigurationBuilder), CancellationToken)
-- uid: Ebceys.Infrastructure.ConfiguredApp.BuildAndRunAsync*
-  name: BuildAndRunAsync
-  href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp_BuildAndRunAsync_
-  commentId: Overload:Ebceys.Infrastructure.ConfiguredApp.BuildAndRunAsync
-  isSpec: "True"
-  fullName: Ebceys.Infrastructure.ConfiguredApp.BuildAndRunAsync
-  nameWithType: ConfiguredApp.BuildAndRunAsync
 - uid: Ebceys.Infrastructure.ConfiguredApp.Dispose
   name: Dispose()
   href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp_Dispose
@@ -726,6 +710,22 @@ references:
   isSpec: "True"
   fullName: Ebceys.Infrastructure.ConfiguredApp.DisposeAsync
   nameWithType: ConfiguredApp.DisposeAsync
+- uid: Ebceys.Infrastructure.ConfiguredApp.RunAsync(System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder},System.Threading.CancellationToken)
+  name: RunAsync(Action<IConfigurationBuilder>?, CancellationToken)
+  href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp_RunAsync_System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder__System_Threading_CancellationToken_
+  commentId: M:Ebceys.Infrastructure.ConfiguredApp.RunAsync(System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder},System.Threading.CancellationToken)
+  name.vb: RunAsync(Action(Of IConfigurationBuilder), CancellationToken)
+  fullName: Ebceys.Infrastructure.ConfiguredApp.RunAsync(System.Action<Microsoft.Extensions.Configuration.IConfigurationBuilder>?, System.Threading.CancellationToken)
+  fullName.vb: Ebceys.Infrastructure.ConfiguredApp.RunAsync(System.Action(Of Microsoft.Extensions.Configuration.IConfigurationBuilder), System.Threading.CancellationToken)
+  nameWithType: ConfiguredApp.RunAsync(Action<IConfigurationBuilder>?, CancellationToken)
+  nameWithType.vb: ConfiguredApp.RunAsync(Action(Of IConfigurationBuilder), CancellationToken)
+- uid: Ebceys.Infrastructure.ConfiguredApp.RunAsync*
+  name: RunAsync
+  href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp_RunAsync_
+  commentId: Overload:Ebceys.Infrastructure.ConfiguredApp.RunAsync
+  isSpec: "True"
+  fullName: Ebceys.Infrastructure.ConfiguredApp.RunAsync
+  nameWithType: ConfiguredApp.RunAsync
 - uid: Ebceys.Infrastructure.ConfiguredApp.ServiceProvider
   name: ServiceProvider
   href: api/Ebceys.Infrastructure.ConfiguredApp.html#Ebceys_Infrastructure_ConfiguredApp_ServiceProvider
@@ -9591,15 +9591,15 @@ references:
   fullName.vb: Ebceys.Infrastructure.WebApplicationBase(Of TStartup)
   nameWithType: WebApplicationBase<TStartup>
   nameWithType.vb: WebApplicationBase(Of TStartup)
-- uid: Ebceys.Infrastructure.WebApplicationBase`1.Build(System.String[])
-  name: Build(string[])
-  href: api/Ebceys.Infrastructure.WebApplicationBase-1.html#Ebceys_Infrastructure_WebApplicationBase_1_Build_System_String___
-  commentId: M:Ebceys.Infrastructure.WebApplicationBase`1.Build(System.String[])
-  name.vb: Build(String())
-  fullName: Ebceys.Infrastructure.WebApplicationBase<TStartup>.Build(string[])
-  fullName.vb: Ebceys.Infrastructure.WebApplicationBase(Of TStartup).Build(String())
-  nameWithType: WebApplicationBase<TStartup>.Build(string[])
-  nameWithType.vb: WebApplicationBase(Of TStartup).Build(String())
+- uid: Ebceys.Infrastructure.WebApplicationBase`1.Build(System.String[],System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  name: Build(string[], Action<IHostBuilder>?)
+  href: api/Ebceys.Infrastructure.WebApplicationBase-1.html#Ebceys_Infrastructure_WebApplicationBase_1_Build_System_String___System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  commentId: M:Ebceys.Infrastructure.WebApplicationBase`1.Build(System.String[],System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  name.vb: Build(String(), Action(Of IHostBuilder))
+  fullName: Ebceys.Infrastructure.WebApplicationBase<TStartup>.Build(string[], System.Action<Microsoft.Extensions.Hosting.IHostBuilder>?)
+  fullName.vb: Ebceys.Infrastructure.WebApplicationBase(Of TStartup).Build(String(), System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  nameWithType: WebApplicationBase<TStartup>.Build(string[], Action<IHostBuilder>?)
+  nameWithType.vb: WebApplicationBase(Of TStartup).Build(String(), Action(Of IHostBuilder))
 - uid: Ebceys.Infrastructure.WebApplicationBase`1.Build*
   name: Build
   href: api/Ebceys.Infrastructure.WebApplicationBase-1.html#Ebceys_Infrastructure_WebApplicationBase_1_Build_
