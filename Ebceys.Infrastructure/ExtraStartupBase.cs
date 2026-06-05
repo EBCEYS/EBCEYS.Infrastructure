@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -204,7 +205,20 @@ public abstract class ExtraStartupBase(IConfiguration configuration) : IStartupB
 
         ConfigureMiddlewares(app, env);
 
-        app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+        app.UseEndpoints(endpoints =>
+        {
+            ConfigureEndpoints(endpoints);
+            endpoints.MapControllers();
+        });
+    }
+
+    /// <summary>
+    ///     Use it to configure your custom endpoints. Called during application configuration after all middlewares and before
+    ///     controller endpoints are mapped.
+    /// </summary>
+    /// <param name="endpoints">The endpoints.</param>
+    protected virtual void ConfigureEndpoints(IEndpointRouteBuilder endpoints)
+    {
     }
 
     /// <summary>
