@@ -3,30 +3,30 @@
 
 |||
 |:---|:---|
-| Generated on: | 06/05/2026 - 09:33:21 |
-| Coverage date: | 06/05/2026 - 09:32:36 - 06/05/2026 - 09:33:18 |
+| Generated on: | 06/05/2026 - 17:32:06 |
+| Coverage date: | 06/05/2026 - 17:31:24 - 06/05/2026 - 17:32:03 |
 | Parser: | MultiReport (4x Cobertura) |
 | Assemblies: | 4 |
 | Classes: | 140 |
 | Files: | 98 |
-| **Line coverage:** | 45.8% (2297 of 5014) |
+| **Line coverage:** | 45.8% (2297 of 5015) |
 | Covered lines: | 2297 |
-| Uncovered lines: | 2717 |
-| Coverable lines: | 5014 |
-| Total lines: | 10974 |
-| **Branch coverage:** | 24.5% (311 of 1268) |
+| Uncovered lines: | 2718 |
+| Coverable lines: | 5015 |
+| Total lines: | 10977 |
+| **Branch coverage:** | 24.4% (311 of 1270) |
 | Covered branches: | 311 |
-| Total branches: | 1268 |
+| Total branches: | 1270 |
 | **Method coverage:** | [Feature is only available for sponsors](https://reportgenerator.io/pro) |
 
 </details>
 
 ## Coverage
-<details><summary>Ebceys.Infrastructure - 51.7%</summary>
+<details><summary>Ebceys.Infrastructure - 51.6%</summary>
 
 |**Name**|**Line**|**Branch**|
 |:---|---:|---:|
-|**Ebceys.Infrastructure**|**51.7%**|**41.2%**|
+|**Ebceys.Infrastructure**|**51.6%**|**41.1%**|
 |Ebceys.Infrastructure.ConfiguredApp|0%|0%|
 |Ebceys.Infrastructure.ControllerFilters.ApiExceptionFilter|100%|100%|
 |Ebceys.Infrastructure.Controllers.ServiceController|67.8%|50%|
